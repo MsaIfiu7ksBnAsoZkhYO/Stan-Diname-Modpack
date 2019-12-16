@@ -1,0 +1,587 @@
+<!-->
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	XML recipes are being DEPRECATED soon.
+	This means that recipes registered via the XML for MACHINES will no longer work
+	To avoid issues that may arise from this, please either distribute a RESOURCE PACK
+	with relevant JSON recipes OR user Craft tweaker + Advanced rocketry tweaker (3rd party)
+	https://minecraft.curseforge.com/projects/advanced-rocketry-tweaker
+	
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="true">
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreDilithium</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productdust;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockIron</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productplate;4;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreIron</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productdust;2;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockGold</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productplate;4;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreGold</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productdust;2;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockCopper</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productplate;4;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreCopper</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productdust;2;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockTin</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productplate;4;5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreTin</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productdust;2;5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockSteel</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productplate;4;6</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockTitanium</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productplate;4;7</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockAluminum</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productplate;4;9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreAluminum</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productdust;2;9</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockIridium</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productplate;4;10</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreIridium</oreDict>
+		</input>
+		<output>
+			<itemStack>libvulpes:productdust;2;10</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockTitaniumAluminide</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:productplate;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockTitaniumIridium</oreDict>
+		</input>
+		<output>
+			<itemStack>advancedrocketry:productplate;4;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockAdamantine</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_plateadamantine;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockAntimony</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_plateantimony;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockArdite</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_plateardite;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockBeryllium</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_plateberyllium;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockBismuth</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platebismuth;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockBoron</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_plateboron;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockCadmium</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platecadmium;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockChromium</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platechromium;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockCobalt</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platecobalt;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockColdiron</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platecoldiron;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockDilithium</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platedilithium;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockLithium</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platelithium;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockMagnesium</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platemagnesium;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockManganese</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platemanganese;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockMercury</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platemercury;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockOsmium</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_plateosmium;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockPlutonium</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_plateplutonium;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockRutile</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platerutile;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockStarsteel</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platestarsteel;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockTantalum</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platetantalum;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockThorium</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platethorium;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockTungsten</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platetungsten;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockZinc</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platezinc;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>blockZirconium</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_platezirconium;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreAdamantine</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:adamantine_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreAntimony</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:antimony_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreArdite</oreDict>
+		</input>
+		<output>
+			<itemStack>jaopca:item_dustardite;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreBeryllium</oreDict>
+		</input>
+		<output>
+			<itemStack>modernmetals:beryllium_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreBismuth</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:bismuth_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreBoron</oreDict>
+		</input>
+		<output>
+			<itemStack>modernmetals:boron_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreCadmium</oreDict>
+		</input>
+		<output>
+			<itemStack>modernmetals:cadmium_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreChromium</oreDict>
+		</input>
+		<output>
+			<itemStack>modernmetals:chromium_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreCobalt</oreDict>
+		</input>
+		<output>
+			<itemStack>magneticraft:dusts;2;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreColdiron</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:coldiron_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreLead</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:lead_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreLithium</oreDict>
+		</input>
+		<output>
+			<itemStack>mekanism:otherdust;2;4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreMagnesium</oreDict>
+		</input>
+		<output>
+			<itemStack>modernmetals:magnesium_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreManganese</oreDict>
+		</input>
+		<output>
+			<itemStack>modernmetals:manganese_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreMercury</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:mercury_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreMithril</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:mithril_blend;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreNickel</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:nickel_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreOsmium</oreDict>
+		</input>
+		<output>
+			<itemStack>magneticraft:dusts;2;11</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>orePlatinum</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:platinum_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>orePlutonium</oreDict>
+		</input>
+		<output>
+			<itemStack>modernmetals:plutonium_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreSilver</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:silver_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreStarsteel</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:starsteel_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreTantalum</oreDict>
+		</input>
+		<output>
+			<itemStack>modernmetals:tantalum_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreThorium</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:dust;2;3</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreTungsten</oreDict>
+		</input>
+		<output>
+			<itemStack>magneticraft:dusts;2;5</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreUranium</oreDict>
+		</input>
+		<output>
+			<itemStack>immersiveengineering:metal;2;14</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreZinc</oreDict>
+		</input>
+		<output>
+			<itemStack>basemetals:zinc_powder;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power ="0">
+		<input>
+			<oreDict>oreZirconium</oreDict>
+		</input>
+		<output>
+			<itemStack>modernmetals:zirconium_powder;2</itemStack>
+		</output>
+	</Recipe>
+</Recipes>

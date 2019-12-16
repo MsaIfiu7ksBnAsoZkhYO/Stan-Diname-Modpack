@@ -1,0 +1,1723 @@
+# Configuration file
+
+##########################################################################################################
+# block
+#--------------------------------------------------------------------------------------------------------#
+# To add any overwrites, simply copy them over from the block.cfg
+##########################################################################################################
+
+block {
+	S:"charset:stacks_decorative:0"=?pickaxe=-1
+	
+	S:"minecraft:gold_ore:0"=pickaxe=2
+	S:"minecraft:iron_ore:0"=pickaxe=4
+	S:"minecraft:coal_ore:0"=pickaxe=1
+	S:"minecraft:lapis_ore:0"=pickaxe=6
+	S:"minecraft:diamond_ore:0"=pickaxe=10
+	S:"minecraft:redstone_ore:0"=pickaxe=6
+	S:"minecraft:emerald_ore:0"=pickaxe=8
+	S:"minecraft:quartz_ore:0"=pickaxe=7
+	
+	S:"actuallyadditions:block_misc:3"=pickaxe=7
+	
+	S:"basemetals:antimony_ore:0"=pickaxe=3
+	S:"basemetals:bismuth_ore:0"=pickaxe=2
+	S:"basemetals:copper_ore:0"=pickaxe=3
+	S:"basemetals:lead_ore:0"=pickaxe=1
+	S:"basemetals:nickel_ore:0"=pickaxe=4
+	S:"basemetals:silver_ore:0"=pickaxe=3
+	S:"basemetals:tin_ore:0"=pickaxe=1
+	S:"basemetals:zinc_ore:0"=pickaxe=2
+	S:"basemetals:platinum_ore:0"=pickaxe=4
+	S:"basemetals:starsteel_ore:0"=pickaxe=5
+	S:"basemetals:mercury_ore:0"=pickaxe=1
+	
+	S:"biomesoplenty:biome_block:0"=pickaxe=11
+	S:"biomesoplenty:gem_ore:0"=pickaxe=11
+	S:"biomesoplenty:gem_ore:1"=pickaxe=9
+	S:"biomesoplenty:gem_ore:2"=pickaxe=7
+	S:"biomesoplenty:gem_ore:3"=pickaxe=7
+	S:"biomesoplenty:gem_ore:4"=pickaxe=7
+	S:"biomesoplenty:gem_ore:5"=pickaxe=3
+	S:"biomesoplenty:gem_ore:6"=pickaxe=9
+	S:"biomesoplenty:gem_ore:7"=pickaxe=3
+	
+	S:"crossroads:ore_tin:0"=pickaxe=1
+	S:"crossroads:ore_copper:0"=pickaxe=3
+	S:"crossroads:ore_native_copper:0"=pickaxe=2
+	S:"crossroads:ore_ruby:0"=pickaxe=9
+	
+	S:"immersiveengineering:ore:0"=pickaxe=3
+	S:"immersiveengineering:ore:1"=pickaxe=4
+	S:"immersiveengineering:ore:2"=pickaxe=2
+	S:"immersiveengineering:ore:3"=pickaxe=3
+	S:"immersiveengineering:ore:4"=pickaxe=4
+	S:"immersiveengineering:ore:5"=pickaxe=6
+	
+	S:"magneticraft:ores:0"=pickaxe=3
+	S:"magneticraft:ores:1:0"=pickaxe=1
+	S:"magneticraft:ores:2:0"=pickaxe=5
+	S:"magneticraft:ores:3:0"=pickaxe=8
+	S:"magneticraft:ores:4:0"=pickaxe=6
+	
+	S:"mekanism:oreblock:0"=pickaxe=7
+	S:"mekanism:oreblock:1:0"=pickaxe=3
+	S:"mekanism:oreblock:2:0"=pickaxe=1
+	
+	S:"modernmetals:aluminum_ore:0"=pickaxe=4
+	S:"modernmetals:beryllium_ore:0"=pickaxe=9
+	S:"modernmetals:boron_ore:0"=pickaxe=9
+	S:"modernmetals:chromium_ore:0"=pickaxe=8
+	S:"modernmetals:magnesium_ore:0"=pickaxe=2
+	S:"modernmetals:manganese_ore:0"=pickaxe=3
+	S:"modernmetals:osmium_ore:0"=pickaxe=7
+	S:"modernmetals:rutile_ore:0"=pickaxe=4
+	S:"modernmetals:tantalum_ore:0"=pickaxe=6
+	S:"modernmetals:thorium_ore:0"=pickaxe=3
+	S:"modernmetals:tungsten_ore:0"=pickaxe=9
+	S:"modernmetals:zirconium_ore:0"=pickaxe=8
+	S:"modernmetals:cadmium_ore:0"=pickaxe=2
+	S:"modernmetals:uranium_ore:0"=pickaxe=6
+	S:"modernmetals:plutonium_ore:0"=pickaxe=7
+	S:"modernmetals:iridium_ore:0"=pickaxe=6
+	S:"modernmetals:titanium_ore:0"=pickaxe=6
+	
+	S:"quark:biotite_ore:0"=pickaxe=11
+	
+	S:"terraqueous:earth_ore:0"=pickaxe=11
+	S:"terraqueous:earth_ore:1"=pickaxe=7
+	
+	S:"thermalfoundation:ore:0"=pickaxe=3
+	S:"thermalfoundation:ore:1"=pickaxe=1
+	S:"thermalfoundation:ore:2"=pickaxe=3
+	S:"thermalfoundation:ore:3"=pickaxe=2
+	S:"thermalfoundation:ore:4"=pickaxe=4
+	S:"thermalfoundation:ore:5"=pickaxe=4
+	S:"thermalfoundation:ore:6"=pickaxe=4
+	S:"thermalfoundation:ore:7"=pickaxe=6
+	S:"thermalfoundation:ore:8"=pickaxe=7
+	S:"thermalfoundation:ore_fluid:2"=pickaxe=6
+	S:"thermalfoundation:ore_fluid:3"=pickaxe=8
+	
+	S:"tconstruct:ore:0"=pickaxe=6
+	S:"tconstruct:ore:1"=pickaxe=6
+	
+	S:"mysticalagriculture:prosperity_ore:0"=pickaxe=6
+	S:"mysticalagriculture:nether_prosperity_ore:0"=pickaxe=8
+	S:"mysticalagriculture:end_prosperity_ore:0"=pickaxe=11
+	S:"mysticalagriculture:inferium_ore:0"=pickaxe=5
+	S:"mysticalagriculture:nether_inferium_ore:0"=pickaxe=7
+	S:"mysticalagriculture:end_inferium_ore:0"=pickaxe=11
+
+	S:"taiga:basalt_block:0"=pickaxe=7
+	S:"taiga:tiberium_ore:0"=pickaxe=7
+	S:"taiga:aurorium_ore:0"=pickaxe=11
+	S:"taiga:prometheum_ore:0"=pickaxe=8
+	S:"taiga:duranite_ore:0"=pickaxe=13
+	S:"taiga:valyrium_ore:0"=pickaxe=9
+	S:"taiga:vibranium_ore:0"=pickaxe=15
+	S:"taiga:karmesine_ore:0"=pickaxe=8
+	S:"taiga:ovium_ore:0"=pickaxe=8
+	S:"taiga:jauxum_ore:0"=pickaxe=8
+	S:"taiga:palladium_ore:0"=pickaxe=11
+	S:"taiga:uru_ore:0"=pickaxe=14
+	S:"taiga:osram_ore:0"=pickaxe=9
+	S:"taiga:eezo_ore:0"=pickaxe=12
+	S:"taiga:abyssum_ore:0"=pickaxe=11
+	S:"taiga:meteoritecobble_block:0"=pickaxe=11
+	S:"taiga:obsidioritecobble_block:0"=pickaxe=13
+	S:"taiga:meteorite_block:0"=pickaxe=11
+	S:"taiga:obsidiorite_block:0"=pickaxe=13
+	S:"taiga:dilithium_ore:0"=pickaxe=7
+	
+	S:"taiga:tiberium_block:0"=pickaxe=7
+	S:"taiga:aurorium_block:0"=pickaxe=11
+	S:"taiga:prometheum_block:0"=pickaxe=8
+	S:"taiga:duranite_block:0"=pickaxe=13
+	S:"taiga:valyrium_block:0"=pickaxe=9
+	S:"taiga:vibranium_block:0"=pickaxe=15
+	S:"taiga:karmesine_block:0"=pickaxe=8
+	S:"taiga:ovium_block:0"=pickaxe=8
+	S:"taiga:jauxum_block:0"=pickaxe=8
+	S:"taiga:palladium_block:0"=pickaxe=11
+	S:"taiga:uru_block:0"=pickaxe=14
+	S:"taiga:osram_block:0"=pickaxe=9
+	S:"taiga:abyssum_block:0"=pickaxe=11
+	S:"taiga:eezo_block:0"=pickaxe=12
+	
+	S:"taiga:terrax_block:0"=pickaxe=8
+	S:"taiga:triberium_block:0"=pickaxe=7
+	S:"taiga:fractum_block:0"=pickaxe=11
+	S:"taiga:violium_block:0"=pickaxe=11
+	S:"taiga:proxii_block:0"=pickaxe=12
+	S:"taiga:tritonite_block:0"=pickaxe=8
+	S:"taiga:ignitz_block:0"=pickaxe=9
+	S:"taiga:imperomite_block:0"=pickaxe=13
+	S:"taiga:solarium_block:0"=pickaxe=14
+	S:"taiga:nihilite_block:0"=pickaxe=15
+	S:"taiga:adamant_block:0"=pickaxe=16
+	S:"taiga:dyonite_block:0"=pickaxe=12
+	S:"taiga:nucleum_block:0"=pickaxe=14
+	S:"taiga:lumix_block:0"=pickaxe=11
+	S:"taiga:seismum_block:0"=pickaxe=12
+	S:"taiga:astrium_block:0"=pickaxe=11
+	S:"taiga:niob_block:0"=pickaxe=13
+	S:"taiga:yrdeen_block:0"=pickaxe=14
+	S:"taiga:iox_block:0"=pickaxe=13
+	S:"taiga:dilithium_block:0"=pickaxe=7
+
+	
+	
+	
+	S:"minecraft:stone:0"=pickaxe=5
+	S:"minecraft:stone:1"=pickaxe=5
+	S:"quark:stone_diorite_stairs:0"=pickaxe=5
+	S:"quark:stone_diorite_slab:"=pickaxe=5
+	S:"quark:world_stone_bricks:1"=pickaxe=5
+	S:"quark:world_stone_carved:1"=pickaxe=5
+	S:"quark:stone_diorite_bricks_stairs:0"=pickaxe=5
+	S:"quark:stone_diorite_bricks_slab:0"=pickaxe=5
+	S:"quark:world_stone_pavement:1"=pickaxe=5
+	S:"quark:stone_diorite_wall:0"=pickaxe=5
+	S:"quark:stone_diorite_bricks_wall:0"=pickaxe=5
+	S:"quark:diorite_speleothem:0"=pickaxe=5
+
+	S:"minecraft:stone:1"=pickaxe=5
+	S:"minecraft:stone:2"=pickaxe=5
+	S:"quark:stone_granite_stairs:0"=pickaxe=5
+	S:"quark:stone_granite_slab:0"=pickaxe=5
+	S:"quark:world_stone_bricks:0"=pickaxe=5
+	S:"quark:world_stone_carved:0"=pickaxe=5
+	S:"quark:stone_granite_bricks_stairs:0"=pickaxe=5
+	S:"quark:stone_granite_bricks_slab:0"=pickaxe=5
+	S:"quark:world_stone_pavement:0"=pickaxe=5
+	S:"quark:stone_granite_wall:0"=pickaxe=5
+	S:"quark:stone_granite_bricks_wall:0"=pickaxe=5
+	S:"quark:granite_speleothem:0"=pickaxe=5
+
+	S:"minecraft:stone:3"=pickaxe=5
+	S:"minecraft:stone:4"=pickaxe=5
+	S:"quark:stone_diorite_stairs:0"=pickaxe=5
+	S:"quark:stone_diorite_slab:0"=pickaxe=5
+	S:"quark:world_stone_bricks:1"=pickaxe=5
+	S:"quark:world_stone_carved:1"=pickaxe=5
+	S:"quark:stone_diorite_bricks_stairs:0"=pickaxe=5
+	S:"quark:stone_diorite_bricks_slab:0"=pickaxe=5
+	S:"quark:world_stone_pavement:1"=pickaxe=5
+	S:"quark:stone_diorite_wall:0"=pickaxe=5
+	S:"quark:stone_diorite_bricks_wall:0"=pickaxe=5
+	S:"quark:diorite_speleothem:0"=pickaxe=5
+	
+	S:"minecraft:stone:5"=pickaxe=5
+	S:"minecraft:stone:6"=pickaxe=5
+	S:"quark:stone_andesite_stairs:0"=pickaxe=5
+	S:"quark:stone_andesite_slab:0"=pickaxe=5
+	S:"quark:world_stone_bricks:2"=pickaxe=5
+	S:"quark:world_stone_carved:2"=pickaxe=5
+	S:"quark:stone_andesite_bricks_stairs:0"=pickaxe=5
+	S:"quark:stone_andesite_bricks_slab:0"=pickaxe=5
+	S:"quark:world_stone_pavement:2"=pickaxe=5
+	S:"quark:stone_andesite_wall:0"=pickaxe=5
+	S:"quark:stone_andesite_bricks_wall:0"=pickaxe=5
+	S:"quark:andesite_speleothem:0"=pickaxe=5
+
+	
+	S:"minecraft:cobblestone:0"=pickaxe=5
+	S:"minecraft:sandstone:0"=pickaxe=3
+	S:"minecraft:sandstone:1"=pickaxe=3
+	S:"minecraft:sandstone:2"=pickaxe=3
+	S:"minecraft:stone_slab:0"=pickaxe=5
+	S:"minecraft:stone_slab:1"=pickaxe=5
+	S:"minecraft:stone_slab:3"=pickaxe=5
+	S:"minecraft:stone_slab:5"=pickaxe=5
+	S:"minecraft:mossy_cobblestone:0"=pickaxe=5
+	S:"minecraft:stone_stairs:0"=pickaxe=5
+	S:"minecraft:stonebrick:0"=pickaxe=5
+	S:"minecraft:stonebrick:1"=pickaxe=5
+	S:"minecraft:stonebrick:2"=pickaxe=5
+	S:"minecraft:stonebrick:2"=pickaxe=5
+	S:"minecraft:stonebrick:3"=pickaxe=5
+	S:"minecraft:stone_brick_stairs:0"=pickaxe=5
+	S:"minecraft:red_sandstone:0"=pickaxe=3
+	S:"minecraft:red_sandstone:1"=pickaxe=3
+	S:"minecraft:red_sandstone:2"=pickaxe=3
+	S:"minecraft:red_sandstone_stairs:0"=pickaxe=3
+	S:"minecraft:stone_slab2:0"=pickaxe=5
+	S:"minecraft:sandstone_stairs:0"=pickaxe=3
+	S:"minecraft:monster_egg:0"=pickaxe=5
+	S:"minecraft:monster_egg:1"=pickaxe=5
+	S:"minecraft:monster_egg:2"=pickaxe=5
+	S:"minecraft:monster_egg:3"=pickaxe=5
+	S:"minecraft:monster_egg:4"=pickaxe=5
+	S:"minecraft:monster_egg:5"=pickaxe=5
+	S:"minecraft:cobblestone_wall:0"=pickaxe=5
+	S:"minecraft:cobblestone_wall:1"=pickaxe=5
+	
+	
+	S:"minecraft:netherrack:0"=pickaxe=7
+	S:"biomesoplenty:grass:6"=pickaxe=7
+	S:"biomesoplenty:grass:8"=pickaxe=7
+	
+	S:"minecraft:nether_brick:0"=pickaxe=7
+	S:"minecraft:nether_brick_stairs:0"=pickaxe=7
+	S:"minecraft:nether_brick_fence:0"=pickaxe=7
+	S:"quark:red_nether_brick_stairs:0"=pickaxe=7
+	S:"quark:red_nether_brick_stairs:0"=pickaxe=7
+	S:"quark:red_nether_brick_slab:0"=pickaxe=7
+	S:"quark:charred_nether_bricks:0"=pickaxe=7
+	S:"quark:charred_nether_brick_stairs:0"=pickaxe=7
+	S:"quark:polished_netherrack"=pickaxe=7
+	S:"quark:polished_netherrack:1"=pickaxe=7
+	S:"quark:polished_netherrack_bricks_stairs:0"=pickaxe=7
+	S:"quark:polished_netherrack_bricks_slab:0"=pickaxe=7
+	S:"quark:polished_netherrack_bricks_wall:0"=pickaxe=7
+	S:"quark:netherrack_speleothem:0"=pickaxe=7
+	S:"quark:smoker:0"=pickaxe=7
+	
+	
+	S:"natura:nether_logs2:0"=axe=10
+	S:"natura:nether_logs2:1"=axe=10
+	S:"natura:nether_logs2:2"=axe=10
+	S:"natura:nether_logs2:3"=axe=10
+	S:"natura:nether_logs2:4"=axe=10
+	S:"natura:nether_logs2:5"=axe=10
+	S:"natura:nether_logs2:6"=axe=10
+	S:"natura:nether_logs2:7"=axe=10
+	S:"natura:nether_logs2:8"=axe=10
+	S:"natura:nether_logs2:9"=axe=10
+	S:"natura:nether_logs2:10"=axe=10
+	S:"natura:nether_logs2:11"=axe=10
+	S:"natura:nether_logs2:12"=axe=10
+	S:"natura:nether_logs2:13"=axe=10
+	S:"natura:nether_logs2:14"=axe=10
+	S:"natura:nether_logs2:15"=axe=10
+
+	
+	
+	S:"minecraft:end_stone:0"=pickaxe=11
+	S:"minecraft:end_bricks:0"=pickaxe=11
+	
+	
+	S:"quark:biome_cobblestone:2>
+	S:"quark:biome_cobblestone:0"=pickaxe=5
+	S:"quark:biome_brick:0"=pickaxe=5
+	S:"quark:fire_stone_slab:0"=pickaxe=5
+	S:"quark:fire_stone_stairs:0"=pickaxe=5
+	S:"quark:fire_stone_wall:0"=pickaxe=5
+	S:"quark:fire_stone_brick_wall:0"=pickaxe=5
+	S:"quark:biome_cobblestone:1"=pickaxe=5
+	S:"quark:biome_brick:1"=pickaxe=5
+	S:"quark:icy_stone_slab:0"=pickaxe=5
+	S:"quark:icy_stone_stairs:0"=pickaxe=5
+	S:"quark:icy_stone_brick_slab:0"=pickaxe=5
+	S:"quark:icy_stone_brick_stairs:0"=pickaxe=5
+	S:"quark:icy_stone_wall:0"=pickaxe=5
+	S:"quark:icy_stone_brick_wall:0"=pickaxe=5
+	S:"quark:fire_stone_brick_slab:0"=pickaxe=5
+	
+	
+	S:"iceandfire:chared_dirt:0"=shovel=7
+	S:"iceandfire:chared_grass:0"=shovel=7
+	S:"iceandfire:chared_stone:0"=pickaxe=7
+	S:"iceandfire:chared_cobblestone:0"=pickaxe=7
+	S:"iceandfire:chared_gravel:0"=shovel=7
+	S:"iceandfire:chared_grass_path:0"=shovel=7
+		
+	S:"iceandfire:frozen_dirt:0"=shovel=7
+	S:"iceandfire:frozen_grass:0"=shovel=7
+	S:"iceandfire:frozen_stone:0"=pickaxe=7
+	S:"iceandfire:frozen_cobblestone:0"=pickaxe=7
+	S:"iceandfire:frozen_gravel:0"=shovel=7
+	S:"iceandfire:frozen_grass_path:0"=shovel=7
+	S:"iceandfire:frozen_splinters:0"=pickaxe=7
+	S:"iceandfire:dragon_ice:0"=pickaxe=7
+	
+	S:"iceandfire:myrmex_resin:0"=pickaxe=7
+	S:"iceandfire:myrmex_resin:1:0"=pickaxe=7
+	S:"iceandfire:myrmex_resin_sticky:0"=pickaxe=7
+	S:"iceandfire:myrmex_resin_sticky:1:0"=pickaxe=7
+	S:"iceandfire:myrmex_desert_resin_block:0"=pickaxe=7
+	S:"iceandfire:myrmex_jungle_resin_block:0"=pickaxe=7	
+	
+
+	
+
+
+
+	S:"undergroundbiomes:igneous_stone:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_monster_stone:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown_snowed:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_speleothem:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_wall:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_fullslab:0"=pickaxe=5
+		
+	S:"undergroundbiomes:igneous_stone_stairs_east:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_east:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:8"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_cobble:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_mossy:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_wall:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_fullslab:0"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_brick:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_wall:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:8"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_fullslab:0"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sandstone:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_chiseled:0"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_smooth:0"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sand:0"=shovel=5
+	S:"undergroundbiomes:igneous_gravel:0"=shovel=5
+	S:"undergroundbiomes:igneous_clay:0"=shovel=5
+	
+	
+	S:"undergroundbiomes:igneous_stone:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_monster_stone:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown_snowed:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_speleothem:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_wall:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_fullslab:1"=pickaxe=5
+		
+	S:"undergroundbiomes:igneous_stone_stairs_east:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_east:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:9"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_cobble:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_mossy:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_wall:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_fullslab:1"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_brick:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_wall:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:9"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_fullslab:1"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sandstone:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_chiseled:1"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_smooth:1"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sand:1"=shovel=5
+	S:"undergroundbiomes:igneous_gravel:1"=shovel=5
+	S:"undergroundbiomes:igneous_clay:1"=shovel=5
+	
+	
+	S:"undergroundbiomes:igneous_stone:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_monster_stone:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown_snowed:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_speleothem:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_wall:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_fullslab:2"=pickaxe=5
+		
+	S:"undergroundbiomes:igneous_stone_stairs_east:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_east:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:10"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_cobble:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_mossy:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_wall:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_fullslab:2"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_brick:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_wall:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:10"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_fullslab:2"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sandstone:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_chiseled:2"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_smooth:2"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sand:2"=shovel=5
+	S:"undergroundbiomes:igneous_gravel:2"=shovel=5
+	S:"undergroundbiomes:igneous_clay:2"=shovel=5
+	
+	
+		S:"undergroundbiomes:igneous_stone:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_monster_stone:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown_snowed:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_speleothem:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_wall:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_fullslab:3"=pickaxe=5
+		
+	S:"undergroundbiomes:igneous_stone_stairs_east:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_east:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:11"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_cobble:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_mossy:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_wall:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_fullslab:3"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_brick:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_wall:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:11"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_fullslab:3"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sandstone:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_chiseled:3"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_smooth:3"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sand:3"=shovel=5
+	S:"undergroundbiomes:igneous_gravel:3"=shovel=5
+	S:"undergroundbiomes:igneous_clay:3"=shovel=5
+	
+	
+		S:"undergroundbiomes:igneous_stone:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_monster_stone:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown_snowed:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_speleothem:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_wall:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_fullslab:4"=pickaxe=5
+		
+	S:"undergroundbiomes:igneous_stone_stairs_east:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_east:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:12"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_cobble:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_mossy:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_wall:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_fullslab:4"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_brick:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_wall:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:12"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_fullslab:4"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sandstone:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_chiseled:4"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_smooth:4"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sand:4"=shovel=5
+	S:"undergroundbiomes:igneous_gravel:4"=shovel=5
+	S:"undergroundbiomes:igneous_clay:4"=shovel=5
+	
+		S:"undergroundbiomes:igneous_stone:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_monster_stone:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_overgrown_snowed:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_speleothem:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_wall:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_halfslab:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_fullslab:5"=pickaxe=5
+		
+	S:"undergroundbiomes:igneous_stone_stairs_east:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_east:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_north:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_south:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_stone_stairs_west:13"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_cobble:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_mossy:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_east:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_north:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_south:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_stairs_west:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_wall:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_halfslab:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_cobble_fullslab:5"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_brick:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_east:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_north:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_south:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_stairs_west:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_wall:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_halfslab:13"=pickaxe=5
+	S:"undergroundbiomes:igneous_brick_fullslab:5"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sandstone:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_chiseled:5"=pickaxe=5
+	S:"undergroundbiomes:igneous_sandstone_smooth:5"=pickaxe=5
+	
+	S:"undergroundbiomes:igneous_sand:5"=shovel=5
+	S:"undergroundbiomes:igneous_gravel:5"=shovel=5
+	S:"undergroundbiomes:igneous_clay:5"=shovel=5
+
+
+		S:"undergroundbiomes:igneous_stone:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_monster_stone:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_overgrown:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_overgrown_snowed:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_speleothem:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_wall:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_halfslab:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_halfslab:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_fullslab:6"=pickaxe=1
+		
+	S:"undergroundbiomes:igneous_stone_stairs_east:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_north:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_south:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_west:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_east:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_north:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_south:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_west:14"=pickaxe=1
+	
+	S:"undergroundbiomes:igneous_cobble:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_mossy:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_east:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_north:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_south:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_west:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_east:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_north:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_south:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_west:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_wall:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_halfslab:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_halfslab:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_fullslab:6"=pickaxe=1
+	
+	S:"undergroundbiomes:igneous_brick:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_east:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_north:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_south:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_west:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_east:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_north:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_south:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_west:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_wall:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_halfslab:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_halfslab:14"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_fullslab:6"=pickaxe=1
+	
+	S:"undergroundbiomes:igneous_sandstone:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_sandstone_chiseled:6"=pickaxe=1
+	S:"undergroundbiomes:igneous_sandstone_smooth:6"=pickaxe=1
+	
+	S:"undergroundbiomes:igneous_sand:6"=shovel=1
+	S:"undergroundbiomes:igneous_gravel:6"=shovel=1
+	S:"undergroundbiomes:igneous_clay:6"=shovel=1	
+	
+	
+		S:"undergroundbiomes:igneous_stone:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_monster_stone:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_overgrown:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_overgrown_snowed:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_speleothem:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_wall:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_halfslab:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_halfslab:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_fullslab:7"=pickaxe=1
+		
+	S:"undergroundbiomes:igneous_stone_stairs_east:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_north:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_south:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_west:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_east:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_north:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_south:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_stone_stairs_west:15"=pickaxe=1
+	
+	S:"undergroundbiomes:igneous_cobble:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_mossy:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_east:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_north:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_south:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_west:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_east:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_north:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_south:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_stairs_west:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_wall:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_halfslab:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_halfslab:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_cobble_fullslab:7"=pickaxe=1
+	
+	S:"undergroundbiomes:igneous_brick:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_east:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_north:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_south:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_west:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_east:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_north:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_south:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_stairs_west:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_wall:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_halfslab:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_halfslab:15"=pickaxe=1
+	S:"undergroundbiomes:igneous_brick_fullslab:7"=pickaxe=1
+	
+	S:"undergroundbiomes:igneous_sandstone:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_sandstone_chiseled:7"=pickaxe=1
+	S:"undergroundbiomes:igneous_sandstone_smooth:7"=pickaxe=1
+	
+	S:"undergroundbiomes:igneous_sand:7"=shovel=1
+	S:"undergroundbiomes:igneous_gravel:7"=shovel=1
+	S:"undergroundbiomes:igneous_clay:7"=shovel=1
+	
+	
+		S:"undergroundbiomes:metamorphic_stone:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_monster_stone:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_overgrown:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_overgrown_snowed:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_speleothem:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_wall:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_halfslab:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_halfslab:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_fullslab:3"=pickaxe=5
+		
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:11"=pickaxe=5
+	
+	S:"undergroundbiomes:metamorphic_cobble:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_mossy:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_wall:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_fullslab:3"=pickaxe=5
+	
+	S:"undergroundbiomes:metamorphic_brick:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_wall:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_halfslab:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_halfslab:11"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_fullslab:3"=pickaxe=5
+	
+	S:"undergroundbiomes:metamorphic_sandstone:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_sandstone_chiseled:3"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_sandstone_smooth:3"=pickaxe=5
+	
+	S:"undergroundbiomes:metamorphic_sand:3"=shovel=5
+	S:"undergroundbiomes:metamorphic_gravel:3"=shovel=5
+	S:"undergroundbiomes:metamorphic_clay:3"=shovel=5
+	
+	
+		S:"undergroundbiomes:metamorphic_stone:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_monster_stone:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_overgrown:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_overgrown_snowed:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_speleothem:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_wall:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_halfslab:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_halfslab:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_fullslab:0"=pickaxe=5
+		
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:8"=pickaxe=5
+	
+	S:"undergroundbiomes:metamorphic_cobble:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_mossy:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_wall:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_cobble_fullslab:0"=pickaxe=5
+	
+	S:"undergroundbiomes:metamorphic_brick:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_wall:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_halfslab:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_halfslab:8"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_brick_fullslab:0"=pickaxe=5
+	
+	S:"undergroundbiomes:metamorphic_sandstone:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_sandstone_chiseled:0"=pickaxe=5
+	S:"undergroundbiomes:metamorphic_sandstone_smooth:0"=pickaxe=5
+	
+	S:"undergroundbiomes:metamorphic_sand:0"=shovel=5
+	S:"undergroundbiomes:metamorphic_gravel:0"=shovel=5
+	S:"undergroundbiomes:metamorphic_clay:0"=shovel=5
+	
+		S:"undergroundbiomes:metamorphic_stone:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_monster_stone:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_overgrown:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_overgrown_snowed:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_speleothem:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_wall:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_halfslab:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_halfslab:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_fullslab:7"=pickaxe=3
+		
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:15"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_cobble:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_mossy:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_wall:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_fullslab:7"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_brick:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_wall:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_halfslab:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_halfslab:15"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_fullslab:7"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_sandstone:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_sandstone_chiseled:7"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_sandstone_smooth:7"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_sand:7"=shovel=3
+	S:"undergroundbiomes:metamorphic_gravel:7"=shovel=3
+	S:"undergroundbiomes:metamorphic_clay:7"=shovel=3
+	
+		S:"undergroundbiomes:metamorphic_stone:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_monster_stone:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_overgrown:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_overgrown_snowed:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_speleothem:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_wall:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_halfslab:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_halfslab:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_fullslab:4"=pickaxe=3
+		
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:12"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_cobble:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_mossy:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_wall:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_fullslab:4"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_brick:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_wall:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_halfslab:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_halfslab:12"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_fullslab:4"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_sandstone:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_sandstone_chiseled:4"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_sandstone_smooth:4"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_sand:4"=shovel=3
+	S:"undergroundbiomes:metamorphic_gravel:4"=shovel=3
+	S:"undergroundbiomes:metamorphic_clay:4"=shovel=3
+	
+	
+		S:"undergroundbiomes:metamorphic_stone:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_monster_stone:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_overgrown:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_overgrown_snowed:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_speleothem:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_wall:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_halfslab:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_halfslab:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_fullslab:5"=pickaxe=3
+		
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:13"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_cobble:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_mossy:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_wall:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_fullslab:5"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_brick:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_wall:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_halfslab:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_halfslab:13"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_fullslab:5"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_sandstone:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_sandstone_chiseled:5"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_sandstone_smooth:5"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_sand:5"=shovel=3
+	S:"undergroundbiomes:metamorphic_gravel:5"=shovel=3
+	S:"undergroundbiomes:metamorphic_clay:5"=shovel=3
+	
+	
+			S:"undergroundbiomes:metamorphic_stone:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_monster_stone:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_overgrown:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_overgrown_snowed:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_speleothem:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_wall:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_halfslab:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_halfslab:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_fullslab:6"=pickaxe=1
+		
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:14"=pickaxe=1
+	
+	S:"undergroundbiomes:metamorphic_cobble:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_mossy:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_wall:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_cobble_fullslab:6"=pickaxe=1
+	
+	S:"undergroundbiomes:metamorphic_brick:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_wall:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_halfslab:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_halfslab:14"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_brick_fullslab:6"=pickaxe=1
+	
+	S:"undergroundbiomes:metamorphic_sandstone:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_sandstone_chiseled:6"=pickaxe=1
+	S:"undergroundbiomes:metamorphic_sandstone_smooth:6"=pickaxe=1
+	
+	S:"undergroundbiomes:metamorphic_sand:6"=shovel=1
+	S:"undergroundbiomes:metamorphic_gravel:6"=shovel=1
+	S:"undergroundbiomes:metamorphic_clay:6"=shovel=1
+	
+	
+		S:"undergroundbiomes:metamorphic_stone:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_monster_stone:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_overgrown:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_overgrown_snowed:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_speleothem:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_wall:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_halfslab:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_halfslab:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_fullslab:2"=pickaxe=3
+		
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:10"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_cobble:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_mossy:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_wall:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_fullslab:2"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_brick:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_wall:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_halfslab:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_halfslab:10"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_fullslab:2"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_sandstone:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_sandstone_chiseled:2"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_sandstone_smooth:2"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_sand:2"=shovel=3
+	S:"undergroundbiomes:metamorphic_gravel:2"=shovel=3
+	S:"undergroundbiomes:metamorphic_clay:2"=shovel=3
+	
+		S:"undergroundbiomes:metamorphic_stone:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_monster_stone:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_overgrown:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_overgrown_snowed:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_speleothem:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_wall:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_halfslab:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_halfslab:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_fullslab:1"=pickaxe=3
+		
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_east:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_north:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_south:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_stone_stairs_west:9"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_cobble:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_mossy:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_east:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_north:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_south:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_stairs_west:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_wall:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_halfslab:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_cobble_fullslab:1"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_brick:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_east:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_north:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_south:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_stairs_west:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_wall:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_halfslab:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_halfslab:9"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_brick_fullslab:1"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_sandstone:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_sandstone_chiseled:1"=pickaxe=3
+	S:"undergroundbiomes:metamorphic_sandstone_smooth:1"=pickaxe=3
+	
+	S:"undergroundbiomes:metamorphic_sand:1"=shovel=3
+	S:"undergroundbiomes:metamorphic_gravel:1"=shovel=3
+	S:"undergroundbiomes:metamorphic_clay:1"=shovel=3
+	
+	
+		S:"undergroundbiomes:sedimentary_stone:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_monster_stone:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_overgrown:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_overgrown_snowed:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_speleothem:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_wall:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_halfslab:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_halfslab:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_fullslab:7"=pickaxe=5
+		
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:15"=pickaxe=5
+	
+	S:"undergroundbiomes:sedimentary_cobble:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_mossy:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_wall:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_cobble_fullslab:7"=pickaxe=5
+	
+	S:"undergroundbiomes:sedimentary_brick:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_wall:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_halfslab:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_halfslab:15"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_brick_fullslab:7"=pickaxe=5
+	
+	S:"undergroundbiomes:sedimentary_sandstone:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_sandstone_chiseled:7"=pickaxe=5
+	S:"undergroundbiomes:sedimentary_sandstone_smooth:7"=pickaxe=5
+	
+	S:"undergroundbiomes:sedimentary_sand:7"=shovel=5
+	S:"undergroundbiomes:sedimentary_gravel:7"=shovel=5
+	S:"undergroundbiomes:sedimentary_clay:7"=shovel=5
+	
+	
+		S:"undergroundbiomes:sedimentary_stone:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_monster_stone:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_overgrown:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_overgrown_snowed:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_speleothem:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_wall:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_halfslab:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_halfslab:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_fullslab:6"=pickaxe=3
+		
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:14"=pickaxe=3
+	
+	S:"undergroundbiomes:sedimentary_cobble:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_mossy:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_wall:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_cobble_fullslab:6"=pickaxe=3
+	
+	S:"undergroundbiomes:sedimentary_brick:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_wall:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_halfslab:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_halfslab:14"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_brick_fullslab:6"=pickaxe=3
+	
+	S:"undergroundbiomes:sedimentary_sandstone:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_sandstone_chiseled:6"=pickaxe=3
+	S:"undergroundbiomes:sedimentary_sandstone_smooth:6"=pickaxe=3
+	
+	S:"undergroundbiomes:sedimentary_sand:6"=shovel=3
+	S:"undergroundbiomes:sedimentary_gravel:6"=shovel=3
+	S:"undergroundbiomes:sedimentary_clay:6"=shovel=3
+	
+	
+			S:"undergroundbiomes:sedimentary_stone:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_monster_stone:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown_snowed:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_speleothem:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_wall:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_fullslab:0"=pickaxe=1
+		
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:8"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_cobble:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_mossy:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_wall:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_fullslab:0"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_brick:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_wall:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:8"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_fullslab:0"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sandstone:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_chiseled:0"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_smooth:0"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sand:0"=shovel=1
+	S:"undergroundbiomes:sedimentary_gravel:0"=shovel=1
+	S:"undergroundbiomes:sedimentary_clay:0"=shovel=1
+	
+	
+	S:"undergroundbiomes:sedimentary_stone:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_monster_stone:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown_snowed:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_speleothem:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_wall:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_fullslab:1"=pickaxe=1
+		
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:9"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_cobble:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_mossy:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_wall:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_fullslab:1"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_brick:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_wall:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:9"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_fullslab:1"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sandstone:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_chiseled:1"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_smooth:1"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sand:1"=shovel=1
+	S:"undergroundbiomes:sedimentary_gravel:1"=shovel=1
+	S:"undergroundbiomes:sedimentary_clay:1"=shovel=1
+	
+	
+	S:"undergroundbiomes:sedimentary_stone:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_monster_stone:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown_snowed:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_speleothem:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_wall:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_fullslab:2"=pickaxe=1
+		
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:10"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_cobble:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_mossy:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_wall:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_fullslab:2"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_brick:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_wall:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:10"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_fullslab:2"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sandstone:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_chiseled:2"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_smooth:2"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sand:2"=shovel=1
+	S:"undergroundbiomes:sedimentary_gravel:2"=shovel=1
+	S:"undergroundbiomes:sedimentary_clay:2"=shovel=1
+	
+	
+		S:"undergroundbiomes:sedimentary_stone:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_monster_stone:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown_snowed:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_speleothem:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_wall:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_fullslab:3"=pickaxe=1
+		
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:11"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_cobble:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_mossy:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_wall:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_fullslab:3"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_brick:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_wall:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:11"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_fullslab:3"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sandstone:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_chiseled:3"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_smooth:3"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sand:3"=shovel=1
+	S:"undergroundbiomes:sedimentary_gravel:3"=shovel=1
+	S:"undergroundbiomes:sedimentary_clay:3"=shovel=1
+	
+		S:"undergroundbiomes:sedimentary_stone:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_monster_stone:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown_snowed:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_speleothem:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_wall:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_fullslab:4"=pickaxe=1
+		
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:12"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_cobble:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_mossy:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_wall:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_fullslab:4"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_brick:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_wall:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:12"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_fullslab:4"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sandstone:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_chiseled:4"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_smooth:4"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sand:4"=shovel=1
+	S:"undergroundbiomes:sedimentary_gravel:4"=shovel=1
+	S:"undergroundbiomes:sedimentary_clay:4"=shovel=1
+	
+		S:"undergroundbiomes:sedimentary_stone:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_monster_stone:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_overgrown_snowed:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_speleothem:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_wall:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_halfslab:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_fullslab:5"=pickaxe=1
+		
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_east:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_north:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_south:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_stone_stairs_west:13"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_cobble:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_mossy:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_east:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_north:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_south:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_stairs_west:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_wall:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_halfslab:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_cobble_fullslab:5"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_brick:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_east:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_north:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_south:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_stairs_west:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_wall:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_halfslab:13"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_brick_fullslab:5"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sandstone:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_chiseled:5"=pickaxe=1
+	S:"undergroundbiomes:sedimentary_sandstone_smooth:5"=pickaxe=1
+	
+	S:"undergroundbiomes:sedimentary_sand:5"=shovel=1
+	S:"undergroundbiomes:sedimentary_gravel:5"=shovel=1
+	S:"undergroundbiomes:sedimentary_clay:5"=shovel=1
+	
+	
+	
+	
+}
+
+
+##########################################################################################################
+# oredict
+#--------------------------------------------------------------------------------------------------------#
+# Add overwrites to all blocks in the given OreDict entry
+##########################################################################################################
+
+oredict {
+}
+
+

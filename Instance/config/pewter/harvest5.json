@@ -1,5 +1,5 @@
 {
-    "name": "alumifun",
+    "name": "harvester",
     "tool": {
       "bow": {
         "speed": 1.4,
@@ -14,7 +14,7 @@
         "attackDamage": 3.5,
         "speed": 8,
         "durability": 220,
-        "harvestLevel": 5
+        "harvestLevel": 20
       },
       "handle": {
         "modifier": 0.85,
@@ -61,7 +61,7 @@
       "TRIM"
     ],
     "nameLocales": {
-      "en_us": "Aluminum"
+      "en_us": "Harvester"
     },
     "smeltingItems": {
       "ingot": [],
