@@ -1,0 +1,122 @@
+{
+  "name": "mythril",
+  "tool": {
+    "bow": {
+      "speed": 1.3,
+      "range": 1.3,
+      "bonusDamage": 4
+    },
+    "fletching": {
+      "accuracy": 0.5,
+      "modifier": 0.0
+    },
+    "head": {
+      "attackDamage": 6.5,
+      "speed": 8,
+      "durability": 800,
+      "harvestLevel": 4
+    },
+    "handle": {
+      "modifier": 1.3,
+      "durability": 90
+    },
+    "arrowShaft": {
+      "modifier": 1.1,
+      "bonusAmmo": 5
+    },
+    "bowstring": {
+      "modifier": 1.1
+    },
+    "extra": {
+      "durability": 90
+    }
+  },
+  "color": "#3DD3E9",
+  "craftable": false,
+  "madeInToolForge": true,
+  "createMeltingRecipes": true,
+  "meltingTemperature": 475,
+  "looks": {
+    "shininess": 0.25,
+    "brightness": 0.25,
+    "hueshift": -0.1
+  },
+  "fluid": {
+    "viscosity": 10000,
+    "density": 2000,
+    "temperature": 1000,
+    "luminosity": 10
+  },
+  "oreDictSuffixes": [],
+  "matParts": [
+    "HEAD",
+    "HANDLE",
+    "EXTRA",
+    "BOW",
+    "PROJECTILE",
+    "CORE",
+    "PLATES",
+    "TRIM"
+  ],
+  "nameLocales": {
+    "en_us": "Mythril"
+  },
+  "smeltingItems": {
+    "ingot": [],
+    "block": [],
+    "nugget": [],
+    "ore": [],
+    "dust": [],
+    "plate": [],
+    "gear": []
+  },
+  "smeltingTags": {
+    "ingot": [],
+    "block": [],
+    "nugget": [],
+    "ore": [],
+    "dust": [],
+    "plate": [],
+    "gear": []
+  },
+  "armor": {
+    "core": {
+      "durability": 47.0,
+      "defense": 67.5
+    },
+    "plates": {
+      "modifier": 1.3,
+      "durability": 7.5,
+      "toughness": 4.5
+    },
+    "trim": {
+      "extraDurability": 12.6
+    }
+  },
+  "specificTraits": {
+    "EXTRA": [
+      "mythical1"
+    ],
+    "HEAD": [
+      "mythical2"
+    ],
+    "HANDLE": [
+      "mythical1"
+    ],
+    "BOW": [
+      "mythical1"
+    ],
+    "PROJECTILE": [
+      "mythical1"
+    ],
+    "CORE": [
+      "mythical1"
+    ],
+    "PLATES": [
+      "mythical1"
+    ],
+    "TRIM": [
+      "mythical1"
+    ]
+  }
+}

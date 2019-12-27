@@ -1,14 +1,21 @@
+//=====================================================================================================================================================================================================	
+//	Import-ant things
+//=====================================================================================================================================================================================================
+
+
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
+	
+	
+//==============================================================
+//Adjust existing recipes.
+//==============================================================
+	
 	//Enhance the Plant string recipe
 recipes.removeByRecipeName("notreepunching:misc/grass_string");
-/*
-recipes.addShaped("Plant String", <notreepunching:grass_string>,
- [[	<ore:fiberPlant>,		<ore:fiberPlant>,		<ore:fiberPlant>		],
-  [	<ore:fiberPlant>,		null,					<ore:fiberPlant>		],
-  [	<ore:fiberPlant>,		<ore:fiberPlant>,		<ore:fiberPlant>		]]);
-*/  
  
 recipes.addShapeless("Plant String", <notreepunching:grass_string>, 
- [<ore:fiberPlant>, <ore:fiberPlant>, <ore:fiberPlant>]);
+ [<ore:fiberPlant>, <ore:fiberPlant>, <ore:fiberPlant>, <ore:fiberPlant>]);
   
 recipes.addShapeless("Flinty McHatchet", <notreepunching:axe/flint>, 
  [<ore:stringPlant>, <ore:shardFlint>, <ore:stickWood>]);
@@ -34,11 +41,10 @@ recipes.addShaped("NTP FireStarter", <notreepunching:fire_starter>,
   [	null,				null,				null	]]);
  
 
-
-
 //==============================================================
 //Remove Easy Tool recipes
 //==============================================================
+
 
 recipes.removeByRecipeName("notreepunching:tools/iron_knife");
 recipes.removeByRecipeName("notreepunching:tools/iron_mattock");

@@ -1,0 +1,10 @@
+[
+  {
+    "internalOreName": "crossroads:ore_native_copper",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/crossroads/ore_native_copper",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  }
+]

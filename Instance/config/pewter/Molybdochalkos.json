@@ -1,0 +1,140 @@
+{
+    "name": "molybdochalkos",
+    "tool": {
+      "bow": {
+        "speed": 0.9,
+        "range": 1.3,
+        "bonusDamage": 1.8
+      },
+      "fletching": {
+        "accuracy": 0.9,
+        "modifier": 1.1
+      },
+      "head": {
+        "attackDamage": 4,
+        "speed": 3,
+        "durability": 270,
+        "harvestLevel": 2
+      },
+      "handle": {
+        "modifier": 1.1,
+        "durability": 30
+      },
+      "arrowShaft": {
+        "modifier": 1.1,
+        "bonusAmmo": 2
+      },
+      "bowstring": {
+        "modifier": 0.5
+      },
+      "extra": {
+        "durability": 50
+      }
+    },
+    "color": "#908090",
+    "craftable": false,
+    "madeInToolForge": true,
+    "createMeltingRecipes": true,
+    "meltingTemperature": 575,
+    "looks": {
+      "shininess": 0.55,
+      "brightness": 0.35,
+      "hueshift": -0.1
+    },
+    "fluid": {
+      "viscosity": 8000,
+      "density": 1500,
+      "temperature": 1000,
+      "luminosity": 4
+    },
+    "oreDictSuffixes": ["molybdochalkos"],
+    "matParts": [
+      "HEAD",
+      "HANDLE",
+      "EXTRA",
+      "BOW",
+      "PROJECTILE",
+      "SHAFT",
+      "FLETCHING",
+      "CORE",
+      "PLATES",
+      "TRIM"
+    ],
+    "nameLocales": {
+      "en_us": "Molybdochalkos"
+    },
+    "smeltingItems": {
+      "ingot": [],
+      "block": [],
+      "nugget": [],
+      "ore": [],
+      "dust": [],
+      "plate": [],
+      "gear": []
+    },
+    "smeltingTags": {
+      "ingot": [],
+      "block": [],
+      "nugget": [],
+      "ore": [],
+      "dust": [],
+      "plate": [],
+      "gear": []
+    },
+    "armor": {
+      "core": {
+        "durability": 15,
+        "defense": 11
+      },
+      "plates": {
+        "modifier": 0.7,
+        "durability": 6.67,
+        "toughness": 2.14
+      },
+      "trim": {
+        "extraDurability": 3.33
+      }
+    },
+    "specificTraits": {
+      "EXTRA": [
+        "heavy",
+        "stiff"
+      ],
+      "HEAD": [
+        "heavy",
+        "stiff"
+      ],
+      "HANDLE": [
+        "heavy",
+        "stiff"
+      ],
+      "BOW": [
+        "heavy",
+        "stiff"
+      ],
+      "PROJECTILE": [
+        "heavy",
+        "stiff"
+      ],
+      "SHAFT": [
+        "heavy",
+        "stiff"
+      ],
+      "FLETCHING": [
+        "heavy",
+        "stiff"
+      ],
+      "CORE": [
+        "heavy_armor",
+        "steady_armor"
+      ],
+      "PLATES": [
+        "heavy_armor",
+        "steady_armor"
+      ],
+      "TRIM": [
+        "heavy_armor",
+        "steady_armor"
+      ]
+    }
+  }

@@ -35,7 +35,7 @@
     "internalOreName": "thermalfoundation:ore",
     "meta": 2,
     "overlay": "undergroundbiomes:blocks/overlays/thermalfoundation/silver",
-    "lightValue": -1,
+    "lightValue": 0,
     "alphaOverlay": false,
     "oreDirectories": []
   },

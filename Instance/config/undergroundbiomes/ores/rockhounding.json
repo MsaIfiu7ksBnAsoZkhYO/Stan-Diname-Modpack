@@ -1,0 +1,83 @@
+[
+  {
+    "internalOreName": "rockhounding_oretiers:coal_ores",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/rockhounding/coal_ores_anthracite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "rockhounding_oretiers:coal_ores",
+    "meta": 1,
+    "overlay": "undergroundbiomes:blocks/overlays/rockhounding/coal_ores_bituminous",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "rockhounding_oretiers:coal_ores",
+    "meta": 2,
+    "overlay": "undergroundbiomes:blocks/overlays/rockhounding/coal_ores_lignite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+
+  {
+    "internalOreName": "rockhounding_oretiers:iron_ores",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/rockhounding/iron_ores_magnetite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },  
+  {
+    "internalOreName": "rockhounding_oretiers:iron_ores",
+    "meta": 1,
+    "overlay": "undergroundbiomes:blocks/overlays/rockhounding/iron_ores_hematite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "rockhounding_oretiers:iron_ores",
+    "meta": 2,
+    "overlay": "undergroundbiomes:blocks/overlays/rockhounding/iron_ores_goethite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "rockhounding_oretiers:iron_ores",
+    "meta": 3,
+    "overlay": "undergroundbiomes:blocks/overlays/rockhounding/iron_ores_limonite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "rockhounding_oretiers:iron_ores",
+    "meta": 4,
+    "overlay": "undergroundbiomes:blocks/overlays/rockhounding/iron_ores_siderite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "rockhounding_oretiers:iron_ores",
+    "meta": 6,
+    "overlay": "undergroundbiomes:blocks/overlays/rockhounding/iron_ores_taconite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "rockhounding_oretiers:iron_ores",
+    "meta": 7,
+    "overlay": "undergroundbiomes:blocks/overlays/rockhounding/iron_ores_bif",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  }
+]

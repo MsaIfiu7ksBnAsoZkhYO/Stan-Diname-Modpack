@@ -35,7 +35,7 @@
     "craftable": false,
     "madeInToolForge": true,
     "createMeltingRecipes": true,
-    "meltingTemperature": 575,
+    "meltingTemperature": 1000,
     "looks": {
       "shininess": 0.55,
       "brightness": 0.35,

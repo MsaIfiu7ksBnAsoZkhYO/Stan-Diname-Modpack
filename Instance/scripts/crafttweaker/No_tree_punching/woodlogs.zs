@@ -17,7 +17,7 @@ recipes.addShaped("Stick Shortcut", <minecraft:stick>*16,
 
 recipes.removeByRecipeName("extrautils2:shortcut_hopper");
 recipes.removeByRecipeName("atum:stick");
-recipes.removeByRecipeName("quark:chest");
+//recipes.removeByRecipeName("quark:chest");
 
 
 

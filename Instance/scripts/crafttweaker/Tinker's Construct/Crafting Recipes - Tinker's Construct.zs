@@ -1,6 +1,16 @@
+//=====================================================================================================================================================================================================	
+//	Import-ant things
+//=====================================================================================================================================================================================================
+
+
 import mods.artisanworktables.builder.RecipeBuilder;
 
+
 /*
+//=====================================================================================================================================================================================================	
+//	Template
+//=====================================================================================================================================================================================================
+
 
 	//	Template	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("basic")
@@ -39,7 +49,7 @@ RecipeBuilder.get("basic")
 	.setShaped([
 		[null, 				<ore:pattern>,	<ore:pattern>,	<ore:pattern>,	null			],
 		[<ore:fenceWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:fenceWood>	],
-		[<ore:fenceWood>, 	null, 			null, 			null, 			<ore:fenceWood>	],
+		[<ore:fenceWood>, 	null, 			<ore:pattern>, 	null, 			<ore:fenceWood>	],
 		[<ore:fenceWood>, 	null, 			null, 			null,			<ore:fenceWood>	],
 		[<ore:fenceWood>, 	null, 			null, 			null, 			<ore:fenceWood>	]])
 	.addOutput( <tconstruct:tooltables:1>.withTag({textureBlock: {id: "minecraft:planks", Count: 1 as byte, Damage: 0 as short}}) )
@@ -60,11 +70,11 @@ RecipeBuilder.get("basic")
 val platePattern = <tconstruct:pattern>.withTag({PartType: "tconstruct:large_plate"});
 RecipeBuilder.get("basic")
 	.setShaped([
-		[null, 					platePattern,	platePattern,	platePattern,	null					],
-		[<quark:bark_oak_wall>,	<ore:slabWood>,	<ore:slabWood>,	<ore:slabWood>,	<quark:bark_oak_wall>	],
-		[<quark:bark_oak_wall>, null, 			null, 			null, 			<quark:bark_oak_wall>	],
-		[<quark:bark_oak_wall>, null, 			null, 			null,			<quark:bark_oak_wall>	],
-		[<quark:bark_oak_wall>, null, 			null, 			null, 			<quark:bark_oak_wall>	]])
+		[null, 				platePattern,	platePattern,	platePattern,	null					],
+		[<ore:fenceWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:fenceWood>	],
+		[<ore:fenceWood>,	null, 			null, 			null, 			<ore:fenceWood>	],
+		[<ore:fenceWood>,	null, 			null, 			null,			<ore:fenceWood>	],
+		[<ore:fenceWood>,	null, 			null, 			null, 			<ore:fenceWood>	]])
 	.addOutput(<tconstruct:tooltables:2>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 0 as short}}))
 	.create();
 
@@ -326,8 +336,6 @@ RecipeBuilder.get("mason")
 //	Porcelain
 //=====================================================================================================================================================================================================
 
-
-<ore:ingotPorcelain>.add(<ceramics:unfired_clay:5>);
 
 	//	Porcelain Seared Faucet	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("mason")

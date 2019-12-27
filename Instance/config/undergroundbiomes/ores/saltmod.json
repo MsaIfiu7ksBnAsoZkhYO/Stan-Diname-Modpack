@@ -1,0 +1,10 @@
+[
+  {
+    "internalOreName": "saltmod:salt_ore",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/saltmod/salt_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  }
+]

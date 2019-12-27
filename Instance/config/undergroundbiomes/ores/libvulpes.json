@@ -1,0 +1,50 @@
+[
+  {
+    "internalOreName": "libvulpes:ore0",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/libvulpes/oredilithium",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "libvulpes:ore0",
+    "meta": 4,
+    "overlay": "undergroundbiomes:blocks/overlays/libvulpes/orecopper",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "libvulpes:ore0",
+    "meta": 5,
+    "overlay": "undergroundbiomes:blocks/overlays/libvulpes/oretin",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "libvulpes:ore0",
+    "meta": 8,
+    "overlay": "undergroundbiomes:blocks/overlays/libvulpes/orerutile",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "libvulpes:ore0",
+    "meta": 9,
+    "overlay": "undergroundbiomes:blocks/overlays/libvulpes/orealuminum",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "libvulpes:ore0",
+    "meta": 10,
+    "overlay": "undergroundbiomes:blocks/overlays/libvulpes/oreiridium",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  }
+]
