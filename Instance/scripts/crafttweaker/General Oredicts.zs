@@ -28,10 +28,14 @@ import crafttweaker.oredict.IOreDictEntry;
 ]);
 
 <ore:plateStackable>.addItems([
-	<libvulpes:productsheet>,
+	<libvulpes:productsheet:1>,
 	<tconstruct:pattern>,
+	<tconstruct:clay_cast>,
 	<tconstruct:cast>,
 	<tconstruct:cast_custom:*>,
+	<tcomplement:cast>,
+	<tcomplement:cast_clay>,
+	<immersiveengineering:mold:*>,
 ]);
 
 //=====================================================================================================================================================================================================	
