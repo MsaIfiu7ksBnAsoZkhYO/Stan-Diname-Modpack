@@ -11,11 +11,11 @@
 				"excludes": []
 			},
 			"parameters": {
-				"size": 8,
+				"size": 2,
 				"variation": 8,
 				"frequency": 8,
-				"minHeight": 0,
-				"maxHeight": 32
+				"minHeight": 4,
+				"maxHeight": 28
 			},
 			"blocks": [
 				{
@@ -141,7 +141,7 @@
 		},
 		"iridium_ore": {
 			"retrogen": false,
-			"enabled": true,
+			"enabled": false,
 			"feature": "default",
 			"replaces": "default",
 			"dimensions": [],
@@ -210,7 +210,7 @@
 		},
 		"osmium_ore": {
 			"retrogen": false,
-			"enabled": true,
+			"enabled": false,
 			"feature": "default",
 			"replaces": "default",
 			"dimensions": [],
@@ -218,11 +218,11 @@
 				"excludes": []
 			},
 			"parameters": {
-				"size": 10,
+				"size": 2,
 				"variation": 4,
 				"frequency": 8,
 				"minHeight": 0,
-				"maxHeight": 96
+				"maxHeight": 40
 			},
 			"blocks": [
 				{
@@ -325,7 +325,7 @@
 		},
 		"uranium_ore": {
 			"retrogen": false,
-			"enabled": true,
+			"enabled": false,
 			"feature": "default",
 			"replaces": "default",
 			"dimensions": [],
@@ -356,11 +356,11 @@
 				"excludes": []
 			},
 			"parameters": {
-				"size": 8,
+				"size": 3,
 				"variation": 4,
 				"frequency": 6,
 				"minHeight": 0,
-				"maxHeight": 64
+				"maxHeight": 30
 			},
 			"blocks": [
 				{

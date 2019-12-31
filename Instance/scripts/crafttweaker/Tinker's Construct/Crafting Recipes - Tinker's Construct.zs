@@ -6,28 +6,6 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
 
-/*
-//=====================================================================================================================================================================================================	
-//	Template
-//=====================================================================================================================================================================================================
-
-
-	//	Template	_______________________________________________________________________________________________________________________________________________________________________
-RecipeBuilder.get("basic")
-	.setShaped([
-		[null,	null,	null, 	null,	null	],
-		[null,	null,	null,	null,	null	],
-		[null, 	null, 	null,	null, 	null	],
-		[null, 	null, 	null, 	null,	null	],
-		[null, 	null, 	null, 	null, 	null	]])
-	.setFluid( <liquid:water> * 250 )
-	.addOutput( <> )
-	.addTool( <ore:artisansHammer>, 10 )
-	.create();
-	
-*/
-
-
 //=====================================================================================================================================================================================================	
 //	Tool Tables
 //=====================================================================================================================================================================================================
@@ -36,7 +14,6 @@ RecipeBuilder.get("basic")
 	//	Crafting Station	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("basic")
 	.setShaped([
-		[null, 				null, 			null, 				null,		null			],
 		[<ore:fenceWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:fenceWood>	],
 		[<ore:fenceWood>, 	null, 			null, 			null, 			<ore:fenceWood>	],
 		[<ore:fenceWood>, 	null, 			null, 			null,			<ore:fenceWood>	],
@@ -123,11 +100,9 @@ RecipeBuilder.get("basic")
 	//	Seared Brick Block	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("mason")
 	.setShaped([
-		[null,	null,					null, 					null,					null	],
-		[null,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	null	],
-		[null, 	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>, null	],
-		[null, 	<ore:ingotBrickSeared>, <ore:ingotBrickSeared>, <ore:ingotBrickSeared>,	null	],
-		[null, 	null, 					null,				 	null, 					null	]])
+		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
+		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
+		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>, <ore:ingotBrickSeared>	]])
 	.setFluid( <liquid:mortar> * 100 )
 	.addOutput( <tconstruct:seared:3> )
 	.addTool( <ore:artisansTrowel>, 2 )
@@ -149,11 +124,8 @@ RecipeBuilder.get("mason")
 	//	Seared Faucet	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("mason")
 	.setShaped([
-		[null,	null,					null, 					null,					null	],
-		[null,	null,					null, 					null,					null	],
-		[null, 	<ore:ingotBrickSeared>,	null,					<ore:ingotBrickSeared>, null	],
-		[null, 	<ore:ingotBrickSeared>, <ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	null	],
-		[null,	null,					null, 					null,					null	]])
+		[<ore:ingotBrickSeared>,	null,					<ore:ingotBrickSeared>	],
+		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	]])
 	.setFluid( <liquid:mortar> * 50 )
 	.addOutput( <tconstruct:faucet> )
 	.addTool( <ore:artisansTrowel>, 1 )
@@ -162,11 +134,8 @@ RecipeBuilder.get("mason")
 	//	Casting Channel	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("mason")
 	.setShaped([
-		[null,						null,					null, 					null,					null					],
-		[null,						null,					null, 					null,					null					],
 		[<ore:ingotBrickSeared>, 	null,					null,					null, 					<ore:ingotBrickSeared>	],
-		[<ore:ingotBrickSeared>, 	<ore:ingotBrickSeared>, <ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
-		[null,						null,					null, 					null,					null					]])
+		[<ore:ingotBrickSeared>, 	<ore:ingotBrickSeared>, <ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	]])
 	.setFluid( <liquid:mortar> * 50 )
 	.addOutput( <tconstruct:channel> )
 	.addTool( <ore:artisansTrowel>, 1 )
@@ -340,11 +309,8 @@ RecipeBuilder.get("mason")
 	//	Porcelain Seared Faucet	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("mason")
 	.setShaped([
-		[null,	null,					null, 					null,					null	],
-		[null,	null,					null, 					null,					null	],
-		[null, 	<ore:ingotPorcelain>,	null,					<ore:ingotPorcelain>, 	null	],
-		[null, 	<ore:ingotPorcelain>, 	<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	null	],
-		[null,	null,					null, 					null,					null	]])
+		[<ore:ingotPorcelain>,	null,					<ore:ingotPorcelain>	],
+		[<ore:ingotPorcelain>, 	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	]])
 	.setFluid( <liquid:mortar> * 50 )
 	.addOutput( <ceramics:faucet> )
 	.addTool( <ore:artisansTrowel>, 1 )
@@ -353,11 +319,8 @@ RecipeBuilder.get("mason")
 	//	Porcelain Casting Channel	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("mason")
 	.setShaped([
-		[null,						null,					null, 					null,					null					],
-		[null,						null,					null, 					null,					null					],
 		[<ore:ingotPorcelain>, 		null,					null,					null, 					<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 		<ore:ingotPorcelain>, 	<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-		[null,						null,					null, 					null,					null					]])
+		[<ore:ingotPorcelain>, 		<ore:ingotPorcelain>, 	<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	]])
 	.setFluid( <liquid:mortar> * 50 )
 	.addOutput( <ceramics:channel> )
 	.addTool( <ore:artisansTrowel>, 1 )
