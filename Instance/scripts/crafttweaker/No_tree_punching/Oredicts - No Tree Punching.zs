@@ -17,3 +17,6 @@ import crafttweaker.oredict.IOreDictEntry;
 
 	//	Remove grass string from real string	_______________________________________________________________________________________________________________________________________________________________________
 <ore:string>.remove(<notreepunching:grass_string>);
+
+	//	Make knifes function as knives	_______________________________________________________________________________________________________________________________________________________________________
+<ore:tooKnife>.add(<totaltinkers:dagger:*>);
