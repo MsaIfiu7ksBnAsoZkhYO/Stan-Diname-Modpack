@@ -5,3 +5,6 @@
 
 	//	Iron ingot recipes should be oredicted anyways	_______________________________________________________________________________________________________________________________________________________________________
 recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:ingotIron>);
+
+	//	Vanilla furnace has been replaced by crossroads.	_______________________________________________________________________________________________________________________________________________________________________
+recipes.replaceAllOccurences(<minecraft:furnace>, <crossroads:coal_heater>);
