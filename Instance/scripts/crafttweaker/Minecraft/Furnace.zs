@@ -145,13 +145,17 @@ val Nugget = {
 
 
 //	Special case for Vanilla iron ingots.	_______________________________________________________________________________________________________________________________________________________________________
+/* - Handled by Unidict
 furnace.remove(<minecraft:iron_ingot>);
 furnace.remove(<ore:ingotAstralStarmetal>);
+*/
 
-//	Dynamically replace ingots with nuggets	_______________________________________________________________________________________________________________________________________________________________________
+//	Dynamically Add chink to nugget	_______________________________________________________________________________________________________________________________________________________________________
+/* - Handled by Unidict
 for item in Ingot {
         furnace.remove(Ingot[item]);
 }
+*/
 
 for item in Chunk {
         furnace.addRecipe(Nugget[item].firstItem * 3, Chunk[item], 0.3);
