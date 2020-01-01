@@ -6,5 +6,13 @@
     "lightValue": -1,
     "alphaOverlay": false,
     "oreDirectories": []
+  },
+  {
+    "internalOreName": "crossroads:ore_copper",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/crossroads/ore_copper",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
   }
 ]
