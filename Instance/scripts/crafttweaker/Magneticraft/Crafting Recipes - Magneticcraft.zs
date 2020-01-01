@@ -25,10 +25,10 @@ RecipeBuilder.get("basic")
 	//	Sluice Box	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("basic")
 	.setShaped([
-		[<minecraft:planks>,	null,						<minecraft:planks>,	null,				null				],
-		[<minecraft:fence>,		<magneticraft:crafting:6>,	<minecraft:fence>,	null,				null				],
-		[<minecraft:fence>,		<magneticraft:crafting:6>,	<minecraft:fence>,	null,				null				],
-		[<minecraft:planks>,	<minecraft:stick>,			<minecraft:planks>,	<minecraft:stick>,	<minecraft:planks>	],
-		[<minecraft:stone>,		<minecraft:stone>,			<minecraft:stone>,	<minecraft:stone>,	<minecraft:stone>	]])
+		[<ore:plankWood>,	null,						<ore:plankWood>,	null,				null			],
+		[<ore:fenceWood>,	<magneticraft:crafting:6>,	<ore:fenceWood>,	null,				null			],
+		[<ore:fenceWood>,	<magneticraft:crafting:6>,	<ore:fenceWood>,	null,				null			],
+		[<ore:plankWood>,	<ore:stickWood>,			<ore:plankWood>,	<ore:stickWood>,	<ore:plankWood>	],
+		[<ore:stone>,		<ore:stone>,				<ore:stone>,		<ore:stone>,		<ore:stone>		]])
 	.addOutput( <magneticraft:sluice_box> )
 	.create();
