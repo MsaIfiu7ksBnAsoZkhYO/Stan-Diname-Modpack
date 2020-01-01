@@ -54,3 +54,14 @@ RecipeBuilder.get("basic")
 		[<ore:logWood>,			<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>		]])
 	.addOutput( <artisanworktables:workshop:14> )
 	.create();
+
+	//	Tailor Table	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<magneticraft:crafting:6>,	<magneticraft:crafting:6>,	<magneticraft:crafting:6>,	<magneticraft:crafting:6>,	<magneticraft:crafting:6>	],
+    [<magneticraft:crafting:6>,	<ore:wool>,					<ore:wool>,					<ore:wool>,					<magneticraft:crafting:6>	],
+    [null,						<ore:wool>,					<ore:chest>,				<ore:wool>,					null						],
+    [<ore:logWood>,				<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:logWood>				],
+    [<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>				]])
+  .addOutput( <artisanworktables:workshop> )
+  .create();
