@@ -1,0 +1,130 @@
+{
+  "name": "treatedwood",
+  "tool": {
+    "bow": {
+      "speed": 1.4,
+      "range": 1.0,
+      "bonusDamage": 3.0
+    },
+    "fletching": {
+      "accuracy": 1.0,
+      "modifier": 1.1
+    },
+    "head": {
+      "attackDamage": 3.5,
+      "speed": 8,
+      "durability": 220,
+      "harvestLevel": 2
+    },
+    "handle": {
+      "modifier": 0.85,
+      "durability": 30
+    },
+    "arrowShaft": {
+      "modifier": 1.1,
+      "bonusAmmo": 5
+    },
+    "bowstring": {
+      "modifier": 0.5
+    },
+    "extra": {
+      "durability": 25
+    }
+  },
+  "color": "#4C301D",
+  "craftable": true,
+  "madeInToolForge": false,
+  "createMeltingRecipes": false,
+  "meltingTemperature": 575,
+  "looks": {
+    "shininess": 0.15,
+    "brightness": 0.15,
+    "hueshift": -0.1
+  },
+  "fluid": {
+    "viscosity": 8000,
+    "density": 1500,
+    "temperature": 1000,
+    "luminosity": 4
+  },
+  "oreDictSuffixes": ["TreatedWood"],
+  "matParts": [
+    "HEAD",
+    "HANDLE",
+    "EXTRA",
+    "BOW",
+    "PROJECTILE",
+	  "SHAFT",
+	  "FLETCHING",
+    "CORE",
+    "PLATES",
+    "TRIM"
+  ],
+  "nameLocales": {
+    "en_us": "Treated Wood"
+  },
+  "smeltingItems": {
+    "ingot": [],
+    "block": [],
+    "nugget": [],
+    "ore": [],
+    "dust": [],
+    "plate": [],
+    "gear": []
+  },
+  "smeltingTags": {
+    "ingot": [],
+    "block": [],
+    "nugget": [],
+    "ore": [],
+    "dust": [],
+    "plate": [],
+    "gear": []
+  },
+  "armor": {
+    "core": {
+      "durability": 20.5,
+      "defense": 13.0
+    },
+    "plates": {
+      "modifier": 0.95,
+      "durability": 15.0,
+      "toughness": 6.0
+    },
+    "trim": {
+      "extraDurability": 10.0
+    }
+  },
+  "specificTraits": {
+    "EXTRA": [
+      "ecological"
+    ],
+    "HEAD": [
+      "ecological"
+    ],
+    "HANDLE": [
+      "ecological"
+    ],
+    "BOW": [
+      "ecological"
+    ],
+    "PROJECTILE": [
+      "ecological"
+    ],
+    "SHAFT": [
+      "ecological"
+    ],
+    "FLETCHING": [
+      "ecological"
+    ],
+    "CORE": [
+      "ecological_armor"
+    ],
+    "PLATES": [
+      "ecological_armor"
+    ],
+    "TRIM": [
+      "ecological_armor"
+    ]
+  }
+}
