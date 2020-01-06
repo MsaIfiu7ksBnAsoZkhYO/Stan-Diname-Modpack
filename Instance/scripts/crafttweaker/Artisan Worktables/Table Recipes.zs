@@ -30,6 +30,8 @@ RecipeBuilder.get("basic")
 		[null,				<ore:stone>,				<ore:chest>,				<ore:stone>,				null				],
 		[<ore:logWood>,		<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:logWood>		],
 		[<ore:logWood>,		<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>		]])
+	.setFluid( <liquid:mortar> * 250 )
+	.addTool( <ore:artisansTrowel>, 5 )
 	.addOutput( <artisanworktables:workshop:2> )
 	.create();
 	
@@ -57,11 +59,33 @@ RecipeBuilder.get("basic")
 
 	//	Tailor Table	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("basic")
-  .setShaped([
-    [<magneticraft:crafting:6>,	<magneticraft:crafting:6>,	<magneticraft:crafting:6>,	<magneticraft:crafting:6>,	<magneticraft:crafting:6>	],
-    [<magneticraft:crafting:6>,	<ore:wool>,					<ore:wool>,					<ore:wool>,					<magneticraft:crafting:6>	],
-    [null,						<ore:wool>,					<ore:chest>,				<ore:wool>,					null						],
-    [<ore:logWood>,				<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:logWood>				],
-    [<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>				]])
-  .addOutput( <artisanworktables:workshop> )
-  .create();
+	.setShaped([
+		[<magneticraft:crafting:6>,	<magneticraft:crafting:6>,	<magneticraft:crafting:6>,	<magneticraft:crafting:6>,	<magneticraft:crafting:6>	],
+		[<magneticraft:crafting:6>,	<ore:wool>,					<ore:wool>,					<ore:wool>,					<magneticraft:crafting:6>	],
+		[null,						<ore:wool>,					<ore:chest>,				<ore:wool>,					null						],
+		[<ore:logWood>,				<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:logWood>				],
+		[<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>				]])
+	.addOutput( <artisanworktables:workshop> )
+	.create();
+  
+	//	Blacksmith Table	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShaped([
+		[<ore:plateIron>,					<ore:plateIron>,			<ore:plateIron>,			<ore:plateIron>,			<ore:plateIron>						],
+		[<ore:plateIron>,					<ore:blockSeared>,			<ore:blockSeared>,			<ore:blockSeared>,			<ore:plateIron>						],
+		[null,								<ore:blockSeared>,			<ore:chest>,				<ore:blockSeared>,			null								],
+		[<actuallyadditions:block_misc:4>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<actuallyadditions:block_misc:4>	],
+		[<ore:logWood>,						<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>						]])
+	.addOutput( <artisanworktables:workshop:3> )
+	.create();
+
+	//Engineer Table	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShaped([
+		[<ore:plateTin>,					<ore:plateBronze>,			<ore:plateBronze>,			<ore:plateBronze>,			<ore:plateTin>						],
+		[<ore:plateBronze>,					<quark:sturdy_stone>,		<quark:sturdy_stone>,		<quark:sturdy_stone>,		<ore:plateBronze>					],
+		[null,								<quark:sturdy_stone>,		<minecraft:chest>,			<quark:sturdy_stone>,		null								],
+		[<actuallyadditions:block_misc:4>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<actuallyadditions:block_misc:4>	],
+		[<ore:logWood>,						<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>						]])
+	.addOutput( <artisanworktables:workshop:6> )
+	.create();

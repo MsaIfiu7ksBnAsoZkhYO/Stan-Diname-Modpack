@@ -28,6 +28,7 @@ recipes.addShaped(
 
 	//	Stick shortcut recipe requires saw	_______________________________________________________________________________________________________________________________________________________________________
 recipes.removeByRecipeName("extrautils2:shortcut_stick");
+/* - NTP has a log > stick recipe so this is not needed.
 recipes.addShaped(
   "Stick Shortcut", 
   <minecraft:stick>*16,
@@ -37,6 +38,7 @@ recipes.addShaped(
     [	null,           null,			      null		]
   ]
 );
+*/
 
 	//	Removing recipes that bypass the saw requirement	_______________________________________________________________________________________________________________________________________________________________________
 recipes.removeByRecipeName("extrautils2:shortcut_hopper");

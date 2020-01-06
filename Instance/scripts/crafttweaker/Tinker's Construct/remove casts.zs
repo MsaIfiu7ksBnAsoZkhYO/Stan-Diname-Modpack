@@ -1,3 +1,7 @@
+
+/* - Script merged with Casting.zs
+
+
 //This script removes casting recepies for tinker materials,
 //and adds back in the sharpening kit, polishing kit, and blank cast.
 
@@ -54,3 +58,4 @@ To-do list
 Do sharpening and polishing kits use oredict?  I might be able to use that instead.	
 	
 */
+

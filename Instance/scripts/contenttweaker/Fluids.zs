@@ -23,5 +23,11 @@ mortar.register();
 	//	mortar	_______________________________________________________________________________________________________________________________________________________________________
 var mortar = VanillaFactory.createFluid("mortar", Color.fromHex("b0b0b0"));
 mortar.viscosity = 100000;
-mortar.density = 10000;
+mortar.density = 100000;
 mortar.register();
+
+	//	molding Sand	_______________________________________________________________________________________________________________________________________________________________________
+var moldsand = VanillaFactory.createFluid("moldsand", Color.fromHex("CCCC99"));
+moldsand.viscosity = 10000;
+moldsand.density = 100000;
+moldsand.register();

@@ -12,7 +12,7 @@ import crafttweaker.oredict.IOreDictEntry;
 //=====================================================================================================================================================================================================
 
 
-//	creeper head hammering	_______________________________________________________________________________________________________________________________________________________________________
+    //  Head Hammering	_______________________________________________________________________________________________________________________________________________________________________
 mods.magneticraft.CrushingTable.removeRecipe(<minecraft:skull:0>);
 mods.magneticraft.CrushingTable.removeRecipe(<minecraft:skull:2>);
 mods.magneticraft.CrushingTable.removeRecipe(<minecraft:skull:4>);
@@ -21,6 +21,7 @@ mods.magneticraft.CrushingTable.removeRecipe(<minecraft:bone>);
 mods.magneticraft.CrushingTable.removeRecipe(<minecraft:gold_block>);
 mods.magneticraft.CrushingTable.removeRecipe(<minecraft:iron_block>);
 
+    //	No plates for you!	_______________________________________________________________________________________________________________________________________________________________________
 mods.magneticraft.CrushingTable.removeRecipe(<ore:blockCopper>.firstItem);
 mods.magneticraft.CrushingTable.removeRecipe(<ore:blockLead>.firstItem);
 mods.magneticraft.CrushingTable.removeRecipe(<ore:blockTungsten>.firstItem);
@@ -33,6 +34,12 @@ mods.magneticraft.CrushingTable.removeRecipe(<ore:ingotSteel>.firstItem);
 
 mods.magneticraft.CrushingTable.addHammer(<tinkersforging:hammer/iron>, 20, 15, 1);
 
+//=====================================================================================================================================================================================================	
+//	Adding recipes
+//=====================================================================================================================================================================================================
+//	creeper head hammering	_______________________________________________________________________________________________________________________________________________________________________
+
+//mods.magneticraft.CrushingTable.addRecipe(<minecraft:quartz_ore>, <minecraft:diamond>, true);
 
 
 //mods.magneticraft.CrushingTable.addRecipe(<minecraft:quartz_ore>, <minecraft:diamond>, true);

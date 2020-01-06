@@ -22,6 +22,8 @@ import crafttweaker.oredict.IOreDictEntry;
 	<tconstruct:materials:2>,
 	<tconstruct:materials:1>,
 	<tconstruct:materials>,
+	<contenttweaker:coke_brick>,
+	<contenttweaker:unfired_coke_brick>,
 ]);
 
 <ore:gearStackable>.addItems([
@@ -59,8 +61,12 @@ import crafttweaker.oredict.IOreDictEntry;
 
 
 //=====================================================================================================================================================================================================	
-//	Iron and Wrought Iron
+//	Red Sandstone
 //=====================================================================================================================================================================================================
-<ore:ingotIron>.add(<contenttweaker:wrought_iron_ingot>);
-<ore:ingotIron>.remove(<minecraft:iron_ingot>);
-
+<ore:redsandstone>.addItems([
+	<minecraft:red_sandstone:*>,
+	<chisel:sandstonered:*>,
+	<chisel:sandstonered1:*>,
+	<chisel:sandstonered2:*>,
+	<chisel:sandstonered-scribbles:*>,
+]);

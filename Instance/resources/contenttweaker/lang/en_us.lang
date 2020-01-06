@@ -1,4 +1,12 @@
 fluid.mortar=Mortar
+fluid.moldsand=Molding Sand
+
+
+tile.contenttweaker.forging_anvil_mold.name=Forging Anvil Mold
+tile.contenttweaker.forging_anvil_mold.name=Wet Forging Anvil Mold
+tile.contenttweaker.forging_anvil_cast.name=Forging Anvil Cast
+tile.contenttweaker.forging_anvil_cast_wet.name=Wet Forging Anvil Cast
+
 
 item.contenttweaker.quicklime.name=Quicklime Rocks
 item.contenttweaker.limedust.name=Lime Dust
@@ -13,6 +21,18 @@ item.contenttweaker.wrought_iron_ingot.name=Iron Ingot
 
 item.contenttweaker.chunk_adamantine.name=Adamantine Chunk
 item.contenttweaker.rockychunk_adamantine.name=Adamantine Rocky Chunk
+
+item.contenttweaker.copshowium_plate.name=Copshowium Plate
+item.contenttweaker.copshowium_rod.name=Copshowium Rod
+
+item.contenttweaker.sand_ingot_cast.name=Sand Ingot Cast
+item.contenttweaker.sand_ingot_cast_wet.name=Wet Sand Ingot Cast
+
+item.contenttweaker.clay_nugget.name=Clay Nugget
+
+item.contenttweaker.coke_clay.name=Coke Oven Clay
+item.contenttweaker.unfired_coke_brick.name=Unfired Coke Oven Brick
+item.contenttweaker.coke_brick.name=Coke Oven Brick
 
 
 

@@ -267,15 +267,15 @@ RecipeBuilder.get("mason")
 	//	Melter	_______________________________________________________________________________________________________________________________________________________________________
 recipes.remove( <tcomplement:melter> );
 RecipeBuilder.get("mason")
-  .setShaped([
-    [<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
-    [<ore:ingotBrickSeared>,	<tconstruct:seared_glass>,	<tconstruct:seared_tank:1>,	<tconstruct:seared_glass>,	<ore:ingotBrickSeared>	],
-    [<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
-    [<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	]])
-  .setFluid( <liquid:mortar> * 250 )
-  .addTool( <ore:artisansTrowel>, 5)
-  .addOutput( <tcomplement:melter> )
-  .create();
+	.setShaped([
+		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
+		[<ore:ingotBrickSeared>,	<tconstruct:seared_glass>,	<tconstruct:seared_tank:1>,	<tconstruct:seared_glass>,	<ore:ingotBrickSeared>	],
+		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
+		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	]])
+	.setFluid( <liquid:mortar> * 250 )
+	.addTool( <ore:artisansTrowel>, 5)
+	.addOutput( <tcomplement:melter> )
+	.create();
 
 	//	Seared Furnace Controller	_______________________________________________________________________________________________________________________________________________________________________
 recipes.remove( <tconstruct:seared_furnace_controller> );
@@ -437,11 +437,11 @@ RecipeBuilder.get("mason")
 recipes.remove( <tcomplement:porcelain_alloy_tank> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<extrautils2:decorativeglass>,	<ore:ingotPorcelain>,	<extrautils2:decorativeglass>,	<ore:ingotPorcelain>,	<extrautils2:decorativeglass>	],
+		[<ore:blockGlassThickended>,	<ore:ingotPorcelain>,	<ore:blockGlassThickended>,	<ore:ingotPorcelain>,	<ore:blockGlassThickended>	],
 		[<ore:ingotPorcelain>,			null,					null,							null, 					<ore:ingotPorcelain>			],
-		[<extrautils2:decorativeglass>,	<ceramics:faucet>,		<tcomplement:porcelain_tank:1>,	<ceramics:faucet>,		<extrautils2:decorativeglass>	],
+		[<ore:blockGlassThickended>,	<ceramics:faucet>,		<tcomplement:porcelain_tank:1>,	<ceramics:faucet>,		<ore:blockGlassThickended>	],
 		[<ore:ingotPorcelain>,			null,					null,							null,					<ore:ingotPorcelain>			],
-		[<extrautils2:decorativeglass>,	<ore:ingotPorcelain>,	<extrautils2:decorativeglass>,	<ore:ingotPorcelain>,	<extrautils2:decorativeglass>	]])
+		[<ore:blockGlassThickended>,	<ore:ingotPorcelain>,	<ore:blockGlassThickended>,	<ore:ingotPorcelain>,	<ore:blockGlassThickended>	]])
 	.setFluid( <liquid:mortar> * 250 )
 	.addTool( <ore:artisansTrowel>, 5 )
 	.addOutput( <tcomplement:porcelain_alloy_tank> )
@@ -451,8 +451,8 @@ RecipeBuilder.get("mason")
 recipes.remove( <tcomplement:porcelain_melter> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,			<extrautils2:decorativeglass>,	<ore:ingotPorcelain>,			<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<extrautils2:decorativeglass>,	<tcomplement:porcelain_tank:1>,	<extrautils2:decorativeglass>,	<ore:ingotPorcelain>	],
+		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,			<ore:blockGlassThickended>,		<ore:ingotPorcelain>,			<ore:ingotPorcelain>	],
+		[<ore:ingotPorcelain>,	<ore:blockGlassThickended>,		<tcomplement:porcelain_tank:1>,	<ore:blockGlassThickended>,		<ore:ingotPorcelain>	],
 		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,			<ore:ingotPorcelain>,			<ore:ingotPorcelain>,			<ore:ingotPorcelain>	],
 		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,			<ore:ingotPorcelain>,			<ore:ingotPorcelain>,			<ore:ingotPorcelain>	]])
 	.setFluid( <liquid:mortar> * 250 )

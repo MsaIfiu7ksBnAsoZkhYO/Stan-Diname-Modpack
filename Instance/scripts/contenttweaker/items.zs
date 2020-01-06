@@ -37,9 +37,31 @@ VanillaFactory.createItem("magmolybdochalkosmuth_ingot").register();
 	//	Wrought Iron Ingot	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("wrought_iron_ingot").register();
 
+	//	Copshowium parts	_______________________________________________________________________________________________________________________________________________________________________
+VanillaFactory.createItem("copshowium_plate").register();
+VanillaFactory.createItem("copshowium_rod").register();
+
+	//	Forging Anvil cast / mold	_______________________________________________________________________________________________________________________________________________________________________
+//VanillaFactory.createItem("forging_anvil_mold").register();
+//VanillaFactory.createItem("forging_anvil_cast").register();
+//VanillaFactory.createItem("forging_anvil_cast_wet").register();
+
+	//	Sand Ingot Cast	_______________________________________________________________________________________________________________________________________________________________________
+VanillaFactory.createItem("sand_ingot_cast").register();
+VanillaFactory.createItem("sand_ingot_cast_wet").register();
+
+	//	Clay Nugget for sand molds	_______________________________________________________________________________________________________________________________________________________________________
+VanillaFactory.createItem("clay_nugget").register();
+
+	//	Coke Brick	_______________________________________________________________________________________________________________________________________________________________________
+VanillaFactory.createItem("coke_clay").register();
+VanillaFactory.createItem("unfired_coke_brick").register();
+VanillaFactory.createItem("coke_brick").register();
+
+
 
 //=====================================================================================================================================================================================================	
-//	Recreate Jaopca chunks that don't play nice with craftweaker recipe changes.
+//	Recreate Jaopca chunks that don't play nice with Magneticraft's craftweaker intgration.
 //=====================================================================================================================================================================================================
 
 

@@ -7,11 +7,35 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 
 //=====================================================================================================================================================================================================	
+//	Remove Recipes
+//=====================================================================================================================================================================================================
+
+
+	//	Unfired Clay bucket	(using NTP unfired clay bucket)_______________________________________________________________________________________________________________________________________________________________________
+recipes.remove(<ceramics:unfired_clay>);
+
+
+//=====================================================================================================================================================================================================	
 //	Alternate Porcelain recipe
 //=====================================================================================================================================================================================================
 
 
 	//	Unfired Porcelain	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:nuggetClay>,					<weather2:sand_layer_placeable>,	<ore:nuggetClay>,					<weather2:sand_layer_placeable>,	<ore:nuggetClay>				],
+		[<weather2:sand_layer_placeable>,	<contenttweaker:flintdust>,			null,								<contenttweaker:flintdust>,			<weather2:sand_layer_placeable>	],
+		[<ore:nuggetClay>,					null,								<contenttweaker:clay_nugget>,		null,								<ore:nuggetClay>				],
+		[<weather2:sand_layer_placeable>,	<contenttweaker:flintdust>,			null,								<contenttweaker:flintdust>,			<weather2:sand_layer_placeable>	],
+		[<ore:nuggetClay>,					<weather2:sand_layer_placeable>,	<ore:nuggetClay>,					<weather2:sand_layer_placeable>,	<ore:nuggetClay>				]])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <ceramics:unfired_clay:4> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+
+/*
 recipes.addShapeless(
 	"ceramics_unfired_clay_ball_custom",
 	<ceramics:unfired_clay:4> * 2, 
@@ -21,12 +45,39 @@ recipes.addShapeless(
 		<ore:clay>
 	]
 );
+*/
 
 //=====================================================================================================================================================================================================	
 //	Clay Tool on porcelain bricks
 //=====================================================================================================================================================================================================
 
 
+	//	Unfired Clay Plate	_______________________________________________________________________________________________________________________________________________________________________
+recipes.remove(<ceramics:unfired_clay:8>);
+RecipeBuilder.get("potter")
+  .setShapeless( [ <ore:brickClay> ] )
+  .setFluid( <liquid:water> * 50 )
+  .setSecondaryIngredients( [ <minecraft:bowl> ] )
+  .addTool( <ore:artisansTrowel> , 1 )
+  .addOutput( <ceramics:unfired_clay:8> )
+  .setExtraOutputOne( <minecraft:bowl> , 1.0 )
+  .create();
+
+	//	Unfired Clay Shears	_______________________________________________________________________________________________________________________________________________________________________
+recipes.remove(<ceramics:unfired_clay:1>);
+RecipeBuilder.get("potter")
+	.setShaped([
+	 	[null,				<ore:brickClay>	],
+	 	[<ore:brickClay>,	null			]])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <ceramics:unfired_clay:1> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+
+
+/* - Replcaing these with potter table recipes.
 recipes.remove(<ceramics:unfired_clay:8>);
 
 recipes.addShapeless(
@@ -56,6 +107,8 @@ recipes.addShapeless(
 		<ore:toolClay>
 	]
 );
+
+*/
 
 
 //=====================================================================================================================================================================================================	

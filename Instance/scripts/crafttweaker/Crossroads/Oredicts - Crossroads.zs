@@ -7,6 +7,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
 
+
 //=====================================================================================================================================================================================================	
 //	Remove Crossroads gears from gear oredicts otherwise Charset Immersion prevens you from placing these in the world for use in rotary power.
 //=====================================================================================================================================================================================================
@@ -24,3 +25,7 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:gearInvar>.remove(<crossroads:gear_invar>);
 <ore:gearPlatinum>.remove(<crossroads:gear_platinum>);
 <ore:gearElectrum>.remove(<crossroads:gear_electrum>);
+
+
+	//	This axle is a bit different than standard stickIron	_______________________________________________________________________________________________________________________________________________________________________
+<ore:stickIron>.remove(<crossroads:axle>);

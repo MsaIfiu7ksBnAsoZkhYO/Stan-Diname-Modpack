@@ -29,31 +29,34 @@ import mods.TinkersForging.Anvil;
 <ore:ingotTitaniumaluminide>.add(<advancedrocketry:productingot>);
 //<ore:ingotQuartzEnrichedIron>.add(<refinedstorage:quartz_enriched_iron>);
 
-	//	Mystical Agriculture	_______________________________________________________________________________________________________________________________________________________________________
+	/*/	Mystical Agriculture	_______________________________________________________________________________________________________________________________________________________________________
 <ore:ingotMa.supremium>.add(<mysticalagriculture:crafting:37>);
 <ore:ingotMa.superium>.add(<mysticalagriculture:crafting:36>);
 <ore:ingotMa.intermedium>.add(<mysticalagriculture:crafting:35>);
 <ore:ingotMa.prudentium>.add(<mysticalagriculture:crafting:34>);
 <ore:ingotMa.inferium>.add(<mysticalagriculture:crafting:33>);
-<ore:ingotMa.base_essence>.add(<mysticalagriculture:crafting:32>);
+	//underscore makes this one note work	_______________________________________________________________________________________________________________________________________________________________________
+<ore:ingotMa.>.add(<mysticalagriculture:crafting:32>);
+*/
 
-	//	Plustic Materials	_______________________________________________________________________________________________________________________________________________________________________
-<ore:ingotPlatinum_plustic>.add(<basemetals:platinum_ingot>);
-<ore:ingotPlatinum_plustic>.add(<thermalfoundation:material:134>);
-<ore:ingotLumium_plustic>.add(<thermalfoundation:material:166>);
-<ore:ingotEnderium_plustic>.add(<thermalfoundation:material:167>);
-<ore:ingotSignalum_plustic>.add(<thermalfoundation:material:165>);
+	/*/	Plustic Materials - working	_______________________________________________________________________________________________________________________________________________________________________
 <ore:ingotRefinedglowstone>.add(<mekanism:ingot:3>);
 <ore:ingotRefinedobsidian>.add(<mekanism:ingot>);
+*/
 
 	//	Botania	_______________________________________________________________________________________________________________________________________________________________________
 <ore:ingotElementium>.add(<botania:manaresource:7>);
 
-	//	Extra Utilites	_______________________________________________________________________________________________________________________________________________________________________
+	//	Astral Sorcery - Starmetal	_______________________________________________________________________________________________________________________________________________________________________
+<ore:ingotStarmetal>.add(<astralsorcery:itemcraftingcomponent:1>);
+
+	/*/	Extra Utilites	_______________________________________________________________________________________________________________________________________________________________________
 <ore:ingotXudemonicmetal>.add(<extrautils2:ingredients:11>);
 <ore:ingotxu_enchanted_metal>.add(<extrautils2:ingredients:12>);
 <ore:ingotxuevilmetal>.add(<extrautils2:ingredients:17>);
+*/
 
-	//	Ice and Fire	_______________________________________________________________________________________________________________________________________________________________________
+	/*/	Ice and Fire	_______________________________________________________________________________________________________________________________________________________________________
 <ore:ingotDragonsteel_fire>.add(<iceandfire:dragonsteel_fire_ingot>);
 <ore:ingotDragonsteel_ice>.add(<iceandfire:dragonsteel_ice_ingot>);
+*/

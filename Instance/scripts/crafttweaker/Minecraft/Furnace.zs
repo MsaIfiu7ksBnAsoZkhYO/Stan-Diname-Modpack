@@ -138,7 +138,6 @@ val Nugget = {
 } as IOreDictEntry[string];
 
 
-
 //=====================================================================================================================================================================================================	
 //	Remove existing ingot recipes and replace them with nuggets.
 //=====================================================================================================================================================================================================
@@ -150,7 +149,7 @@ furnace.remove(<minecraft:iron_ingot>);
 furnace.remove(<ore:ingotAstralStarmetal>);
 */
 
-//	Dynamically Add chink to nugget	_______________________________________________________________________________________________________________________________________________________________________
+//	Dynamically Add chunk to nugget	_______________________________________________________________________________________________________________________________________________________________________
 /* - Handled by Unidict
 for item in Ingot {
         furnace.remove(Ingot[item]);
@@ -160,17 +159,3 @@ for item in Ingot {
 for item in Chunk {
         furnace.addRecipe(Nugget[item].firstItem * 3, Chunk[item], 0.3);
 }
-
-
-
-/*
-furnace.remove(<ore:ingotCopper>);
-furnace.addRecipe(<ore:nuggetCopper>.firstItem * 3, <ore:chunkCopper>, 0.0);
-
-furnace.remove(<ore:ingotIron>);
-furnace.addRecipe(<ore:nuggetIron>.firstItem * 3, <ore:chunkIron>, 0.0);
-
-furnace.remove(<ore:ingotGold>);
-furnace.addRecipe(<ore:nuggetGold>.firstItem * 3, <ore:chunkGold>, 0.0);
-
-*/
