@@ -153,9 +153,9 @@ recipes.addShaped(
     "Crossroads Fuel Heater",
     <crossroads:coal_heater>, 
     [
-        [<quark:sturdy_stone>,  <ore:ingotCopper>,      <quark:sturdy_stone>    ],
-        [<quark:sturdy_stone>,  <ore:itemCoalpellet>,   <quark:sturdy_stone>    ], 
-        [<quark:sturdy_stone>,  <quark:sturdy_stone>,   <quark:sturdy_stone>    ]
+        [<ore:cobblestone>,  <ore:ingotCopper>,     <ore:cobblestone>    ],
+        [<ore:cobblestone>,  <ore:itemCoalpellet>,  <ore:cobblestone>    ], 
+        [<ore:cobblestone>,  <ore:cobblestone>,     <ore:cobblestone>    ]
     ]
 );
 
@@ -165,33 +165,23 @@ recipes.addShaped(
     "Crossroads Heating Chamber",
     <crossroads:heating_chamber>, 
     [
-        [<quark:sturdy_stone>,  <ore:ingotCopper>,      <quark:sturdy_stone>    ],
-        [<quark:sturdy_stone>,  null,                   <quark:sturdy_stone>    ], 
-        [<quark:sturdy_stone>,  <quark:sturdy_stone>,   <quark:sturdy_stone>    ]
+        [<ore:cobblestone>,  <ore:ingotCopper>, <ore:cobblestone>    ],
+        [<ore:cobblestone>,  null,              <ore:cobblestone>    ], 
+        [<ore:cobblestone>,  <ore:cobblestone>, <ore:cobblestone>    ]
     ]
 );
 
 	//	Wool Insulated Heat Cable	_______________________________________________________________________________________________________________________________________________________________________
 recipes.remove(<crossroads:heat_cable_copper_wool>);
-recipes.addShaped(
-    "Crossroads Wool Insulated Heat Cable",
-    <crossroads:heat_cable_copper_wool>, 
-    [
-        [<techguns:itemshared:60>,  <ore:ingotCopper>,          <techguns:itemshared:60>    ],
-        [<ore:ingotCopper>,         <techguns:itemshared:60>,   <ore:ingotCopper>           ], 
-        [<techguns:itemshared:60>,  <ore:ingotCopper>,          <techguns:itemshared:60>    ]
-    ]
-);
-recipes.addShaped(
-    "Crossroads Wool Insulated Heat Cable Rods",
-    <crossroads:heat_cable_copper_wool>, 
-    [
-        [<techguns:itemshared:60>,  <ore:stickCopper>,          <techguns:itemshared:60>    ],
-        [<ore:stickCopper>,         <techguns:itemshared:60>,   <ore:stickCopper>           ], 
-        [<techguns:itemshared:60>,  <ore:stickCopper>,          <techguns:itemshared:60>    ]
-    ]
-);
-
+RecipeBuilder.get("basic")
+    .setShaped([
+        [null,                  null,               <ore:nuggetCopper>, null,               null                ],
+        [null,                  <ore:nuggetCopper>, <ore:wool>,         <ore:nuggetCopper>, null                ],
+        [<ore:nuggetCopper>,    <ore:wool>,         <ore:nuggetCopper>, <ore:wool>,         <ore:nuggetCopper>  ],
+        [null,                  <ore:nuggetCopper>, <ore:wool>,         <ore:nuggetCopper>, null                ],
+        [null,                  null,               <ore:nuggetCopper>, null,               null                ]])
+    .addOutput( <crossroads:heat_cable_copper_wool> )
+    .create();
 
 	//	Fluid Cooling Chamber	_______________________________________________________________________________________________________________________________________________________________________
 recipes.remove( <crossroads:fluid_cooling_chamber> );
