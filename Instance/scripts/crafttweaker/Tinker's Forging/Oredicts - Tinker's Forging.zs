@@ -3,7 +3,7 @@
 //=====================================================================================================================================================================================================
 
 
-#priority 5000
+#priority 9001
 
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
@@ -25,8 +25,10 @@ import mods.TinkersForging.Anvil;
 <ore:ingotAlumifun>.add(<libvulpes:productingot:9>);
 <ore:ingotAlumifun>.add(<thermalfoundation:material:132>);
 <ore:ingotAlumifun>.add(<nuclearcraft:ingot:12>);
+<ore:ingotAlumifun>.add(<immersiveengineering:metal:1>);
 <ore:ingotTitaniumiridium>.add(<advancedrocketry:productingot:1>);
 <ore:ingotTitaniumaluminide>.add(<advancedrocketry:productingot>);
+<ore:ingotCerrosafe>.add(<contenttweaker:cerrosafe_ingot>);
 //<ore:ingotQuartzEnrichedIron>.add(<refinedstorage:quartz_enriched_iron>);
 
 	/*/	Mystical Agriculture	_______________________________________________________________________________________________________________________________________________________________________

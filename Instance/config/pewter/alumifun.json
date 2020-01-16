@@ -47,7 +47,7 @@
     "temperature": 1000,
     "luminosity": 4
   },
-  "oreDictSuffixes": ["Aluminum"],
+  "oreDictSuffixes": [],
   "matParts": [
     "HEAD",
     "HANDLE",

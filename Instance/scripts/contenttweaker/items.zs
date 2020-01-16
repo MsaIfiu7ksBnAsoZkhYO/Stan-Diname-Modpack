@@ -29,10 +29,14 @@ VanillaFactory.createItem("flintdust").register();
 
 	//	Porcelain brick to mimic: clay ball > clay brick > fired brick 	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("porcelain_brick").register();
+VanillaFactory.createItem("porcelain_clay_nugget").register();
 
 	//	Custom pewter material ingots that don't exist	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("molybdochalkos_ingot").register();
 VanillaFactory.createItem("magmolybdochalkosmuth_ingot").register();
+
+	//	Cerrosafe Ingot	_______________________________________________________________________________________________________________________________________________________________________
+VanillaFactory.createItem("cerrosafe_ingot").register();
 
 	//	Wrought Iron Ingot	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("wrought_iron_ingot").register();
@@ -50,14 +54,42 @@ VanillaFactory.createItem("copshowium_rod").register();
 VanillaFactory.createItem("sand_ingot_cast").register();
 VanillaFactory.createItem("sand_ingot_cast_wet").register();
 
-	//	Clay Nugget for sand molds	_______________________________________________________________________________________________________________________________________________________________________
+	//	Clay Nugget for thingies	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("clay_nugget").register();
 
 	//	Coke Brick	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("coke_clay").register();
+VanillaFactory.createItem("coke_clay_nugget").register();
 VanillaFactory.createItem("unfired_coke_brick").register();
 VanillaFactory.createItem("coke_brick").register();
 
+	//	Blast Brick	_______________________________________________________________________________________________________________________________________________________________________
+VanillaFactory.createItem("blast_clay").register();
+VanillaFactory.createItem("blast_clay_nugget").register();
+VanillaFactory.createItem("unfired_blast_brick").register();
+VanillaFactory.createItem("blast_brick").register();
+
+	//	Kiln Brick	_______________________________________________________________________________________________________________________________________________________________________
+VanillaFactory.createItem("kiln_clay").register();
+VanillaFactory.createItem("kiln_clay_nugget").register();
+VanillaFactory.createItem("unfired_kiln_brick").register();
+VanillaFactory.createItem("kiln_brick").register();
+
+	//	Seared Brick (Smeltery)	_______________________________________________________________________________________________________________________________________________________________________
+VanillaFactory.createItem("seared_clay").register();
+VanillaFactory.createItem("seared_clay_nugget").register();
+VanillaFactory.createItem("unfired_seared_brick").register();
+
+
+	//	Scorched Brick (High Oven)	_______________________________________________________________________________________________________________________________________________________________________
+VanillaFactory.createItem("scorched_clay").register();
+VanillaFactory.createItem("scorched_clay_nugget").register();
+VanillaFactory.createItem("unfired_scorched_brick").register();
+
+	//	Small Carbon and Sulfer and Dust dusts	_______________________________________________________________________________________________________________________________________________________________________
+VanillaFactory.createItem("tiny_carbon_dust").register();
+VanillaFactory.createItem("tiny_sulfur_dust").register();
+VanillaFactory.createItem("tiny_dust_dust").register();
 
 
 //=====================================================================================================================================================================================================	

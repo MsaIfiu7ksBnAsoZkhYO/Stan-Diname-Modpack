@@ -31,3 +31,11 @@ var moldsand = VanillaFactory.createFluid("moldsand", Color.fromHex("CCCC99"));
 moldsand.viscosity = 10000;
 moldsand.density = 100000;
 moldsand.register();
+
+	//	Smeltery Fuel 3500	_______________________________________________________________________________________________________________________________________________________________________
+var smeltery_fuel_3500 = VanillaFactory.createFluid("smeltery_fuel_3500", Color.fromHex("b0b0b0"));
+smeltery_fuel_3500.fillSound = <soundevent:block.note.snare>;
+smeltery_fuel_3500.luminosity = 20;
+smeltery_fuel_3500.viscosity = 3000;
+smeltery_fuel_3500.temperature= 3800;
+smeltery_fuel_3500.register();

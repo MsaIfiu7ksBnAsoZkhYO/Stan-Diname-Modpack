@@ -2,6 +2,7 @@
 //	Import-ant things
 //=====================================================================================================================================================================================================
 
+#priority 9000
 
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
@@ -21,9 +22,58 @@ import crafttweaker.oredict.IOreDictEntry;
 
 
 //=====================================================================================================================================================================================================	
-//	clay Nugget
+//	clay Nuggets
 //=====================================================================================================================================================================================================
 <ore:nuggetClay>.add(<contenttweaker:clay_nugget>);
+<ore:nuggetPorcelain>.add(<contenttweaker:porcelain_clay_nugget>);
+<ore:nuggetCoke>.add(<contenttweaker:coke_clay_nugget>);
+<ore:nuggetSeared>.add(<contenttweaker:seared_clay_nugget>);
+<ore:nuggetScorched>.add(<contenttweaker:scorched_clay_nugget>);
+<ore:nuggetBlast>.add(<contenttweaker:blast_clay_nugget>);
+<ore:nuggetKiln>.add(<contenttweaker:kiln_clay_nugget>);
+
+
+//=====================================================================================================================================================================================================	
+//	clay balls
+//=====================================================================================================================================================================================================
+<ore:clayCoke>.add(<contenttweaker:coke_clay>);
+<ore:claySeared>.add(<contenttweaker:seared_clay>);
+<ore:clayScorched>.add(<contenttweaker:scorched_clay>);
+<ore:clayBlast>.add(<contenttweaker:blast_clay>);
+<ore:clayKiln>.add(<contenttweaker:kiln_clay>);
+
+
+//=====================================================================================================================================================================================================	
+//	Unfired Clay bricks
+//=====================================================================================================================================================================================================
+<ore:brickCoke>.add(<contenttweaker:unfired_coke_brick>);
+<ore:brickSeared>.add(<contenttweaker:unfired_seared_brick>);
+<ore:brickScorched>.add(<contenttweaker:unfired_scorched_brick>);
+<ore:brickBlast>.add(<contenttweaker:unfired_blast_brick>);
+<ore:brickKiln>.add(<contenttweaker:unfired_kiln_brick>);
+
+
+//=====================================================================================================================================================================================================	
+//	Fired Clay bricks
+//=====================================================================================================================================================================================================
+<ore:ingotCoke>.add(<contenttweaker:coke_brick>);
+<ore:ingotBlast>.add(<contenttweaker:blast_brick>);
+<ore:ingotKiln>.add(<contenttweaker:kiln_brick>);
+
+
+//=====================================================================================================================================================================================================	
+//	Flint Dust
+//=====================================================================================================================================================================================================
+<ore:dustFlint>.add(<contenttweaker:flintdust>);
+
+
+//=====================================================================================================================================================================================================	
+//	Tiny Pollution dusts
+//=====================================================================================================================================================================================================
+<ore:dustTinyCarbon>.add(<contenttweaker:tiny_carbon_dust>);
+<ore:dustTinySulfur>.add(<contenttweaker:tiny_sulfur_dust>);
+<ore:dustTinyDust>.add(<contenttweaker:tiny_dust_dust>);
+
 
 
 //=====================================================================================================================================================================================================	
@@ -32,7 +82,6 @@ import crafttweaker.oredict.IOreDictEntry;
 
 
 	//	Chunks	_______________________________________________________________________________________________________________________________________________________________________
-<ore:chunkAdamantine>.add(<contenttweaker:chunk_adamantine>);
 <ore:chunkAmber>.add(<contenttweaker:chunk_amber>);
 <ore:chunkAmethyst>.add(<contenttweaker:chunk_amethyst>);
 <ore:chunkAntimony>.add(<contenttweaker:chunk_antimony>);
@@ -78,7 +127,6 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:chunkZirconium>.add(<contenttweaker:chunk_zirconium>);
 
 	//	Rocky Chunks	_______________________________________________________________________________________________________________________________________________________________________
-<ore:rockyChunkAdamantine>.add(<contenttweaker:rockychunk_adamantine>);
 <ore:rockyChunkAmber>.add(<contenttweaker:rockychunk_amber>);
 <ore:rockyChunkAmethyst>.add(<contenttweaker:rockychunk_amethyst>);
 <ore:rockyChunkAntimony>.add(<contenttweaker:rockychunk_antimony>);

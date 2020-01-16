@@ -37,7 +37,7 @@ var TconMaterials = {
 var TconParts = {
 	<tconstruct:sharpening_kit> : 2,
 	<tconstruct:pick_head> : 2,
-	<tconstruct:shovel_head> : 1,
+	<tconstruct:shovel_head> : 2,
 	<tconstruct:axe_head> : 2,
 	<tconstruct:broad_axe_head> : 8,
 	<tconstruct:sword_blade> : 2,
@@ -58,7 +58,7 @@ var TconParts = {
 	<tconstruct:wide_guard> : 1,
 	<tconstruct:hand_guard> : 1,
 	<tconstruct:cross_guard> : 1,
-	<tconstruct:knife_blade> : 2,
+	<tconstruct:knife_blade> : 1,
 	<conarm:polishing_kit> : 3,
 	<conarm:helmet_core> : 4,
 	<conarm:chest_core> : 6,
@@ -68,6 +68,7 @@ var TconParts = {
 	<conarm:armor_trim> : 1,
 	<totaltinkers:greatbladecore> : 12,
 	<totaltinkers:fullguard> : 3,
+	<tcomplement:chisel_head> : 1,
 } as int[IItemStack];
 
 var SandCastable = {
@@ -89,14 +90,13 @@ var AnvilCast = {
 	<tinkersforging:tinkers_anvil/copper> : <liquid:copper>,
 	<tinkersforging:tinkers_anvil/tin> : <liquid:tin>,
 	<tinkersforging:tinkers_anvil/bronze> : <liquid:bronze>,
-	<tinkersforging:tinkers_anvil/zinc> : <liquid:zinc>,
 	<tinkersforging:tinkers_anvil/silver> : <liquid:silver>,
 	<tinkersforging:tinkers_anvil/iron> : <liquid:iron>,
 	<tinkersforging:tinkers_anvil/alumifun> : <liquid:aluminum>,
 	<tinkersforging:tinkers_anvil/brass> : <liquid:brass>,
 	<tinkersforging:tinkers_anvil/steel> : <liquid:steel>,
 } as ILiquidStack[IItemStack];
-
+	//<tinkersforging:tinkers_anvil/zinc> : <liquid:zinc>,
 
 
 
@@ -173,9 +173,18 @@ mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:forging_anvil_cast_wet> ,
 for Anvil , Fluid in AnvilCast {
 	recipes.remove( Anvil );
 	mods.tconstruct.Casting.addBasinRecipe(Anvil , <contenttweaker:forging_anvil_cast> , Fluid , 2160 , true , 3000);
-	mods.tconstruct.Melting.addRecipe(Fluid * 2160 , Anvil , 1300);
+	//mods.tconstruct.Melting.addRecipe(Fluid * 2160 , Anvil , 1300);
 }
 	
+	//	Glass Casting	_______________________________________________________________________________________________________________________________________________________________________
+mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:clear_glass>);
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:glass> , null, <liquid:glass> , 1000 , false, 200 );
+//mods.tconstruct.Casting.addTableRecipe(<minecraft:glass_pane> , null, <liquid:glass> , 375 , false, 80 );
+	//	Sandy Glass	_______________________________________________________________________________________________________________________________________________________________________
+recipes.remove( <extrautils2:decorativesolid:4> );
+mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativesolid:4> , <ore:sand>, <liquid:glass> , 1000 , true, 220 );
+	//	Thickened Glass	_______________________________________________________________________________________________________________________________________________________________________
+mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativeglass> , <tconstruct:clear_glass>, <liquid:glass> , 1000 , true, 300 );
 
 //=====================================================================================================================================================================================================	
 //	Super Awesome Kustom Kast Krafting system...  Wait...

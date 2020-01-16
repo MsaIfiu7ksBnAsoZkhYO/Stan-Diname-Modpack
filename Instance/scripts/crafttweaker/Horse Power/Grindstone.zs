@@ -27,7 +27,7 @@ mods.horsepower.Grindstone.add(
 mods.horsepower.Grindstone.add(
 	<ore:cobblestoneLimestone>, 
 	<notreepunching:rock/limestone> * 2, 
-	40, 
+	16, 
 	false, 
 	<notreepunching:rock/limestone> *2, 
 	100
@@ -36,20 +36,20 @@ mods.horsepower.Grindstone.add(
 	//	Grind up quicklime into lime dust	_______________________________________________________________________________________________________________________________________________________________________
 mods.horsepower.Grindstone.add(
 	<contenttweaker:quicklime>, 
-	<contenttweaker:limedust> * 1, 
-	24, 
+	<contenttweaker:limedust> * 2, 
+	8, 
 	false, 
-	<contenttweaker:limedust> *1 , 
+	<contenttweaker:limedust> * 2 , 
 	100
 );
 
 	//	Flint shards to flint dust for alternate porcelain recipe	_______________________________________________________________________________________________________________________________________________________________________
 mods.horsepower.Grindstone.add(
 	<ore:shardFlint>, 
-	<contenttweaker:flintdust> * 1, 
-	24, 
+	<contenttweaker:flintdust> * 2, 
+	8, 
 	false, 
-	<contenttweaker:flintdust> *1 , 
+	<contenttweaker:flintdust> * 2 , 
 	100
 );
 
@@ -57,7 +57,7 @@ mods.horsepower.Grindstone.add(
 mods.horsepower.Grindstone.add(
 	<ore:sandstone>, 
 	<notreepunching:rock/sandstone> * 2, 
-	40, 
+	16, 
 	false, 
 	<notreepunching:rock/sandstone> *2 ,
 	100
@@ -67,14 +67,14 @@ mods.horsepower.Grindstone.add(
 mods.horsepower.Grindstone.add(
 	<notreepunching:rock/sandstone>, 
 	<terraqueous:item_main:214> * 1, 
-	24
+	8
 );
 
 	//	Red Sandstone to Red sandstone rocks	_______________________________________________________________________________________________________________________________________________________________________
 mods.horsepower.Grindstone.add(
 	<ore:redsandstone>, 
 	<notreepunching:rock/red_sandstone> * 2, 
-	40, 
+	16, 
 	false,
 	<notreepunching:rock/red_sandstone> *2 ,
 	100
@@ -84,5 +84,5 @@ mods.horsepower.Grindstone.add(
 mods.horsepower.Grindstone.add(
 	<notreepunching:rock/red_sandstone>, 
 	<terraqueous:item_main:216> * 1, 
-	24
+	8
 );

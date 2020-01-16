@@ -17,6 +17,12 @@ import crafttweaker.oredict.IOreDict;
 recipes.removeByRecipeName("terraqueous:dust-sandstone");
 recipes.removeByRecipeName("terraqueous:dust-red_sandstone");
 
+	//	Remove Tiny dusts to large dusts	_______________________________________________________________________________________________________________________________________________________________________
+recipes.removeByRecipeName("terraqueous:dust-diamond_dust");
+recipes.removeByRecipeName("terraqueous:dust-emerald_dust");
+recipes.removeByRecipeName("terraqueous:dust-lapis");
+recipes.removeByRecipeName("terraqueous:dust-redstone");
+
 	//	Split Gravel blocks into gravel lumps	_______________________________________________________________________________________________________________________________________________________________________
 recipes.addShapeless(
   "Gravel to Gravel Lumps",

@@ -23,11 +23,11 @@ recipes.remove(<ceramics:unfired_clay>);
 	//	Unfired Porcelain	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
 	.setShaped([
-		[<ore:nuggetClay>,					<weather2:sand_layer_placeable>,	<ore:nuggetClay>,					<weather2:sand_layer_placeable>,	<ore:nuggetClay>				],
-		[<weather2:sand_layer_placeable>,	<contenttweaker:flintdust>,			null,								<contenttweaker:flintdust>,			<weather2:sand_layer_placeable>	],
-		[<ore:nuggetClay>,					null,								<contenttweaker:clay_nugget>,		null,								<ore:nuggetClay>				],
-		[<weather2:sand_layer_placeable>,	<contenttweaker:flintdust>,			null,								<contenttweaker:flintdust>,			<weather2:sand_layer_placeable>	],
-		[<ore:nuggetClay>,					<weather2:sand_layer_placeable>,	<ore:nuggetClay>,					<weather2:sand_layer_placeable>,	<ore:nuggetClay>				]])
+    	[null,								<weather2:sand_layer_placeable>,	<ore:nuggetClay>,			<weather2:sand_layer_placeable>,	null							],
+    	[<weather2:sand_layer_placeable>,	<ore:nuggetClay>,					<contenttweaker:flintdust>,	<ore:nuggetClay>,					<weather2:sand_layer_placeable>	],
+    	[<ore:nuggetClay>,					<contenttweaker:flintdust>,			<ore:nuggetClay>,			<contenttweaker:flintdust>,			<ore:nuggetClay>				],
+    	[<weather2:sand_layer_placeable>,	<ore:nuggetClay>,					<contenttweaker:flintdust>, <ore:nuggetClay>,					<weather2:sand_layer_placeable>	],
+    	[null,								<weather2:sand_layer_placeable>,	<ore:nuggetClay>,			<weather2:sand_layer_placeable>,	null							]])
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
@@ -35,17 +35,6 @@ RecipeBuilder.get("potter")
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
-/*
-recipes.addShapeless(
-	"ceramics_unfired_clay_ball_custom",
-	<ceramics:unfired_clay:4> * 2, 
-	[
-		<contenttweaker:flintdust>,
-		<ore:sand>,
-		<ore:clay>
-	]
-);
-*/
 
 //=====================================================================================================================================================================================================	
 //	Clay Tool on porcelain bricks

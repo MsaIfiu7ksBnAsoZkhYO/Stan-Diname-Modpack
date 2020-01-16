@@ -14,22 +14,21 @@ import crafttweaker.oredict.IOreDict;
 //=====================================================================================================================================================================================================
 
 
-//	Magneticraft Rocky Chunks	_______________________________________________________________________________________________________________________________________________________________________
+	//	Magneticraft Rocky Chunks	_______________________________________________________________________________________________________________________________________________________________________
 val RockyChunk = {
-	Iron : <ore:rockyChunkIron>,
-	Gold : <ore:rockyChunkGold>,
-	Copper : <ore:rockyChunkCopper>,
-	Lead : <ore:rockyChunkLead>,
-	Cobalt : <ore:rockyChunkCobalt>,
-	Tungsten : <ore:rockyChunkTungsten>,
-	Aluminum : <ore:rockyChunkAluminum>,
-	Mithril : <ore:rockyChunkMithril>,
-	Nickel : <ore:rockyChunkNickel>,
-	Osmium : <ore:rockyChunkOsmium>,
-	Silver : <ore:rockyChunkSilver>,
-	Tin : <ore:rockyChunkTin>,
-	Zinc : <ore:rockyChunkZinc>,
-	adamantine : <ore:rockyChunkAdamantine>,
+	iron : <ore:rockyChunkIron>,
+	gold : <ore:rockyChunkGold>,
+	copper : <ore:rockyChunkCopper>,
+	lead : <ore:rockyChunkLead>,
+	cobalt : <ore:rockyChunkCobalt>,
+	tungsten : <ore:rockyChunkTungsten>,
+	aluminum : <ore:rockyChunkAluminum>,
+	mithril : <ore:rockyChunkMithril>,
+	nickel : <ore:rockyChunkNickel>,
+	osmium : <ore:rockyChunkOsmium>,
+	silver : <ore:rockyChunkSilver>,
+	tin : <ore:rockyChunkTin>,
+	zinc : <ore:rockyChunkZinc>,
 	antimony : <ore:rockyChunkAntimony>,
 	ardite : <ore:rockyChunkArdite>,
 	beryllium : <ore:rockyChunkBeryllium>,
@@ -55,22 +54,21 @@ val RockyChunk = {
 	zirconium : <ore:rockyChunkZirconium>,
 } as IOreDictEntry[string];
 
-//	Mekanism dustDirtys	_______________________________________________________________________________________________________________________________________________________________________
+	//	Mekanism dustDirtys	_______________________________________________________________________________________________________________________________________________________________________
 val DustDirty = {
-	Iron : <ore:dustDirtyIron>,
-	Gold : <ore:dustDirtyGold>,
-	Copper : <ore:dustDirtyCopper>,
-	Lead : <ore:dustDirtyLead>,
-	Cobalt : <ore:dustDirtyCobalt>,
-	Tungsten : <ore:dustDirtyTungsten>,
-	Aluminum : <ore:dustDirtyAluminum>,
-	Mithril : <ore:dustDirtyMithril>,
-	Nickel : <ore:dustDirtyNickel>,
-	Osmium : <ore:dustDirtyOsmium>,
-	Silver : <ore:dustDirtySilver>,
-	Tin : <ore:dustDirtyTin>,
-	Zinc : <ore:dustDirtyZinc>,
-	adamantine : <ore:dustDirtyAdamantine>,
+	iron : <ore:dustDirtyIron>,
+	gold : <ore:dustDirtyGold>,
+	copper : <ore:dustDirtyCopper>,
+	lead : <ore:dustDirtyLead>,
+	cobalt : <ore:dustDirtyCobalt>,
+	tungsten : <ore:dustDirtyTungsten>,
+	aluminum : <ore:dustDirtyAluminum>,
+	mithril : <ore:dustDirtyMithril>,
+	nickel : <ore:dustDirtyNickel>,
+	osmium : <ore:dustDirtyOsmium>,
+	silver : <ore:dustDirtySilver>,
+	tin : <ore:dustDirtyTin>,
+	zinc : <ore:dustDirtyZinc>,
 	antimony : <ore:dustDirtyAntimony>,
 	ardite : <ore:dustDirtyArdite>,
 	beryllium : <ore:dustDirtyBeryllium>,
@@ -111,18 +109,21 @@ val DustDirty = {
 mods.crossroads.Grindstone.addRecipe(IItemStack input, IIngredient output1, @Optional IIngredient output2, @Optional IIngredient output3)
 */
 
-//Zirconium - One is there
-//Astral Starmetal
-//Zinc dust - one is there
-//Tantalum dust - One is there
+	//	Remove existing recipes	_______________________________________________________________________________________________________________________________________________________________________
+mods.crossroads.Grindstone.removeRecipe(<ore:oreCopper>);
+mods.crossroads.Grindstone.removeRecipe(<ore:stone>);
+mods.crossroads.Grindstone.removeRecipe(<ore:blockRedstone>);
+mods.crossroads.Grindstone.removeRecipe(<ore:cobblestone>);
+mods.crossroads.Grindstone.removeRecipe(<ore:gravel>);
+mods.crossroads.Grindstone.removeRecipe(<ore:blockCoal>);
+mods.crossroads.Grindstone.removeRecipe(<ore:ingotCopper>);
+mods.crossroads.Grindstone.removeRecipe(<minecraft:potato>);
+mods.crossroads.Grindstone.removeRecipe(<minecraft:pumpkin>);
+mods.crossroads.Grindstone.removeRecipe(<minecraft:melon>);
+mods.crossroads.Grindstone.removeRecipe(<minecraft:wheat>);
+mods.crossroads.Grindstone.removeRecipe(<minecraft:nether_wart_block>);
 
-
+	//	Grind rocky chunks into dirty dust.  Kinky.	_______________________________________________________________________________________________________________________________________________________________________
 for item in RockyChunk {
     mods.crossroads.Grindstone.addRecipe(RockyChunk[item], DustDirty[item].firstItem);
 }
-
-//mods.crossroads.Grindstone.addRecipe(<ore:chunkCopper>, <ore:dustDirtyCopper>.firstItem);
-
-
-
-

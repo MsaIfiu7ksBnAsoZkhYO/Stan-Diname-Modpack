@@ -10,11 +10,76 @@ import crafttweaker.oredict.IOreDictEntry;
 import modtweaker.tconstruct.ITICMaterial;
 import mods.TinkersForging.Anvil;
 
+
+//==============================================================
+//	Arrays for Dynamic thingies
+//==============================================================
+
+
+	//	Ingots	_______________________________________________________________________________________________________________________________________________________________________
+val Ingot = {
+	iron : <ore:ingotIron>,
+	gold : <ore:ingotGold>,
+	copper : <ore:ingotCopper>,
+	lead : <ore:ingotLead>,
+	silver : <ore:ingotSilver>,
+	tin : <ore:ingotTin>,
+	zinc : <ore:ingotZinc>,
+	bronze : <ore:ingotBronze>,
+	brass : <ore:ingotBrass>,
+	steel : <ore:ingotSteel>,
+} as IOreDictEntry[string];
+
+	//	Sticks	_______________________________________________________________________________________________________________________________________________________________________
+val Stick = {
+	iron : <ore:stickIron>,
+	gold : <ore:stickGold>,
+	copper : <ore:stickCopper>,
+	lead : <ore:stickLead>,
+	silver : <ore:stickSilver>,
+	tin : <ore:stickTin>,
+	zinc : <ore:stickZinc>,
+	bronze : <ore:stickBronze>,
+	brass : <ore:stickBrass>,
+	steel : <ore:stickSteel>,
+} as IOreDictEntry[string];
+
+	//	Plates	_______________________________________________________________________________________________________________________________________________________________________
+val Plate = {
+	iron : <ore:plateIron>,
+	gold : <ore:plateGold>,
+	copper : <ore:plateCopper>,
+	lead : <ore:plateLead>,
+	silver : <ore:plateSilver>,
+	tin : <ore:plateTin>,
+	zinc : <ore:plateZinc>,
+	bronze : <ore:plateBronze>,
+	brass : <ore:plateBrass>,
+	steel : <ore:plateSteel>,
+} as IOreDictEntry[string];
+
+	//	Anvil Tier _______________________________________________________________________________________________________________________________________________________________________
+val Tier = {
+	iron : 4,
+	gold : 2,
+	copper : 1,
+	lead : 1,
+	silver : 3,
+	tin : 1,
+	zinc : 3,
+	bronze : 2,
+	brass : 3,
+	steel : 5,
+} as int[string];
+
+
+
 //==============================================================
 //	Add Heat to items to allow them to be forged
 //==============================================================
 
 
+	//	Slag iron ingot	_______________________________________________________________________________________________________________________________________________________________________
 Anvil.addItemHeat(<minecraft:iron_ingot>, 700, 2000);
 
 //Anvil.addItemHeat(<mysticalagriculture:crafting:37>, 300, 2000);
@@ -35,7 +100,7 @@ Anvil.addItemHeat(<minecraft:iron_ingot>, 700, 2000);
 Anvil.addRecipe(<minecraft:iron_ingot>, <contenttweaker:wrought_iron_ingot>, 4, "hit_any", "hit_any", "hit_any");
 
 
-
+/* - Making a dynamic loop function
 	//	Plates	_______________________________________________________________________________________________________________________________________________________________________
 Anvil.addRecipe(<ore:ingotCopper>, <thermalfoundation:material:320>, 1, "hit_any", "draw_second_last", "punch_last");
 Anvil.addRecipe(<ore:ingotTin>, <thermalfoundation:material:321>, 1, "hit_any", "draw_second_last", "punch_last");
@@ -46,7 +111,12 @@ Anvil.addRecipe(<ore:ingotSteel>, <libvulpes:productplate:6>, 5, "hit_last", "hi
 	//	Rods	_______________________________________________________________________________________________________________________________________________________________________
 Anvil.addRecipe(<ore:ingotIron>, <immersiveengineering:material:1>, 4, "hit_any", "draw_second_last", "punch_last");
 Anvil.addRecipe(<ore:ingotSteel>, <libvulpes:productrod:6>, 5, "draw_any", "hit_not_last");
+*/
 
+for item in Ingot {
+	Anvil.addRecipe( Ingot[item] , Plate[item].firstItem , Tier[item] , "hit_any", "draw_second_last", "punch_last");
+	Anvil.addRecipe( Ingot[item] , Stick[item].firstItem , Tier[item] , "hit_any", "draw_second_last", "punch_last");
+}
 
 
 //Anvil.removeRecipe(<minecraft:iron_chestplate>);

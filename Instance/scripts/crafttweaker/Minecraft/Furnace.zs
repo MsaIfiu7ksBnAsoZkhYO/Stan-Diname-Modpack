@@ -16,43 +16,15 @@ import crafttweaker.oredict.IOreDict;
 
 //	Magneticraft Chunks	_______________________________________________________________________________________________________________________________________________________________________
 val Chunk = {
-	Iron : <ore:chunkIron>,
 	Gold : <ore:chunkGold>,
 	Copper : <ore:chunkCopper>,
 	Lead : <ore:chunkLead>,
-	Cobalt : <ore:chunkCobalt>,
-	Tungsten : <ore:chunkTungsten>,
-	Aluminum : <ore:chunkAluminum>,
-	Mithril : <ore:chunkMithril>,
-	Nickel : <ore:chunkNickel>,
-	Osmium : <ore:chunkOsmium>,
+	Aluminum : <ore:chunkAluminium>,
 	Silver : <ore:chunkSilver>,
 	Tin : <ore:chunkTin>,
 	Zinc : <ore:chunkZinc>,
-	adamantine : <ore:chunkAdamantine>,
-	antimony : <ore:chunkAntimony>,
-	ardite : <ore:chunkArdite>,
-	beryllium : <ore:chunkBeryllium>,
 	bismuth : <ore:chunkBismuth>,
-	boron : <ore:chunkBoron>,
-	cadmium : <ore:chunkCadmium>,
-	chromium : <ore:chunkChromium>,
-	coldiron : <ore:chunkColdiron>,
-	dilithium : <ore:chunkDilithium>,
-	iridium : <ore:chunkIridium>,
-	lithium : <ore:chunkLithium>,
 	magnesium : <ore:chunkMagnesium>,
-	manganese : <ore:chunkManganese>,
-	mercury : <ore:chunkMercury>,
-	platinum : <ore:chunkPlatinum>,
-	plutonium : <ore:chunkPlutonium>,
-	rutile : <ore:chunkRutile>,
-	starsteel : <ore:chunkStarsteel>,
-	tantalum : <ore:chunkTantalum>,
-	thorium : <ore:chunkThorium>,
-	titanium : <ore:chunkTitanium>,
-	uranium : <ore:chunkUranium>,
-	zirconium : <ore:chunkZirconium>,
 } as IOreDictEntry[string];
 
 //	Ingots	_______________________________________________________________________________________________________________________________________________________________________
@@ -70,7 +42,6 @@ val Ingot = {
 	Silver : <ore:ingotSilver>,
 	Tin : <ore:ingotTin>,
 	Zinc : <ore:ingotZinc>,
-	adamantine : <ore:ingotAdamantine>,
 	antimony : <ore:ingotAntimony>,
 	ardite : <ore:ingotArdite>,
 	beryllium : <ore:ingotBeryllium>,
@@ -94,6 +65,68 @@ val Ingot = {
 	titanium : <ore:ingotTitanium>,
 	uranium : <ore:ingotUranium>,
 	zirconium : <ore:ingotZirconium>,
+	
+	EnchantedMetal : <ore:ingotEnchantedMetal>,
+	Uranium : <ore:ingotUranium>,
+	Ferroboron : <ore:ingotFerroboron>,
+	Knightslime : <ore:ingotKnightslime>,
+	Insanium : <ore:ingotInsanium>,
+	BaseEssence : <ore:ingotBaseEssence>,
+	Inferium : <ore:ingotInferium>,
+	Prudentium : <ore:ingotPrudentium>,
+	Intermedium : <ore:ingotIntermedium>,
+	Superium : <ore:ingotSuperium>,
+	Supremium : <ore:ingotSupremium>,
+	Soulium : <ore:ingotSoulium>,
+	Manganese : <ore:ingotManganese>,
+	LithiumManganeseDioxide : <ore:ingotLithiumManganeseDioxide>,
+	HSLASteel : <ore:ingotHSLASteel>,
+	SiliconCarbide : <ore:ingotSiliconCarbide>,
+	Copshowium : <ore:ingotCopshowium>,
+	Osmiridium : <ore:ingotOsmiridium>,
+	Tough : <ore:ingotTough>,
+	SiCSiCCMC : <ore:ingotSiCSiCCMC>,
+	Pigiron : <ore:ingotPigiron>,
+	Elementium : <ore:ingotElementium>,
+	ElectrotineAlloy : <ore:ingotElectrotineAlloy>,
+	RedAlloy : <ore:ingotRedAlloy>,
+	Carbon : <ore:ingotCarbon>,
+	Alubrass : <ore:ingotAlubrass>,
+	FireDragonsteel : <ore:ingotFireDragonsteel>,
+	Manasteel : <ore:ingotManasteel>,
+	Mirion : <ore:ingotMirion>,
+	Extreme : <ore:ingotExtreme>,
+	EvilMetal : <ore:ingotEvilMetal>,
+	Osgloglas : <ore:ingotOsgloglas>,
+	ObsidianSteel : <ore:ingotObsidianSteel>,
+	Unstable : <ore:ingotUnstable>,
+	Redstone : <ore:ingotRedstone>,
+	Thermoconducting : <ore:ingotThermoconducting>,
+	Terrasteel : <ore:ingotTerrasteel>,
+	Alumite : <ore:ingotAlumite>,
+	IceDragonsteel : <ore:ingotIceDragonsteel>,
+	MagnesiumDiboride : <ore:ingotMagnesiumDiboride>,
+	Shibuichi : <ore:ingotShibuichi>,
+	TinSilver : <ore:ingotTinSilver>,
+	LeadPlatinum : <ore:ingotLeadPlatinum>,
+	Zircaloy : <ore:ingotZircaloy>,
+	Manyullyn : <ore:ingotManyullyn>,
+	emonicMetal : <ore:ingotDemonicMetal>,
+	RefinedGlowstone : <ore:ingotRefinedGlowstone>,
+
+	Amber : <ore:gemEnderBiotite>,
+	Amethyst : <ore:gemAmethyst>,
+	Ruby : <ore:gemRuby>,
+	Peridot : <ore:gemPeridot>,
+	Topaz : <ore:gemTopaz>,
+	Tanzanite : <ore:gemTanzanite>,
+	Malachite : <ore:gemMalachite>,
+	Sapphire : <ore:gemSapphire>,
+	Amber : <ore:gemAmber>,
+	Lapis : <ore:gemLapis>,
+	BlackQuartz : <ore:gemQuartzBlack>,
+	Redstone : <ore:dustRedstone>,
+	Aquamarine : <ore:gemAquamarine>,
 } as IOreDictEntry[string];
 
 //	Nuggets	_______________________________________________________________________________________________________________________________________________________________________
@@ -111,7 +144,6 @@ val Nugget = {
 	Silver : <ore:nuggetSilver>,
 	Tin : <ore:nuggetTin>,
 	Zinc : <ore:nuggetZinc>,
-	adamantine : <ore:nuggetAdamantine>,
 	antimony : <ore:nuggetAntimony>,
 	ardite : <ore:nuggetArdite>,
 	beryllium : <ore:nuggetBeryllium>,
@@ -122,16 +154,13 @@ val Nugget = {
 	coldiron : <ore:nuggetColdiron>,
 	dilithium : <ore:nuggetDilithium>,
 	iridium : <ore:nuggetIridium>,
-	lithium : <ore:nuggetLithium>,
 	magnesium : <ore:nuggetMagnesium>,
 	manganese : <ore:nuggetManganese>,
-	mercury : <ore:nuggetMercury>,
 	platinum : <ore:nuggetPlatinum>,
 	plutonium : <ore:nuggetPlutonium>,
 	rutile : <ore:nuggetRutile>,
 	starsteel : <ore:nuggetStarsteel>,
 	tantalum : <ore:nuggetTantalum>,
-	thorium : <ore:nuggetThorium>,
 	titanium : <ore:nuggetTitanium>,
 	uranium : <ore:nuggetUranium>,
 	zirconium : <ore:nuggetZirconium>,
@@ -142,22 +171,20 @@ val Nugget = {
 //	Remove Recipes
 //=====================================================================================================================================================================================================
 
+
 	//	Remove Vanilla Charcoal_______________________________________________________________________________________________________________________________________________________________________
 furnace.remove(<minecraft:coal:1>);
 
-
-//	Special case for Vanilla iron ingots.	_______________________________________________________________________________________________________________________________________________________________________
-/* - Handled by Unidict
+//	Special case removals.	_______________________________________________________________________________________________________________________________________________________________________
 furnace.remove(<minecraft:iron_ingot>);
+furnace.remove(<minecraft:glass>);
 furnace.remove(<ore:ingotAstralStarmetal>);
-*/
 
-//	Dynamically Add chunk to nugget	_______________________________________________________________________________________________________________________________________________________________________
-/* - Handled by Unidict
+//	Dynamically Remove all ingots	_______________________________________________________________________________________________________________________________________________________________________
 for item in Ingot {
         furnace.remove(Ingot[item]);
 }
-*/
+
 
 //=====================================================================================================================================================================================================	
 //	Add 
