@@ -12,7 +12,7 @@ import crafttweaker.oredict.IOreDictEntry;
 //	Add items here to allow them to be stacked by Charset Immersion.  *Don't add anything here if it can normally be placed in the world, or if it has it's own right click function.
 //=====================================================================================================================================================================================================
 
-
+/* - Charset has been removed.  These don't need to exist anymore.
 <ore:ingotStackable>.addItems([
 	<notreepunching:clay_brick>,
 	<minecraft:brick>,
@@ -40,7 +40,7 @@ import crafttweaker.oredict.IOreDictEntry;
 	<tcomplement:cast_clay>,
 	<immersiveengineering:mold:*>,
 ]);
-
+*/
 
 //=====================================================================================================================================================================================================	
 //	Limestone

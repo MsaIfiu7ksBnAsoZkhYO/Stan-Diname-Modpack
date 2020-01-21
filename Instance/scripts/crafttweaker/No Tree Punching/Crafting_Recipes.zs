@@ -14,24 +14,24 @@ import mods.artisanworktables.builder.RecipeBuilder;
 //=====================================================================================================================================================================================================	
 
 
-recipes.removeByRecipeName("notreepunching:tools/iron_knife");
-recipes.removeByRecipeName("notreepunching:tools/iron_mattock");
-recipes.removeByRecipeName("notreepunching:tools/iron_saw");
-recipes.removeByRecipeName("notreepunching:tools/gold_knife");
-recipes.removeByRecipeName("notreepunching:tools/gold_mattock");
-recipes.removeByRecipeName("notreepunching:tools/gold_saw");
-recipes.removeByRecipeName("notreepunching:copper_knife");
-recipes.removeByRecipeName("notreepunching:copper_mattock");
-recipes.removeByRecipeName("notreepunching:copper_saw");
-recipes.removeByRecipeName("notreepunching:tin_knife");
-recipes.removeByRecipeName("notreepunching:tin_mattock");
-recipes.removeByRecipeName("notreepunching:tin_saw");
-recipes.removeByRecipeName("notreepunching:bronze_knife");
-recipes.removeByRecipeName("notreepunching:bronze_mattock");
-recipes.removeByRecipeName("notreepunching:bronze_saw");
-recipes.removeByRecipeName("notreepunching:steel_knife");
-recipes.removeByRecipeName("notreepunching:steel_mattock");
-recipes.removeByRecipeName("notreepunching:steel_saw");
+//recipes.removeByRecipeName("notreepunching:tools/iron_knife");
+//recipes.removeByRecipeName("notreepunching:tools/iron_mattock");
+//recipes.removeByRecipeName("notreepunching:tools/iron_saw");
+//recipes.removeByRecipeName("notreepunching:tools/gold_knife");
+//recipes.removeByRecipeName("notreepunching:tools/gold_mattock");
+//recipes.removeByRecipeName("notreepunching:tools/gold_saw");
+//recipes.removeByRecipeName("notreepunching:copper_knife");
+//recipes.removeByRecipeName("notreepunching:copper_mattock");
+//recipes.removeByRecipeName("notreepunching:copper_saw");
+//recipes.removeByRecipeName("notreepunching:tin_knife");
+//recipes.removeByRecipeName("notreepunching:tin_mattock");
+//recipes.removeByRecipeName("notreepunching:tin_saw");
+//recipes.removeByRecipeName("notreepunching:bronze_knife");
+//recipes.removeByRecipeName("notreepunching:bronze_mattock");
+//recipes.removeByRecipeName("notreepunching:bronze_saw");
+//recipes.removeByRecipeName("notreepunching:steel_knife");
+//recipes.removeByRecipeName("notreepunching:steel_mattock");
+//recipes.removeByRecipeName("notreepunching:steel_saw");
 
 
 //=====================================================================================================================================================================================================	
@@ -40,7 +40,7 @@ recipes.removeByRecipeName("notreepunching:steel_saw");
 	
 
 	//	Tweak Plant string recipe	_______________________________________________________________________________________________________________________________________________________________________
-recipes.removeByRecipeName("notreepunching:misc/grass_string");
+//recipes.removeByRecipeName("notreepunching:misc/grass_string");
 recipes.addShapeless(
   "Plant String", 
   <notreepunching:grass_string>, 
@@ -113,7 +113,7 @@ recipes.addShaped(
 
 
 	//	Sandstone Rocks to Sandstone blocks	Shouldn't give 2 blocks.  _______________________________________________________________________________________________________________________________________________________________________
-recipes.removeByRecipeName("notreepunching:blocks/rocks_to_sandstone");
+//recipes.removeByRecipeName("notreepunching:blocks/rocks_to_sandstone");
 recipes.addShapeless(
   "Sandstone Rocks to Sandstone", 
   <minecraft:sandstone>, 
@@ -126,7 +126,7 @@ recipes.addShapeless(
 );
 
 	//	Red Sandstone Rocks to Red Sandstone blocks	Shouldn't give 2 blocks_______________________________________________________________________________________________________________________________________________________________________
-recipes.removeByRecipeName("notreepunching:blocks/rocks_to_red_sandstone");
+//recipes.removeByRecipeName("notreepunching:blocks/rocks_to_red_sandstone");
 recipes.addShapeless(
   "Red Sandstone Rocks to Red Sandstone", 
   <minecraft:red_sandstone>, 
@@ -146,7 +146,7 @@ recipes.addShapeless(
 
 
 	//	Clay ball > Unfired Clay Brick  _______________________________________________________________________________________________________________________________________________________________________
-recipes.remove(<notreepunching:clay_brick>);
+//recipes.remove(<notreepunching:clay_brick>);
 RecipeBuilder.get("potter")
   .setShapeless( [ <minecraft:clay_ball> ] )
   .setFluid( <liquid:water> * 50 )

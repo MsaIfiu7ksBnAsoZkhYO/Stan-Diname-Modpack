@@ -2,18 +2,18 @@
 //These imports must be included to cast the arrays
 //=====================================================================================================================================================================================================	
 
-
+/*
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.oredict.IOreDict;
-
+*/
 
 //=====================================================================================================================================================================================================	
 //	Material tables for dynamic recipes.
 //=====================================================================================================================================================================================================
 
-
+/*
 	//	Magneticraft Rocky Chunks	_______________________________________________________________________________________________________________________________________________________________________
 val RockyChunk = {
 	iron : <ore:rockyChunkIron>,
@@ -93,6 +93,8 @@ val DustDirty = {
 	uranium : <ore:dustDirtyUranium>,
 	zirconium : <ore:dustDirtyZirconium>,
 } as IOreDictEntry[string];
+*/
+
 
 //=====================================================================================================================================================================================================	
 //	Bumpin' and grindin' them ores.
@@ -124,6 +126,14 @@ mods.crossroads.Grindstone.removeRecipe(<minecraft:wheat>);
 mods.crossroads.Grindstone.removeRecipe(<minecraft:nether_wart_block>);
 
 	//	Grind rocky chunks into dirty dust.  Kinky.	_______________________________________________________________________________________________________________________________________________________________________
-for item in RockyChunk {
-    mods.crossroads.Grindstone.addRecipe(RockyChunk[item], DustDirty[item].firstItem);
+for Item in GlobalRockyChunk {
+
+    if( 
+		!isNull( GlobalRockyChunk[Item] ) 
+		&
+		!isNull( GlobalDustDirty[Item] ) 
+	) { 
+		mods.crossroads.Grindstone.addRecipe( GlobalRockyChunk[Item] , GlobalDustDirty[Item].firstItem * 2 ); 
+	}
+
 }

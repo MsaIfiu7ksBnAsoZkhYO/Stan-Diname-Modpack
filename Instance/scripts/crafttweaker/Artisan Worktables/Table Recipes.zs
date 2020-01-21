@@ -89,3 +89,14 @@ RecipeBuilder.get("basic")
 		[<ore:logWood>,						<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>						]])
 	.addOutput( <artisanworktables:workshop:6> )
 	.create();
+
+	//Tanner's Table	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShaped([
+		[<ore:leather>,			<ore:leatherSheet>,			<ore:leatherSheet>,			<ore:leatherSheet>,			<ore:leather>		],
+		[<ore:leatherSheet>,	<ore:plankWood>,			<ore:plankWood>,			<ore:plankWood>,			<ore:leatherSheet>	],
+		[null,					<ore:logWood>,				<ore:chest>,				<ore:logWood>,				null				],
+		[<ore:logWood>,			<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:logWood>		],
+		[<ore:logWood>,			<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>		]])
+	.addOutput( <artisanworktables:workshop:13> )
+	.create();

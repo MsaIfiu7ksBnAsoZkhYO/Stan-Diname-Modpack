@@ -47,3 +47,5 @@ mods.tconstruct.Alloy.addRecipe(<liquid:molybdochalkos> *9, [<liquid:lead> * 9, 
 mods.tconstruct.Alloy.addRecipe(<liquid:magmolybdochalkosmuth> * 2, [<liquid:molybdochalkos> * 2, <liquid:magnesium> * 1, <liquid:bismuth> * 1]);
 
 mods.tconstruct.Alloy.addRecipe(<liquid:cerrosafe> * 4, [<liquid:bismuth> * 4, <liquid:lead> * 3, <liquid:tin> * 1, <liquid:cadmium> * 1]);
+
+mods.tconstruct.Alloy.addRecipe(<liquid:iron> * 1, [<liquid:bloom> * 1 , <liquid:dirt> * 1]);

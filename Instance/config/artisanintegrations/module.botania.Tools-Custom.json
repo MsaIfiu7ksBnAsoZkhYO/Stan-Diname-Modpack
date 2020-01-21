@@ -2,8 +2,8 @@
   "list": [
     {
       "name": "manasteel",
-      "harvestLevel": 3,
-      "maxUses": 300,
+      "harvestLevel": 5,
+      "maxUses": 660,
       "efficiency": 6.2,
       "damage": 2.0,
       "enchantability": 20,
@@ -15,8 +15,8 @@
     },
     {
       "name": "elementium",
-      "harvestLevel": 3,
-      "maxUses": 720,
+      "harvestLevel": 6,
+      "maxUses": 910,
       "efficiency": 6.2,
       "damage": 2.0,
       "enchantability": 20,
@@ -28,8 +28,8 @@
     },
     {
       "name": "terrasteel",
-      "harvestLevel": 4,
-      "maxUses": 2300,
+      "harvestLevel": 7,
+      "maxUses": 1125,
       "efficiency": 9.0,
       "damage": 3.0,
       "enchantability": 26,

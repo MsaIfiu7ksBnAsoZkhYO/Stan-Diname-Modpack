@@ -4,19 +4,20 @@
 
 
 import mods.artisanworktables.builder.RecipeBuilder;
+/*
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.liquid.ILiquidStack;
-
+*/
 
 
 //=====================================================================================================================================================================================================	
 //	Hashtables used in dynamic mapping function.  These would be in a separate script file if Zenscript didn't have a stick up its ass.
 //=====================================================================================================================================================================================================
 
-
+/*
 //	Crossroads gears	_______________________________________________________________________________________________________________________________________________________________________
 val Gear = {
 	Iron : <crossroads:gear_iron>,
@@ -128,7 +129,7 @@ val Liquid = {
 	Platinum : <liquid:platinum>,
 	Electrum : <liquid:electrum>,
 } as ILiquidStack[string];
-
+*/
 
 //=====================================================================================================================================================================================================	
 //	Outright removal (for balance I guess)
@@ -139,7 +140,7 @@ val Liquid = {
 mods.jei.JEI.removeAndHide(<crossroads:hand_crank>);
 
 	//	This is not how alloying works	_______________________________________________________________________________________________________________________________________________________________________
-recipes.removeByRecipeName("unidict:ingotbronze_x1_shape.aaaabaaaa");
+//recipes.removeByRecipeName("unidict:ingotbronze_x1_shape.aaaabaaaa");
 
 
 //=====================================================================================================================================================================================================	
@@ -148,7 +149,7 @@ recipes.removeByRecipeName("unidict:ingotbronze_x1_shape.aaaabaaaa");
 
 
 	//	Fuel Heater  (furnace replacement)	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:coal_heater> );
+//recipes.remove( <crossroads:coal_heater> );
 recipes.addShaped(
     "Crossroads Fuel Heater",
     <crossroads:coal_heater>, 
@@ -160,7 +161,7 @@ recipes.addShaped(
 );
 
 	//	Heating Chamber	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:heating_chamber> );
+//recipes.remove( <crossroads:heating_chamber> );
 recipes.addShaped(
     "Crossroads Heating Chamber",
     <crossroads:heating_chamber>, 
@@ -172,7 +173,7 @@ recipes.addShaped(
 );
 
 	//	Wool Insulated Heat Cable	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove(<crossroads:heat_cable_copper_wool>);
+//recipes.remove( <crossroads:heat_cable_copper_wool> );
 RecipeBuilder.get("basic")
     .setShaped([
         [null,                  null,               <ore:nuggetCopper>, null,               null                ],
@@ -184,7 +185,7 @@ RecipeBuilder.get("basic")
     .create();
 
 	//	Fluid Cooling Chamber	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:fluid_cooling_chamber> );
+//recipes.remove( <crossroads:fluid_cooling_chamber> );
 RecipeBuilder.get("blacksmith")
     .setShaped([
         [<ore:plateIron>,       <ore:plateIron>,            <ore:plateCopper>,          <ore:plateIron>,            <ore:plateIron>         ],
@@ -199,7 +200,7 @@ RecipeBuilder.get("blacksmith")
     .create();
 
 	//	Heating Crucible	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:heating_crucible> );
+//recipes.remove( <crossroads:heating_crucible> );
 RecipeBuilder.get("mason")
     .setShaped([
         [<ore:ingotPorcelain>,  null,                   null,               null,                   <ore:ingotPorcelain>    ],
@@ -212,7 +213,7 @@ RecipeBuilder.get("mason")
     .create();
 
 	//	Grindstone	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:grindstone> );
+//recipes.remove( <crossroads:grindstone> );
 RecipeBuilder.get("basic")
     .setShaped([
         [<quark:sturdy_stone>,  <quark:sturdy_stone>,           <crossroads:axle>,              <quark:sturdy_stone>,           <quark:sturdy_stone>    ],
@@ -224,7 +225,7 @@ RecipeBuilder.get("basic")
     .create();
 
 	//	Master Axis	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:master_axis> );
+//recipes.remove( <crossroads:master_axis> );
 RecipeBuilder.get("blacksmith")
     .setShaped([
         [<ore:plateIron>,   <ore:plateIron>,    <ore:plateIron>,    <ore:plateIron>,    <ore:plateIron> ],
@@ -239,7 +240,7 @@ RecipeBuilder.get("blacksmith")
     .create();
 
 	//	Rotary Pump / Steam Turbine	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:rotary_pump> );
+//recipes.remove( <crossroads:rotary_pump> );
 RecipeBuilder.get("blacksmith")
     .setShaped([
         [<ore:plateBronze>,             <ore:plateBronze>,          <crossroads:axle>,          <ore:plateBronze>,          <ore:plateBronze>           ],
@@ -254,7 +255,7 @@ RecipeBuilder.get("blacksmith")
     .create();
 
 	//	Fluid Tubes	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:fluid_tube> );
+//recipes.remove( <crossroads:fluid_tube> );
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:plateBronze>, <ore:plateBronze>,  <ore:plateBronze>   ],
@@ -267,7 +268,7 @@ RecipeBuilder.get("blacksmith")
   .create();
   
   	//	Fluid Tank	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:fluid_tank> );
+//recipes.remove( <crossroads:fluid_tank> );
 RecipeBuilder.get("blacksmith")
     .setShaped([
         [<ore:plateBronze>, <ore:plateBronze>,          <ore:plateBronze>,          <ore:plateBronze>,          <ore:plateBronze>   ],
@@ -282,7 +283,7 @@ RecipeBuilder.get("blacksmith")
     .create();
 
  	//	Steam Boiler	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:steam_boiler> );
+//recipes.remove( <crossroads:steam_boiler> );
 RecipeBuilder.get("blacksmith")
     .setShaped([
         [<ore:plateBronze>, <ore:plateBronze>,              <ore:plateBronze>,              <ore:plateBronze>,              <ore:plateBronze>   ],
@@ -297,7 +298,7 @@ RecipeBuilder.get("blacksmith")
     .create();
 
  	//	Axle	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <crossroads:axle> );
+//recipes.remove( <crossroads:axle> );
 RecipeBuilder.get("blacksmith")
     .setShaped([
         [null,          null,               null,               null,               <ore:stone> ],
@@ -318,18 +319,29 @@ RecipeBuilder.get("blacksmith")
 
 
 	//	Make All the gear recipes!	_______________________________________________________________________________________________________________________________________________________________________
-for item in Gear {
-    recipes.remove( Gear[item] );
-    RecipeBuilder.get("blacksmith")
-        .setShaped([
-            [Nugget[item],  null,           Nugget[item],   null,           Nugget[item]    ],
-            [null,          Plate[item],    null,           Plate[item],    null            ],
-            [Nugget[item],  null,           Plate[item],    null,           Nugget[item]    ],
-            [null,          Plate[item],    null,           Plate[item],    null            ],
-            [Nugget[item],  null,           Nugget[item],   null,           Nugget[item]    ]])
-        .setFluid( Liquid[item] * 16 )
-        .addTool( <ore:artisansHammer>, 5 )
-        .addTool( <ore:artisansPliers>, 5 )
-        .addOutput( Gear[item] )
-        .create();
+for Item in GlobalCrossroadsGear {
+
+        //Magic verification check to prevent Null errors
+    if (  
+        !isNull( GlobalNugget[Item] )
+        &
+        !isNull( GlobalPlate[Item] )
+    ){
+        //recipes.remove( GlobalCrossroadsGear[Item] );
+        RecipeBuilder.get("blacksmith")
+            .setShaped([
+                [GlobalNugget[Item],    null,               GlobalNugget[Item], null,               GlobalNugget[Item]  ],
+                [null,                  GlobalPlate[Item],  null,               GlobalPlate[Item],  null                ],
+                [GlobalNugget[Item],    null,               GlobalPlate[Item],  null,               GlobalNugget[Item]  ],
+                [null,                  GlobalPlate[Item],  null,               GlobalPlate[Item],  null                ],
+                [GlobalNugget[Item],    null,               GlobalNugget[Item], null,               GlobalNugget[Item]  ]])
+            .setFluid( GlobalMoltenMetal[Item] * 16 )
+            .addTool( <ore:artisansHammer>, 5 )
+            .addTool( <ore:artisansPliers>, 5 )
+            .addOutput( GlobalCrossroadsGear[Item] )
+            .create();
+    }
+
 }
+
+

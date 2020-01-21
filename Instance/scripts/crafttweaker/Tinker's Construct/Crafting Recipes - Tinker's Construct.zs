@@ -12,7 +12,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 
 	//	Blank Patterns	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:pattern> );
+//recipes.remove( <tconstruct:pattern> );
 recipes.addShaped(
     "Tconstuct Blank Pattern",
     <tconstruct:pattern> * 2, 
@@ -37,7 +37,7 @@ recipes.addShapeless(
 
 
 	//	Crafting Station	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:tooltables> );
+//recipes.remove( <tconstruct:tooltables> );
 RecipeBuilder.get("basic")
 	.setShaped([
 		[<ore:fenceWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:fenceWood>	],
@@ -48,7 +48,7 @@ RecipeBuilder.get("basic")
 	.create();
 
 	//	Stencil Table	______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:tooltables:1> );
+//recipes.remove( <tconstruct:tooltables:1> );
 RecipeBuilder.get("basic")
 	.setShaped([
 		[null, 				<ore:pattern>,	<ore:pattern>,	<ore:pattern>,	null			],
@@ -60,7 +60,7 @@ RecipeBuilder.get("basic")
 	.create();
 
 	//	Pattern Chest	______________________________________________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:tooltables:4> );
+//recipes.remove( <tconstruct:tooltables:4> );
 RecipeBuilder.get("basic")
 	.setShaped([
 		[<ore:plankWood>, 	<ore:slabWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:plankWood>	],
@@ -72,7 +72,7 @@ RecipeBuilder.get("basic")
 	.create();
 
 	//	Part Builder	______________________________________________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:tooltables:2> );
+//recipes.remove( <tconstruct:tooltables:2> );
 val platePattern = <tconstruct:pattern>.withTag({PartType: "tconstruct:large_plate"});
 RecipeBuilder.get("basic")
 	.setShaped([
@@ -85,7 +85,7 @@ RecipeBuilder.get("basic")
 	.create();
 
 	//	Part Chest	______________________________________________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:tooltables:5> );
+//recipes.remove( <tconstruct:tooltables:5> );
 val bindPattern = <tconstruct:pattern>.withTag({PartType: "tconstruct:binding"});
 RecipeBuilder.get("basic")
 	.setShaped([
@@ -98,7 +98,7 @@ RecipeBuilder.get("basic")
 	.create();
 	
 	//	Tool Station	______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:tooltables:3> );
+//recipes.remove( <tconstruct:tooltables:3> );
 val rodPattern = <tconstruct:pattern>.withTag({PartType: "tconstruct:tool_rod"});
 RecipeBuilder.get("basic")
 	.setShaped([
@@ -111,7 +111,7 @@ RecipeBuilder.get("basic")
 	.create();
 	
 	//	Armor Station	______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <conarm:armorstation> );
+//recipes.remove( <conarm:armorstation> );
 val armorPattern = <tconstruct:pattern>.withTag({PartType: "conarm:armor_plate"});
 RecipeBuilder.get("basic")
 	.setShaped([
@@ -130,7 +130,7 @@ RecipeBuilder.get("basic")
 	
 
 	//	Grout has been replaced by clay things	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove(<tconstruct:soil>);
+//recipes.remove(<tconstruct:soil>);
 
 	//	Seared Clay Nuggets	_______________________________________________________________________________________________________________________________________________________________________
 recipes.addShapeless(
@@ -167,7 +167,7 @@ RecipeBuilder.get("potter")
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
-	.addOutput( <ore:claySeared>.firstItem )
+	.addOutput( <ore:claySeared>.firstItem * 2 )
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
@@ -182,7 +182,7 @@ RecipeBuilder.get("potter")
 	.create();
 
 	//	Seared Brick Block	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:seared:3> );
+//recipes.remove( <tconstruct:seared:3> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
@@ -194,7 +194,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Smeltery Drain	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:smeltery_io> );
+//recipes.remove( <tconstruct:smeltery_io> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<tconstruct:channel>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
@@ -208,7 +208,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Seared Faucet	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:faucet> );
+//recipes.remove( <tconstruct:faucet> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	null,					<ore:ingotBrickSeared>	],
@@ -219,7 +219,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Casting Channel	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:channel> );
+//recipes.remove( <tconstruct:channel> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>, 	null,					null,					null, 					<ore:ingotBrickSeared>	],
@@ -230,7 +230,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Seared Tank	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:seared_tank> );
+//recipes.remove( <tconstruct:seared_tank> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
@@ -244,7 +244,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Seared glass	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:seared_glass> );
+//recipes.remove( <tconstruct:seared_glass> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[null,						<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		null					],
@@ -258,7 +258,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Seared Window	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:seared_tank:2> );
+//recipes.remove( <tconstruct:seared_tank:2> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
@@ -272,7 +272,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Seared Gauge	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:seared_tank:1> );
+//recipes.remove( <tconstruct:seared_tank:1> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
@@ -286,7 +286,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Casting Table	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:casting> );
+//recipes.remove( <tconstruct:casting> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	null,					null,					null,					<ore:ingotBrickSeared>	],
@@ -300,7 +300,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Casting Basin	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:casting:1> );
+//recipes.remove( <tconstruct:casting:1> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	null,					null,					null,					<ore:ingotBrickSeared>	],
@@ -315,7 +315,7 @@ RecipeBuilder.get("mason")
 	
 /* - Moving to tinker's Complement - Crafting Recipes.
 	//	Seared Heater	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:melter:8> );
+//recipes.remove( <tcomplement:melter:8> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[null,						<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		null					],
@@ -329,7 +329,7 @@ RecipeBuilder.get("mason")
 	.create();
 
 	//	Alloy Tank	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:alloy_tank> );
+//recipes.remove( <tcomplement:alloy_tank> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,	<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,	<tconstruct:seared_glass>	],
@@ -343,7 +343,7 @@ RecipeBuilder.get("mason")
 	.create();
 
 	//	Melter	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:melter> );
+//recipes.remove( <tcomplement:melter> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
@@ -357,7 +357,7 @@ RecipeBuilder.get("mason")
 */
 
 	//	Seared Furnace Controller	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:seared_furnace_controller> );
+//recipes.remove( <tconstruct:seared_furnace_controller> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
@@ -371,7 +371,7 @@ RecipeBuilder.get("mason")
 	.create();
 
 	//	Tinker Tank Controller	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:tinker_tank_controller> );
+//recipes.remove( <tconstruct:tinker_tank_controller> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
@@ -385,7 +385,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Smeltery Controller	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tconstruct:smeltery_controller> );
+//recipes.remove( <tconstruct:smeltery_controller> );
 val tinkertank = <tconstruct:tinker_tank_controller>;
 RecipeBuilder.get("mason")
 	.setShaped([
@@ -408,7 +408,7 @@ RecipeBuilder.get("mason")
 
 
 	//	Porcelain Seared Faucet	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <ceramics:faucet> );
+//recipes.remove( <ceramics:faucet> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotPorcelain>,	null,					<ore:ingotPorcelain>	],
@@ -419,7 +419,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Porcelain Casting Channel	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <ceramics:channel> );
+//recipes.remove( <ceramics:channel> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotPorcelain>, 		null,					null,					null, 					<ore:ingotPorcelain>	],
@@ -430,7 +430,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Porcelain Tank	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:porcelain_tank> );
+//recipes.remove( <tcomplement:porcelain_tank> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
@@ -444,7 +444,7 @@ RecipeBuilder.get("mason")
 	.create();
 		
 	//	Porcelain Window	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:porcelain_tank:2> );
+//recipes.remove( <tcomplement:porcelain_tank:2> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:blockGlass>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
@@ -458,7 +458,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Porcelain Gauge	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:porcelain_tank:1> );
+//recipes.remove( <tcomplement:porcelain_tank:1> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:blockGlass>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
@@ -472,7 +472,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Porcelain Casting Table	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:porcelain_casting> );
+//recipes.remove( <tcomplement:porcelain_casting> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotPorcelain>,	null,					null,					null,					<ore:ingotPorcelain>	],
@@ -486,7 +486,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Porcelain Casting Basin	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:porcelain_casting:1> );
+//recipes.remove( <tcomplement:porcelain_casting:1> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotPorcelain>,	null,					null,					null,					<ore:ingotPorcelain>	],
@@ -500,7 +500,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Porcelain Heater	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:porcelain_melter:8> );
+//recipes.remove( <tcomplement:porcelain_melter:8> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[null,					<ore:ingotPorcelain>,		<ore:ingotPorcelain>,		<ore:ingotPorcelain>,		null					],
@@ -514,7 +514,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Porcelain Alloy Tank	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:porcelain_alloy_tank> );
+//recipes.remove( <tcomplement:porcelain_alloy_tank> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:blockGlassThickended>,	<ore:ingotPorcelain>,	<ore:blockGlassThickended>,	<ore:ingotPorcelain>,	<ore:blockGlassThickended>	],
@@ -528,7 +528,7 @@ RecipeBuilder.get("mason")
 	.create();
 
 	//	Porcelain Melter	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <tcomplement:porcelain_melter> );
+//recipes.remove( <tcomplement:porcelain_melter> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,			<ore:blockGlassThickended>,		<ore:ingotPorcelain>,			<ore:ingotPorcelain>	],

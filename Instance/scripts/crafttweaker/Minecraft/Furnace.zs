@@ -13,7 +13,7 @@ import crafttweaker.oredict.IOreDict;
 //	Hashtables used in dynamic mapping function.  These would be in a separate script file if Zenscript didn't have a stick up its ass.
 //=====================================================================================================================================================================================================
 
-
+/*
 //	Magneticraft Chunks	_______________________________________________________________________________________________________________________________________________________________________
 val Chunk = {
 	Gold : <ore:chunkGold>,
@@ -165,7 +165,7 @@ val Nugget = {
 	uranium : <ore:nuggetUranium>,
 	zirconium : <ore:nuggetZirconium>,
 } as IOreDictEntry[string];
-
+*/
 
 //=====================================================================================================================================================================================================	
 //	Remove Recipes
@@ -181,8 +181,12 @@ furnace.remove(<minecraft:glass>);
 furnace.remove(<ore:ingotAstralStarmetal>);
 
 //	Dynamically Remove all ingots	_______________________________________________________________________________________________________________________________________________________________________
-for item in Ingot {
-        furnace.remove(Ingot[item]);
+for Item in GlobalIngot {
+	if( !isNull( GlobalIngot[Item] ) ) { furnace.remove( GlobalIngot[Item] ); }
+}
+
+for Item in GlobalGem {
+	if( !isNull( GlobalGem[Item] ) ) { furnace.remove( GlobalGem[Item] ); }
 }
 
 
@@ -196,6 +200,11 @@ furnace.addRecipe(<rockhounding_oretiers:tier_items:4>, <ore:logWood>, 0.1);
 
 
 //	Dynamically Add chunk to nugget	_______________________________________________________________________________________________________________________________________________________________________
-for item in Chunk {
-        furnace.addRecipe(Nugget[item].firstItem * 3, Chunk[item], 0.3);
+for Item in GlobalChunk {
+	if(	!isNull( GlobalMeltingTemp[Item] ) ) {
+		//	Only add recipes for melting temps 1000 and under
+		if ( GlobalMeltingTemp[Item] <= 1000 ) {    //>
+    	    furnace.addRecipe(GlobalNugget[Item].firstItem * 3, GlobalChunk[Item], 0.3);
+		}
+	}
 }

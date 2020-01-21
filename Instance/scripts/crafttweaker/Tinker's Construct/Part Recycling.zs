@@ -14,7 +14,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 //=====================================================================================================================================================================================================	
 //	Arrays and things
 //=====================================================================================================================================================================================================
-
+/*
 //	Chunks	_______________________________________________________________________________________________________________________________________________________________________
 val Chunk = {
 	iron : <ore:chunkIron>,
@@ -90,7 +90,7 @@ var TconParts = {
 	<totaltinkers:fullguard> : 3,
 	<tcomplement:chisel_head> : 1,
 } as float[IItemStack];
-
+*/
 
 
 //=====================================================================================================================================================================================================	
@@ -98,25 +98,18 @@ var TconParts = {
 //=====================================================================================================================================================================================================
 
     
-    //	Crafting Table bypass	_______________________________________________________________________________________________________________________________________________________________________
-for item in Chunk {
-	if( !isNull( item ) ) {	
-    	for Part , Int in TconParts {
-			
+    //	Deconstruct Tcon parts	_______________________________________________________________________________________________________________________________________________________________________
+for Item in GlobalChunk {
+	if( !isNull( Item ) ) {	
+    	for Part , Int in GlobalTconParts {
+
 			RecipeBuilder.get("basic")
-				.setName( item~Part.displayName~"bypass" )
-				.setShapeless( [ Part.withTag( {Material: item} ).onlyWithTag( {Material: item} ) ] )
+				.setName( Item~Part.displayName~"bypass" )
+				.setShapeless( [ Part.withTag( {Material: Item} ).onlyWithTag( {Material: Item} ) ] )
 				.addTool( <ore:artisansHammer> , (Int * 2) )
-				.addOutput( Chunk[item].firstItem * Int )
+				.addOutput( GlobalChunk[Item].firstItem * Int )
 				.create();
-			
-			/* - Adds 2 minutes to tconstruct load times?  is it because tconsruct is qquerying the recipe for melting recipes?
-			recipes.addShapeless(
-            	item~Part.displayName~"bypass",
-            	Chunk[item].firstItem * Int, 
-            	[ Part.withTag( {Material: item} ).onlyWithTag( {Material: item} ) ]
-			);
-			*/
+
 		}
 	}
 }

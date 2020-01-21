@@ -11,7 +11,7 @@ import crafttweaker.oredict.IOreDictEntry;
 //	Hashtables used in dynamic mapping function.  
 //=====================================================================================================================================================================================================
 
-
+/*
 //	Magneticraft Chunks	_______________________________________________________________________________________________________________________________________________________________________
 val Chunk = {
 	Iron : <ore:chunkIron>,
@@ -206,7 +206,7 @@ val Secondary = {
 	uranium : <ore:nuggetUranium>,
 	zirconium : <ore:nuggetZirconium>,
 } as IOreDictEntry[string];
-
+*/
 
 //=====================================================================================================================================================================================================	
 //	Remove existing recipes
@@ -256,7 +256,7 @@ val Secondary = {
 	//	Unique recipes	_______________________________________________________________________________________________________________________________________________________________________
 mods.magneticraft.SluiceBox.addRecipe(<minecraft:gravel> , 1.0,<minecraft:flint> , 0.25,<notreepunching:flint_shard>, 0.15,<terraqueous:item_main:215> , true);
 
-
+/*
 	//	Dynamic recipes from above hashtables	_______________________________________________________________________________________________________________________________________________________________________
 for item in RockyChunk{
     mods.magneticraft.SluiceBox.addRecipe(RockyChunk[item].firstItem , 1.0,Chunk[item].firstItem , 0.05,Secondary[item].firstItem , 0.25,<notreepunching:rock/stone> , true);
@@ -264,7 +264,36 @@ for item in RockyChunk{
 for item in DustDirty {
     mods.magneticraft.SluiceBox.addRecipe(DustDirty[item].firstItem , 1.0,Dust[item].firstItem , 0.05,Secondary[item].firstItem ,  0.25,<terraqueous:item_main:215> , true);
 }
+*/
 
+	//	Rocky Chunk > Chunk + tinydusts + rock	_______________________________________________________________________________________________________________________________________________________________________
+for Item in GlobalHarvestLevel {
+
+    if ( 4 >= GlobalHarvestLevel[Item] ) {
+
+		if(	
+			!isNull( GlobalRockyChunk[Item] ) 
+			&
+			!isNull( GlobalChunk[Item] ) 
+			&
+			!isNull( GlobalNugget[Item] ) 
+		) {
+			mods.magneticraft.SluiceBox.addRecipe( GlobalRockyChunk[Item].firstItem , 1.0,GlobalChunk[Item].firstItem , 0.05,GlobalNugget[Item].firstItem , 0.25,<notreepunching:rock/stone> , true);
+		}
+		
+		if(	
+			!isNull( GlobalDustDirty[Item] ) 
+			&
+			!isNull( GlobalDust[Item] )
+			&
+			!isNull( GlobalNugget[Item] )  
+		) {
+    		mods.magneticraft.SluiceBox.addRecipe( GlobalDustDirty[Item].firstItem , 1.0,GlobalDust[Item].firstItem , 0.05,GlobalNugget[Item].firstItem , 0.25,<terraqueous:item_main:215> , true );
+		}
+	
+	}
+
+}
 
 //Old POC recipes
 //mods.magneticraft.SluiceBox.addRecipe(<magneticraft:rocky_chunks:2> , 1.0,<magneticraft:chunks:2> , 0.25,<notreepunching:rock/stone> , true);

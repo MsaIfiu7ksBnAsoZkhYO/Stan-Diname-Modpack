@@ -16,7 +16,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 
 	//	Fluid Tank	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <openblocks:tank> );
+//recipes.remove( <openblocks:tank> );
 RecipeBuilder.get("basic")
     .setShaped([
         [<ore:stickCopper>, <ore:paneGlass>,    <ore:stickWood>,        <ore:paneGlass>,    <ore:stickCopper>   ],

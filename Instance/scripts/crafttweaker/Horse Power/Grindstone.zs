@@ -86,3 +86,20 @@ mods.horsepower.Grindstone.add(
 	<terraqueous:item_main:216> * 1, 
 	8
 );
+
+	//	Cobblestone to rocks	_______________________________________________________________________________________________________________________________________________________________________
+mods.horsepower.Grindstone.add(
+	<ore:cobblestone>, 
+	<notreepunching:rock/stone> * 2, 
+	16, 
+	false,
+	<notreepunching:rock/stone> *2 ,
+	100
+);
+
+	//	NTP rocks to Gravel lumps	_______________________________________________________________________________________________________________________________________________________________________
+mods.horsepower.Grindstone.add(
+	<ore:rock>, 
+	<terraqueous:item_main:215> * 1, 
+	8
+);

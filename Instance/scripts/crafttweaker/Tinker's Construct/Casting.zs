@@ -26,13 +26,36 @@ var CastMetals = [
 	//	Custom Cast Crafting table
 	//	Source Material Part : Output Material Fluid	_______________________________________________________________________________________________________________________________________________________________________
 var TconMaterials = {
+	<ticmat:livingrock> : <liquid:lead>,
+	<ticmat:copper> : <liquid:bronze>,
+	<ticmat:lead> : <liquid:molybdochalkos>,
+
+	<ticmat:magnesium> : <liquid:magmolybdochalkosmuth>,
+	<ticmat:bismuth> : <liquid:starmetal>,
+
+	<ticmat:silver> : <liquid:nickel>,
+	<ticmat:electrum> : <liquid:invar>,
+
+	<ticmat:alumifun> : <liquid:titaniumaluminide>,
+	<ticmat:brass> : <liquid:zirconium>,
+
+	<ticmat:nickel> : <liquid:nichrome>,
+	<ticmat:steel> : <liquid:ferroboron>,
+
 	<ticmat:silver> : <liquid:xu_enchanted_metal>,
 	<ticmat:xu_enchanted_metal> : <liquid:xu_demonic_metal>,
 	<ticmat:xu_demonic_metal> : <liquid:xu_evil_metal>,
-	<ticmat:osmiridium> : <liquid:refinedobsidian>,
+	<ticmat:iron> : <liquid:nickel>,
+	<ticmat:invar> : <liquid:platinum>,
 	<ticmat:mithril> : <liquid:mythril>,
+	<ticmat:terrasteel> : <liquid:mirion>,
+	<ticmat:lumium> : <liquid:refinedglowstone>,
+	<ticmat:osmiridium> : <liquid:refinedobsidian>,
+	<ticmat:adamant> : <liquid:dragonsteel_fire>,
+	<ticmat:adamant> : <liquid:dragonsteel_ice>,
 } as ILiquidStack[ITICMaterial];
 
+/* - Made Global
 	//	Table of parts	_______________________________________________________________________________________________________________________________________________________________________
 var TconParts = {
 	<tconstruct:sharpening_kit> : 2,
@@ -70,7 +93,9 @@ var TconParts = {
 	<totaltinkers:fullguard> : 3,
 	<tcomplement:chisel_head> : 1,
 } as int[IItemStack];
+*/
 
+// - Technicall this is metals under 1000 C, or under HL 4.
 var SandCastable = {
 	<ore:ingotCopper> : <liquid:copper>,
 	<ore:ingotTin> : <liquid:tin>,
@@ -86,6 +111,7 @@ var SandCastable = {
 	<ore:ingotElectrum> : <liquid:electrum>,
 } as ILiquidStack[IOreDictEntry];
 
+/* - Global Variable
 var AnvilCast = {
 	<tinkersforging:tinkers_anvil/copper> : <liquid:copper>,
 	<tinkersforging:tinkers_anvil/tin> : <liquid:tin>,
@@ -97,7 +123,7 @@ var AnvilCast = {
 	<tinkersforging:tinkers_anvil/steel> : <liquid:steel>,
 } as ILiquidStack[IItemStack];
 	//<tinkersforging:tinkers_anvil/zinc> : <liquid:zinc>,
-
+*/
 
 
 //=====================================================================================================================================================================================================	
@@ -132,7 +158,7 @@ for Metal in CastMetals{
 mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:512> , <immersiveengineering:material:9>, <liquid:redstone> , 400 , true, 300 );
 mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:513> , <ore:gearGold>, <liquid:redstone> , 200 , true, 200 );
 mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:514> , <ore:gearSilver>, <liquid:redstone> , 200 , true, 200 );
-//mods.tconstruct.Casting.addTableRecipe(<extrautils2:ingredients:1> , <ore:gearCopper>, <liquid:redstone> , 1600 , true, 200 );
+mods.tconstruct.Casting.addTableRecipe(<extrautils2:ingredients:1> , <ore:gearCopper>, <liquid:redstone> , 1600 , true, 200 );
 //mods.tconstruct.Casting.addBasinRecipe(<thermalexpansion:frame> , <thermalexpansion:frame:64>, <liquid:iron> , 144*4 , true, 400 );
 mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:2> , <minecraft:redstone_ore>, <liquid:redstone> , 1000 , true, 400 );
 
@@ -170,9 +196,9 @@ for Item , Fluid in SandCastable {
 mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:forging_anvil_cast_wet> , <tinkersforging:tinkers_anvil/moldclay>, <liquid:moldsand> , 2000 , true, 800 );
 
 	//	Forging Anvil casting	_______________________________________________________________________________________________________________________________________________________________________
-for Anvil , Fluid in AnvilCast {
-	recipes.remove( Anvil );
-	mods.tconstruct.Casting.addBasinRecipe(Anvil , <contenttweaker:forging_anvil_cast> , Fluid , 2160 , true , 3000);
+for Item in GlobalAnvil {
+	//recipes.remove( GlobalAnvil[Item] );
+	mods.tconstruct.Casting.addBasinRecipe(GlobalAnvil[Item] , <contenttweaker:forging_anvil_cast> , GlobalMoltenMetal[Item] , 2160 , true , 3000);
 	//mods.tconstruct.Melting.addRecipe(Fluid * 2160 , Anvil , 1300);
 }
 	
@@ -181,7 +207,7 @@ mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:clear_glass>);
 mods.tconstruct.Casting.addBasinRecipe(<minecraft:glass> , null, <liquid:glass> , 1000 , false, 200 );
 //mods.tconstruct.Casting.addTableRecipe(<minecraft:glass_pane> , null, <liquid:glass> , 375 , false, 80 );
 	//	Sandy Glass	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <extrautils2:decorativesolid:4> );
+//recipes.remove( <extrautils2:decorativesolid:4> );
 mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativesolid:4> , <ore:sand>, <liquid:glass> , 1000 , true, 220 );
 	//	Thickened Glass	_______________________________________________________________________________________________________________________________________________________________________
 mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativeglass> , <tconstruct:clear_glass>, <liquid:glass> , 1000 , true, 300 );
@@ -193,7 +219,7 @@ mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativeglass> , <tconstru
 
 	//	Magic happens here. Now in a recursive function!	_______________________________________________________________________________________________________________________________________________________________________
 for Table , Liquid in TconMaterials {
-	for Part , Int in TconParts {
+	for Part , Int in GlobalTconParts {
 		mods.tconstruct.Casting.addTableRecipe(Part.withTag({Material:Liquid.name}) , Part.withTag({Material:Table.getName}) , Liquid , Int*144 , true, Int*100 );
 	}
 }	

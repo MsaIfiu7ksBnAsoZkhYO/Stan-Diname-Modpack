@@ -4,11 +4,11 @@
 
 
 	//	Anvil Mold  _______________________________________________________________________________________________________________________________________________________________________
-<tinkersforging:tinkers_anvil/moldclay>.displayName = "Anvil Mold";
+(<tinkersforging:tinkers_anvil/moldclay>).displayName = "Anvil Mold";
 mods.jei.JEI.addDescription(<tinkersforging:tinkers_anvil/moldclay>,"Pour Molding Sand on it to create a cast");
 
 	//	Wet Anvil Mold  _______________________________________________________________________________________________________________________________________________________________________
-<tinkersforging:tinkers_anvil/moldclaywet>.displayName = "Wet Anvil Mold";
+(<tinkersforging:tinkers_anvil/moldclaywet>).displayName = "Wet Anvil Mold";
 mods.jei.JEI.addDescription(<tinkersforging:tinkers_anvil/moldclaywet>,"Needs a time out on a Drying Pallet");
 
 

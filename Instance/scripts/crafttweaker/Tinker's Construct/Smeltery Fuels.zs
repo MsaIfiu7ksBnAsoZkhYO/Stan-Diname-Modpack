@@ -8,19 +8,19 @@
 // Or 1mb every 8 ticks
 
 	//	Test Fuel above 3000 C	_______________________________________________________________________________________________________________________________________________________________________
-mods.tconstruct.Fuel.registerFuel(<liquid:smeltery_fuel_3500> * 50, 400);
+mods.tconstruct.Fuel.registerFuel(<liquid:smeltery_fuel_3500> * 50, 800);
 
 	//	Lava	_______________________________________________________________________________________________________________________________________________________________________
-//<liquid:lava>.definition.temperature = 1500;
-mods.tconstruct.Fuel.registerFuel(<liquid:lava> * 50, 400);
+<liquid:lava>.definition.temperature = 1900;
+mods.tconstruct.Fuel.registerFuel(<liquid:lava> * 50, 800);
 
 	//	Magma Fluid	_______________________________________________________________________________________________________________________________________________________________________
-<liquid:magma_fluid>.definition.temperature = 1900;
-mods.tconstruct.Fuel.registerFuel(<liquid:magma_fluid> * 50, 400);
+<liquid:magma_fluid>.definition.temperature = 2600;
+mods.tconstruct.Fuel.registerFuel(<liquid:magma_fluid> * 50, 800);
 
 	//	Nitronite Fluid	_______________________________________________________________________________________________________________________________________________________________________
 <liquid:nitronite_fluid>.definition.temperature = 3300;
-mods.tconstruct.Fuel.registerFuel(<liquid:nitronite_fluid> * 50, 400);
+mods.tconstruct.Fuel.registerFuel(<liquid:nitronite_fluid> * 50, 800);
 
 	//	Thermite Fuel	_______________________________________________________________________________________________________________________________________________________________________
 //<liquid:thermite>.definition.temperature = 2800;
@@ -28,5 +28,5 @@ mods.tconstruct.Fuel.registerFuel(<liquid:nitronite_fluid> * 50, 400);
 
 	//	420 Blazit Pyrotheum	_______________________________________________________________________________________________________________________________________________________________________
 <liquid:pyrotheum>.definition.temperature = 4500;
-mods.tconstruct.Fuel.registerFuel(<liquid:pyrotheum> * 50, 400);
+mods.tconstruct.Fuel.registerFuel(<liquid:pyrotheum> * 50, 800);
 

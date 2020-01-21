@@ -27,19 +27,44 @@ mods.magneticraft.CrushingTable.removeRecipe(<ore:blockLead>.firstItem);
 mods.magneticraft.CrushingTable.removeRecipe(<ore:blockTungsten>.firstItem);
 mods.magneticraft.CrushingTable.removeRecipe(<ore:ingotSteel>.firstItem);
 
+    //	Crushing table is only good for low tier ores.	_______________________________________________________________________________________________________________________________________________________________________
+mods.magneticraft.CrushingTable.removeRecipe(<ore:oreCobalt>.firstItem);
+mods.magneticraft.CrushingTable.removeRecipe(<ore:oreTungsten>.firstItem);
+mods.magneticraft.CrushingTable.removeRecipe(<ore:oreMithril>.firstItem);
+mods.magneticraft.CrushingTable.removeRecipe(<ore:oreNickel>.firstItem);
+mods.magneticraft.CrushingTable.removeRecipe(<ore:oreOsmium>.firstItem);
+mods.magneticraft.CrushingTable.removeRecipe(<ore:oreIron>.firstItem);
 
-//==============================================================
-//Making a new hammer to test mining levels
-//==============================================================
 
-mods.magneticraft.CrushingTable.addHammer(<tinkersforging:hammer/iron>, 20, 15, 1);
+
+//=====================================================================================================================================================================================================	
+//  Add Artisan hammers as crushing table hammers.
+//=====================================================================================================================================================================================================	
+
+
+for Hammer in <ore:artisansHammer>.items {
+    mods.magneticraft.CrushingTable.addHammer(Hammer, 20, 15, 1);
+}
+
 
 //=====================================================================================================================================================================================================	
 //	Adding recipes
 //=====================================================================================================================================================================================================
-//	creeper head hammering	_______________________________________________________________________________________________________________________________________________________________________
-
-//mods.magneticraft.CrushingTable.addRecipe(<minecraft:quartz_ore>, <minecraft:diamond>, true);
 
 
-//mods.magneticraft.CrushingTable.addRecipe(<minecraft:quartz_ore>, <minecraft:diamond>, true);
+	//	Add recipes for ores Harvest Level 4 and under.
+for Item in GlobalHarvestLevel {
+
+    if ( 4 >= GlobalHarvestLevel[Item] ) {
+
+        if ( 
+            !isNull( GlobalOreChunk[Item] ) 
+            &
+            !isNull( GlobalRockyChunk[Item] ) 
+        ) {
+            mods.magneticraft.CrushingTable.addRecipe( GlobalOreChunk[Item].firstItem , GlobalRockyChunk[Item].firstItem, true);
+        }
+
+    }
+
+}		

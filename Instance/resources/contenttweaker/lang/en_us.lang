@@ -10,6 +10,14 @@ tile.contenttweaker.forging_anvil_cast.name=Forging Anvil Cast
 tile.contenttweaker.forging_anvil_cast_wet.name=Wet Forging Anvil Cast
 
 
+tile.contenttweaker.chalk_cobble.name=Chalk Cobblestone
+tile.contenttweaker.chert_cobble.name=Chert Cobblestone
+tile.contenttweaker.dolomite_cobble.name=Dolomite Cobblestone
+tile.contenttweaker.greywacke_cobble.name=Greywacke Cobblestone
+tile.contenttweaker.shale_cobble.name=Shale Cobblestone
+tile.contenttweaker.siltstone_cobble.name=Siltstone Cobblestone
+
+
 item.contenttweaker.quicklime.name=Quicklime Rocks
 item.contenttweaker.limedust.name=Lime Dust
 item.contenttweaker.flintdust.name=Flint Dust

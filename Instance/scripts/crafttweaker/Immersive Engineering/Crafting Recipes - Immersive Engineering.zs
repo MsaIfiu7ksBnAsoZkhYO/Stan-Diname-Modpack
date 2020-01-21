@@ -17,7 +17,7 @@ import crafttweaker.liquid.ILiquidStack;
    
    
     //	Treated Wood in crafting table (make in casting basin)	_______________________________________________________________________________________________________________________________________________________________________
-recipes.removeByRecipeName("immersiveengineering:treated_wood/treated_wood");
+//recipes.removeByRecipeName("immersiveengineering:treated_wood/treated_wood");
 
 
 //=====================================================================================================================================================================================================	
@@ -49,29 +49,28 @@ recipes.addShapeless(
     //	Coke Clay 	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
     .setShaped([
-        [<ore:lumpSandstone>,   <ore:lumpGravel>,       <ore:nuggetClay>,       <ore:lumpGravel>,       <ore:lumpSandstone> ],
-        [<ore:lumpGravel>,      <ore:nuggetClay>,       <ore:lumpSandstone>,    <ore:nuggetClay>,       <ore:lumpGravel>    ],
-        [<ore:nuggetClay>,      <ore:lumpSandstone>,    <ore:nuggetClay>,       <ore:lumpSandstone>,    <ore:nuggetClay>    ],
-        [<ore:lumpGravel>,      <ore:nuggetClay>,       <ore:lumpSandstone>,    <ore:nuggetClay>,       <ore:lumpGravel>    ],
-        [<ore:lumpSandstone>,   <ore:lumpGravel>,       <ore:nuggetClay>,       <ore:lumpGravel>,       <ore:lumpSandstone> ]])
+        [<ore:lumpSandstone>,   <ore:lumpGravel>,       <ore:nuggetPorcelain>,  <ore:lumpGravel>,       <ore:lumpSandstone>     ],
+        [<ore:lumpGravel>,      <ore:nuggetPorcelain>,  <ore:lumpSandstone>,    <ore:nuggetPorcelain>,  <ore:lumpGravel>        ],
+        [<ore:nuggetPorcelain>, <ore:lumpSandstone>,    <ore:nuggetPorcelain>,  <ore:lumpSandstone>,    <ore:nuggetPorcelain>   ],
+        [<ore:lumpGravel>,      <ore:nuggetPorcelain>,  <ore:lumpSandstone>,    <ore:nuggetPorcelain>,  <ore:lumpGravel>        ],
+        [<ore:lumpSandstone>,   <ore:lumpGravel>,       <ore:nuggetPorcelain>,  <ore:lumpGravel>,       <ore:lumpSandstone>     ]])
     .setFluid( <liquid:water > * 50 )
     .setSecondaryIngredients( [ <minecraft:bowl> ] )
     .addTool( <ore:artisansTrowel> , 1 )
-    .addOutput( <ore:clayCoke>.firstItem )
+    .addOutput( <ore:clayCoke>.firstItem * 2 )
     .setExtraOutputOne( <minecraft:bowl>, 1.0 )
     .create();
 
     //	Unfired Coke Clay Brick	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
-    .setShapeless(
-            [<ore:clayCoke>])
+    .setShapeless( [ <ore:clayCoke> ] )
     .setFluid( <liquid:water> * 50 )
     .addTool( <ore:artisansTrowel> , 1 )
     .addOutput( <contenttweaker:unfired_coke_brick> )
     .create();
 
     //	Coke Brick Block	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove( <immersiveengineering:stone_decoration> );
+//recipes.remove( <immersiveengineering:stone_decoration> );
 RecipeBuilder.get("mason")
     .setShaped([
         [<ore:ingotCoke>,   <ore:ingotCoke>,    <ore:ingotCoke> ],
@@ -122,7 +121,7 @@ RecipeBuilder.get("potter")
     .setFluid( <liquid:water> * 50 )
     .setSecondaryIngredients( [ <minecraft:bowl> ] )
     .addTool( <ore:artisansTrowel> , 1 )
-    .addOutput( <contenttweaker:kiln_clay> )
+    .addOutput( <contenttweaker:kiln_clay> * 2 )
     .setExtraOutputOne( <minecraft:bowl> , 1.0 )
     .create();
 

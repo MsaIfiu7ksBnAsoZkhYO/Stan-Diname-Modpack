@@ -31,15 +31,13 @@ import mods.TinkersForging.Anvil;
 <ore:ingotCerrosafe>.add(<contenttweaker:cerrosafe_ingot>);
 //<ore:ingotQuartzEnrichedIron>.add(<refinedstorage:quartz_enriched_iron>);
 
-	/*/	Mystical Agriculture	_______________________________________________________________________________________________________________________________________________________________________
+	//	Mystical Agriculture	_______________________________________________________________________________________________________________________________________________________________________
 <ore:ingotMa.supremium>.add(<mysticalagriculture:crafting:37>);
 <ore:ingotMa.superium>.add(<mysticalagriculture:crafting:36>);
 <ore:ingotMa.intermedium>.add(<mysticalagriculture:crafting:35>);
 <ore:ingotMa.prudentium>.add(<mysticalagriculture:crafting:34>);
 <ore:ingotMa.inferium>.add(<mysticalagriculture:crafting:33>);
-	//underscore makes this one note work	_______________________________________________________________________________________________________________________________________________________________________
-<ore:ingotMa.>.add(<mysticalagriculture:crafting:32>);
-*/
+
 
 	/*/	Plustic Materials - working	_______________________________________________________________________________________________________________________________________________________________________
 <ore:ingotRefinedglowstone>.add(<mekanism:ingot:3>);

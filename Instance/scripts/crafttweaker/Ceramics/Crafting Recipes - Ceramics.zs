@@ -12,7 +12,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 
 	//	Unfired Clay bucket	(using NTP unfired clay bucket)_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove(<ceramics:unfired_clay>);
+//recipes.remove(<ceramics:unfired_clay>);
 
 
 //=====================================================================================================================================================================================================	
@@ -31,7 +31,7 @@ RecipeBuilder.get("potter")
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
-	.addOutput( <ceramics:unfired_clay:4> )
+	.addOutput( <ceramics:unfired_clay:4> * 2 )
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
@@ -42,7 +42,7 @@ RecipeBuilder.get("potter")
 
 
 	//	Unfired Clay Plate	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove(<ceramics:unfired_clay:8>);
+//recipes.remove(<ceramics:unfired_clay:8>);
 RecipeBuilder.get("potter")
   .setShapeless( [ <ore:brickClay> ] )
   .setFluid( <liquid:water> * 50 )
@@ -53,7 +53,7 @@ RecipeBuilder.get("potter")
   .create();
 
 	//	Unfired Clay Shears	_______________________________________________________________________________________________________________________________________________________________________
-recipes.remove(<ceramics:unfired_clay:1>);
+//recipes.remove(<ceramics:unfired_clay:1>);
 RecipeBuilder.get("potter")
 	.setShaped([
 	 	[null,				<ore:brickClay>	],
@@ -67,7 +67,7 @@ RecipeBuilder.get("potter")
 
 
 /* - Replcaing these with potter table recipes.
-recipes.remove(<ceramics:unfired_clay:8>);
+//recipes.remove(<ceramics:unfired_clay:8>);
 
 recipes.addShapeless(
 	"ceramics_unfired_Clay_Brick",
@@ -105,10 +105,10 @@ recipes.addShapeless(
 //=====================================================================================================================================================================================================
 
 	//	Remove Existing Recipes	_______________________________________________________________________________________________________________________________________________________________________
-recipes.removeByRecipeName("ceramics:decoration/porcelain_bricks/slab");
-recipes.removeByRecipeName("ceramics:decoration/porcelain_bricks/block");
-recipes.removeByRecipeName("ceramics:decoration/monochrome_bricks/block");
-recipes.removeByRecipeName("ceramics:decoration/marine_bricks/block");
+//recipes.removeByRecipeName("ceramics:decoration/porcelain_bricks/slab");
+//recipes.removeByRecipeName("ceramics:decoration/porcelain_bricks/block");
+//recipes.removeByRecipeName("ceramics:decoration/monochrome_bricks/block");
+//recipes.removeByRecipeName("ceramics:decoration/marine_bricks/block");
 
 
 	//	Add the recipes back in with oredict entry	_______________________________________________________________________________________________________________________________________________________________________

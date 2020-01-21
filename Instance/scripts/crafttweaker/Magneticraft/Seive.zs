@@ -11,7 +11,7 @@ import crafttweaker.oredict.IOreDictEntry;
 //	Hashtables used in dynamic mapping function.  
 //=====================================================================================================================================================================================================
 
-
+/*
 //	Magneticraft Chunks	_______________________________________________________________________________________________________________________________________________________________________
 val Chunk = {
 	Iron : <ore:chunkIron>,
@@ -206,7 +206,7 @@ val Secondary = {
 	uranium : <ore:nuggetUranium>,
 	zirconium : <ore:nuggetZirconium>,
 } as IOreDictEntry[string];
-
+*/
 
 //=====================================================================================================================================================================================================	
 //	Remove existing recipes
@@ -269,7 +269,7 @@ mods.magneticraft.Sieve.addRecipe(<minecraft:gravel> , <minecraft:flint>,1.0 , <
 //	Add new recipes Dynamically from oredict lists above
 //=====================================================================================================================================================================================================
 
-
+/*
 	//	Rocky Chunk > Chunk + tinydusts + rock	_______________________________________________________________________________________________________________________________________________________________________
 for item in RockyChunk{
     mods.magneticraft.Sieve.addRecipe(RockyChunk[item].firstItem , Chunk[item].firstItem,1.0 , Secondary[item].firstItem,0.1 , <notreepunching:rock/stone>,0.25 , 240 , true);
@@ -279,7 +279,37 @@ for item in RockyChunk{
 for item in DustDirty {
     mods.magneticraft.Sieve.addRecipe(DustDirty[item].firstItem , Dust[item].firstItem,1.0 , Secondary[item].firstItem,0.1 ,  <terraqueous:item_main:215>,0.25 , 300 , true);
 }
+*/
+	
+	//	Rocky Chunk > Chunk + tinydusts + rock	_______________________________________________________________________________________________________________________________________________________________________
+for Item in GlobalRockyChunk {
+		
+		if(	
+			!isNull( GlobalRockyChunk[Item] ) 
+			&
+			!isNull( GlobalChunk[Item] ) 
+			&
+			!isNull( GlobalNugget[Item] ) 
+		) {
+    		mods.magneticraft.Sieve.addRecipe( GlobalRockyChunk[Item].firstItem , GlobalChunk[Item].firstItem,1.0 , GlobalNugget[Item].firstItem,0.1 , <notreepunching:rock/stone>,0.25 , 240 , true );
+		}
 
+}
+
+	//	Dirty Dust > Dust > gravel lumps	_______________________________________________________________________________________________________________________________________________________________________
+for Item in GlobalDustDirty {
+		
+		if(	
+			!isNull( GlobalDustDirty[Item] ) 
+			&
+			!isNull( GlobalDust[Item] )
+			&
+			!isNull( GlobalNugget[Item] )  
+		) {
+    		mods.magneticraft.Sieve.addRecipe( GlobalDustDirty[Item].firstItem , GlobalDust[Item].firstItem,1.0 , GlobalNugget[Item].firstItem,0.1 , <terraqueous:item_main:215>,0.25 , 240 , true );
+		}
+
+}
 
 //Old POC recipes
 //mods.magneticraft.Sieve.addRecipe(<magneticraft:rocky_chunks:2> , 1.0,<magneticraft:chunks:2> , 0.25,<notreepunching:rock/stone> , true);

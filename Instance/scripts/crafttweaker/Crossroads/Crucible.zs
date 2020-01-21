@@ -3,18 +3,17 @@
 //=====================================================================================================================================================================================================
 
 
-#priority 1001
-
+/*
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
-
+*/
 
 //=====================================================================================================================================================================================================	
 //  Predefining arrays
 //=====================================================================================================================================================================================================	
 
-
+/* - Globals now.
     //	Ore Chunks	_______________________________________________________________________________________________________________________________________________________________________
 val OreChunk = {
 	Gold : <ore:chunkGold>,
@@ -89,6 +88,7 @@ val Dust = {
     Brass : <ore:dustBrass>,
     Electrum : <ore:dustElectrum>,
 } as IOreDictEntry[string];
+*/
 
 //=====================================================================================================================================================================================================	
 //  Remove Melting Recipes
@@ -96,10 +96,13 @@ val Dust = {
 
 
 //mods.crossroads.HeatingCrucible.removeRecipe(Input Item);
-mods.crossroads.HeatingCrucible.removeRecipe(<ore:oreCopper>);
 mods.crossroads.HeatingCrucible.removeRecipe(<ore:cobblestone>);
+mods.crossroads.HeatingCrucible.removeRecipe(<ore:oreCopper>);
+mods.crossroads.HeatingCrucible.removeRecipe(<ore:dustCopper>);
+mods.crossroads.HeatingCrucible.removeRecipe(<ore:ingotCopper>);
 mods.crossroads.HeatingCrucible.removeRecipe(<ore:ingotIron>);
-//Already has recipes for gold, tin, copper ingots and copper dust
+mods.crossroads.HeatingCrucible.removeRecipe(<ore:ingotGold>);
+mods.crossroads.HeatingCrucible.removeRecipe(<ore:ingotTin>);
 
 
 //=====================================================================================================================================================================================================	
@@ -119,8 +122,28 @@ mods.crossroads.HeatingCrucible.addRecipe(<ore:sand>, <liquid:glass> * 1000, "mi
 //  Dynamic melting recipes
 //=====================================================================================================================================================================================================	
 
+	//	Output is liquids, so thats what we're iterating through
+for Liquid in GlobalMoltenMetal {
+		
+		//	Check that a melting temperature is defined
+	if(	!isNull( GlobalMeltingTemp[Liquid] ) ) {
+			
+			//	Only add recipes for melting temps 1000 and under
+		if ( GlobalMeltingTemp[Liquid] <= 1000 ) {    //>
 
-    //	Melt clean chunks	_______________________________________________________________________________________________________________________________________________________________________
+				//	Make the Crucible recipes.
+			if( !isNull( GlobalChunk[Liquid] ) ) { mods.crossroads.HeatingCrucible.addRecipe( GlobalChunk[Liquid], GlobalMoltenMetal[Liquid] * 144, "minecraft:blocks/gravel" ); }
+			if( !isNull( GlobalDust[Liquid] ) ) { mods.crossroads.HeatingCrucible.addRecipe( GlobalDust[Liquid], GlobalMoltenMetal[Liquid] * 144, "minecraft:blocks/sand" ); }
+			if( !isNull( GlobalIngot[Liquid] ) ) { mods.crossroads.HeatingCrucible.addRecipe( GlobalIngot[Liquid], GlobalMoltenMetal[Liquid] * 144, "minecraft:blocks/gravel" ); }
+			if( !isNull( GlobalNugget[Liquid] ) ) { mods.crossroads.HeatingCrucible.addRecipe( GlobalNugget[Liquid], GlobalMoltenMetal[Liquid] * 16, "minecraft:blocks/gravel" ); }
+		
+		}
+	}
+}
+
+
+/* - Replacing with Globals
+	//	Melt clean chunks	_______________________________________________________________________________________________________________________________________________________________________
 for item in OreChunk { mods.crossroads.HeatingCrucible.addRecipe( OreChunk[item], MoltenMetal[item] * 144, "minecraft:blocks/gravel" ); }
 
     //	Melt dusts	_______________________________________________________________________________________________________________________________________________________________________
@@ -128,7 +151,7 @@ for item in Dust { mods.crossroads.HeatingCrucible.addRecipe( Dust[item], Molten
 
     //	Melt Ingots	_______________________________________________________________________________________________________________________________________________________________________
 for item in Ingot { mods.crossroads.HeatingCrucible.addRecipe( Ingot[item], MoltenMetal[item] * 144, "minecraft:blocks/gravel" ); }
-
+*/
 
 /* - Old POC recipes
 mods.crossroads.HeatingCrucible.addRecipe(<ore:chunkCopper>, <liquid:copper> * 144, "magneticraft:items/chunk/copper");

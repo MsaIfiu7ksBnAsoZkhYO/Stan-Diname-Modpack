@@ -2,16 +2,16 @@
 //	Import-ant things
 //=====================================================================================================================================================================================================
 
-
+/*
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
-
+*/
 
 //=====================================================================================================================================================================================================	
 //	Hashtables used in dynamic mapping function.  
 //=====================================================================================================================================================================================================
 
-
+/*
 //	Ore Chunks	_______________________________________________________________________________________________________________________________________________________________________
 val OreChunk = {
 	Iron : <ore:oreChunkIron>,
@@ -91,6 +91,8 @@ val RockyChunk = {
 	uranium : <ore:rockyChunkUranium>,
 	zirconium : <ore:rockyChunkZirconium>,
 } as IOreDictEntry[string];
+*/
+
 
 //=====================================================================================================================================================================================================	
 //	Remove existing recipes
@@ -159,7 +161,24 @@ mods.magneticraft.Grinder.addRecipe(<minecraft:gold_ore>, <minecraft:gold_ingot>
 
 */
 
+	//	Grindinate up cobblestone into rocks and rocks into gravel lumps
+mods.magneticraft.Grinder.addRecipe(<minecraft:cobblestone>, <notreepunching:rock/stone> * 4, <terraqueous:item_main:215>, 0.25, 80, true);
+mods.magneticraft.Grinder.addRecipe(<notreepunching:rock/stone>, <terraqueous:item_main:215>, <terraqueous:item_main:215>, 0.25, 40, true);
+
+	//	Grind gravel into sand
+mods.magneticraft.Grinder.addRecipe(<minecraft:gravel>, <minecraft:sand>, <weather2:sand_layer_placeable>, 0.25, 40, true);
+mods.magneticraft.Grinder.addRecipe(<notreepunching:rock/stone>, <terraqueous:item_main:215>, <terraqueous:item_main:215>, 0.25, 40, true);
+
 	//	Ore Chunk > Rocky Chunk + Chance to double + rock	_______________________________________________________________________________________________________________________________________________________________________
-for item in OreChunk {
-    mods.magneticraft.Grinder.addRecipe(OreChunk[item].firstItem, RockyChunk[item].firstItem, RockyChunk[item].firstItem, 0.05, 200, true);
+for Item in GlobalOreChunk {
+		
+		if(	
+			!isNull( GlobalOreChunk[Item] ) 
+			&
+			!isNull( GlobalRockyChunk[Item] ) 
+
+		) {
+    		mods.magneticraft.Grinder.addRecipe(GlobalOreChunk[Item].firstItem, GlobalRockyChunk[Item].firstItem, GlobalRockyChunk[Item].firstItem, 0.05, 200, true);
+		}
+
 }
