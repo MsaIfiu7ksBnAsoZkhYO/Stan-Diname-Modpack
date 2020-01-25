@@ -12,39 +12,32 @@ import crafttweaker.liquid.ILiquidStack;
 
 
 //=====================================================================================================================================================================================================	
-//	Removeing Crafting Recipes
-//=====================================================================================================================================================================================================
-   
-   
-    //	Treated Wood in crafting table (make in casting basin)	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.removeByRecipeName("immersiveengineering:treated_wood/treated_wood");
-
-
-//=====================================================================================================================================================================================================	
 //	Coke Clay
 //=====================================================================================================================================================================================================
 
 
-    //	Coke Clay nuggets	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-    "Coke Clay nuggets from Coke Clay ball",
-    <ore:nuggetCoke>.firstItem * 9, 
-    [<ore:clayCoke>]);
-recipes.addShapeless(
-    "Coke Clay Ball from Coke Clay Nuggets",
-    <ore:clayCoke>.firstItem, 
-    [
-        <ore:nuggetCoke>,
-        <ore:nuggetCoke>,
-        <ore:nuggetCoke>,
-        <ore:nuggetCoke>,
-        <ore:nuggetCoke>,
-        <ore:nuggetCoke>,
-        <ore:nuggetCoke>,
-        <ore:nuggetCoke>,
-        <ore:nuggetCoke>
-    ]
-);
+	//	Coke Clay Nuggets Assemble!	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless([
+		<ore:nuggetCoke>,	<ore:nuggetCoke>,	<ore:nuggetCoke>,	
+		<ore:nuggetCoke>,	<ore:nuggetCoke>,	<ore:nuggetCoke>,
+		<ore:nuggetCoke>,	<ore:nuggetCoke>,	<ore:nuggetCoke>])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:coke_clay> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+
+	//	Coke Clay Nuggets, divide and conquer.	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless( [ <ore:clayCoke> ] )
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:coke_clay_nugget> * 9 )
+	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
+	.create();
 
     //	Coke Clay 	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
@@ -57,7 +50,7 @@ RecipeBuilder.get("potter")
     .setFluid( <liquid:water > * 50 )
     .setSecondaryIngredients( [ <minecraft:bowl> ] )
     .addTool( <ore:artisansTrowel> , 1 )
-    .addOutput( <ore:clayCoke>.firstItem * 2 )
+    .addOutput( <ore:clayCoke>.firstItem )
     .setExtraOutputOne( <minecraft:bowl>, 1.0 )
     .create();
 
@@ -65,8 +58,11 @@ RecipeBuilder.get("potter")
 RecipeBuilder.get("potter")
     .setShapeless( [ <ore:clayCoke> ] )
     .setFluid( <liquid:water> * 50 )
+    .setSecondaryIngredients( [ <minecraft:bowl> ] )
     .addTool( <ore:artisansTrowel> , 1 )
+    .addTool( <tconstruct:pattern> , 0 )
     .addOutput( <contenttweaker:unfired_coke_brick> )
+    .setExtraOutputOne( <minecraft:bowl>, 1.0 )
     .create();
 
     //	Coke Brick Block	_______________________________________________________________________________________________________________________________________________________________________
@@ -87,41 +83,41 @@ RecipeBuilder.get("mason")
 //=====================================================================================================================================================================================================
 
 
-    //	Kiln Clay Nuggets	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-    "Coke Kiln Nuggets from Kiln Clay Ball",
-    <ore:nuggetKiln>.firstItem * 9, 
-    [<contenttweaker:kiln_clay>]
-);
+	//	Kiln Clay Nuggets Assemble!	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless([
+		<ore:nuggetKiln>,	<ore:nuggetKiln>,	<ore:nuggetKiln>,	
+		<ore:nuggetKiln>,	<ore:nuggetKiln>,	<ore:nuggetKiln>,
+		<ore:nuggetKiln>,	<ore:nuggetKiln>,	<ore:nuggetKiln>])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:kiln_clay> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
 
-recipes.addShapeless(
-    "Coke Kiln Caly Ball to Coke Kiln Clay Nuggets",
-    <contenttweaker:kiln_clay>, 
-    [
-        <ore:nuggetKiln>,
-        <ore:nuggetKiln>,
-        <ore:nuggetKiln>,
-        <ore:nuggetKiln>,
-        <ore:nuggetKiln>,
-        <ore:nuggetKiln>,
-        <ore:nuggetKiln>,
-        <ore:nuggetKiln>,
-        <ore:nuggetKiln>
-    ]
-);
+	//	Kiln Clay Nuggets, divide and conquer.	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless( [ <ore:clayKiln> ] )
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:kiln_clay_nugget> * 9 )
+	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
+	.create();
 
     //	Kiln Clay Ball	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
     .setShaped([
-        [null,                  <ore:lumpSandstone>,    <ore:nuggetCoke>,       <ore:lumpSandstone>,    null                ],
+        [<ore:dustAsh>,         <ore:lumpSandstone>,    <ore:nuggetCoke>,       <ore:lumpSandstone>,    <ore:dustAsh>       ],
         [<ore:lumpSandstone>,   <ore:nuggetCoke>,       <ore:lumpSandstone>,    <ore:nuggetCoke>,       <ore:lumpSandstone> ],
         [<ore:nuggetCoke>,      <ore:lumpSandstone>,    <ore:nuggetCoke>,       <ore:lumpSandstone>,    <ore:nuggetCoke>    ],
         [<ore:lumpSandstone>,   <ore:nuggetCoke>,       <ore:lumpSandstone>,    <ore:nuggetCoke>,       <ore:lumpSandstone> ],
-        [null,                  <ore:lumpSandstone>,    <ore:nuggetCoke>,       <ore:lumpSandstone>,    null                ]])
+        [<ore:dustAsh>,         <ore:lumpSandstone>,    <ore:nuggetCoke>,       <ore:lumpSandstone>,    <ore:dustAsh>       ]])
     .setFluid( <liquid:water> * 50 )
     .setSecondaryIngredients( [ <minecraft:bowl> ] )
     .addTool( <ore:artisansTrowel> , 1 )
-    .addOutput( <contenttweaker:kiln_clay> * 2 )
+    .addOutput( <contenttweaker:kiln_clay> )
     .setExtraOutputOne( <minecraft:bowl> , 1.0 )
     .create();
 
@@ -131,6 +127,7 @@ RecipeBuilder.get("potter")
     .setFluid( <liquid:water> * 50 )
     .setSecondaryIngredients( [ <minecraft:bowl> ] )
     .addTool( <ore:artisansTrowel> , 1 )
+    .addTool( <tconstruct:pattern> , 0 )
     .addOutput( <contenttweaker:unfired_kiln_brick> )
     .setExtraOutputOne( <minecraft:bowl> , 1.0 )
     .create();
@@ -152,28 +149,28 @@ RecipeBuilder.get("mason")
 //=====================================================================================================================================================================================================
 
 
-    //	Blast Brick Clay Nuggets	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-    "Blast Clay Ball to Blast Clay nuggets",
-    <ore:nuggetBlast>.firstItem * 9, 
-    [<contenttweaker:blast_clay>]
-);
+	//	Blast Clay Nuggets Assemble!	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless([
+		<ore:nuggetBlast>,	<ore:nuggetBlast>,	<ore:nuggetBlast>,	
+		<ore:nuggetBlast>,	<ore:nuggetBlast>,	<ore:nuggetBlast>,
+		<ore:nuggetBlast>,	<ore:nuggetBlast>,	<ore:nuggetBlast>])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:blast_clay> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
 
-recipes.addShapeless(
-    "Blast Clay Nuggets to Blast Clay Ball",
-    <contenttweaker:blast_clay>, 
-    [
-        <ore:nuggetBlast>,
-        <ore:nuggetBlast>,
-        <ore:nuggetBlast>,
-        <ore:nuggetBlast>,
-        <ore:nuggetBlast>,
-        <ore:nuggetBlast>,
-        <ore:nuggetBlast>,
-        <ore:nuggetBlast>,
-        <ore:nuggetBlast>
-    ]
-);
+	//	Blast Clay Nuggets, divide and conquer.	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless( [ <ore:clayBlast> ] )
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:blast_clay_nugget> * 9 )
+	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
+	.create();
 
     //	Blast Brick Clay Ball	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
@@ -186,7 +183,7 @@ RecipeBuilder.get("potter")
     .setFluid( <liquid:water> * 50 )
     .setSecondaryIngredients( [ <minecraft:bowl> , <ore:nuggetCoke> ] )
     .addTool( <ore:artisansTrowel> , 1 )
-    .addOutput( <contenttweaker:blast_clay> * 2 )
+    .addOutput( <contenttweaker:blast_clay> )
     .setExtraOutputOne( <minecraft:bowl> , 1.0 )
     .create();
 
@@ -196,6 +193,7 @@ RecipeBuilder.get("potter")
     .setFluid( <liquid:water> * 50 )
     .setSecondaryIngredients( [ <minecraft:bowl> ] )
     .addTool( <ore:artisansTrowel> , 1 )
+    .addTool( <tconstruct:pattern> , 0 )
     .addOutput( <contenttweaker:unfired_blast_brick> )
     .setExtraOutputOne( <minecraft:bowl> , 1.0 )
     .create();

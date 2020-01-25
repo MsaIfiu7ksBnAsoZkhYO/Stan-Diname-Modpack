@@ -7,9 +7,9 @@
 for Item in GlobalClump {
 		
 		if(	
-			!isNull( GlobalClump[Item] ) 
+			!isNull( GlobalClump[Item].firstItem ) 
 			&
-			!isNull( GlobalRockyChunk[Item] ) 
+			!isNull( GlobalRockyChunk[Item].firstItem ) 
             &
 			!isNull( GlobalHarvestLevel[Item] )
 

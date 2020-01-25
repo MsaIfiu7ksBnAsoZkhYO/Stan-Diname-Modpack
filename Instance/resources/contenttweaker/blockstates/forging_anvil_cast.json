@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/forging_anvil_cast",
+      "particle": "contenttweaker:blocks/forging_anvil_cast"
+    },
+    "model": "contenttweaker:forging_anvil_cast",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

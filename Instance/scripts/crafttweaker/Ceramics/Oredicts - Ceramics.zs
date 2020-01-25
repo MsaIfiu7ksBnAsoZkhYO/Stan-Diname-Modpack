@@ -3,6 +3,8 @@
 //=====================================================================================================================================================================================================
 
 
+#priority 10000
+
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
@@ -17,3 +19,11 @@ import crafttweaker.oredict.IOreDictEntry;
 
 	//	Make fired brick the actual brick	_______________________________________________________________________________________________________________________________________________________________________
 <ore:ingotPorcelain>.add(<contenttweaker:porcelain_brick>);
+
+
+	//	Barrel Extensions 	_______________________________________________________________________________________________________________________________________________________________________
+<ore:clayBarrelExtension>.addItems([
+	<ceramics:clay_barrel:1>,
+	<ceramics:clay_barrel_stained_extension:*>,
+	<ceramics:porcelain_barrel_extension:*>
+]);

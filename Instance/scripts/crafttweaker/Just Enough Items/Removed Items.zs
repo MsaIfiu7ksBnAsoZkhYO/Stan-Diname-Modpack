@@ -4,6 +4,29 @@
 //=====================================================================================================================================================================================================
 
 
+	//	Remove items in the global removal script.	_______________________________________________________________________________________________________________________________________________________________________
+for Item in GlobalRemovalRecipeOutputs {
+	mods.jei.JEI.removeAndHide(Item);
+}
+	
+//=====================================================================================================================================================================================================	
+//	Random Things
+//=====================================================================================================================================================================================================
+
+
+	//	Pitcher Plant and other things that would break balance	_______________________________________________________________________________________________________________________________________________________________________
+mods.jei.JEI.removeAndHide(<randomthings:pitcherplant>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecoil_normal>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecoil_redstone>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecoil_ender>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecoil_number:*>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecoil_genesis>);
+mods.jei.JEI.removeAndHide(<randomthings:diviningrod:*>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecharger:*>);
+mods.jei.JEI.removeAndHide(<randomthings:chunkanalyzer>);
+
+
+/* - Everything here is now handled by the above function and the Reduce Load Times exception list.
 	//	Aggressivly remove the nugget to ingot allloying recipes.	_______________________________________________________________________________________________________________________________________________________________________
 mods.jei.JEI.removeAndHide(<crossroads:ingot_bronze>);
 mods.jei.JEI.removeAndHide(<crossroads:block_bronze>);

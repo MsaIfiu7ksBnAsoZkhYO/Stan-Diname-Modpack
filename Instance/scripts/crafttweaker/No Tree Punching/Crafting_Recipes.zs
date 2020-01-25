@@ -152,6 +152,7 @@ RecipeBuilder.get("potter")
   .setFluid( <liquid:water> * 50 )
   .setSecondaryIngredients( [ <minecraft:bowl> ] )
   .addTool( <ore:artisansTrowel> , 1 )
+  .addTool( <tconstruct:pattern> , 0 )
   .addOutput( <notreepunching:clay_brick> )
   .setExtraOutputOne( <minecraft:bowl> , 1.0 )
   .create();

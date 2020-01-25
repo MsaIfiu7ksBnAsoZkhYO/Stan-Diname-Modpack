@@ -17,9 +17,22 @@ import crafttweaker.oredict.IOreDictEntry;
 	<undergroundbiomes:metamorphic_clay:*>,
 	<undergroundbiomes:sedimentary_clay:*>,
 ]);
+
 	//	Not a singular clay 	_______________________________________________________________________________________________________________________________________________________________________
 <ore:clay>.removeItems([
 	<undergroundbiomes:igneous_clay:*>,
 	<undergroundbiomes:metamorphic_clay:*>,
 	<undergroundbiomes:sedimentary_clay:*>,
+]);
+
+	//	Stone Brick Stairs 	_______________________________________________________________________________________________________________________________________________________________________
+<ore:stairStoneBrick>.addItems([
+	<undergroundbiomes:igneous_brick_stairs:*>,
+	<undergroundbiomes:metamorphic_brick_stairs:*>
+]);
+
+	//	Stone Brick Slabs 	_______________________________________________________________________________________________________________________________________________________________________
+<ore:slabStoneBrick>.addItems([
+	<undergroundbiomes:igneous_brick_halfslab:*>,
+	<undergroundbiomes:metamorphic_brick_halfslab:*>
 ]);

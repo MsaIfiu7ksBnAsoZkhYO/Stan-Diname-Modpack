@@ -201,9 +201,15 @@ furnace.addRecipe(<rockhounding_oretiers:tier_items:4>, <ore:logWood>, 0.1);
 
 //	Dynamically Add chunk to nugget	_______________________________________________________________________________________________________________________________________________________________________
 for Item in GlobalChunk {
-	if(	!isNull( GlobalMeltingTemp[Item] ) ) {
+	if(	
+		!isNull( GlobalMeltingTemp[Item] ) 
+		&
+		!isNull( GlobalNugget[Item].firstItem ) 
+		&
+		!isNull( GlobalChunk[Item].firstItem )
+	) {
 		//	Only add recipes for melting temps 1000 and under
-		if ( GlobalMeltingTemp[Item] <= 1000 ) {    //>
+		if ( 1000 >= GlobalMeltingTemp[Item] ) {
     	    furnace.addRecipe(GlobalNugget[Item].firstItem * 3, GlobalChunk[Item], 0.3);
 		}
 	}

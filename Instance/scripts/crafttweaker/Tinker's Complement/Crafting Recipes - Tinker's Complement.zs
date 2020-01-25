@@ -11,38 +11,15 @@ import mods.artisanworktables.builder.RecipeBuilder;
 //=====================================================================================================================================================================================================
 
 
-	//	Porcelain Seared Faucet	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <ceramics:faucet> );
-RecipeBuilder.get("mason")
-	.setShaped([
-		[<ore:ingotPorcelain>,	null,					<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	]])
-	.setFluid( <liquid:mortar> * 50 )
-	.addOutput( <ceramics:faucet> )
-	.addTool( <ore:artisansTrowel>, 1 )
-	.create();
-	
-	//	Porcelain Casting Channel	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <ceramics:channel> );
-RecipeBuilder.get("mason")
-	.setShaped([
-		[<ore:ingotPorcelain>, 		null,					null,					null, 					<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 		<ore:ingotPorcelain>, 	<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	]])
-	.setFluid( <liquid:mortar> * 50 )
-	.addOutput( <ceramics:channel> )
-	.addTool( <ore:artisansTrowel>, 1 )
-	.create();
-	
+
 	//	Porcelain Tank	_______________________________________________________________________________________________________________________________________________________________________
 //recipes.remove( <tcomplement:porcelain_tank> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:blockGlass>,		<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 	<ore:ingotPorcelain>,	<openblocks:tank>,		<ore:ingotPorcelain>, 	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 	<ore:ingotPorcelain>,	<ore:blockGlass>,		<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 	<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	]])
-	.setFluid( <liquid:mortar> * 250 )
+    	[<ore:ingotPorcelain>,	<ore:blockGlassThickended>,	<ore:ingotPorcelain>	],
+    	[<ore:ingotPorcelain>,	<openblocks:tank>,			<ore:ingotPorcelain>	],
+    	[<ore:ingotPorcelain>,	<ore:blockGlassThickended>,	<ore:ingotPorcelain>	]])
+	.setFluid( <liquid:mortar> * 125 )
 	.addOutput( <tcomplement:porcelain_tank> )
 	.addTool( <ore:artisansTrowel>, 5 )
 	.create();
@@ -51,12 +28,10 @@ RecipeBuilder.get("mason")
 //recipes.remove( <tcomplement:porcelain_tank:2> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:blockGlass>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<ore:blockGlass>,		<ore:blockGlass>,	<ore:blockGlass>,		<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 	<ore:blockGlass>,		<openblocks:tank>,	<ore:blockGlass>, 		<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 	<ore:blockGlass>, 		<ore:blockGlass>,	<ore:blockGlass>,		<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 	<ore:ingotPorcelain>, 	<ore:blockGlass>,	<ore:ingotPorcelain>, 	<ore:ingotPorcelain>	]])
-	.setFluid( <liquid:mortar> * 250 )
+   		[<ore:ingotPorcelain>,	<ore:blockGlassThickended>,	<ore:ingotPorcelain>	],
+   		[null,					<openblocks:tank>,			null					],
+   		[<ore:ingotPorcelain>,	<ore:blockGlassThickended>,	<ore:ingotPorcelain>	]])
+	.setFluid( <liquid:mortar> * 125 )
 	.addOutput( <tcomplement:porcelain_tank:2> )
 	.addTool( <ore:artisansTrowel>, 5 )
 	.create();
@@ -65,12 +40,10 @@ RecipeBuilder.get("mason")
 //recipes.remove( <tcomplement:porcelain_tank:1> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:blockGlass>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<ore:blockGlass>,		<ore:blockGlass>,	<ore:blockGlass>,		<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 	<ore:ingotPorcelain>,	<openblocks:tank>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 	<ore:blockGlass>, 		<ore:blockGlass>,	<ore:blockGlass>,		<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>, 	<ore:ingotPorcelain>, 	<ore:blockGlass>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	]])
-	.setFluid( <liquid:mortar> * 250 )
+    	[null,					<ore:blockGlassThickended>,	null					],
+    	[<ore:ingotPorcelain>,	<openblocks:tank>,			<ore:ingotPorcelain>	],
+    	[null,					<ore:blockGlassThickended>,	null					]])
+	.setFluid( <liquid:mortar> * 125 )
 	.addOutput( <tcomplement:porcelain_tank:1> )
 	.addTool( <ore:artisansTrowel>, 5 )
 	.create();
@@ -107,12 +80,10 @@ RecipeBuilder.get("mason")
 //recipes.remove( <tcomplement:porcelain_melter:8> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[null,					<ore:ingotPorcelain>,		<ore:ingotPorcelain>,		<ore:ingotPorcelain>,		null					],
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,		<ore:ingotPorcelain>,		<ore:ingotPorcelain>,		<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,		<crossroads:coal_heater>,	<ore:ingotPorcelain>,		<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<crossroads:coal_heater>,	<crossroads:coal_heater>,	<crossroads:coal_heater>,	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<crossroads:coal_heater>,	<crossroads:coal_heater>,	<crossroads:coal_heater>,	<ore:ingotPorcelain>	]])
-	.setFluid( <liquid:mortar> * 250 )
+    	[null,					<ore:ingotPorcelain>,		null					],
+    	[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,		<ore:ingotPorcelain>	],
+    	[<ore:ingotPorcelain>,	<crossroads:coal_heater>,	<ore:ingotPorcelain>	]])
+	.setFluid( <liquid:mortar> * 125 )
 	.addTool( <ore:artisansTrowel>, 5 )
 	.addOutput( <tcomplement:porcelain_melter:8> )
 	.create();
@@ -121,12 +92,8 @@ RecipeBuilder.get("mason")
 //recipes.remove( <tcomplement:porcelain_alloy_tank> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<ore:blockGlassThickended>,	<ore:ingotPorcelain>,	<ore:blockGlassThickended>,	<ore:ingotPorcelain>,	<ore:blockGlassThickended>	],
-		[<ore:ingotPorcelain>,			null,					null,							null, 					<ore:ingotPorcelain>			],
-		[<ore:blockGlassThickended>,	<ceramics:faucet>,		<tcomplement:porcelain_tank:1>,	<ceramics:faucet>,		<ore:blockGlassThickended>	],
-		[<ore:ingotPorcelain>,			null,					null,							null,					<ore:ingotPorcelain>			],
-		[<ore:blockGlassThickended>,	<ore:ingotPorcelain>,	<ore:blockGlassThickended>,	<ore:ingotPorcelain>,	<ore:blockGlassThickended>	]])
-	.setFluid( <liquid:mortar> * 250 )
+    	[<ceramics:faucet>,	<tcomplement:porcelain_tank:1>,	<ceramics:faucet>	]])
+	.setFluid( <liquid:mortar> * 125 )
 	.addTool( <ore:artisansTrowel>, 5 )
 	.addOutput( <tcomplement:porcelain_alloy_tank> )
 	.create();
@@ -135,11 +102,10 @@ RecipeBuilder.get("mason")
 //recipes.remove( <tcomplement:porcelain_melter> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,			<ore:blockGlassThickended>,		<ore:ingotPorcelain>,			<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<ore:blockGlassThickended>,		<tcomplement:porcelain_tank:1>,	<ore:blockGlassThickended>,		<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,			<ore:ingotPorcelain>,			<ore:ingotPorcelain>,			<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,			<ore:ingotPorcelain>,			<ore:ingotPorcelain>,			<ore:ingotPorcelain>	]])
-	.setFluid( <liquid:mortar> * 250 )
+    	[null,					<tcomplement:porcelain_tank:1>,	null					],
+    	[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,			<ore:ingotPorcelain>	],
+    	[<ore:ingotPorcelain>,	<crossroads:heating_chamber>,	<ore:ingotPorcelain>	]])
+	.setFluid( <liquid:mortar> * 125 )
 	.addTool( <ore:artisansTrowel>, 5 )
 	.addOutput( <tcomplement:porcelain_melter> )
 	.create();
@@ -154,11 +120,9 @@ RecipeBuilder.get("mason")
 //recipes.remove( <tcomplement:melter:8> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[null,						<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		null					],
-		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
-		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<crossroads:coal_heater>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
-		[<ore:ingotBrickSeared>,	<crossroads:coal_heater>,	<crossroads:coal_heater>,	<crossroads:coal_heater>,	<ore:ingotBrickSeared>	],
-		[<ore:ingotBrickSeared>,	<crossroads:coal_heater>,	<crossroads:coal_heater>,	<crossroads:coal_heater>,	<ore:ingotBrickSeared>	]])
+    	[<tconstruct:materials>,	<ore:ingotBrickSeared>,		<tconstruct:materials>	],
+    	[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
+    	[<ore:ingotBrickSeared>,	<crossroads:coal_heater>,	<ore:ingotBrickSeared>	]])	
 	.setFluid( <liquid:mortar> * 250 )
 	.addTool( <ore:artisansTrowel>, 5)
 	.addOutput( <tcomplement:melter:8> )
@@ -168,11 +132,9 @@ RecipeBuilder.get("mason")
 //recipes.remove( <tcomplement:alloy_tank> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,	<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,	<tconstruct:seared_glass>	],
-		[<ore:ingotBrickSeared>,	null,					null,						null,					<ore:ingotBrickSeared>		],
-		[<tconstruct:seared_glass>,	<tconstruct:faucet>,	<tconstruct:seared_tank:1>,	<tconstruct:faucet>,	<tconstruct:seared_glass>	],
-		[<ore:ingotBrickSeared>,	null,					null,						null,					<ore:ingotBrickSeared>		],
-		[<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,	<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,	<tconstruct:seared_glass>	]])
+    	[null,					<tconstruct:faucet>,		null				],
+    	[<tconstruct:faucet>,	<tconstruct:seared_tank:1>,	<tconstruct:faucet>	],
+    	[null,					<tconstruct:faucet>,		null				]])
 	.setFluid( <liquid:mortar> * 250 )
 	.addTool( <ore:artisansTrowel>, 5 )
 	.addOutput( <tcomplement:alloy_tank> )
@@ -182,10 +144,9 @@ RecipeBuilder.get("mason")
 //recipes.remove( <tcomplement:melter> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<tconstruct:seared_glass>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
-		[<ore:ingotBrickSeared>,	<tconstruct:seared_glass>,	<tconstruct:seared_tank:1>,	<tconstruct:seared_glass>,	<ore:ingotBrickSeared>	],
-		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	],
-		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>	]])
+    	[<tconstruct:seared_tank:1>,	<tconstruct:seared_tank:2>,		<tconstruct:seared_tank:1>	],
+    	[<ore:ingotBrickSeared>,		<ore:ingotBrickSeared>,			<ore:ingotBrickSeared>		],
+    	[<ore:ingotBrickSeared>,		<crossroads:heating_chamber>,	<ore:ingotBrickSeared>		]])
 	.setFluid( <liquid:mortar> * 250 )
 	.addTool( <ore:artisansTrowel>, 5)
 	.addOutput( <tcomplement:melter> )
@@ -196,27 +157,30 @@ RecipeBuilder.get("mason")
 //	Scorched
 //=====================================================================================================================================================================================================
 
-	
-	//	Scorched Clay Nuggets	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-	"Scorched Clay Nuggets to Scorched Clay Ball",
-	<contenttweaker:scorched_clay>, 
-	[
-		<contenttweaker:scorched_clay_nugget>,
-		<contenttweaker:scorched_clay_nugget>,
-		<contenttweaker:scorched_clay_nugget>,
-		<contenttweaker:scorched_clay_nugget>,
-		<contenttweaker:scorched_clay_nugget>,
-		<contenttweaker:scorched_clay_nugget>,
-		<contenttweaker:scorched_clay_nugget>,
-		<contenttweaker:scorched_clay_nugget>,
-		<contenttweaker:scorched_clay_nugget>
-	]
-);
-recipes.addShapeless(
-	"Scorched Clay ball to Scorched CLay nuggets",
-	<contenttweaker:scorched_clay_nugget> * 9, 
-	[<contenttweaker:scorched_clay>]);
+
+	//	Scorched Clay Nuggets Assemble!	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless([
+		<ore:nuggetScorched>,	<ore:nuggetScorched>,	<ore:nuggetScorched>,	
+		<ore:nuggetScorched>,	<ore:nuggetScorched>,	<ore:nuggetScorched>,
+		<ore:nuggetScorched>,	<ore:nuggetScorched>,	<ore:nuggetScorched>])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:scorched_clay> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+
+
+	//	Scorched Clay Nuggets, divide and conquer.	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless( [ <ore:clayScorched> ] )
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:scorched_clay_nugget> * 9 )
+	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
+	.create();
 
 	//	Scorched Clay	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
@@ -229,7 +193,7 @@ RecipeBuilder.get("potter")
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> , <ore:nuggetBlast> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
-	.addOutput( <contenttweaker:scorched_clay> * 2 )
+	.addOutput( <contenttweaker:scorched_clay> )
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
@@ -239,6 +203,7 @@ RecipeBuilder.get("potter")
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
+	.addTool( <tconstruct:pattern> , 0 )
 	.addOutput( <contenttweaker:unfired_scorched_brick> )
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();

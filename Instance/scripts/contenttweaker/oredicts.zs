@@ -2,7 +2,7 @@
 //	Import-ant things
 //=====================================================================================================================================================================================================
 
-#priority 9000
+#priority 10000
 
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
@@ -74,9 +74,20 @@ import crafttweaker.oredict.IOreDictEntry;
 
 
 //=====================================================================================================================================================================================================	
-//	Flint Dust
+//	Porcelain Dusts
 //=====================================================================================================================================================================================================
 <ore:dustFlint>.add(<contenttweaker:flintdust>);
+<ore:dustBone>.add(<contenttweaker:bonedust>);
+<ore:dustAsh>.add(<contenttweaker:ashdust>);
+
+	//	Make this oredictionary so the recipe supports any combination of these infgredients.
+<ore:ingredientPorcelain>.addAll(<ore:dustFlint>); 
+<ore:ingredientPorcelain>.addAll(<ore:dustBone>); 
+<ore:ingredientPorcelain>.addAll(<ore:dustAsh>); 
+
+<ore:dustLime>.add(<contenttweaker:limedust>);
+
+<ore:sandSilica>.add(<contenttweaker:silica_sand>);
 
 
 //=====================================================================================================================================================================================================	
@@ -137,6 +148,7 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:chunkTopaz>.add(<contenttweaker:chunk_topaz>);
 <ore:chunkUranium>.add(<contenttweaker:chunk_uranium>);
 <ore:chunkZirconium>.add(<contenttweaker:chunk_zirconium>);
+
 
 	//	Rocky Chunks	_______________________________________________________________________________________________________________________________________________________________________
 <ore:rockyChunkAmber>.add(<contenttweaker:rockychunk_amber>);

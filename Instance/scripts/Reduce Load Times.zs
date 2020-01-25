@@ -45,6 +45,18 @@ for Item in GlobalExceptionRecipeOutputs {
         }
     }
 }
+
+    // Adds in the values from the outright removal list.
+for Item in GlobalRemovalRecipeOutputs {
+    if !isNull(Item) {  
+        for CraftingRecipes in recipes.getRecipesFor( Item ) {
+            if !(isNull(CraftingRecipes)) {
+                AllRecipeExceptions[ CraftingRecipes.fullResourceDomain ] = CraftingRecipes;
+            }
+        }
+    }
+}
+
  
     //Add the recipe names to the exception list too.  Filters out Null value recipe names
 for Item in GlobalExceptionRecipeNames {

@@ -154,6 +154,26 @@
 					1
 				]
 			}
+		},
+		"Ebwizardry Crystal Ore": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "ebwizardry:crystal_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 1,
+			"min-height": 3,
+			"max-height": 20,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
 		}
 	}
 }

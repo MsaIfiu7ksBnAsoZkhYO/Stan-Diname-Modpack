@@ -1,0 +1,10 @@
+[
+  {
+    "internalOreName": "ebwizardry:crystal_ore",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/electroblob/crystal_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  }
+]

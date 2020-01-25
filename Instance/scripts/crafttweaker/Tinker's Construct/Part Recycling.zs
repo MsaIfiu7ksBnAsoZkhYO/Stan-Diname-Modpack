@@ -99,15 +99,15 @@ var TconParts = {
 
     
     //	Deconstruct Tcon parts	_______________________________________________________________________________________________________________________________________________________________________
-for Item in GlobalChunk {
-	if( !isNull( Item ) ) {	
+for Item in GlobalDust {
+	if( !isNull( GlobalDust[Item].firstItem ) ) {	
     	for Part , Int in GlobalTconParts {
 
 			RecipeBuilder.get("basic")
 				.setName( Item~Part.displayName~"bypass" )
 				.setShapeless( [ Part.withTag( {Material: Item} ).onlyWithTag( {Material: Item} ) ] )
 				.addTool( <ore:artisansHammer> , (Int * 2) )
-				.addOutput( GlobalChunk[Item].firstItem * Int )
+				.addOutput( GlobalDust[Item].firstItem * Int )
 				.create();
 
 		}

@@ -103,3 +103,13 @@ mods.horsepower.Grindstone.add(
 	<terraqueous:item_main:215> * 1, 
 	8
 );
+
+	//	Bonemeal to Bone dust	_______________________________________________________________________________________________________________________________________________________________________
+mods.horsepower.Grindstone.add(
+	<minecraft:dye:15>, 
+	<contenttweaker:bonedust> * 2, 
+	8, 
+	false, 
+	<contenttweaker:bonedust> * 2 , 
+	100
+);

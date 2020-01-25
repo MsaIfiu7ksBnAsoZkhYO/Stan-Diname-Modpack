@@ -255,11 +255,42 @@ val Secondary = {
 
 	# Adds a recipe with only one output, basically anything with 0 chance is ignored
 	mods.magneticraft.Sieve.addRecipe(<minecraft:iron_ore>, <minecraft:iron_ingot>, 1.0, <minecraft:stone>, 0.0, <minecraft:stone>, 0.0, 100, true);
+
+	//	Recipe as used in scripts
+	//	Note that all output are required, but can be set to 0.0 for no output.	_______________________________________________________________________________________________________________________________________________________________________
+mods.magneticraft.Sieve.addRecipe(
+	<IItemStack:Input>,
+	<IItemStack:Output> , float.Chance,
+	<IItemStack:Output> , float.Chance,
+	<IItemStack:Output> , float.Chance,
+	int (processing time in TICKS),
+	bool (use oredict for input?)
+);
+
 */
 
 
-	//	Unique recipes	_______________________________________________________________________________________________________________________________________________________________________
-mods.magneticraft.Sieve.addRecipe(<minecraft:gravel> , <minecraft:flint>,1.0 , <minecraft:flint>,0.25 , <terraqueous:item_main:215>,0.25 , 120 , true);
+	//	Gravel to Flint	_______________________________________________________________________________________________________________________________________________________________________
+mods.magneticraft.Sieve.addRecipe(
+	<minecraft:gravel>,
+	<minecraft:flint> , 1.00,
+	<minecraft:flint> , 0.50,
+	<terraqueous:item_main:215> * 2 , 0.25,
+	120,
+	true
+);
+
+	//	Sand to Silica Sand	_______________________________________________________________________________________________________________________________________________________________________
+mods.magneticraft.Sieve.addRecipe(
+	<minecraft:sand>,
+	<contenttweaker:silica_sand> , 1.00,
+	<weather2:sand_layer_placeable> * 4 , 1.00,
+	<weather2:sand_layer_placeable> * 3 , 0.50,
+	120,
+	true
+);
+
+
 /*  - Seive specific recipes that probably won't come back
 	Sand - gold nugets and nether quartz
 	Soul Sand - Nether Quartz
@@ -269,17 +300,6 @@ mods.magneticraft.Sieve.addRecipe(<minecraft:gravel> , <minecraft:flint>,1.0 , <
 //	Add new recipes Dynamically from oredict lists above
 //=====================================================================================================================================================================================================
 
-/*
-	//	Rocky Chunk > Chunk + tinydusts + rock	_______________________________________________________________________________________________________________________________________________________________________
-for item in RockyChunk{
-    mods.magneticraft.Sieve.addRecipe(RockyChunk[item].firstItem , Chunk[item].firstItem,1.0 , Secondary[item].firstItem,0.1 , <notreepunching:rock/stone>,0.25 , 240 , true);
-}
-
-	//	Dirty Dust > Dust > gravel lumps	_______________________________________________________________________________________________________________________________________________________________________
-for item in DustDirty {
-    mods.magneticraft.Sieve.addRecipe(DustDirty[item].firstItem , Dust[item].firstItem,1.0 , Secondary[item].firstItem,0.1 ,  <terraqueous:item_main:215>,0.25 , 300 , true);
-}
-*/
 	
 	//	Rocky Chunk > Chunk + tinydusts + rock	_______________________________________________________________________________________________________________________________________________________________________
 for Item in GlobalRockyChunk {
@@ -291,7 +311,14 @@ for Item in GlobalRockyChunk {
 			&
 			!isNull( GlobalNugget[Item] ) 
 		) {
-    		mods.magneticraft.Sieve.addRecipe( GlobalRockyChunk[Item].firstItem , GlobalChunk[Item].firstItem,1.0 , GlobalNugget[Item].firstItem,0.1 , <notreepunching:rock/stone>,0.25 , 240 , true );
+    		mods.magneticraft.Sieve.addRecipe( 
+				GlobalRockyChunk[Item].firstItem,
+				GlobalChunk[Item].firstItem , 1.00,
+				GlobalNugget[Item].firstItem , 0.10,
+				<notreepunching:rock/stone> , 0.25,
+				240,
+				true
+			);
 		}
 
 }
@@ -306,7 +333,14 @@ for Item in GlobalDustDirty {
 			&
 			!isNull( GlobalNugget[Item] )  
 		) {
-    		mods.magneticraft.Sieve.addRecipe( GlobalDustDirty[Item].firstItem , GlobalDust[Item].firstItem,1.0 , GlobalNugget[Item].firstItem,0.1 , <terraqueous:item_main:215>,0.25 , 240 , true );
+    		mods.magneticraft.Sieve.addRecipe( 
+				GlobalDustDirty[Item].firstItem,
+				GlobalDust[Item].firstItem , 1.00,
+				GlobalNugget[Item].firstItem , 0.1,
+				<terraqueous:item_main:215> , 0.25,
+				240,
+				true
+			);
 		}
 
 }

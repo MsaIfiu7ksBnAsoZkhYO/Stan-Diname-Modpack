@@ -173,9 +173,9 @@ mods.magneticraft.Grinder.addRecipe(<notreepunching:rock/stone>, <terraqueous:it
 for Item in GlobalOreChunk {
 		
 		if(	
-			!isNull( GlobalOreChunk[Item] ) 
+			!isNull( GlobalOreChunk[Item].firstItem ) 
 			&
-			!isNull( GlobalRockyChunk[Item] ) 
+			!isNull( GlobalRockyChunk[Item].firstItem ) 
 
 		) {
     		mods.magneticraft.Grinder.addRecipe(GlobalOreChunk[Item].firstItem, GlobalRockyChunk[Item].firstItem, GlobalRockyChunk[Item].firstItem, 0.05, 200, true);

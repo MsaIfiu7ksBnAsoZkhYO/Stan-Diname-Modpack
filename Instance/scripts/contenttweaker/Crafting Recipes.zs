@@ -13,69 +13,72 @@ import mods.artisanworktables.builder.RecipeBuilder;
 //=====================================================================================================================================================================================================
 
 
-	//	Clay ball from nuggets	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-    "Clay Nuggers, Assemble!",
-    <minecraft:clay_ball>, 
-    [
-        <ore:nuggetClay>,   <ore:nuggetClay>,   <ore:nuggetClay>,
-        <ore:nuggetClay>,   <ore:nuggetClay>,   <ore:nuggetClay>,
-        <ore:nuggetClay>,   <ore:nuggetClay>,   <ore:nuggetClay>
-    ]
-);
+	//	Clay Clay Nuggets Assemble!	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless([
+		<ore:nuggetClay>,	<ore:nuggetClay>,	<ore:nuggetClay>,	
+		<ore:nuggetClay>,	<ore:nuggetClay>,	<ore:nuggetClay>,
+		<ore:nuggetClay>,	<ore:nuggetClay>,	<ore:nuggetClay>])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <minecraft:clay_ball> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
 
-	//	Clay Nuggets from clay ball	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-    "Clay Nuggers from Clay",
-    <contenttweaker:clay_nugget> * 9, 
-    [<ore:clay>]
-);
+	//	Clay Clay Nuggets, divide and conquer.	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless( [ <ore:clay> ] )
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:clay_nugget> * 9 )
+	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
+	.create();
 
 
+	//	Carbon Dusts Assemble!	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShapeless([
+		<ore:dustTinyCarbon>,	<ore:dustTinyCarbon>,	<ore:dustTinyCarbon>,	
+		<ore:dustTinyCarbon>,	<ore:dustTinyCarbon>,	<ore:dustTinyCarbon>,
+		<ore:dustTinyCarbon>,	<ore:dustTinyCarbon>,	<ore:dustTinyCarbon>])
+	.addOutput( <jaopca:item_dustcarbon> )
+	.create();
 
+	//	Carbon Dust, divide and conquer.	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShapeless( [ <ore:dustCarbon> ] )
+	.addOutput( <jaopca:item_dusttinycarbon> * 9 )
+	.create();
 
-	//	Carbon dust	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-    "Car Bon Dust",
-    <ore:dustCarbon>.firstItem, 
-    [
-        <ore:dustTinyCarbon>,   <ore:dustTinyCarbon>,   <ore:dustTinyCarbon>,
-        <ore:dustTinyCarbon>,   <ore:dustTinyCarbon>,   <ore:dustTinyCarbon>,
-        <ore:dustTinyCarbon>,   <ore:dustTinyCarbon>,   <ore:dustTinyCarbon>
-    ]
-);
+	//	Sulfur Dusts Assemble!	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShapeless([
+		<ore:dustTinySulfur>,	<ore:dustTinySulfur>,	<ore:dustTinySulfur>,	
+		<ore:dustTinySulfur>,	<ore:dustTinySulfur>,	<ore:dustTinySulfur>,
+		<ore:dustTinySulfur>,	<ore:dustTinySulfur>,	<ore:dustTinySulfur>])
+	.addOutput( <immersiveengineering:material:25> )
+	.create();
 
-	//	Tiny Carbon Dust	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-    "Look at the little carbon dusts",
-    <ore:dustTinyCarbon>.firstItem * 9, 
-    [<ore:dustCarbon>]
-);
-
-	//	Sulfur Dust	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-    "Sul Fur Dust",
-    <ore:dustSulfur>.firstItem, 
-    [
-        <ore:dustTinySulfur>,   <ore:dustTinySulfur>,   <ore:dustTinySulfur>,
-        <ore:dustTinySulfur>,   <ore:dustTinySulfur>,   <ore:dustTinySulfur>,
-        <ore:dustTinySulfur>,   <ore:dustTinySulfur>,   <ore:dustTinySulfur>
-    ]
-);
-
-	//	Tiny Sulfur Dust	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-    "The itsy bitsy sulfur",
-    <ore:dustTinySulfur>.firstItem * 9, 
-    [<ore:dustSulfur>]
-);
+	//	Sulfur Dust, divide and conquer.	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShapeless( [ <ore:dustSulfur> ] )
+	.addOutput( <jaopca:item_dusttinysulfur> * 9 )
+	.create();
 
 	//	Dust to clay nugget	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
     .setShapeless( [ <ore:dustTinyDust> ] )
-    .setFluid( <liquid:water> * 10 )
+    .setFluid( <liquid:water> * 50 )
     .setSecondaryIngredients( [ <minecraft:bowl> ] )
     .addTool( <ore:partToolRod> , 0 )
     .addOutput( <contenttweaker:clay_nugget> )
     .setExtraOutputOne( <minecraft:bowl> , 1.0 )
     .create();
+
+	//	Ash block to ash dust	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+  .setShapeless( [ <ore:blockAsh> ] )
+  .addOutput( <contenttweaker:ashdust> * 4 )
+  .create();

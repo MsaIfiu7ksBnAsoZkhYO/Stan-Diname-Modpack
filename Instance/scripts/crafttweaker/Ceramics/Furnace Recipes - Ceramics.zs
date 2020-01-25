@@ -24,11 +24,12 @@ furnace.remove(
 furnace.addRecipe(
 	<contenttweaker:porcelain_brick>, 
 	<ceramics:unfired_clay:5>, 
-	0.0
+	0.5
 );
 
 	//	Clay Bucket	_______________________________________________________________________________________________________________________________________________________________________
 furnace.addRecipe(
 	<ceramics:clay_bucket>, 
-	<notreepunching:pottery/bucket>
+	<notreepunching:pottery/bucket>,
+	0.5
 );

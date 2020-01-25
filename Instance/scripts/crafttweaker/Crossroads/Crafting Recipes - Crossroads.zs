@@ -323,18 +323,18 @@ for Item in GlobalCrossroadsGear {
 
         //Magic verification check to prevent Null errors
     if (  
-        !isNull( GlobalNugget[Item] )
+        !isNull( oreDict[ "nugget"~GlobalPostfixMetals[Item] ].firstItem )
         &
-        !isNull( GlobalPlate[Item] )
+        !isNull( oreDict[ "plate"~GlobalPostfixMetals[Item] ].firstItem )
     ){
         //recipes.remove( GlobalCrossroadsGear[Item] );
         RecipeBuilder.get("blacksmith")
             .setShaped([
-                [GlobalNugget[Item],    null,               GlobalNugget[Item], null,               GlobalNugget[Item]  ],
-                [null,                  GlobalPlate[Item],  null,               GlobalPlate[Item],  null                ],
-                [GlobalNugget[Item],    null,               GlobalPlate[Item],  null,               GlobalNugget[Item]  ],
-                [null,                  GlobalPlate[Item],  null,               GlobalPlate[Item],  null                ],
-                [GlobalNugget[Item],    null,               GlobalNugget[Item], null,               GlobalNugget[Item]  ]])
+                [oreDict[ "nugget"~GlobalPostfixMetals[Item] ],   null,                                       oreDict[ "nugget"~GlobalPostfixMetals[Item] ],    null,                                       oreDict[ "nugget"~GlobalPostfixMetals[Item] ]   ],
+                [null,                                          oreDict[ "plate"~GlobalPostfixMetals[Item] ], null,                                           oreDict[ "plate"~GlobalPostfixMetals[Item] ], null                                            ],
+                [oreDict[ "nugget"~GlobalPostfixMetals[Item] ],   null,                                       oreDict[ "plate"~GlobalPostfixMetals[Item] ],     null,                                       oreDict[ "nugget"~GlobalPostfixMetals[Item] ]   ],
+                [null,                                          oreDict[ "plate"~GlobalPostfixMetals[Item] ], null,                                           oreDict[ "plate"~GlobalPostfixMetals[Item] ], null                                            ],
+                [oreDict[ "nugget"~GlobalPostfixMetals[Item] ],   null,                                       oreDict[ "nugget"~GlobalPostfixMetals[Item] ],    null,                                       oreDict[ "nugget"~GlobalPostfixMetals[Item] ]   ]])
             .setFluid( GlobalMoltenMetal[Item] * 16 )
             .addTool( <ore:artisansHammer>, 5 )
             .addTool( <ore:artisansPliers>, 5 )

@@ -17,5 +17,13 @@ import crafttweaker.oredict.IOreDict;
 	//	Limestone rock > quicklime	_______________________________________________________________________________________________________________________________________________________________________
 furnace.addRecipe(
     <contenttweaker:quicklime>, 
-    <notreepunching:rock/limestone>
+    <notreepunching:rock/limestone>,
+    0.2
+);
+
+	//	Compressed Sawdust > Ash dust	_______________________________________________________________________________________________________________________________________________________________________
+furnace.addRecipe(
+    <contenttweaker:ashdust>, 
+    <thermalfoundation:material:801>,
+    0.2
 );

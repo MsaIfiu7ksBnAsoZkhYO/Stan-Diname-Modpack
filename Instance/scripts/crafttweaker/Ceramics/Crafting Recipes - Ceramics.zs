@@ -20,14 +20,37 @@ import mods.artisanworktables.builder.RecipeBuilder;
 //=====================================================================================================================================================================================================
 
 
-	//	Unfired Porcelain	_______________________________________________________________________________________________________________________________________________________________________
+	//	Porcelain Clay Nuggets Assemble!	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless([
+		<ore:nuggetPorcelain>,	<ore:nuggetPorcelain>,	<ore:nuggetPorcelain>,	
+		<ore:nuggetPorcelain>,	<ore:nuggetPorcelain>,	<ore:nuggetPorcelain>,
+		<ore:nuggetPorcelain>,	<ore:nuggetPorcelain>,	<ore:nuggetPorcelain>])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <ceramics:unfired_clay:4> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+
+	//	Porcelain Clay Nuggets, divide and conquer.	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless( [ <ore:clayPorcelain> ] )
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:porcelain_clay_nugget> * 9 )
+	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
+	.create();
+	
+	//	Unfired Porcelain Clay Ball	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
 	.setShaped([
-    	[null,								<weather2:sand_layer_placeable>,	<ore:nuggetClay>,			<weather2:sand_layer_placeable>,	null							],
-    	[<weather2:sand_layer_placeable>,	<ore:nuggetClay>,					<contenttweaker:flintdust>,	<ore:nuggetClay>,					<weather2:sand_layer_placeable>	],
-    	[<ore:nuggetClay>,					<contenttweaker:flintdust>,			<ore:nuggetClay>,			<contenttweaker:flintdust>,			<ore:nuggetClay>				],
-    	[<weather2:sand_layer_placeable>,	<ore:nuggetClay>,					<contenttweaker:flintdust>, <ore:nuggetClay>,					<weather2:sand_layer_placeable>	],
-    	[null,								<weather2:sand_layer_placeable>,	<ore:nuggetClay>,			<weather2:sand_layer_placeable>,	null							]])
+    	[null,				<ore:layerSand>,			<ore:nuggetClay>,			<ore:layerSand>,			null				],
+    	[<ore:layerSand>,	<ore:nuggetClay>,			<ore:ingredientPorcelain>,	<ore:nuggetClay>,			<ore:layerSand>		],
+    	[<ore:nuggetClay>,	<ore:ingredientPorcelain>,	<ore:nuggetClay>,			<ore:ingredientPorcelain>,	<ore:nuggetClay>	],
+    	[<ore:layerSand>,	<ore:nuggetClay>,			<ore:ingredientPorcelain>,	<ore:nuggetClay>,			<ore:layerSand>		],
+    	[null,				<ore:layerSand>,			<ore:nuggetClay>,			<ore:layerSand>,			null				]])
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
@@ -35,9 +58,46 @@ RecipeBuilder.get("potter")
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
+	//	Unfired Porcelain Brick	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShapeless( [ <ore:clayPorcelain> ] )
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addTool( <tconstruct:pattern> , 0 )
+	.addOutput( <ceramics:unfired_clay:5> )
+	.setExtraOutputOne (<minecraft:bowl> , 1.0 )
+	.create();
+
+	//	Porcelain Seared Faucet	_______________________________________________________________________________________________________________________________________________________________________
+//recipes.remove( <ceramics:faucet> );
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:clayPorcelain>,	null,					<ore:clayPorcelain>	],
+		[null,					<ore:clayPorcelain>,	null				]])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <ceramics:unfired_clay:6> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+	
+	//	Porcelain Casting Channel	_______________________________________________________________________________________________________________________________________________________________________
+//recipes.remove( <ceramics:channel> );
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:clayPorcelain>,	null,					<ore:clayPorcelain>	],
+		[<ore:clayPorcelain>,	<ore:clayPorcelain>,	<ore:clayPorcelain>	]])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel>, 1 )
+	.addOutput( <ceramics:unfired_clay:7> )
+	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
+	.create();
+
 
 //=====================================================================================================================================================================================================	
-//	Clay Tool on porcelain bricks
+//	Clay Tool porcelain bricks
 //=====================================================================================================================================================================================================
 
 
@@ -65,50 +125,9 @@ RecipeBuilder.get("potter")
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
-
-/* - Replcaing these with potter table recipes.
-//recipes.remove(<ceramics:unfired_clay:8>);
-
-recipes.addShapeless(
-	"ceramics_unfired_Clay_Brick",
-	<ceramics:unfired_clay:5>,
-	[
-		<ore:clayPorcelain>,
-		<ore:toolClay>
-	]
-);
-
-recipes.addShapeless(
-	"ceramics_unfired_Clay_Brick_x4",
-	<ceramics:unfired_clay:5> * 4, 
-	[
-		<ceramics:clay_soft>,
-		<ore:toolClay>
-	]
-);
-
-recipes.addShapeless(
-	"ceramics_unfired_clay_plate",
-	<ceramics:unfired_clay:8>, 
-	[
-		<ore:clay>,
-		<ore:clay>,
-		<ore:toolClay>
-	]
-);
-
-*/
-
-
 //=====================================================================================================================================================================================================	
 //	Fix default recipes to use oredict
 //=====================================================================================================================================================================================================
-
-	//	Remove Existing Recipes	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.removeByRecipeName("ceramics:decoration/porcelain_bricks/slab");
-//recipes.removeByRecipeName("ceramics:decoration/porcelain_bricks/block");
-//recipes.removeByRecipeName("ceramics:decoration/monochrome_bricks/block");
-//recipes.removeByRecipeName("ceramics:decoration/marine_bricks/block");
 
 
 	//	Add the recipes back in with oredict entry	_______________________________________________________________________________________________________________________________________________________________________

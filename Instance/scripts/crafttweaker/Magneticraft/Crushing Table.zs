@@ -5,6 +5,7 @@
 
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.item.IItemStack;
 
 
 //=====================================================================================================================================================================================================	
@@ -51,6 +52,13 @@ for Hammer in <ore:artisansHammer>.items {
 //	Adding recipes
 //=====================================================================================================================================================================================================
 
+
+	//	Flint to flint shards
+mods.magneticraft.CrushingTable.addRecipe( 
+    <minecraft:flint>, 
+    <notreepunching:flint_shard> * 3, 
+    true
+);
 
 	//	Add recipes for ores Harvest Level 4 and under.
 for Item in GlobalHarvestLevel {

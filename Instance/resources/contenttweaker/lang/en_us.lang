@@ -3,6 +3,21 @@ fluid.moldsand=Molding Sand
 
 fluid.smeltery_fuel_3500=Liquified Essence of Stacy's Mom
 
+fluid.lime_liquid=Lime
+fluid.flint_liquid=Flint
+fluid.sand_liquid=Sand
+fluid.carbon_liquid=Carbon
+fluid.gravel_liquid=Gravel
+fluid.ash_liquid=Ash
+fluid.bone_liquid=Bone
+
+fluid.porcelain_clay_liquid=Porcelain Clay
+fluid.seared_clay_liquid=Smeltery Clay (Seared)
+fluid.scorched_clay_liquid=High Oven Clay (Scorched)
+fluid.coke_clay_liquid=Coke Oven Clay
+fluid.kiln_clay_liquid=Alloy Kiln Clay
+fluid.blast_clay_liquid=Blast Furnace Clay
+
 
 tile.contenttweaker.forging_anvil_mold.name=Forging Anvil Mold
 tile.contenttweaker.forging_anvil_mold.name=Wet Forging Anvil Mold
@@ -20,7 +35,12 @@ tile.contenttweaker.siltstone_cobble.name=Siltstone Cobblestone
 
 item.contenttweaker.quicklime.name=Quicklime Rocks
 item.contenttweaker.limedust.name=Lime Dust
+
 item.contenttweaker.flintdust.name=Flint Dust
+item.contenttweaker.bonedust.name=Bone Dust
+item.contenttweaker.ashdust.name=Ash
+
+item.contenttweaker.silica_sand.name=Silica Sand (Glass)
 
 item.contenttweaker.molybdochalkos_ingot.name=Molybdochalkos Ingot
 item.contenttweaker.magmolybdochalkosmuth_ingot.name=Magmolybdochalkosmuth Ingot
@@ -68,7 +88,7 @@ item.contenttweaker.scorched_clay_nugget.name=High Oven Clay Nugget (Scorched)
 item.contenttweaker.unfired_scorched_brick.name=Unfired High Oven Brick (Scorched)
 
 item.contenttweaker.tiny_carbon_dust.name=Tiny Carbon Dust
-item.contenttweaker.tiny_sulfer_dust.name=Tiny Sulfur Dust
+item.contenttweaker.tiny_sulfur_dust.name=Tiny Sulfur Dust
 item.contenttweaker.tiny_dust_dust.name=Tiny Dust Dust
 
 
@@ -130,6 +150,8 @@ item.contenttweaker.chunk_tungsten.name=Tungsten Chunk
 item.contenttweaker.chunk_uranium.name=Uranium Chunk
 item.contenttweaker.chunk_zinc.name=Zinc Chunk
 item.contenttweaker.chunk_zirconium.name=Zirconium Chunk
+
+
 
 item.contenttweaker.rockychunk_adamantine.name=Adamantine Rocky Chunk
 item.contenttweaker.rockychunk_aluminium.name=Aluminium Rocky Chunk

@@ -21,11 +21,14 @@ import mods.contenttweaker.ItemFood;
 
 	//	Lime things for mortar	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("quicklime").register();
-VanillaFactory.createItem("quicklime2").register();
 VanillaFactory.createItem("limedust").register();
 
-	//	Flint dust for alternate Porcelain recipe	_______________________________________________________________________________________________________________________________________________________________________
+	//	Dusts for alternate Porcelain recipe	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("flintdust").register();
+VanillaFactory.createItem("bonedust").register();
+VanillaFactory.createItem("ashdust").register();
+
+VanillaFactory.createItem("silica_sand").register();
 
 	//	Porcelain brick to mimic: clay ball > clay brick > fired brick 	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("porcelain_brick").register();
@@ -188,3 +191,4 @@ VanillaFactory.createItem("rockychunk_titanium").register();
 VanillaFactory.createItem("rockychunk_topaz").register();
 VanillaFactory.createItem("rockychunk_uranium").register();
 VanillaFactory.createItem("rockychunk_zirconium").register();
+
