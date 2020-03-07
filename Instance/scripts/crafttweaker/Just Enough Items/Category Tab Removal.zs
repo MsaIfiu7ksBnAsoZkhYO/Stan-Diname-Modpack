@@ -4,7 +4,7 @@
 
 
 mods.jei.JEI.hideCategory("actuallyadditions.crushing");
-mods.jei.JEI.hideCategory("mmdlib.crackhammer");
+//mods.jei.JEI.hideCategory("mmdlib.crackhammer");
 mods.jei.JEI.hideCategory("zmaster587.AR.platePresser");
 mods.jei.JEI.hideCategory("xu2_machine_extrautils2:crusher");
 mods.jei.JEI.hideCategory("atum.quern");

@@ -1,219 +1,9 @@
 //=====================================================================================================================================================================================================	
-//	Import-ant things
-//=====================================================================================================================================================================================================
-
-
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
-
-
-//=====================================================================================================================================================================================================	
-//	Hashtables used in dynamic mapping function.  
-//=====================================================================================================================================================================================================
-
-/*
-//	Magneticraft Chunks	_______________________________________________________________________________________________________________________________________________________________________
-val Chunk = {
-	Iron : <ore:chunkIron>,
-	Gold : <ore:chunkGold>,
-	Copper : <ore:chunkCopper>,
-	Lead : <ore:chunkLead>,
-	Cobalt : <ore:chunkCobalt>,
-	Tungsten : <ore:chunkTungsten>,
-	Aluminum : <ore:chunkAluminum>,
-	Mithril : <ore:chunkMithril>,
-	Nickel : <ore:chunkNickel>,
-	Osmium : <ore:chunkOsmium>,
-	Silver : <ore:chunkSilver>,
-	Tin : <ore:chunkTin>,
-	Zinc : <ore:chunkZinc>,
-	antimony : <ore:chunkAntimony>,
-	ardite : <ore:chunkArdite>,
-	beryllium : <ore:chunkBeryllium>,
-	bismuth : <ore:chunkBismuth>,
-	boron : <ore:chunkBoron>,
-	cadmium : <ore:chunkCadmium>,
-	chromium : <ore:chunkChromium>,
-	coldiron : <ore:chunkColdiron>,
-	dilithium : <ore:chunkDilithium>,
-	iridium : <ore:chunkIridium>,
-	lithium : <ore:chunkLithium>,
-	magnesium : <ore:chunkMagnesium>,
-	manganese : <ore:chunkManganese>,
-	platinum : <ore:chunkPlatinum>,
-	plutonium : <ore:chunkPlutonium>,
-	rutile : <ore:chunkRutile>,
-	starsteel : <ore:chunkStarsteel>,
-	tantalum : <ore:chunkTantalum>,
-	thorium : <ore:chunkThorium>,
-	titanium : <ore:chunkTitanium>,
-	uranium : <ore:chunkUranium>,
-	zirconium : <ore:chunkZirconium>,
-} as IOreDictEntry[string];
-
-//	Magneticraft Rocky Chunks	_______________________________________________________________________________________________________________________________________________________________________
-val RockyChunk = {
-	Iron : <ore:rockyChunkIron>,
-	Gold : <ore:rockyChunkGold>,
-	Copper : <ore:rockyChunkCopper>,
-	Lead : <ore:rockyChunkLead>,
-	Cobalt : <ore:rockyChunkCobalt>,
-	Tungsten : <ore:rockyChunkTungsten>,
-	Aluminum : <ore:rockyChunkAluminum>,
-	Mithril : <ore:rockyChunkMithril>,
-	Nickel : <ore:rockyChunkNickel>,
-	Osmium : <ore:rockyChunkOsmium>,
-	Silver : <ore:rockyChunkSilver>,
-	Tin : <ore:rockyChunkTin>,
-	Zinc : <ore:rockyChunkZinc>,
-	antimony : <ore:rockyChunkAntimony>,
-	ardite : <ore:rockyChunkArdite>,
-	beryllium : <ore:rockyChunkBeryllium>,
-	bismuth : <ore:rockyChunkBismuth>,
-	boron : <ore:rockyChunkBoron>,
-	cadmium : <ore:rockyChunkCadmium>,
-	chromium : <ore:rockyChunkChromium>,
-	coldiron : <ore:rockyChunkColdiron>,
-	dilithium : <ore:rockyChunkDilithium>,
-	iridium : <ore:rockyChunkIridium>,
-	lithium : <ore:rockyChunkLithium>,
-	magnesium : <ore:rockyChunkMagnesium>,
-	manganese : <ore:rockyChunkManganese>,
-	platinum : <ore:rockyChunkPlatinum>,
-	plutonium : <ore:rockyChunkPlutonium>,
-	rutile : <ore:rockyChunkRutile>,
-	starsteel : <ore:rockyChunkStarsteel>,
-	tantalum : <ore:rockyChunkTantalum>,
-	thorium : <ore:rockyChunkThorium>,
-	titanium : <ore:rockyChunkTitanium>,
-	uranium : <ore:rockyChunkUranium>,
-	zirconium : <ore:rockyChunkZirconium>,
-} as IOreDictEntry[string];
-
-//	Dusts	_______________________________________________________________________________________________________________________________________________________________________
-val Dust = {
-	Iron : <ore:dustIron>,
-	Gold : <ore:dustGold>,
-	Copper : <ore:dustCopper>,
-	Lead : <ore:dustLead>,
-	Cobalt : <ore:dustCobalt>,
-	Tungsten : <ore:dustTungsten>,
-	Aluminum : <ore:dustAluminum>,
-	Mithril : <ore:dustMithril>,
-	Nickel : <ore:dustNickel>,
-	Osmium : <ore:dustOsmium>,
-	Silver : <ore:dustSilver>,
-	Tin : <ore:dustTin>,
-	Zinc : <ore:dustZinc>,
-	antimony : <ore:dustAntimony>,
-	ardite : <ore:dustArdite>,
-	beryllium : <ore:dustBeryllium>,
-	bismuth : <ore:dustBismuth>,
-	boron : <ore:dustBoron>,
-	cadmium : <ore:dustCadmium>,
-	chromium : <ore:dustChromium>,
-	coldiron : <ore:dustColdiron>,
-	dilithium : <ore:dustDilithium>,
-	iridium : <ore:dustIridium>,
-	lithium : <ore:dustLithium>,
-	magnesium : <ore:dustMagnesium>,
-	manganese : <ore:dustManganese>,
-	platinum : <ore:dustPlatinum>,
-	plutonium : <ore:dustPlutonium>,
-	rutile : <ore:dustRutile>,
-	starsteel : <ore:dustStarsteel>,
-	tantalum : <ore:dustTantalum>,
-	thorium : <ore:dustThorium>,
-	titanium : <ore:dustTitanium>,
-	uranium : <ore:dustUranium>,
-	zirconium : <ore:dustZirconium>,
-} as IOreDictEntry[string];
-
-//	Mekanism DustDirty	_______________________________________________________________________________________________________________________________________________________________________
-val DustDirty = {
-	Iron : <ore:dustDirtyIron>,
-	Gold : <ore:dustDirtyGold>,
-	Copper : <ore:dustDirtyCopper>,
-	Lead : <ore:dustDirtyLead>,
-	Cobalt : <ore:dustDirtyCobalt>,
-	Tungsten : <ore:dustDirtyTungsten>,
-	Aluminum : <ore:dustDirtyAluminum>,
-	Mithril : <ore:dustDirtyMithril>,
-	Nickel : <ore:dustDirtyNickel>,
-	Osmium : <ore:dustDirtyOsmium>,
-	Silver : <ore:dustDirtySilver>,
-	Tin : <ore:dustDirtyTin>,
-	Zinc : <ore:dustDirtyZinc>,
-	antimony : <ore:dustDirtyAntimony>,
-	ardite : <ore:dustDirtyArdite>,
-	beryllium : <ore:dustDirtyBeryllium>,
-	bismuth : <ore:dustDirtyBismuth>,
-	boron : <ore:dustDirtyBoron>,
-	cadmium : <ore:dustDirtyCadmium>,
-	chromium : <ore:dustDirtyChromium>,
-	coldiron : <ore:dustDirtyColdiron>,
-	dilithium : <ore:dustDirtyDilithium>,
-	iridium : <ore:dustDirtyIridium>,
-	lithium : <ore:dustDirtyLithium>,
-	magnesium : <ore:dustDirtyMagnesium>,
-	manganese : <ore:dustDirtyManganese>,
-	platinum : <ore:dustDirtyPlatinum>,
-	plutonium : <ore:dustDirtyPlutonium>,
-	rutile : <ore:dustDirtyRutile>,
-	starsteel : <ore:dustDirtyStarsteel>,
-	tantalum : <ore:dustDirtyTantalum>,
-	thorium : <ore:dustDirtyThorium>,
-	titanium : <ore:dustDirtyTitanium>,
-	uranium : <ore:dustDirtyUranium>,
-	zirconium : <ore:dustDirtyZirconium>,
-} as IOreDictEntry[string];
-
-//	Secondary Outputs (nuggets)	_______________________________________________________________________________________________________________________________________________________________________
-val Secondary = {
-	Iron : <ore:nuggetIron>,
-	Gold : <ore:nuggetGold>,
-	Copper : <ore:nuggetCopper>,
-	Lead : <ore:nuggetLead>,
-	Cobalt : <ore:nuggetCobalt>,
-	Tungsten : <ore:nuggetTungsten>,
-	Aluminum : <ore:nuggetAluminum>,
-	Mithril : <ore:nuggetMithril>,
-	Nickel : <ore:nuggetNickel>,
-	Osmium : <ore:nuggetOsmium>,
-	Silver : <ore:nuggetSilver>,
-	Tin : <ore:nuggetTin>,
-	Zinc : <ore:nuggetZinc>,
-	antimony : <ore:nuggetAntimony>,
-	ardite : <ore:nuggetArdite>,
-	beryllium : <ore:nuggetBeryllium>,
-	bismuth : <ore:nuggetBismuth>,
-	boron : <ore:nuggetBoron>,
-	cadmium : <ore:nuggetCadmium>,
-	chromium : <ore:nuggetChromium>,
-	coldiron : <ore:nuggetColdiron>,
-	dilithium : <ore:nuggetDilithium>,
-	iridium : <ore:nuggetIridium>,
-	lithium : <ore:dustFlint>,
-	magnesium : <ore:nuggetMagnesium>,
-	manganese : <ore:nuggetManganese>,
-	platinum : <ore:nuggetPlatinum>,
-	plutonium : <ore:nuggetPlutonium>,
-	rutile : <ore:nuggetRutile>,
-	starsteel : <ore:nuggetStarsteel>,
-	tantalum : <ore:nuggetTantalum>,
-	thorium : <ore:dustFlint>,
-	titanium : <ore:nuggetTitanium>,
-	uranium : <ore:nuggetUranium>,
-	zirconium : <ore:nuggetZirconium>,
-} as IOreDictEntry[string];
-*/
-
-//=====================================================================================================================================================================================================	
 //	Remove existing recipes
 //=====================================================================================================================================================================================================
-
-
-    mods.magneticraft.Sieve.removeRecipe(<minecraft:sand>);
+    
+	
+	mods.magneticraft.Sieve.removeRecipe(<minecraft:sand>);
     mods.magneticraft.Sieve.removeRecipe(<minecraft:gravel>);
 	mods.magneticraft.Sieve.removeRecipe(<minecraft:soul_sand>);
     mods.magneticraft.Sieve.removeRecipe(<magneticraft:rocky_chunks:0>);
@@ -284,8 +74,8 @@ mods.magneticraft.Sieve.addRecipe(
 mods.magneticraft.Sieve.addRecipe(
 	<minecraft:sand>,
 	<contenttweaker:silica_sand> , 1.00,
-	<weather2:sand_layer_placeable> * 4 , 1.00,
 	<weather2:sand_layer_placeable> * 3 , 0.50,
+	<weather2:sand_layer_placeable> * 2 , 0.50,
 	120,
 	true
 );
@@ -307,9 +97,9 @@ for Item in GlobalRockyChunk {
 		if(	
 			!isNull( GlobalRockyChunk[Item] ) 
 			&
-			!isNull( GlobalChunk[Item] ) 
+			!isNull( GlobalChunk[Item].firstItem ) 
 			&
-			!isNull( GlobalNugget[Item] ) 
+			!isNull( GlobalNugget[Item].firstItem ) 
 		) {
     		mods.magneticraft.Sieve.addRecipe( 
 				GlobalRockyChunk[Item].firstItem,
@@ -327,11 +117,11 @@ for Item in GlobalRockyChunk {
 for Item in GlobalDustDirty {
 		
 		if(	
-			!isNull( GlobalDustDirty[Item] ) 
+			!isNull( GlobalDustDirty[Item].firstItem ) 
 			&
-			!isNull( GlobalDust[Item] )
+			!isNull( GlobalDust[Item].firstItem )
 			&
-			!isNull( GlobalNugget[Item] )  
+			!isNull( GlobalNugget[Item].firstItem )  
 		) {
     		mods.magneticraft.Sieve.addRecipe( 
 				GlobalDustDirty[Item].firstItem,

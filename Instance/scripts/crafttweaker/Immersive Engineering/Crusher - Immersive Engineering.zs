@@ -2,26 +2,41 @@
 //mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
 //mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
 
-
-
-for Item in GlobalClump {
-		
-		if(	
-			!isNull( GlobalClump[Item].firstItem ) 
+	//	Remove default ore chunk recipes
+for Item in GlobalOreChunk {
+    if(	!isNull( GlobalOreChunk[Item] ) ) { mods.immersiveengineering.Crusher.removeRecipesForInput( GlobalOreBlock[Item].firstItem ); }
+}
+	
+	//	Ore cluster to ore rocks
+for Item in GlobalCluster {
+	if ( 10 >= GlobalHarvestLevel[Item] ) {
+		if (	
+			!isNull( GlobalCluster[Item].firstItem ) 
 			&
-			!isNull( GlobalRockyChunk[Item].firstItem ) 
+			!isNull( GlobalOreRock[Item].firstItem ) 
             &
 			!isNull( GlobalHarvestLevel[Item] )
-
 		) {
-    		mods.immersiveengineering.Crusher.addRecipe( GlobalRockyChunk[Item].firstItem, GlobalClump[Item], GlobalHarvestLevel[Item]*20000 );
-
+    		mods.immersiveengineering.Crusher.addRecipe( GlobalOreRock[Item].firstItem, GlobalCluster[Item], GlobalHarvestLevel[Item]*2000 );
 		}
-
+	}
 }
 
-for Item in GlobalOreBlock {
-    if(	!isNull( GlobalOreBlock[Item] ) ) { mods.immersiveengineering.Crusher.removeRecipesForInput( GlobalOreBlock[Item].firstItem ); }
+	//	Ore chunk to ore rocks
+for Item in GlobalOreChunk {
+	if ( 10 >= GlobalHarvestLevel[Item] ) {
+		if (	
+			!isNull( GlobalOreChunk[Item].firstItem ) 
+			&
+			!isNull( GlobalOreRock[Item].firstItem ) 
+            &
+			!isNull( GlobalHarvestLevel[Item] )
+		) {
+    		mods.immersiveengineering.Crusher.addRecipe( GlobalOreRock[Item].firstItem * 2, GlobalOreChunk[Item], GlobalHarvestLevel[Item]*2000 );
+		}
+	}
 }
+
+
 
 

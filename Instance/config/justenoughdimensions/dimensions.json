@@ -1,0 +1,112 @@
+{
+  "config_version": 
+  {
+    "id": "__default",
+    "version": 0
+  },
+  "dimensions": 
+  [
+    {
+      "dim": -11,
+      "dimensiontype": 
+      {
+        "id": -11,
+        "name": "Mining Layer -11",
+        "suffix": "_dim-11",
+        "keeploaded": false,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "worldinfo_onetime": 
+      {
+        "generatorName": "flat",
+        "generatorOptions": "3;32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone;3;biome_1,mineshaft,dungeon,caves,ravines",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      },
+      "worldinfo": 
+      {
+        "JED": 
+          { 
+            "CloudHeight": 256,
+            "SkyColor": "000000",
+            "CloudColor": "000000",
+            "SkyRenderType": 1,
+            "SkyDisableFlags": 7, 
+            "LightBrightness": 
+            [
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0
+            ]
+          }
+      }
+    },
+    {
+      "dim": -12,
+      "dimensiontype": 
+      {
+        "id": -12,
+        "name": "Mining Layer -12",
+        "suffix": "_dim-12",
+        "keeploaded": false,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "worldinfo": 
+      {
+        "JED": 
+          { 
+            "CloudHeight": "256",
+            "SkyColor": "000000",
+            "CloudColor": "000000",
+            "SkyRenderType": 1,
+            "SkyDisableFlags": 7,
+            "LightBrightness": [
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0
+            ]
+          },
+        "GameRules": {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        },
+        "generatorName": "flat",
+        "generatorOptions": "3;32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone;3;biome_1,mineshaft,dungeon,caves,ravines"
+      }
+    },
+    {
+      "dim": -13,
+      "dimensiontype": 
+      {
+        "id": -13,
+        "name": "Mining Layer -13",
+        "suffix": "_dim-13",
+        "keeploaded": false,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "worldinfo": 
+      {
+        "JED": 
+          { 
+            "CloudHeight": "0",
+            "SkyColor": "ff8888", 
+            "CloudColor": "ddddff", 
+            "SkyRenderType": 1,
+            "SkyDisableFlags": 7,
+            "LightBrightness": [
+              0, 0, 0, 0, 0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 0, 0
+            ]
+          },
+        "GameRules": {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        },
+        "generatorName": "flat",
+        "generatorOptions": "3;32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone;3;biome_1,mineshaft,dungeon,caves,ravines"
+      }
+    }
+  ]
+}

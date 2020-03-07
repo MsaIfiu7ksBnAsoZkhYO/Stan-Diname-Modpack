@@ -77,28 +77,27 @@ mods.magneticraft.SluiceBox.addRecipe(
 mods.magneticraft.SluiceBox.addRecipe(
 	<minecraft:sand>,
 	1.00 , <contenttweaker:silica_sand>,
-	1.00 , <weather2:sand_layer_placeable>,
-	0.80 , <weather2:sand_layer_placeable>,
-	0.60 , <weather2:sand_layer_placeable>,
-	0.40 , <weather2:sand_layer_placeable>,
-	0.20 , <weather2:sand_layer_placeable>,
+	0.75 , <weather2:sand_layer_placeable>,
+	0.50 , <weather2:sand_layer_placeable>,
+	0.25 , <weather2:sand_layer_placeable>,
+	0.10 , <weather2:sand_layer_placeable>,
+	0.05 , <weather2:sand_layer_placeable>,
 	true
 );
 
 
 	//	Dynamically Add recipes for ore processing	_______________________________________________________________________________________________________________________________________________________________________
-for Item in GlobalHarvestLevel {
-
+for Item in GlobalRockyChunk {
     	//	Only add low level materials to require Sieve	_______________________________________________________________________________________________________________________________________________________________________
-	if ( 4 >= GlobalHarvestLevel[Item] ) {
+	if ( 5 >= GlobalHarvestLevel[Item] ) {
 
 			//	Rocky Chunk > Chunk + tinydusts + rock	_______________________________________________________________________________________________________________________________________________________________________
 		if(	
-			!isNull( GlobalRockyChunk[Item] ) 
+			!isNull( GlobalRockyChunk[Item].firstItem ) 
 			&
-			!isNull( GlobalChunk[Item] ) 
+			!isNull( GlobalChunk[Item].firstItem ) 
 			&
-			!isNull( GlobalNugget[Item] ) 
+			!isNull( GlobalNugget[Item].firstItem ) 
 		) {
 			mods.magneticraft.SluiceBox.addRecipe( 
 				GlobalRockyChunk[Item].firstItem,
@@ -108,14 +107,18 @@ for Item in GlobalHarvestLevel {
 				true
 			);
 		}
-		
+	}
+}
+
+for Item in GlobalDustDirty {	
 			//	Dirty Dust > Dust + tinydusts + rock	_______________________________________________________________________________________________________________________________________________________________________
+	if ( 5 >= GlobalHarvestLevel[Item] ) {
 		if(	
-			!isNull( GlobalDustDirty[Item] ) 
+			!isNull( GlobalDustDirty[Item].firstItem ) 
 			&
-			!isNull( GlobalDust[Item] )
+			!isNull( GlobalDust[Item].firstItem )
 			&
-			!isNull( GlobalNugget[Item] )  
+			!isNull( GlobalNugget[Item].firstItem )  
 		) {
     		mods.magneticraft.SluiceBox.addRecipe(
 				GlobalDustDirty[Item].firstItem,
@@ -127,5 +130,5 @@ for Item in GlobalHarvestLevel {
 		}
 	
 	}
-
+	
 }

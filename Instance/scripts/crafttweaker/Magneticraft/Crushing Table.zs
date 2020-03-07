@@ -12,7 +12,6 @@ import crafttweaker.item.IItemStack;
 //	Remove exiting recipes
 //=====================================================================================================================================================================================================
 
-
     //  Head Hammering	_______________________________________________________________________________________________________________________________________________________________________
 mods.magneticraft.CrushingTable.removeRecipe(<minecraft:skull:0>);
 mods.magneticraft.CrushingTable.removeRecipe(<minecraft:skull:2>);
@@ -35,6 +34,7 @@ mods.magneticraft.CrushingTable.removeRecipe(<ore:oreMithril>.firstItem);
 mods.magneticraft.CrushingTable.removeRecipe(<ore:oreNickel>.firstItem);
 mods.magneticraft.CrushingTable.removeRecipe(<ore:oreOsmium>.firstItem);
 mods.magneticraft.CrushingTable.removeRecipe(<ore:oreIron>.firstItem);
+mods.magneticraft.CrushingTable.removeRecipe(<ore:oreSteel>.firstItem);
 
 
 
@@ -60,19 +60,28 @@ mods.magneticraft.CrushingTable.addRecipe(
     true
 );
 
-	//	Add recipes for ores Harvest Level 4 and under.
-for Item in GlobalHarvestLevel {
-
-    if ( 4 >= GlobalHarvestLevel[Item] ) {
-
+	//	Ore chunk to rocky chunks
+for Item in GlobalOreChunk {
+    if ( 5 >= GlobalHarvestLevel[Item] ) {
         if ( 
-            !isNull( GlobalOreChunk[Item] ) 
+            !isNull( GlobalOreChunk[Item].firstItem ) 
             &
-            !isNull( GlobalRockyChunk[Item] ) 
+            !isNull( GlobalRockyChunk[Item].firstItem ) 
         ) {
             mods.magneticraft.CrushingTable.addRecipe( GlobalOreChunk[Item].firstItem , GlobalRockyChunk[Item].firstItem, true);
         }
-
     }
+}
 
-}		
+	//	Ore Rocks to rocky chunks
+for Item in GlobalOreRock {
+    if ( 5 >= GlobalHarvestLevel[Item] ) {
+        if ( 
+            !isNull( GlobalOreRock[Item].firstItem ) 
+            &
+            !isNull( GlobalRockyChunk[Item].firstItem ) 
+        ) {
+            mods.magneticraft.CrushingTable.addRecipe( GlobalOreRock[Item].firstItem , GlobalRockyChunk[Item].firstItem, true);
+        }
+    }
+}

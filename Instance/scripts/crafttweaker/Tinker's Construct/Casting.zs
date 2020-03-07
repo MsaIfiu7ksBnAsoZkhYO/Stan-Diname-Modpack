@@ -31,15 +31,15 @@ var TconMaterials = {
 	<ticmat:lead> : <liquid:molybdochalkos>,
 
 	<ticmat:magnesium> : <liquid:magmolybdochalkosmuth>,
-	<ticmat:bismuth> : <liquid:starmetal>,
+
 
 	<ticmat:silver> : <liquid:nickel>,
 	<ticmat:electrum> : <liquid:invar>,
 
 	<ticmat:alumifun> : <liquid:titaniumaluminide>,
-	<ticmat:brass> : <liquid:zirconium>,
+	<ticmat:bronze> : <liquid:water>,
 
-	<ticmat:nickel> : <liquid:nichrome>,
+	<ticmat:nickel> : <liquid:water>,
 	<ticmat:steel> : <liquid:ferroboron>,
 
 	<ticmat:silver> : <liquid:xu_enchanted_metal>,
@@ -47,7 +47,7 @@ var TconMaterials = {
 	<ticmat:xu_demonic_metal> : <liquid:xu_evil_metal>,
 	<ticmat:iron> : <liquid:nickel>,
 	<ticmat:invar> : <liquid:platinum>,
-	<ticmat:mithril> : <liquid:mythril>,
+	<ticmat:mythril> : <liquid:mythril>,
 	<ticmat:terrasteel> : <liquid:mirion>,
 	<ticmat:lumium> : <liquid:refinedglowstone>,
 	<ticmat:osmiridium> : <liquid:refinedobsidian>,
@@ -55,75 +55,31 @@ var TconMaterials = {
 	<ticmat:adamant> : <liquid:dragonsteel_ice>,
 } as ILiquidStack[ITICMaterial];
 
-/* - Made Global
-	//	Table of parts	_______________________________________________________________________________________________________________________________________________________________________
-var TconParts = {
-	<tconstruct:sharpening_kit> : 2,
-	<tconstruct:pick_head> : 2,
-	<tconstruct:shovel_head> : 2,
-	<tconstruct:axe_head> : 2,
-	<tconstruct:broad_axe_head> : 8,
-	<tconstruct:sword_blade> : 2,
-	<tconstruct:large_sword_blade> : 8,
-	<tconstruct:hammer_head> : 8,
-	<tconstruct:excavator_head> : 8,
-	<tconstruct:scythe_head> : 8,
-	<tconstruct:large_plate> : 8,
-	<tconstruct:kama_head> : 2,
-	<tconstruct:arrow_head> : 2,
-	<tconstruct:pan_head> : 3,
-	<tconstruct:sign_head> : 3,
-	<tconstruct:tough_tool_rod> : 3,
-	<tconstruct:tough_binding> : 3,
-	<tconstruct:bow_limb> : 3,
-	<tconstruct:tool_rod> : 1,
-	<tconstruct:binding> : 1,
-	<tconstruct:wide_guard> : 1,
-	<tconstruct:hand_guard> : 1,
-	<tconstruct:cross_guard> : 1,
-	<tconstruct:knife_blade> : 1,
-	<conarm:polishing_kit> : 3,
-	<conarm:helmet_core> : 4,
-	<conarm:chest_core> : 6,
-	<conarm:leggings_core> : 5,
-	<conarm:boots_core> : 4,
-	<conarm:armor_plate> : 3,
-	<conarm:armor_trim> : 1,
-	<totaltinkers:greatbladecore> : 12,
-	<totaltinkers:fullguard> : 3,
-	<tcomplement:chisel_head> : 1,
-} as int[IItemStack];
-*/
-
 // - Technicall this is metals under 1000 C, or under HL 4.
 var SandCastable = {
-	<ore:ingotCopper> : <liquid:copper>,
-	<ore:ingotTin> : <liquid:tin>,
-	<ore:ingotLead> : <liquid:lead>,
-	<ore:ingotBronze> : <liquid:bronze>,
-	<ore:ingotMolybdochalkos> : <liquid:molybdochalkos>,
-	<ore:ingotMagmolybdochalkosmuth> : <liquid:magmolybdochalkosmuth>,
-	<ore:ingotBismuth> : <liquid:bismuth>,
-	<ore:ingotCadmium> : <liquid:cadmium>,
-	<ore:ingotSilver> : <liquid:silver>,
-	<ore:ingotZinc> : <liquid:zinc>,
-	<ore:ingotBrass> : <liquid:brass>,
-	<ore:ingotElectrum> : <liquid:electrum>,
+	<ore:ingotCopper>					:	<liquid:copper>,
+	<ore:ingotTin>						:	<liquid:tin>,
+	<ore:ingotLead>						:	<liquid:lead>,
+	<ore:ingotBronze>					:	<liquid:bronze>,
+	<ore:ingotMolybdochalkos>			:	<liquid:molybdochalkos>,
+	<ore:ingotMagmolybdochalkosmuth>	:	<liquid:magmolybdochalkosmuth>,
+	<ore:ingotSilver>					:	<liquid:silver>,
+	<ore:ingotZinc>						:	<liquid:zinc>,
+	<ore:ingotBrass>					:	<liquid:brass>,
+	<ore:ingotElectrum>					:	<liquid:electrum>,
 } as ILiquidStack[IOreDictEntry];
 
-/* - Global Variable
-var AnvilCast = {
-	<tinkersforging:tinkers_anvil/copper> : <liquid:copper>,
-	<tinkersforging:tinkers_anvil/tin> : <liquid:tin>,
-	<tinkersforging:tinkers_anvil/bronze> : <liquid:bronze>,
-	<tinkersforging:tinkers_anvil/silver> : <liquid:silver>,
-	<tinkersforging:tinkers_anvil/iron> : <liquid:iron>,
-	<tinkersforging:tinkers_anvil/alumifun> : <liquid:aluminum>,
-	<tinkersforging:tinkers_anvil/brass> : <liquid:brass>,
-	<tinkersforging:tinkers_anvil/steel> : <liquid:steel>,
+
+// - Clay bricks and things
+var ClayBrickItems = {
+	<notreepunching:clay_brick>				:	<liquid:clay>,
+	<ceramics:unfired_clay:5>				:	<liquid:porcelain_clay_liquid>,
+	<contenttweaker:unfired_coke_brick>		:	<liquid:coke_clay_liquid>,
+	<contenttweaker:unfired_kiln_brick>		:	<liquid:kiln_clay_liquid>,
+	<contenttweaker:unfired_blast_brick>	:	<liquid:blast_clay_liquid>,
+	<contenttweaker:unfired_seared_brick>	:	<liquid:seared_clay_liquid>,
+	<contenttweaker:unfired_scorched_brick>	:	<liquid:scorched_clay_liquid>,
 } as ILiquidStack[IItemStack];
-	//<tinkersforging:tinkers_anvil/zinc> : <liquid:zinc>,
-*/
 
 
 //=====================================================================================================================================================================================================	
@@ -147,6 +103,14 @@ for Metal in CastMetals{
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast>.withTag({PartType:"tconstruct:sharpening_kit"}), <tconstruct:sharpening_kit>.withTag({Material:"moldclay"}), Metal, 144, true, 200);
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast>.withTag({PartType:"conarm:polishing_kit"}), <conarm:polishing_kit>.withTag({Material:"moldclay"}), Metal, 144, true, 200);
 }
+
+	//	You can make clay casts of these things if you really want to.  They are even self drying on the casting table.  :D	_______________________________________________________________________________________________________________________________________________________________________
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:clay_cast>.withTag({PartType:"tcomplement:chisel_head"}), <tcomplement:chisel_head>.withTag({Material:"moldclay"}), <liquid:moldsand>, 250, true, 6200);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:clay_cast>.withTag({PartType:"tconstruct:fletching"}), <tconstruct:fletching>.withTag({Material: "moldclay"}), <liquid:moldsand>, 250, true, 6200);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:clay_cast>.withTag({PartType:"tconstruct:arrow_shaft"}), <tconstruct:arrow_shaft>.withTag({Material:"moldclay"}), <liquid:moldsand>, 250, true, 6200);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:clay_cast>.withTag({PartType:"tconstruct:bow_string"}), <tconstruct:bow_string>.withTag({Material: "moldclay"}), <liquid:moldsand>, 250, true, 6200);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:clay_cast>.withTag({PartType:"tconstruct:sharpening_kit"}), <tconstruct:sharpening_kit>.withTag({Material:"moldclay"}), <liquid:moldsand>, 250, true, 6200);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:clay_cast>.withTag({PartType:"conarm:polishing_kit"}), <conarm:polishing_kit>.withTag({Material:"moldclay"}), <liquid:moldsand>, 250, true, 6200);
 
 
 //=====================================================================================================================================================================================================	
@@ -185,32 +149,53 @@ mods.tconstruct.Casting.addTableRecipe(<contenttweaker:molybdochalkos_ingot> , <
 mods.tconstruct.Casting.addTableRecipe(<contenttweaker:magmolybdochalkosmuth_ingot> , <tconstruct:cast_custom>, <liquid:magmolybdochalkosmuth> , 144 , false, 120 );
 
 	//	Sand Ingot Cast	_______________________________________________________________________________________________________________________________________________________________________
-mods.tconstruct.Casting.addTableRecipe(<contenttweaker:sand_ingot_cast_wet> , <ore:ingotStackable>, <liquid:moldsand> , 250 , true, 100 );
+mods.tconstruct.Casting.addTableRecipe(<contenttweaker:sand_ingot_cast_wet> , <ore:ingotCastBase>, <liquid:moldsand> , 250 , true, 100 );
 
 	//	Sand Castable ingots for early game	_______________________________________________________________________________________________________________________________________________________________________
 for Item , Fluid in SandCastable {
-	mods.tconstruct.Casting.addTableRecipe(Item.firstItem , <contenttweaker:sand_ingot_cast> , Fluid , 144 , true , 100);
+	mods.tconstruct.Casting.addTableRecipe(Item.firstItem , <contenttweaker:sand_ingot_cast> , Fluid , 144 , true , 140);
 }
 
-	//	Anvil Cast	_______________________________________________________________________________________________________________________________________________________________________
-mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:forging_anvil_cast_wet> , <tinkersforging:tinkers_anvil/moldclay>, <liquid:moldsand> , 2000 , true, 800 );
-
-	//	Forging Anvil casting	_______________________________________________________________________________________________________________________________________________________________________
-for Item in GlobalAnvil {
-	//recipes.remove( GlobalAnvil[Item] );
-	mods.tconstruct.Casting.addBasinRecipe(GlobalAnvil[Item] , <contenttweaker:forging_anvil_cast> , GlobalMoltenMetal[Item] , 2160 , true , 3000);
-	//mods.tconstruct.Melting.addRecipe(Fluid * 2160 , Anvil , 1300);
+	//	Cast Clays into unfired bricks	_______________________________________________________________________________________________________________________________________________________________________
+for Item , Fluid in ClayBrickItems {
+	if(	
+		!isNull( Item ) 
+		& 
+		!isNull( Fluid ) 
+	) {
+		mods.tconstruct.Casting.addTableRecipe(Item , <contenttweaker:sand_ingot_cast> , Fluid , 144 , true , 80);
+		mods.tconstruct.Casting.addTableRecipe(Item , <tconstruct:cast_custom> , Fluid , 144 , false , 60);
+	}
 }
 	
 	//	Glass Casting	_______________________________________________________________________________________________________________________________________________________________________
 mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:clear_glass>);
-mods.tconstruct.Casting.addBasinRecipe(<minecraft:glass> , null, <liquid:glass> , 1000 , false, 200 );
+mods.tconstruct.Casting.addBasinRecipe(
+	<minecraft:glass>,
+	null,
+	<liquid:glass>,
+	1000,
+	false,
+	200
+);
+
 //mods.tconstruct.Casting.addTableRecipe(<minecraft:glass_pane> , null, <liquid:glass> , 375 , false, 80 );
 	//	Sandy Glass	_______________________________________________________________________________________________________________________________________________________________________
 //recipes.remove( <extrautils2:decorativesolid:4> );
 mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativesolid:4> , <ore:sand>, <liquid:glass> , 1000 , true, 220 );
 	//	Thickened Glass	_______________________________________________________________________________________________________________________________________________________________________
 mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativeglass> , <tconstruct:clear_glass>, <liquid:glass> , 1000 , true, 300 );
+
+	//	Anvil Casting	_______________________________________________________________________________________________________________________________________________________________________
+mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:forging_anvil_cast_wet> , <tinkersforging:tinkers_anvil/moldclay>, <liquid:moldsand> , 2000 , true, 800 );
+
+	//	Forging Anvil casting	_______________________________________________________________________________________________________________________________________________________________________
+for Item in GlobalAnvil {
+
+	mods.tconstruct.Casting.addBasinRecipe(GlobalAnvil[Item] , <contenttweaker:forging_anvil_cast> , GlobalMoltenMetal[Item] , 2160 , true , 3000);
+
+}
+
 
 //=====================================================================================================================================================================================================	
 //	Super Awesome Kustom Kast Krafting system...  Wait...
@@ -223,3 +208,28 @@ for Table , Liquid in TconMaterials {
 		mods.tconstruct.Casting.addTableRecipe(Part.withTag({Material:Liquid.name}) , Part.withTag({Material:Table.getName}) , Liquid , Int*144 , true, Int*100 );
 	}
 }	
+
+//=====================================================================================================================================================================================================	
+//	Casting the ore oil into an ore cluster for the ore processing chain
+//=====================================================================================================================================================================================================	
+	
+	
+	//	Stage 4 ore oil to ore cluster
+for Item in GlobalCluster {
+	if ( 10 >= GlobalHarvestLevel[Item] ) {
+		if (	
+			!isNull( GlobalCluster[Item].firstItem ) 
+            &
+			!isNull( GlobalHarvestLevel[Item] )
+		) {		
+			mods.tconstruct.Casting.addTableRecipe(
+				GlobalCluster[Item].firstItem,
+				<ore:rock>, 
+				GlobalStage4MetalFluid[Item], 
+				200 , 
+				true, 
+				GlobalHarvestLevel[Item]*120 
+			);
+		}
+	}
+}
