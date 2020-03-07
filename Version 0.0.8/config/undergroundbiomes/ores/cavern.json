@@ -1,0 +1,42 @@
+[
+  {
+    "internalOreName": "cavern:cave_block",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/cavern/aquamarine_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "cavern:cave_block",
+    "meta": 2,
+    "overlay": "undergroundbiomes:blocks/overlays/cavern/magnite_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "cavern:cave_block",
+    "meta": 4,
+    "overlay": "undergroundbiomes:blocks/overlays/cavern/randomite_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "cavern:cave_block",
+    "meta": 5,
+    "overlay": "undergroundbiomes:blocks/overlays/cavern/hexcite_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "cavern:cave_block",
+    "meta": 7,
+    "overlay": "undergroundbiomes:blocks/overlays/cavern/stone_fissured",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  }
+]
