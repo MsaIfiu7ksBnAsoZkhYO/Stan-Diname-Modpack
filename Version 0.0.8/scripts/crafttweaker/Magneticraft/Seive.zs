@@ -87,10 +87,45 @@ mods.magneticraft.Sieve.addRecipe(
 */
 
 //=====================================================================================================================================================================================================	
-//	Add new recipes Dynamically from oredict lists above
+//	Add new recipes Dynamically
 //=====================================================================================================================================================================================================
 
 	
+	
+    //  Defines the Input / Output relationships to be extra dynamic
+var Recipes = {
+    "rockyChunk"   :   "chunk",
+    "dustDirty"    :   "dust",
+} as string[string];
+
+for Item in GlobalHarvestLevel {
+    var HarvestLevel = GlobalHarvestLevel[Item];
+		//	Shut up.  I'll remove this later.
+	if ( 100 >= HarvestLevel ) {
+            //  Set the Left value as the input and the right value as the output
+        for Left,Right in Recipes {
+            var Input = GlobalGimmeOreDict(Left,Item);
+            var Output = GlobalGimmeOreDict(Right,Item);
+			var Output2 = GlobalGimmeOreDict("nugget",Item);
+            if ( 
+                !(Input.empty)
+                &
+                !(Output.empty)
+            ) {
+				mods.magneticraft.Sieve.addRecipe( 
+					Input.firstItem,
+					Output.firstItem , 1.00,
+					Output2.firstItem , 0.10,
+					<notreepunching:rock/stone> , 0.25,
+					240,
+					true
+				);
+            }
+		}
+	}
+}	
+	
+/*
 	//	Rocky Chunk > Chunk + tinydusts + rock	_______________________________________________________________________________________________________________________________________________________________________
 for Item in GlobalRockyChunk {
 		
@@ -134,6 +169,7 @@ for Item in GlobalDustDirty {
 		}
 
 }
+*/
 
 //Old POC recipes
 //mods.magneticraft.Sieve.addRecipe(<magneticraft:rocky_chunks:2> , 1.0,<magneticraft:chunks:2> , 0.25,<notreepunching:rock/stone> , true);

@@ -9,8 +9,8 @@
 //	These imports must be included to cast the arrays
 //=====================================================================================================================================================================================================	
 
-
-#priority 9998
+#norun
+#priority 9999
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
