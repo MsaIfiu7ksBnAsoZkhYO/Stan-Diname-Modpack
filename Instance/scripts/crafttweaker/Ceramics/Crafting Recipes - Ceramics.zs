@@ -39,11 +39,13 @@ RecipeBuilder.get("potter")
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
+	.addTool( <ore:toolClay> , 1 )
 	.addOutput( <contenttweaker:porcelain_clay_nugget> * 9 )
 	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
 	.create();
 	
 	//	Unfired Porcelain Clay Ball	_______________________________________________________________________________________________________________________________________________________________________
+/* - Making a better recipe
 RecipeBuilder.get("potter")
 	.setShaped([
     	[null,				<ore:layerSand>,			<ore:nuggetClay>,			<ore:layerSand>,			null				],
@@ -57,6 +59,19 @@ RecipeBuilder.get("potter")
 	.addOutput( <ceramics:unfired_clay:4> * 2 )
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
+*/
+
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:layerSand>,	<ore:nuggetClay>,			<ore:layerSand>		],
+		[<ore:nuggetClay>,	<ore:ingredientPorcelain>,	<ore:nuggetClay>	],
+		[<ore:layerSand>,	<ore:nuggetClay>,			<ore:layerSand>		]])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <ceramics:unfired_clay:4> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
 
 	//	Unfired Porcelain Brick	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
@@ -64,7 +79,7 @@ RecipeBuilder.get("potter")
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
-	.addTool( <tconstruct:pattern> , 0 )
+	.addTool( <contenttweaker:brick_mold> , 1 )
 	.addOutput( <ceramics:unfired_clay:5> )
 	.setExtraOutputOne (<minecraft:bowl> , 1.0 )
 	.create();
@@ -116,8 +131,8 @@ RecipeBuilder.get("potter")
 //recipes.remove(<ceramics:unfired_clay:1>);
 RecipeBuilder.get("potter")
 	.setShaped([
-	 	[null,				<ore:brickClay>	],
-	 	[<ore:brickClay>,	null			]])
+	 	[null,					<ore:plateClayRaw>	],
+	 	[<ore:plateClayRaw>,	null				]])
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
@@ -138,13 +153,6 @@ recipes.addShaped(
 		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>	]
 	]);
 	
-recipes.addShaped(
-	"ceramics_decoration/porcelain_bricks/block",
-	<ceramics:clay_hard>, 
-	[
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-	]);
 
 recipes.addShaped(
 	"ceramics_decoration/monochrome_bricks/block",
@@ -175,14 +183,51 @@ recipes.addShaped(
 	//	Porcelin Brick block	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
-		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>,	<ore:ingotPorcelain>	]])
+		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>	],
+		[<ore:ingotPorcelain>,	<ore:ingotPorcelain>	]])
   	.setFluid( <liquid:mortar> * 100 )
 	.addTool( <ore:artisansTrowel>, 2 )
 	.addOutput( <ceramics:clay_hard> )
 	.create();
 
+	//	Clay Barrel	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:plateClayRaw>,	null,				<ore:plateClayRaw>	],
+		[<ore:plateClayRaw>,	null,				<ore:plateClayRaw>	],
+		[<ore:plateClayRaw>,	<ore:plateClayRaw>,	<ore:plateClayRaw>	]])
+	.setFluid( <liquid:water> * 100	)
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <ceramics:clay_barrel_unfired> )
+	.create();
 
+	//	Clay Barrel Extension	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:plateClayRaw>,	null,	<ore:plateClayRaw>],
+		[<ore:plateClayRaw>,	null,	<ore:plateClayRaw>]])
+	.setFluid( <liquid:water> * 100 )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <ceramics:clay_barrel_unfired:1> )
+	.create();
 
+	//	Porcelin barrel	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:brickPorcelain>,	null,					<ore:brickPorcelain>	],
+		[<ore:brickPorcelain>,	null,					<ore:brickPorcelain>	],
+		[<ore:brickPorcelain>,	<ore:brickPorcelain>,	<ore:brickPorcelain>	]])
+	.setFluid( <liquid:water> * 100 )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <ceramics:clay_barrel_unfired:2> )
+	.create();
 
+	//	Porcelin barrel extension	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:brickPorcelain>,	null,	<ore:brickPorcelain>	],
+		[<ore:brickPorcelain>,	null,	<ore:brickPorcelain>	]])
+	.setFluid( <liquid:water> * 100 )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <ceramics:clay_barrel_unfired:3> )
+	.create();

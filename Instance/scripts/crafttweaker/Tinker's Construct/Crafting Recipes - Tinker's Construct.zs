@@ -12,23 +12,20 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 
 	//	Blank Patterns	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:pattern> );
-recipes.addShaped(
-    "Tconstuct Blank Pattern",
-    <tconstruct:pattern> * 2, 
-    [
-        [<ore:stickWood>,	null,				<ore:stickWood>	],
-        [null,				<ore:plankWood>,	null			], 
-        [<ore:stickWood>,	null,				<ore:stickWood>	]
-    ]
-);
+RecipeBuilder.get("carpenter")
+	.setShaped([
+		[<ore:stickWood>,	null,				<ore:stickWood>	],
+		[null,				<ore:plankWood>,	null			],
+		[<ore:stickWood>,	null,				<ore:stickWood>	]])
+	.addTool( <ore:artisansHammer> , 1 )
+	.addOutput( <tconstruct:pattern> )
+	.create();
 
 	//	Tconstruct flint shards to NTP flint shards	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-	"tconstruct flint shard to NTP flint shard",
-	<notreepunching:flint_shard>, 
-	[<tconstruct:shard>.withTag({Material: "flint"})]
-);
+RecipeBuilder.get("basic")
+	.setShapeless( [ <tconstruct:shard>.withTag({Material: "flint"}) ] )
+	.addOutput( <notreepunching:flint_shard> )
+	.create();
 
 
 //=====================================================================================================================================================================================================	
@@ -149,11 +146,13 @@ RecipeBuilder.get("potter")
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
+	.addTool( <ore:toolClay> , 1 )
 	.addOutput( <contenttweaker:seared_clay_nugget> * 9 )
 	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
 	.create();
 
 	//	Seared Clay Ball	_______________________________________________________________________________________________________________________________________________________________________
+/*
 val PorcelainNugget = <ore:nuggetPorcelain>;
 val SandLayer = <ore:layerSand>;
 RecipeBuilder.get("potter")
@@ -169,6 +168,19 @@ RecipeBuilder.get("potter")
 	.addOutput( <ore:claySeared>.firstItem )
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
+*/
+
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:nuggetPorcelain>,	<ore:lumpGravel>,	<ore:nuggetPorcelain>	],
+		[<ore:layerSand>,		<ore:dustFlint>,	<ore:layerSand>			],
+		[<ore:nuggetPorcelain>,	<ore:lumpGravel>,	<ore:nuggetPorcelain>	]])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:seared_clay> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
 
 	//	Unfired Seared Brick	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
@@ -176,7 +188,7 @@ RecipeBuilder.get("potter")
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
-	.addTool( <tconstruct:pattern> , 0 )
+	.addTool( <contenttweaker:brick_mold> , 1 )
 	.addOutput( <contenttweaker:unfired_seared_brick> )
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
@@ -185,9 +197,8 @@ RecipeBuilder.get("potter")
 //recipes.remove( <tconstruct:seared:3> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
-		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
-		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>, <ore:ingotBrickSeared>	]])
+		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
+		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	]])
 	.setFluid( <liquid:mortar> * 100 )
 	.addOutput( <tconstruct:seared:3> )
 	.addTool( <ore:artisansTrowel>, 2 )
@@ -348,4 +359,87 @@ RecipeBuilder.get("mason")
 	.addOutput( <tconstruct:smeltery_controller> )
 	.addTool( <ore:artisansTrowel>, 10 )
 	.addTool( <saltmod:salt_pinch>, 0 )
+	.create();
+
+
+//=====================================================================================================================================================================================================	
+//	Clay Parts for Castable parts
+//=====================================================================================================================================================================================================
+	
+
+	//	Chisel Head	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:nuggetClay>,	<ore:plateClayRaw>	],
+		[<ore:brickClay>,	<ore:nuggetClay>	]])
+	.setFluid(	<liquid:water> * 100	)
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <tcomplement:chisel_head>.withTag({Material: "moldclaywet"}) )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+
+	//	Sharpening Kit	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:brickClay>,	<ore:nuggetClay>	],
+		[<ore:nuggetClay>,	<ore:brickClay>		]])
+	.setFluid( <liquid:water> * 100 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <tconstruct:sharpening_kit>.withTag({Material: "moldclaywet"}) )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+
+	//	Polishing Kit	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:clay>,		<ore:nuggetClay>	],
+		[<ore:nuggetClay>,	<ore:clay>			]])
+	.setFluid(<liquid:water> * 100)
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <conarm:polishing_kit>.withTag({Material: "moldclaywet"}) )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+
+	//	Bowstring	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[null,				null,				null,				<ore:nuggetClay>,	<ore:nuggetClay>	],
+		[null,				null,				<ore:nuggetClay>,	<ore:stickWood>,	null				],
+		[null,				null,				null,				<ore:nuggetClay>,	null				],
+		[<ore:nuggetClay>,	<ore:stickWood>,	null,				<ore:stickWood>,	<ore:nuggetClay>	],
+		[null,				<ore:nuggetClay>,	<ore:nuggetClay>,	<ore:nuggetClay>,	null				]])
+	.setFluid( <liquid:water> * 100	)
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <tconstruct:bow_string>.withTag({Material: "moldclaywet"}) )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+
+	//	Arrow Shaft	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[null,				null,				<ore:brickClay>	],
+		[null,				<ore:stickWood>,	null			],
+		[<ore:brickClay>,	null,				null			]])
+	.setFluid( <liquid:water> * 100 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <tconstruct:arrow_shaft>.withTag({Material: "moldclaywet"}) )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
+
+	//	Fletching	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:plateClayRaw>,	null,				null				],
+		[null,					<ore:stickWood>,	null				],
+		[null,					null,				<ore:plateClayRaw>	]])
+	.setFluid( <liquid:water> * 100 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <tconstruct:fletching>.withTag({Material: "moldclaywet"}) )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();

@@ -98,22 +98,38 @@ var TconParts = {
 //=====================================================================================================================================================================================================
 
     
+   //	Deconstruct Tcon parts	_______________________________________________________________________________________________________________________________________________________________________
+for Item in GlobalHarvestLevel {
+    var Output = GlobalGimmeOreDict("dust",Item);
+    if ( 
+        !(Output.empty)
+    ) {
+		for Part , Int in GlobalTconParts {
+			RecipeBuilder.get("basic")
+				.setName( Item~Part.displayName~"bypass" )
+				.setShapeless( [ Part.withTag( {Material: Item} ).onlyWithTag( {Material: Item} ) ] )
+				.addTool( <ore:artisansHammer> , (Int * 2) )
+				.addOutput( Output.firstItem * Int )
+				.create();
+		}
+	}
+}
+
+/*
     //	Deconstruct Tcon parts	_______________________________________________________________________________________________________________________________________________________________________
 for Item in GlobalDust {
 	if( !isNull( GlobalDust[Item].firstItem ) ) {	
     	for Part , Int in GlobalTconParts {
-
 			RecipeBuilder.get("basic")
 				.setName( Item~Part.displayName~"bypass" )
 				.setShapeless( [ Part.withTag( {Material: Item} ).onlyWithTag( {Material: Item} ) ] )
 				.addTool( <ore:artisansHammer> , (Int * 2) )
 				.addOutput( GlobalDust[Item].firstItem * Int )
 				.create();
-
 		}
 	}
 }
-
+*/
 
 
 //recipes.addShapeless(<contenttweaker:wrought_iron_ingot> * 6, [ <conarm:chest_core>.withTag( {Material: "iron"} ).onlyWithTag( {Material: "iron"} ) ]);

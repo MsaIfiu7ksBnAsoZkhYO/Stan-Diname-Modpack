@@ -23,7 +23,11 @@ mods.crossroads.HeatingCrucible.removeRecipe(<ore:ingotTin>);
 
 
     //	Silica Sand to molten Glass	_______________________________________________________________________________________________________________________________________________________________________
-mods.crossroads.HeatingCrucible.addRecipe(<ore:sandSilica>, <liquid:glass> * 1000, "minecraft:blocks/sand");
+mods.crossroads.HeatingCrucible.addRecipe(
+	<ore:sandSilica>, 
+	<liquid:glass> * 1000, 
+	"minecraft:blocks/sand"
+);
 
 
 //=====================================================================================================================================================================================================	
@@ -31,21 +35,50 @@ mods.crossroads.HeatingCrucible.addRecipe(<ore:sandSilica>, <liquid:glass> * 100
 //=====================================================================================================================================================================================================	
 
 	
-	//	Output is liquids, so thats what we're iterating through
+	//Defines the part types and fluid amounts that will get crucible melting recipes
+var PartTypes = {
+	chunk	:	144,
+	dust	:	144,
+	ingot	:	144,
+	nugget	:	16,
+} as  int[string];
+
+	//	Output is liquids, so thats what we iterate through
 for Liquid in GlobalMoltenMetal {
-		
-		//	Check that a melting temperature is defined
+		//	Check that a melting temperature is defined for Liquid
 	if(	!isNull( GlobalMeltingTemp[Liquid] ) ) {
-			
 			//	Only add recipes for melting temps 1000 and under
 		if ( 1000 >= GlobalMeltingTemp[Liquid] ) { 
-
-				//	Make the Crucible recipes.
-			if( !isNull( oreDict[ "chunk"~GlobalPostfixMetals[Liquid] ].firstItem ) ) { mods.crossroads.HeatingCrucible.addRecipe( oreDict[ "chunk"~GlobalPostfixMetals[Liquid] ], GlobalMoltenMetal[Liquid] * 144, "minecraft:blocks/gravel" ); }
-			if( !isNull( oreDict[ "dust"~GlobalPostfixMetals[Liquid] ].firstItem ) ) { mods.crossroads.HeatingCrucible.addRecipe( oreDict[ "dust"~GlobalPostfixMetals[Liquid] ], GlobalMoltenMetal[Liquid] * 144, "minecraft:blocks/sand" ); }
-			if( !isNull( oreDict[ "ingot"~GlobalPostfixMetals[Liquid] ].firstItem ) ) { mods.crossroads.HeatingCrucible.addRecipe( oreDict[ "ingot"~GlobalPostfixMetals[Liquid] ], GlobalMoltenMetal[Liquid] * 144, "minecraft:blocks/gravel" ); }
-			if( !isNull( oreDict[ "nugget"~GlobalPostfixMetals[Liquid] ].firstItem ) ) { mods.crossroads.HeatingCrucible.addRecipe( oreDict[ "nugget"~GlobalPostfixMetals[Liquid] ], GlobalMoltenMetal[Liquid] * 16, "minecraft:blocks/gravel" ); }
+				//	Make the Crucible recipes based on the defined PartTypes above
+			for Part,Amount in PartTypes {
+					//	Assign the input item oredictionary entry so we only iterate throught the table once.
+				var Input = GlobalGimmeOreDict(Part,Liquid);
+					//	Check if the oredictionary entry has an item to use
+				if( 
+					!(Input.empty) 
+				) { 
+					mods.crossroads.HeatingCrucible.addRecipe( 
+						Input, 
+						GlobalMoltenMetal[Liquid] * Amount, 
+						"minecraft:blocks/gravel" 
+					); 
+				}			
+			/* - Old recipes before looping them.
+			if( 
+				!isNull( GlobalChunk[Liquid].firstItem ) 
+			) { 
+				mods.crossroads.HeatingCrucible.addRecipe( 
+					GlobalChunk[Liquid], 
+					GlobalMoltenMetal[Liquid] * 144, 
+					"minecraft:blocks/gravel" 
+				); 
+			}
+			*/
+			//if( !isNull( GlobalDust[Liquid].firstItem ) ) { mods.crossroads.HeatingCrucible.addRecipe( GlobalDust[Liquid], GlobalMoltenMetal[Liquid] * 144, "minecraft:blocks/sand" ); }
+			//if( !isNull( GlobalIngot[Liquid].firstItem ) ) { mods.crossroads.HeatingCrucible.addRecipe( GlobalIngot[Liquid], GlobalMoltenMetal[Liquid] * 144, "minecraft:blocks/gravel" ); }
+			//if( !isNull( GlobalNugget[Liquid].firstItem ) ) { mods.crossroads.HeatingCrucible.addRecipe( GlobalNugget[Liquid], GlobalMoltenMetal[Liquid] * 16, "minecraft:blocks/gravel" ); }
 		
+			}
 		}
 	}
 }

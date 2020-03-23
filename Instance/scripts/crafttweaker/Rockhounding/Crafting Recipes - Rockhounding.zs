@@ -13,7 +13,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 RecipeBuilder.get("mason")
     .setShaped([
-        [null,              <ore:stairSeared>,          <ore:clayBarrelExtension>,  <ore:stairSeared>,          null                ],
+        [null,              null,                       <ore:clayBarrelExtension>,  null,                       null                ],
         [null,              <ore:stairSeared>,          <ore:clayBarrelExtension>,  <ore:stairSeared>,          null                ],
         [<ore:stairSeared>, <ore:blockSeared>,          <ore:clayBarrelExtension>,  <ore:blockSeared>,          <ore:stairSeared>   ],
         [<ore:stairSeared>, <crossroads:coal_heater>,   <crossroads:coal_heater>,   <crossroads:coal_heater>,   <ore:stairSeared>   ],

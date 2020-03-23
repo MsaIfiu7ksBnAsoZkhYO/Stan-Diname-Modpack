@@ -64,38 +64,54 @@ recipes.addShapeless(
 );
  
 	//  Flint Pickaxe with plant string if you want to make one of these for some reason		_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShaped(
-  "Flinty McPickaxe", 
-  <notreepunching:pickaxe/flint>,
-  [
-    [	<ore:shardFlint>,	<ore:stringPlant>,	<ore:shardFlint>	],
-    [	<ore:shardFlint>,	<ore:stickWood>,	  <ore:shardFlint>	],
-    [	null,				      <ore:stickWood>,	  null      				]
-  ]
-);
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:shardFlint>,  <ore:stringPlant>,  <ore:shardFlint>  ],
+    [<ore:shardFlint>,  <ore:stickWood>,    <ore:shardFlint>  ],
+    [null,              <ore:stickWood>,    null              ]])
+  .addOutput( <notreepunching:pickaxe/flint> )
+  .create();
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:shardFlint>,  <ore:string>,       <ore:shardFlint>  ],
+    [<ore:shardFlint>,  <ore:stickWood>,    <ore:shardFlint>  ],
+    [null,              <ore:stickWood>,    null              ]])
+  .addOutput( <notreepunching:pickaxe/flint> )
+  .create();
 
   //  Flint shovel with plant string if you want to make one of these for some reason		_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShaped(
-  "Flinty McShovel", 
-  <notreepunching:shovel/flint>,
-  [
-    [	null,				      <ore:shardFlint>,   <ore:shardFlint>	],
-    [	null,				      <ore:stringPlant>,  <ore:shardFlint>	],
-    [	<ore:stickWood>,	null,			        	null	      			]
-  ]
-);
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, <ore:shardFlint>, <ore:shardFlint>],
+    [null, <ore:stringPlant>, <ore:shardFlint>],
+    [<ore:stickWood>, null, null]])
+  .addOutput(<notreepunching:shovel/flint>)
+  .create();
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, <ore:shardFlint>, <ore:shardFlint>],
+    [null, <ore:string>, <ore:shardFlint>],
+    [<ore:stickWood>, null, null]])
+  .addOutput(<notreepunching:shovel/flint>)
+  .create();
   
 
   //  Flint night companion with plant string.  I know why you want to make one of these.  ( ͡° ͜ʖ ͡°)		_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShaped(
-  "Flinty McLadyoftheNight", 
-  <notreepunching:hoe/flint>,
-  [
-    [	<ore:stringPlant>,  <ore:shardFlint>, <ore:shardFlint>	],
-    [	<ore:stickWood>,    null,			        null			      	],
-    [	<ore:stickWood>,    null,			        null			      	]
-  ]
-);
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:stringPlant>, <ore:shardFlint>, <ore:shardFlint>],
+    [<ore:stickWood>, null, null],
+    [<ore:stickWood>, null, null]])
+  .addOutput(<notreepunching:hoe/flint>)
+  .create();
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:string>, <ore:shardFlint>, <ore:shardFlint>],
+    [<ore:stickWood>, null, null],
+    [<ore:stickWood>, null, null]])
+  .addOutput(<notreepunching:hoe/flint>)
+  .create();
+
   
   //  Fire started with Plant String		_______________________________________________________________________________________________________________________________________________________________________
 recipes.addShaped(
@@ -108,35 +124,21 @@ recipes.addShaped(
  
 
 //=====================================================================================================================================================================================================	
-//  Flint starter tools
+//  Sandstone rock fix
 //=====================================================================================================================================================================================================	
 
 
 	//	Sandstone Rocks to Sandstone blocks	Shouldn't give 2 blocks.  _______________________________________________________________________________________________________________________________________________________________________
-//recipes.removeByRecipeName("notreepunching:blocks/rocks_to_sandstone");
-recipes.addShapeless(
-  "Sandstone Rocks to Sandstone", 
-  <minecraft:sandstone>, 
-  [
-    <notreepunching:rock/sandstone>, 
-    <notreepunching:rock/sandstone>, 
-    <notreepunching:rock/sandstone>, 
-    <notreepunching:rock/sandstone>
-  ]
-);
+RecipeBuilder.get("basic")
+  .setShapeless([<notreepunching:rock/sandstone>, <notreepunching:rock/sandstone>, <notreepunching:rock/sandstone>, <notreepunching:rock/sandstone>])
+  .addOutput(<minecraft:sandstone>)
+  .create();
 
 	//	Red Sandstone Rocks to Red Sandstone blocks	Shouldn't give 2 blocks_______________________________________________________________________________________________________________________________________________________________________
-//recipes.removeByRecipeName("notreepunching:blocks/rocks_to_red_sandstone");
-recipes.addShapeless(
-  "Red Sandstone Rocks to Red Sandstone", 
-  <minecraft:red_sandstone>, 
-  [
-    <notreepunching:rock/red_sandstone>, 
-    <notreepunching:rock/red_sandstone>, 
-    <notreepunching:rock/red_sandstone>, 
-    <notreepunching:rock/red_sandstone>
-  ]
-);
+RecipeBuilder.get("basic")
+  .setShapeless([<ore:rockRedSandstone>, <ore:rockRedSandstone>, <ore:rockRedSandstone>, <ore:rockRedSandstone>])
+  .addOutput(<minecraft:red_sandstone>)
+  .create();
 
 
 
@@ -152,7 +154,7 @@ RecipeBuilder.get("potter")
   .setFluid( <liquid:water> * 50 )
   .setSecondaryIngredients( [ <minecraft:bowl> ] )
   .addTool( <ore:artisansTrowel> , 1 )
-  .addTool( <tconstruct:pattern> , 0 )
+  .addTool( <contenttweaker:brick_mold> , 1 )
   .addOutput( <notreepunching:clay_brick> )
   .setExtraOutputOne( <minecraft:bowl> , 1.0 )
   .create();

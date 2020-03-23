@@ -178,11 +178,13 @@ RecipeBuilder.get("potter")
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
+	.addTool( <ore:toolClay> , 1 )
 	.addOutput( <contenttweaker:scorched_clay_nugget> * 9 )
 	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
 	.create();
 
 	//	Scorched Clay	_______________________________________________________________________________________________________________________________________________________________________
+/*
 RecipeBuilder.get("potter")
 	.setShaped([
 		[<ore:dustTinySulfur>,	<ore:nuggetBlast>,		<ore:nuggetSeared>,		<ore:nuggetBlast>,		<ore:dustTinySulfur>	],
@@ -196,6 +198,19 @@ RecipeBuilder.get("potter")
 	.addOutput( <contenttweaker:scorched_clay> )
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
+*/
+
+RecipeBuilder.get("potter")
+	.setShaped([
+		[<ore:nuggetBlast>,		<ore:nuggetSeared>,		<ore:nuggetBlast>	],
+		[<ore:nuggetSeared>,	<ore:dustTinySulfur>,	<ore:nuggetSeared>	],
+		[<ore:nuggetBlast>,		<ore:nuggetSeared>,		<ore:nuggetBlast>	]])
+	.setFluid( <liquid:water> * 50 )
+	.setSecondaryIngredients( [ <minecraft:bowl> ] )
+	.addTool( <ore:artisansTrowel> , 1 )
+	.addOutput( <contenttweaker:scorched_clay> )
+	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
+	.create();
 
 	//	Unfired Scorched Clay Brick	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
@@ -203,7 +218,7 @@ RecipeBuilder.get("potter")
 	.setFluid( <liquid:water> * 50 )
 	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
-	.addTool( <tconstruct:pattern> , 0 )
+	.addTool( <contenttweaker:brick_mold> , 1 )
 	.addOutput( <contenttweaker:unfired_scorched_brick> )
 	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
@@ -212,9 +227,8 @@ RecipeBuilder.get("potter")
 //recipes.remove( <tcomplement:scorched_block:3> );
 RecipeBuilder.get("mason")
 	.setShaped([
-		[<ore:ingotBrickScorched>,	<ore:ingotBrickScorched>,	<ore:ingotBrickScorched>	],
-		[<ore:ingotBrickScorched>,	<ore:ingotBrickScorched>,	<ore:ingotBrickScorched>	],
-		[<ore:ingotBrickScorched>,	<ore:ingotBrickScorched>,	<ore:ingotBrickScorched>	]])
+		[<ore:ingotBrickScorched>,	<ore:ingotBrickScorched>	],
+		[<ore:ingotBrickScorched>,	<ore:ingotBrickScorched>	]])
 	.setFluid( <liquid:mortar> * 100 )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addOutput( <tcomplement:scorched_block:3> )

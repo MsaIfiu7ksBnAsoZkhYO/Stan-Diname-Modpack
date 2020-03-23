@@ -1,102 +1,4 @@
 //=====================================================================================================================================================================================================	
-//These imports must be included to cast the arrays
-//=====================================================================================================================================================================================================	
-
-/*
-import crafttweaker.item.IItemStack;
-import crafttweaker.item.IIngredient;
-import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.oredict.IOreDict;
-*/
-
-//=====================================================================================================================================================================================================	
-//	Material tables for dynamic recipes.
-//=====================================================================================================================================================================================================
-
-/*
-	//	Magneticraft Rocky Chunks	_______________________________________________________________________________________________________________________________________________________________________
-val RockyChunk = {
-	iron : <ore:rockyChunkIron>,
-	gold : <ore:rockyChunkGold>,
-	copper : <ore:rockyChunkCopper>,
-	lead : <ore:rockyChunkLead>,
-	cobalt : <ore:rockyChunkCobalt>,
-	tungsten : <ore:rockyChunkTungsten>,
-	aluminum : <ore:rockyChunkAluminum>,
-	mithril : <ore:rockyChunkMithril>,
-	nickel : <ore:rockyChunkNickel>,
-	osmium : <ore:rockyChunkOsmium>,
-	silver : <ore:rockyChunkSilver>,
-	tin : <ore:rockyChunkTin>,
-	zinc : <ore:rockyChunkZinc>,
-	antimony : <ore:rockyChunkAntimony>,
-	ardite : <ore:rockyChunkArdite>,
-	beryllium : <ore:rockyChunkBeryllium>,
-	bismuth : <ore:rockyChunkBismuth>,
-	boron : <ore:rockyChunkBoron>,
-	cadmium : <ore:rockyChunkCadmium>,
-	chromium : <ore:rockyChunkChromium>,
-	coldiron : <ore:rockyChunkColdiron>,
-	dilithium : <ore:rockyChunkDilithium>,
-	iridium : <ore:rockyChunkIridium>,
-	lithium : <ore:rockyChunkLithium>,
-	magnesium : <ore:rockyChunkMagnesium>,
-	manganese : <ore:rockyChunkManganese>,
-	mercury : <ore:rockyChunkMercury>,
-	platinum : <ore:rockyChunkPlatinum>,
-	plutonium : <ore:rockyChunkPlutonium>,
-	rutile : <ore:rockyChunkRutile>,
-	starsteel : <ore:rockyChunkStarsteel>,
-	tantalum : <ore:rockyChunkTantalum>,
-	thorium : <ore:rockyChunkThorium>,
-	titanium : <ore:rockyChunkTitanium>,
-	uranium : <ore:rockyChunkUranium>,
-	zirconium : <ore:rockyChunkZirconium>,
-} as IOreDictEntry[string];
-
-	//	Mekanism dustDirtys	_______________________________________________________________________________________________________________________________________________________________________
-val DustDirty = {
-	iron : <ore:dustDirtyIron>,
-	gold : <ore:dustDirtyGold>,
-	copper : <ore:dustDirtyCopper>,
-	lead : <ore:dustDirtyLead>,
-	cobalt : <ore:dustDirtyCobalt>,
-	tungsten : <ore:dustDirtyTungsten>,
-	aluminum : <ore:dustDirtyAluminum>,
-	mithril : <ore:dustDirtyMithril>,
-	nickel : <ore:dustDirtyNickel>,
-	osmium : <ore:dustDirtyOsmium>,
-	silver : <ore:dustDirtySilver>,
-	tin : <ore:dustDirtyTin>,
-	zinc : <ore:dustDirtyZinc>,
-	antimony : <ore:dustDirtyAntimony>,
-	ardite : <ore:dustDirtyArdite>,
-	beryllium : <ore:dustDirtyBeryllium>,
-	bismuth : <ore:dustDirtyBismuth>,
-	boron : <ore:dustDirtyBoron>,
-	cadmium : <ore:dustDirtyCadmium>,
-	chromium : <ore:dustDirtyChromium>,
-	coldiron : <ore:dustDirtyColdiron>,
-	dilithium : <ore:dustDirtyDilithium>,
-	iridium : <ore:dustDirtyIridium>,
-	lithium : <ore:dustDirtyLithium>,
-	magnesium : <ore:dustDirtyMagnesium>,
-	manganese : <ore:dustDirtyManganese>,
-	mercury : <ore:dustDirtyMercury>,
-	platinum : <ore:dustDirtyPlatinum>,
-	plutonium : <ore:dustDirtyPlutonium>,
-	rutile : <ore:dustDirtyRutile>,
-	starsteel : <ore:dustDirtyStarsteel>,
-	tantalum : <ore:dustDirtyTantalum>,
-	thorium : <ore:dustDirtyThorium>,
-	titanium : <ore:dustDirtyTitanium>,
-	uranium : <ore:dustDirtyUranium>,
-	zirconium : <ore:dustDirtyZirconium>,
-} as IOreDictEntry[string];
-*/
-
-
-//=====================================================================================================================================================================================================	
 //	Bumpin' and grindin' them ores.
 //=====================================================================================================================================================================================================
 /*
@@ -126,14 +28,21 @@ mods.crossroads.Grindstone.removeRecipe(<minecraft:wheat>);
 mods.crossroads.Grindstone.removeRecipe(<minecraft:nether_wart_block>);
 
 	//	Grind rocky chunks into dirty dust.  Kinky.	_______________________________________________________________________________________________________________________________________________________________________
-for Item in GlobalRockyChunk {
+for Item in GlobalHarvestLevel {
 
+		//	Assign the oredicts we want to variables
+	var Input = GlobalGimmeOreDict("chunk",Item);
+	var Output = GlobalGimmeOreDict("dustDirty",Item);
+		//	Verify the oredictionaries have items to use
     if( 
-		!isNull( GlobalRockyChunk[Item] ) 
+		!( Input.empty ) 
 		&
-		!isNull( GlobalDustDirty[Item] ) 
+		!( Output.empty ) 
 	) { 
-		mods.crossroads.Grindstone.addRecipe( GlobalRockyChunk[Item] , GlobalDustDirty[Item].firstItem * 2 ); 
+		mods.crossroads.Grindstone.addRecipe( 
+			Input, 
+			Output.firstItem * 2 
+		); 
 	}
 
 }

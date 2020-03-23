@@ -19,10 +19,8 @@ import mods.artisanworktables.builder.RecipeBuilder;
 //recipes.remove( <openblocks:tank> );
 RecipeBuilder.get("basic")
     .setShaped([
-        [<ore:stickCopper>, <ore:paneGlass>,    <ore:stickWood>,        <ore:paneGlass>,    <ore:stickCopper>   ],
-        [<ore:paneGlass>,   <ore:stickWood>,    null,                   <ore:stickWood>,    <ore:paneGlass>     ],
-        [<ore:stickWood>,   null,               <agricraft:water_tank>, null,               <ore:stickWood>     ],
-        [<ore:paneGlass>,   <ore:stickWood>,    null,                   <ore:stickWood>,    <ore:paneGlass>     ],
-        [<ore:stickCopper>, <ore:paneGlass>,    <ore:stickWood>,        <ore:paneGlass>,    <ore:stickCopper>   ]])
+        [<ore:stickCopper>, <ore:paneGlass>,        <ore:stickCopper>   ],
+        [<ore:paneGlass>,   <ceramics:clay_barrel>, <ore:paneGlass>     ],
+        [<ore:stickCopper>, <ore:paneGlass>,        <ore:stickCopper>   ]])
     .addOutput( <openblocks:tank> )
     .create();

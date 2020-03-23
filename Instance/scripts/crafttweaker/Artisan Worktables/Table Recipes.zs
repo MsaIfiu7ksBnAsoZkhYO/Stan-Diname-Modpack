@@ -11,31 +11,34 @@ import mods.artisanworktables.builder.RecipeBuilder;
 //=====================================================================================================================================================================================================
 
 
-	//	Basic Workbench	_______________________________________________________________________________________________________________________________________________________________________
+	//	Basic Workstation	_______________________________________________________________________________________________________________________________________________________________________
 recipes.addShaped(
-	"Basic Workshop", 
-	<artisanworktables:workshop:5>,
+	"Artisan Basic Workstation", 
+	<artisanworktables:workstation:5>,
 	[
-		[<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:craftingTableWood>		],
-		[null,						<ore:chest>,				null						],
-		[<ore:logWood>,				<ore:logWood>,				<ore:logWood>				]
+		[<ore:plankWood>,	<ore:plankWood>	],
+		[<ore:plankWood>,	<ore:plankWood>	]
 	]
 );
-  
-	//	Mason Table	_______________________________________________________________________________________________________________________________________________________________________
+	//	Basic Workshop	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("basic")
 	.setShaped([
-		[<ore:ingotBrick>,	<ore:ingotBrick>,			<ore:ingotBrick>,			<ore:ingotBrick>,			<ore:ingotBrick>	],
-		[<ore:ingotBrick>,	<ore:stone>,				<ore:stone>,				<ore:stone>,				<ore:ingotBrick>	],
-		[null,				<ore:stone>,				<ore:chest>,				<ore:stone>,				null				],
-		[<ore:logWood>,		<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:logWood>		],
-		[<ore:logWood>,		<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>		]])
-	.setFluid( <liquid:mortar> * 250 )
-	.addTool( <ore:artisansTrowel>, 5 )
-	.addOutput( <artisanworktables:workshop:2> )
+		[<artisanworktables:workstation:5>,	<artisanworktables:workstation:5>,	<artisanworktables:workstation:5>	],
+		[null,								<ore:chest>,						null								],
+		[<ore:logWood>,						<ore:logWood>,						<ore:logWood>						]])
+	.addOutput(<artisanworktables:workshop:5>)
 	.create();
-	
-	//	Carpenter Table	_______________________________________________________________________________________________________________________________________________________________________
+  
+
+	//	Carpenter WorkStation	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShaped([
+		[<ore:plankWood>,	<ore:plankWood>,					<ore:plankWood>	],
+		[null,				<artisanworktables:workstation:5>,	null			],
+		[<ore:logWood>,		<ore:logWood>,						<ore:logWood>	]])
+	.addOutput(<artisanworktables:workstation:1>)
+	.create();
+	//	Carpenter WorkShop	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("basic")
 	.setShaped([
 		[<ore:plankWood>,	<ore:plankWood>,			<ore:plankWood>,			<ore:plankWood>,			<ore:plankWood>	],
@@ -46,7 +49,15 @@ RecipeBuilder.get("basic")
 	.addOutput( <artisanworktables:workshop:1> )
 	.create();
 	
-	//	Potter Table	_______________________________________________________________________________________________________________________________________________________________________
+	//	Potter Workstation	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShaped([
+		[<ore:ingotBrick>,	<ore:hardenedClay>,					<ore:ingotBrick>	],
+		[null,				<artisanworktables:workstation:5>,	null				],
+		[<ore:logWood>,		<ore:logWood>,						<ore:logWood>		]])
+	.addOutput( <artisanworktables:workstation:14> )
+	.create();	
+	//	Potter Workshop	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("basic")
 	.setShaped([
 		[<ore:stone>,			<ore:hardenedClay>,			<ore:hardenedClay>,			<ore:hardenedClay>,			<ore:stone>			],
@@ -56,6 +67,28 @@ RecipeBuilder.get("basic")
 		[<ore:logWood>,			<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>		]])
 	.addOutput( <artisanworktables:workshop:14> )
 	.create();
+
+
+	//	Mason Workstation	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShaped([
+		[<ore:ingotBrick>,	<ore:stone>,						<ore:ingotBrick>	],
+		[null,				<artisanworktables:workstation:5>,	null				],
+		[<ore:logWood>,		<ore:logWood>,						<ore:logWood>		]])
+	.addOutput( <artisanworktables:workstation:2> )
+	.create();
+	//	Mason Workshop	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShaped([
+		[<ore:ingotBrick>,	<ore:ingotBrick>,			<ore:ingotBrick>,			<ore:ingotBrick>,			<ore:ingotBrick>	],
+		[<ore:ingotBrick>,	<ore:stone>,				<ore:stone>,				<ore:stone>,				<ore:ingotBrick>	],
+		[null,				<ore:stone>,				<ore:chest>,				<ore:stone>,				null				],
+		[<ore:logWood>,		<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:craftingTableWood>,	<ore:logWood>		],
+		[<ore:logWood>,		<ore:logWood>,				<ore:logWood>,				<ore:logWood>,				<ore:logWood>		]])
+	.addOutput( <artisanworktables:workshop:2> )
+	.create();
+	
+
 
 	//	Tailor Table	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("basic")
@@ -90,7 +123,15 @@ RecipeBuilder.get("basic")
 	.addOutput( <artisanworktables:workshop:6> )
 	.create();
 
-	//Tanner's Table	_______________________________________________________________________________________________________________________________________________________________________
+	//Tanner's Workstation	_______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+	.setShaped([
+		[<ore:leatherSheet>,	<ore:leatherSheet>,					<ore:leatherSheet>	],
+		[null,					<artisanworktables:workstation:5>,	null				],
+		[<ore:logWood>,			<ore:logWood>,						<ore:logWood>		]])
+	.addOutput( <artisanworktables:workstation:13> )
+	.create();
+	//Tanner's Workshop	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("basic")
 	.setShaped([
 		[<ore:leather>,			<ore:leatherSheet>,			<ore:leatherSheet>,			<ore:leatherSheet>,			<ore:leather>		],

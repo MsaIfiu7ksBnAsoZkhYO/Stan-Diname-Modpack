@@ -2,6 +2,7 @@
 //	Remove existing recipes
 //=====================================================================================================================================================================================================
 
+#priority -100000
 
     mods.magneticraft.Grinder.removeRecipe(<minecraft:iron_ore>);
     mods.magneticraft.Grinder.removeRecipe(<minecraft:gold_ore>);
@@ -40,9 +41,9 @@
     mods.magneticraft.Grinder.removeRecipe(<minecraft:obsidian>);
     mods.magneticraft.Grinder.removeRecipe(<minecraft:coal:1>);
 		//	Contentweaker ore blocks, zinc, steel, tungsten
-	mods.magneticraft.Grinder.removeRecipe(<ore:oreZinc>.firstItem);
-	mods.magneticraft.Grinder.removeRecipe(<ore:oreSteel>.firstItem);
-	mods.magneticraft.Grinder.removeRecipe(<ore:oreTungsten>.firstItem);
+	//mods.magneticraft.Grinder.removeRecipe(<ore:oreZinc>.firstItem);
+	//mods.magneticraft.Grinder.removeRecipe(<ore:oreSteel>.firstItem);
+	//mods.magneticraft.Grinder.removeRecipe(<ore:oreTungsten>.firstItem);
 
 
 //=====================================================================================================================================================================================================	
@@ -96,6 +97,48 @@ mods.magneticraft.Grinder.addRecipe(
     true
 );
 
+//  I can merge these together right?
+//  only differences are inputs and outputs.
+//  So make a table with:
+//  Input   :   Output
+//  Input2  :   Output2
+
+//  Then call it in a for loop
+
+
+    //  Defines the Input / Output relationships to be extra dynamic
+var Recipes = {
+    "oreChunk"  :   "rockyChunk",
+    "rock"      :   "rockyChunk",
+} as string[string];
+
+for Item in GlobalHarvestLevel {
+    var HarvestLevel = GlobalHarvestLevel[Item];
+    if ( 10 >= HarvestLevel ) {
+            //  Set the Left value as the input and the right value as the output
+        for Left,Right in Recipes {
+            var Input = GlobalGimmeOreDict(Left,Item);
+            var Output = GlobalGimmeOreDict(Right,Item);
+            if ( 
+                !(Input.empty)
+                &
+                !(Output.empty)
+            ) {
+                mods.magneticraft.Grinder.addRecipe(
+                    Input.firstItem, 
+                    Output.firstItem,
+                    Output.firstItem, 
+                    0.05, 
+                    200, 
+                    true
+                );
+            }
+        }
+    }
+}
+        
+
+/*
 	//	Ore Chunk > Rocky Chunk + Chance to double + rock	_______________________________________________________________________________________________________________________________________________________________________
 for Item in GlobalOreChunk {	
 	if ( 10 >= GlobalHarvestLevel[Item] ) {
@@ -121,3 +164,4 @@ for Item in GlobalOreRock {
 		}
     }
 }
+*/

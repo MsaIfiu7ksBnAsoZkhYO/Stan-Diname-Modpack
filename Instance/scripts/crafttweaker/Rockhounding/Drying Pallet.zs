@@ -33,7 +33,15 @@ mods.rockhounding_oretiers.DryingPallet.add( "blockClay", <tconstruct:dried_clay
 mods.rockhounding_oretiers.DryingPallet.add( <minecraft:sponge:1>, <minecraft:sponge>, 2400);
 mods.rockhounding_oretiers.DryingPallet.add( "treeSapling", <minecraft:deadbush>, 7200);
 
-	//	Sand cast need to be dryed before use	_______________________________________________________________________________________________________________________________________________________________________
+	//	Sand casts need to be dryed before use	_______________________________________________________________________________________________________________________________________________________________________
 mods.rockhounding_oretiers.DryingPallet.add( <tinkersforging:tinkers_anvil/moldclaywet>, <tinkersforging:tinkers_anvil/moldclay>, 6000);
 mods.rockhounding_oretiers.DryingPallet.add( <contenttweaker:forging_anvil_cast_wet>, <contenttweaker:forging_anvil_cast>, 6000);
 mods.rockhounding_oretiers.DryingPallet.add( <contenttweaker:sand_ingot_cast_wet>, <contenttweaker:sand_ingot_cast>, 6000);
+
+	//	Wet mold clay tool parts	_______________________________________________________________________________________________________________________________________________________________________
+mods.rockhounding_oretiers.DryingPallet.add( <tcomplement:chisel_head>.withTag({Material: "moldclaywet"}), <tcomplement:chisel_head>.withTag({Material: "moldclay"}), 6000);
+mods.rockhounding_oretiers.DryingPallet.add( <tconstruct:sharpening_kit>.withTag({Material: "moldclaywet"}), <tconstruct:sharpening_kit>.withTag({Material: "moldclay"}), 6000);
+mods.rockhounding_oretiers.DryingPallet.add( <conarm:polishing_kit>.withTag({Material: "moldclaywet"}), <conarm:polishing_kit>.withTag({Material: "moldclay"}), 6000);
+mods.rockhounding_oretiers.DryingPallet.add( <tconstruct:bow_string>.withTag({Material: "moldclaywet"}), <tconstruct:bow_string>.withTag({Material: "moldclay"}), 6000);
+mods.rockhounding_oretiers.DryingPallet.add( <tconstruct:arrow_shaft>.withTag({Material: "moldclaywet"}), <tconstruct:arrow_shaft>.withTag({Material: "moldclay"}), 6000);
+mods.rockhounding_oretiers.DryingPallet.add( <tconstruct:fletching>.withTag({Material: "moldclaywet"}), <tconstruct:fletching>.withTag({Material: "moldclay"}), 6000);

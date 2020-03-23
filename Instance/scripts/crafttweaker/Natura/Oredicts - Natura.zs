@@ -3,26 +3,16 @@
 //=====================================================================================================================================================================================================
 
 
-#priority -1
+#priority 9001
 
-import crafttweaker.item.IItemStack;
-import crafttweaker.item.IIngredient;
-import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
 
 
 //=====================================================================================================================================================================================================	
-//	Adjust Burn times
+//	Add things to oredictionaries they should be in
 //=====================================================================================================================================================================================================
 
 
-furnace.setFuel(<minecraft:torch>, 0);
-furnace.setFuel(<minecraft:sugar>, 0);
-furnace.setFuel(<minecraft:wool>, 0);
-
-furnace.setFuel(<ore:treeSapling>, 25);
-furnace.setFuel(<ore:stickWood>, 50);
-furnace.setFuel(<ore:slabWood>, 50);
-furnace.setFuel(<ore:stairWood>, 100);
-furnace.setFuel(<ore:plankWood>, 100);
-furnace.setFuel(<ore:logWood>, 200);
+	//	Bloodwood Logs to make the recipes look nicer and so I can unify the drops.	_______________________________________________________________________________________________________________________________________________________________________
+<ore:logBloodwood>.add( <natura:nether_logs2:*> );

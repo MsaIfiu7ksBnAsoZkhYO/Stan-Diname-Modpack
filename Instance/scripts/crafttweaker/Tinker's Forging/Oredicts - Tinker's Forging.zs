@@ -32,11 +32,11 @@ import mods.TinkersForging.Anvil;
 //<ore:ingotQuartzEnrichedIron>.add(<refinedstorage:quartz_enriched_iron>);
 
 	//	Mystical Agriculture	_______________________________________________________________________________________________________________________________________________________________________
-<ore:ingotMa.supremium>.add(<mysticalagriculture:crafting:37>);
-<ore:ingotMa.superium>.add(<mysticalagriculture:crafting:36>);
-<ore:ingotMa.intermedium>.add(<mysticalagriculture:crafting:35>);
-<ore:ingotMa.prudentium>.add(<mysticalagriculture:crafting:34>);
-<ore:ingotMa.inferium>.add(<mysticalagriculture:crafting:33>);
+//<ore:ingotMa.supremium>.add(<mysticalagriculture:crafting:37>);
+//<ore:ingotMa.superium>.add(<mysticalagriculture:crafting:36>);
+//<ore:ingotMa.intermedium>.add(<mysticalagriculture:crafting:35>);
+//<ore:ingotMa.prudentium>.add(<mysticalagriculture:crafting:34>);
+//<ore:ingotMa.inferium>.add(<mysticalagriculture:crafting:33>);
 
 
 	/*/	Plustic Materials - working	_______________________________________________________________________________________________________________________________________________________________________

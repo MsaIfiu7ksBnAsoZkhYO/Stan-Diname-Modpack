@@ -213,7 +213,37 @@ for Table , Liquid in TconMaterials {
 //	Casting the ore oil into an ore cluster for the ore processing chain
 //=====================================================================================================================================================================================================	
 	
+	//	No needed, but this makes it super easy to add and remove recipes as needed
+var Recipes = {
+    "cluster"   :   "cluster",
+} as string[string];
+
+for Item in GlobalHarvestLevel {
+	var HarvestLevel = GlobalHarvestLevel[Item];
+		//	Limit recipes to only items that melt at 1000c or less
+	if ( 10 >= HarvestLevel ) {
+            //  Set the Left value as the input and the right value as the output
+        for Left,Right in Recipes {
+            var Input = GlobalGimmeOreDict(Left,Item);
+            if ( 
+                !(Input.empty)
+                &
+				!isNull( HarvestLevel )
+            ) {
+				mods.tconstruct.Casting.addTableRecipe(
+					Input.firstItem,
+					<ore:rock>, 
+					GlobalStage4MetalFluid[Item], 
+					200 , 
+					true, 
+					GlobalHarvestLevel[Item]*120 
+				);
+            }
+		}
+	}
+}
 	
+/*	
 	//	Stage 4 ore oil to ore cluster
 for Item in GlobalCluster {
 	if ( 10 >= GlobalHarvestLevel[Item] ) {
@@ -233,3 +263,4 @@ for Item in GlobalCluster {
 		}
 	}
 }
+*/

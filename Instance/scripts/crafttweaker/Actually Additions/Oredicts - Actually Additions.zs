@@ -24,3 +24,7 @@ import crafttweaker.oredict.IOreDictEntry;
 		<actuallyadditions:item_crystal_shard:5>
 	]
 );
+
+	//	Tiny coal and charcoal to coal pelet oredict so they work off the existing torch recipe.	_______________________________________________________________________________________________________________________________________________________________________
+//<ore:itemCoalpellet>.add( <actuallyadditions:item_misc:10> );
+//<ore:itemCoalpellet>.add( <actuallyadditions:item_misc:11> );

@@ -36,20 +36,20 @@ mods.horsepower.Grindstone.add(
 	//	Grind up quicklime into lime dust	_______________________________________________________________________________________________________________________________________________________________________
 mods.horsepower.Grindstone.add(
 	<contenttweaker:quicklime>, 
-	<contenttweaker:limedust> * 2, 
+	<contenttweaker:limedust> * 1, 
 	8, 
 	false, 
-	<contenttweaker:limedust> * 2 , 
+	<contenttweaker:limedust> * 1 , 
 	100
 );
 
 	//	Flint shards to flint dust for alternate porcelain recipe	_______________________________________________________________________________________________________________________________________________________________________
 mods.horsepower.Grindstone.add(
 	<ore:shardFlint>, 
-	<contenttweaker:flintdust> * 2, 
+	<contenttweaker:flintdust> * 1, 
 	8, 
 	false, 
-	<contenttweaker:flintdust> * 2 , 
+	<contenttweaker:flintdust> * 1 , 
 	100
 );
 
@@ -107,9 +107,9 @@ mods.horsepower.Grindstone.add(
 	//	Bonemeal to Bone dust	_______________________________________________________________________________________________________________________________________________________________________
 mods.horsepower.Grindstone.add(
 	<minecraft:dye:15>, 
-	<contenttweaker:bonedust> * 2, 
+	<contenttweaker:bonedust> * 1, 
 	8, 
 	false, 
-	<contenttweaker:bonedust> * 2 , 
+	<contenttweaker:bonedust> * 1 , 
 	100
 );

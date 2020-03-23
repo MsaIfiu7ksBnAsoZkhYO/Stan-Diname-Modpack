@@ -8,9 +8,13 @@ import crafttweaker.oredict.IOreDictEntry;
 
 
 //=====================================================================================================================================================================================================	
-//	Clay blocks should be clay blocks.
+//	Oredictinary adjustments
 //=====================================================================================================================================================================================================
 
+
+	//	Lignite fragments from rock so they can make torches..	_______________________________________________________________________________________________________________________________________________________________________
+<ore:itemCoalpellet>.add( <undergroundbiomes:lignite_coal> );
+	
 	//	Clay that is a block should be a blockClay.	_______________________________________________________________________________________________________________________________________________________________________
 <ore:blockClay>.addItems([
 	<undergroundbiomes:igneous_clay:*>,
@@ -26,13 +30,16 @@ import crafttweaker.oredict.IOreDictEntry;
 ]);
 
 	//	Stone Brick Stairs 	_______________________________________________________________________________________________________________________________________________________________________
+/*
 <ore:stairStoneBrick>.addItems([
 	<undergroundbiomes:igneous_brick_stairs:*>,
 	<undergroundbiomes:metamorphic_brick_stairs:*>
 ]);
+*/
 
 	//	Stone Brick Slabs 	_______________________________________________________________________________________________________________________________________________________________________
 <ore:slabStoneBrick>.addItems([
 	<undergroundbiomes:igneous_brick_halfslab:*>,
 	<undergroundbiomes:metamorphic_brick_halfslab:*>
 ]);
+

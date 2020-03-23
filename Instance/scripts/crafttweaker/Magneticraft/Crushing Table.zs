@@ -34,7 +34,7 @@ mods.magneticraft.CrushingTable.removeRecipe(<ore:oreMithril>.firstItem);
 mods.magneticraft.CrushingTable.removeRecipe(<ore:oreNickel>.firstItem);
 mods.magneticraft.CrushingTable.removeRecipe(<ore:oreOsmium>.firstItem);
 mods.magneticraft.CrushingTable.removeRecipe(<ore:oreIron>.firstItem);
-mods.magneticraft.CrushingTable.removeRecipe(<ore:oreSteel>.firstItem);
+//mods.magneticraft.CrushingTable.removeRecipe(<ore:oreSteel>.firstItem);
 
 
 
@@ -60,6 +60,72 @@ mods.magneticraft.CrushingTable.addRecipe(
     true
 );
 
+    //  Defines the Input / Output relationships to be extra dynamic
+var Recipes = {
+    "oreChunk"  :   "rockyChunk",
+    "rock"      :   "RockyChunk",
+} as string[string];
+
+
+for Item in GlobalHarvestLevel {
+    var HarvestLevel = GlobalHarvestLevel[Item];
+    if ( 5 >= HarvestLevel ) {
+            //  Set the Left value as the input and the right value as the output
+        for Left,Right in Recipes {
+            var Input = GlobalGimmeOreDict(Left,Item);
+            var Output = GlobalGimmeOreDict(Right,Item);
+            if ( 
+                !(Input.empty)
+                &
+                !(Output.empty)
+            ) {
+                mods.magneticraft.CrushingTable.addRecipe( 
+                    Input.firstItem, 
+                    Output.firstItem, 
+                    true);
+            }
+        }
+    }
+}
+
+/* - Previous rebuild that's already outdated.  Lol
+for Item in GlobalHarvestLevel {
+    var HarvestLevel = GlobalHarvestLevel[Item];
+    if ( 5 >= HarvestLevel ) {
+            //  Ore Chunk to Rocky Chunk
+        var Input = GlobalGimmeOreDict("chunk",Item);
+        var Output = GlobalGimmeOreDict("rockyChunk",Item);
+        if ( 
+            !(Input.empty)
+            &
+            !(Output.empty)
+        ) {
+            mods.magneticraft.CrushingTable.addRecipe( 
+                Input.firstItem, 
+                Output.firstItem, 
+                true);
+        }
+         
+         
+            //  Ore Rock to Rocky Chunk
+        var Input = GlobalGimmeOreDict("rock",Item);
+        var Output = GlobalGimmeOreDict("rockyChunk",Item);
+        if ( 
+            !(Input.empty)
+            &
+            !(Output.empty)
+        ) {
+            mods.magneticraft.CrushingTable.addRecipe( 
+                Input.firstItem, 
+                Output.firstItem, 
+                true);
+        }
+
+}
+*/
+
+
+/*
 	//	Ore chunk to rocky chunks
 for Item in GlobalOreChunk {
     if ( 5 >= GlobalHarvestLevel[Item] ) {
@@ -85,3 +151,4 @@ for Item in GlobalOreRock {
         }
     }
 }
+*/

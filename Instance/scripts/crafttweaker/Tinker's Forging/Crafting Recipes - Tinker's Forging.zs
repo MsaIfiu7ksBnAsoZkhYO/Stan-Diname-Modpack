@@ -29,3 +29,16 @@ RecipeBuilder.get("potter")
     .addOutput( <tinkersforging:tinkers_anvil/moldclaywet> )
     .setExtraOutputOne( <minecraft:bowl> , 1.0 )
     .create();
+
+	//	Brick Forge	______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("mason")
+    .setShaped([
+        [<ore:ingotKiln>,   <ore:ingotKiln>,                <ore:ingotKiln>,                <ore:ingotKiln>,                <ore:ingotKiln> ],
+        [<ore:ingotKiln>,   <ore:clayBarrelExtension>,      <ore:clayBarrelExtension>,      <ore:clayBarrelExtension>,      <ore:ingotKiln> ],
+        [<ore:ingotKiln>,   <crossroads:heating_chamber>,   <crossroads:heating_chamber>,   <crossroads:heating_chamber>,   <ore:ingotKiln> ],
+        [<ore:ingotKiln>,   <crossroads:coal_heater>,       <crossroads:coal_heater>,       <crossroads:coal_heater>,       <ore:ingotKiln> ],
+        [<ore:ingotKiln>,   <ore:ingotKiln>,                <ore:ingotKiln>,                <ore:ingotKiln>,                <ore:ingotKiln> ]])
+    .setFluid( <liquid:mortar> * 500 )
+    .addTool( <ore:artisansTrowel> , 10 )
+    .addOutput( <tinkersforging:forge> )
+    .create();

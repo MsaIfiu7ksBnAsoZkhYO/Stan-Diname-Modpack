@@ -9,11 +9,11 @@ import crafttweaker.oredict.IOreDictEntry;
 
 
 //=====================================================================================================================================================================================================	
-//	Add items here to allow them to be stacked by Charset Immersion.  *Don't add anything here if it can normally be placed in the world, or if it has it's own right click function.
+//	Items that can be used to make a Sand Ingot Cast
 //=====================================================================================================================================================================================================
 
-/* - Charset has been removed.  These don't need to exist anymore.
-<ore:ingotStackable>.addItems([
+
+<ore:ingotCastBase>.addItems([
 	<notreepunching:clay_brick>,
 	<minecraft:brick>,
 	<biomesoplenty:mud_brick>,
@@ -21,44 +21,57 @@ import crafttweaker.oredict.IOreDictEntry;
 	<ceramics:unfired_clay:5>,
 	<contenttweaker:porcelain_brick>,
 	<tconstruct:materials:2>,
-	<tconstruct:materials:1>,
 	<tconstruct:materials>,
+	<tcomplement:materials:1>,
 	<contenttweaker:coke_brick>,
-	<contenttweaker:unfired_coke_brick>,
+	<contenttweaker:coke_brick>,
+	<contenttweaker:kiln_brick>,
+	<contenttweaker:blast_brick>,
 ]);
 
-<ore:gearStackable>.addItems([
-]);
-
-<ore:plateStackable>.addItems([
-	<libvulpes:productsheet:1>,
-	<tconstruct:pattern>,
-	<tconstruct:clay_cast>,
-	<tconstruct:cast>,
-	<tconstruct:cast_custom:*>,
-	<tcomplement:cast>,
-	<tcomplement:cast_clay>,
-	<immersiveengineering:mold:*>,
-]);
-*/
 
 //=====================================================================================================================================================================================================	
 //	Limestone
 //=====================================================================================================================================================================================================
+
+
 <ore:stoneLimestone>.add(<undergroundbiomes:sedimentary_stone>);
 
 
 //=====================================================================================================================================================================================================	
-//	Stripped Logs so they don't become unusable in recipes.
+//	Ensure oredict consistancy across the Wooden things I have global tables for already.
 //=====================================================================================================================================================================================================
-<ore:logWood>.addItems([
-	<woodstock:stripped_oak_log>,
-	<woodstock:stripped_spruce_log>,
-	<woodstock:stripped_birch_log>,
-	<woodstock:stripped_jungle_log>,
-	<woodstock:stripped_acacia_log>,
-	<woodstock:stripped_dark_oak_log>,
-]);
+for Name,Item in GlobalWoodLog {
+	<ore:logWood>.add(Item);
+}
+
+for Name,Item in GlobalWoodPlank {
+	<ore:plankWood>.add(Item);
+}
+
+for Name,Item in GlobalWoodFence {
+	<ore:fenceWood>.add(Item);
+}
+
+for Name,Item in GlobalWoodFenceGate {
+	<ore:fenceGateWood>.add(Item);
+}
+
+for Name,Item in GlobalWoodSlab {
+	<ore:slabWood>.add(Item);
+}
+
+for Name,Item in GlobalWoodStair {
+	<ore:stairWood>.add(Item);
+}
+
+for Name,Item in GlobalWoodDoor {
+	<ore:doorWood>.add(Item);
+}
+
+for Name,Item in GlobalWoodTrapDoor {
+	<ore:trapdoorWood>.add(Item);
+}
 
 
 //=====================================================================================================================================================================================================	

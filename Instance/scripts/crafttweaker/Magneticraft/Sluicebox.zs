@@ -86,6 +86,40 @@ mods.magneticraft.SluiceBox.addRecipe(
 );
 
 
+	
+    //  Defines the Input / Output relationships to be extra dynamic
+var Recipes = {
+    "rockyChunk"	:  "chunk",
+    "dustDirty"		:   "dust",
+} as string[string];
+
+for Item in GlobalHarvestLevel {
+    var HarvestLevel = GlobalHarvestLevel[Item];
+		//	Shut up.  I'll remove this later.
+	if ( 5 >= HarvestLevel ) {
+            //  Set the Left value as the input and the right value as the output
+        for Left,Right in Recipes {
+            var Input = GlobalGimmeOreDict(Left,Item);
+            var Output = GlobalGimmeOreDict(Right,Item);
+			var Output2 = GlobalGimmeOreDict("nugget",Item);
+            if ( 
+                !(Input.empty)
+                &
+                !(Output.empty)
+            ) {
+				mods.magneticraft.SluiceBox.addRecipe( 
+					Input.firstItem,
+					1.00 , Output.firstItem,
+					0.05 , Output2.firstItem,
+					0.25 , <notreepunching:rock/stone>,
+					true
+				);
+            }
+		}
+	}
+}		
+	
+/*
 	//	Dynamically Add recipes for ore processing	_______________________________________________________________________________________________________________________________________________________________________
 for Item in GlobalRockyChunk {
     	//	Only add low level materials to require Sieve	_______________________________________________________________________________________________________________________________________________________________________
@@ -132,3 +166,4 @@ for Item in GlobalDustDirty {
 	}
 	
 }
+*/
