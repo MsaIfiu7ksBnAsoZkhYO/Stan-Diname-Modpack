@@ -1,0 +1,199 @@
+{
+	"populate": {
+		"limestone rocks": {
+			"distribution": "surface",
+			"generator": {
+				"type": "decoration",
+				"block": "notreepunching:loose_rock/limestone",
+				"cluster-size": 1
+			},
+			"chunk-chance": 1,
+			"cluster-count": 50,
+			"min-height": 40,
+			"max-height": 256,
+			"surface": [
+				"minecraft:dirt",
+				"minecraft:grass",
+				"minecraft:stone",
+				"minecraft:stone:1",
+				"minecraft:stone:3",
+				"minecraft:stone:5",
+				"minecraft:sand",
+				"minecraft:gravel",
+				"biomesoplenty:grass:2",
+				"biomesoplenty:grass:3",
+				"biomesoplenty:grass:4",
+				"biomesoplenty:grass:5",
+				"biomesoplenty:grass:7",
+				"biomesoplenty:grass:1",
+				"biomesoplenty:mud"
+			],
+			"check-stay": true,
+			"follow-terrain": true,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"Extra Doodads": {
+			"distribution": "surface",
+			"generator": {
+				"type": "decoration",
+				"block": {
+					"name": "terraqueous:doodads",
+					"properties": {
+						"variant": "stone"
+					}
+				},
+				"cluster-size": 2
+			},
+			"chunk-chance": 1,
+			"cluster-count": 30,
+			"min-height": 40,
+			"max-height": 256,
+			"surface": [
+				"minecraft:dirt",
+				"minecraft:grass",
+				"minecraft:stone",
+				"minecraft:stone:1",
+				"minecraft:stone:3",
+				"minecraft:stone:5",
+				"minecraft:sand",
+				"minecraft:gravel",
+				"biomesoplenty:grass:2",
+				"biomesoplenty:grass:3",
+				"biomesoplenty:grass:4",
+				"biomesoplenty:grass:5",
+				"biomesoplenty:grass:7",
+				"biomesoplenty:grass:1",
+				"biomesoplenty:mud"
+			],
+			"check-stay": true,
+			"follow-terrain": true,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"extra clay": {
+			"distribution": "underfluid",
+			"fluid": "water",
+			"generator": [
+				{
+					"type": "cluster",
+					"block": "minecraft:clay",
+					"cluster-size": 10
+				}
+			],
+            "chunk-chance": 1,
+			"cluster-count": 16,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+		"CR native copper": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "crossroads:ore_native_copper",
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 1,
+			"min-height": 45,
+			"max-height": 95,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"Native Copper on Copper": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "crossroads:ore_native_copper",
+				"material": [
+					"basemetals:copper_ore",
+					"immersiveengineering:ore",
+					"magneticraft:ores",
+					"mekanism:oreblock:1",
+					"nuclearcraft:ore",
+					"thermalfoundation:ore",
+					"crossroads:ore_copper",
+					"crossroads:ore_copper"
+				],
+				"cluster-size": 2
+			},
+			"cluster-count": 1,
+			"min-height": 45,
+			"max-height": 95,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"Ebwizardry Crystal Ore": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "ebwizardry:crystal_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 1,
+			"min-height": 3,
+			"max-height": 20,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"Zinc Ore": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "<contenttweaker:sub_block_holder_1:7>",
+				"material": "minecraft:stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 3,
+			"min-height": 23,
+			"max-height": 38,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

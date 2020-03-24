@@ -1,0 +1,20 @@
+crafttweaker:artisan basic workstation
+crafttweaker:ceramics_decoration/porcelain_bricks/slab
+crafttweaker:ceramics_decoration/monochrome_bricks/block
+crafttweaker:ceramics_decoration/marine_bricks/block
+crafttweaker:ct_shapeless45116414
+crafttweaker:ct_shapeless2092606087
+crafttweaker:ct_shapeless977669405
+crafttweaker:ct_shapeless1275701824
+crafttweaker:ct_shapeless1210299036
+crafttweaker:ct_shapeless1442970614
+crafttweaker:ct_shapeless57384443
+crafttweaker:plant string
+crafttweaker:flinty mchatchet
+crafttweaker:ntp firestarter
+crafttweaker:tconstruct torch arrows
+crafttweaker:gravel to gravel lumps
+crafttweaker:ct_shapeless931733164
+guideapi:guide_journal_to_manual
+guideapi:guide_journal
+guideapi:guide_manual_to_journal

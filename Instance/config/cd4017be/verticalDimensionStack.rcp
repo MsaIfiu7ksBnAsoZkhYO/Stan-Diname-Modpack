@@ -64,7 +64,7 @@ PRE_INIT() {
 	dim_ceiling:-1 = 256;
 	
 	!prevent bedrock from being generated in ...
-	!rem_block_gen:0 = "minecraft:bedrock"; !the Overworld (rem '!' to enable)
+	rem_block_gen:0 = "minecraft:bedrock"; !the Overworld (rem '!' to enable)
 	rem_block_gen:-1 = "minecraft:bedrock"; !the Nether (rem '!' to enable)
 	
 	!register a new noise field

@@ -49,7 +49,16 @@
   },
   "oreDictSuffixes": [],
   "matParts": [
-	"HEAD"
+    "HEAD",
+    "HANDLE",
+    "EXTRA",
+    "BOW",
+    "PROJECTILE",
+	"SHAFT",
+	"FLETCHING",
+    "CORE",
+    "PLATES",
+    "TRIM"
   ],
   "nameLocales": {
     "en_us": "Molded Clay"
