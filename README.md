@@ -1,4 +1,13 @@
 # Stan-Diname-Modpack
 It's an expert mode pack but with guns. &amp; Knuckles
 
-Currently building this pack from the ground up while trying to keep load times to a reasonable level ~ 5 minutes and less than 10 minutes for sure.
+Pack is all about expanding on Ore processing and processing in general.  
+
+Possibly including:
+
+Build massive convoluted factories
+Automate those masive convoluted factories with even more massive and convoluted redstone
+Keep digging down!  Mining has been expanded deeper underground with more ores, more danger, and more harvest levels!
+Tool and armor material and their stats have been arranged in an ascending tier
+
+Way too much custom contentweaker and texture work!

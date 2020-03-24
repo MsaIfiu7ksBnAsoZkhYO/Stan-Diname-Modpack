@@ -965,7 +965,7 @@ import crafttweaker.liquid.ILiquidStack;
 		Adamant					:	<liquid:adamant_fluid>,
 		Aluminumbrass			:	<liquid:alubrass>,
 		Bloodbronze				:	<liquid:bloodbronze>,
-		Bloodinfusediron		:	<liquid:bloodarsenal.molten_blood_infused_iron>,
+		Bloodinfusediron		:	<liquid:molten_blood_infused_iron>,
 		Dilithium				:	<liquid:dilithium_fluid>,
 		Enchantedmetal			:	<liquid:xu_enchanted_metal>,
 		Evilinfusedmetal		:	<liquid:xu_evil_metal>,
