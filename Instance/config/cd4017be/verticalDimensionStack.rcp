@@ -23,34 +23,36 @@ ceil_on_demand = true;
 !override_default = "dimensionstack.dat";
 
 !set these to true to disable vanilla ore-generation in overworld and nether. 
-disable_coal = false;
-disable_diamond = false;
-disable_emerald = false;
-disable_gold = false;
-disable_iron = false;
-disable_lapis = false;
-disable_redstone = false;
-disable_quartz = false;
+disable_coal = true;
+disable_diamond = true;
+disable_emerald = true;
+disable_gold = true;
+disable_iron = true;
+disable_lapis = true;
+disable_redstone = true;
+disable_quartz = true;
 
 {	
 	!nubers of octaves for global noise generators, used for add("noiseField" ...)
 	custom_noise_octaves = [4]#;
 }
 
-dim_ceiling = 255; !default height at which ceiling portals are generated
+dim_ceiling = 253; !default height at which ceiling portals are generated
 
 PRE_INIT() {
 	!stacking dimensions on top of each other so they get connected via portals (order bottom to top):
 	!add("dimstack", [<dimId>...]#);
 	!add("dimstack", [-1, 0]#); !overworld on top of nether (rem '!' to enable)
 	
-	add("dimstack", [-11, 0]#); !overworld on top of First Mining Layer
-	add("dimstack", [-12, -11]#); !Second Mining Layer
-	add("dimstack", [-13, -12]#); !Third Mining Layer
-	add("dimstack", [-50, -13]#); !Cavern dimension
-	add("dimstack", [-52, -50]#); !Aquatic Cavern dimension
-	add("dimstack", [-51, -52]#); !Huge Cavern dimension
-	add("dimstack", [-54, -51]#); !Cavenia dimension
+	add("dimstack", [-10, 0]#);  	!Minign Dim 10	:	Overworld
+	add("dimstack", [-11, -10]#);	!Mining Dim 11	:	Mining dim 10
+	add("dimstack", [-50, -11]#);	!Cavern			:	Mining Dim 11
+	add("dimstack", [-12, -50]#);	!Mining Dim 12	:	Cavern
+	add("dimstack", [-51, -12]#);	!Huge Cavern	:	Mining Dim 12
+	add("dimstack", [-13, -51]#);	!Mining Dim 13	:	Huge Cavern
+	add("dimstack", [-52, -13]#);	!Aqua Cavern	:	Mining Dim 13
+	add("dimstack", [-14, -52]#);	!Mining Dim 14	:	Aqua Cavern
+	add("dimstack", [-54, -14]#);	!Cavenia		:	Mining dim 14
 	
 	
 	!dimension data for automatic transition layer generation:
@@ -58,8 +60,17 @@ PRE_INIT() {
 	dim_transitions:0 = ["minecraft:stone", 4, "minecraft:air", 0]; !Overworld has stone at floor and air at ceiling
 	dim_transitions:-1 = ["minecraft:netherrack", 4, "minecraft:netherrack", 4]; !The Nether has netherrack at both floor and ceiling
 	dim_transitions:1 = ["minecraft:air", 0, "minecraft:air", 0]; !The End has air at both floor and ceiling
+	dim_transitions:-10 = ["minecraft:stone", 4, "minecraft:stone", 4]; !Will all be Stone ceiling and Stone floors.
+	dim_transitions:-11 = ["minecraft:stone", 4, "minecraft:stone", 4]; !Will all be Stone ceiling and Stone floors.
+	dim_transitions:-12 = ["minecraft:stone", 4, "minecraft:stone", 4]; !Will all be Stone ceiling and Stone floors.
+	dim_transitions:-13 = ["minecraft:stone", 4, "minecraft:stone", 4]; !Will all be Stone ceiling and Stone floors.
+	dim_transitions:-14 = ["minecraft:stone", 4, "minecraft:stone", 4]; !Will all be Stone ceiling and Stone floors.
+	dim_transitions:-50 = ["minecraft:stone", 4, "minecraft:stone", 4]; !Will all be Stone ceiling and Stone floors.
+	dim_transitions:-51 = ["minecraft:stone", 4, "minecraft:stone", 4]; !Will all be Stone ceiling and Stone floors.
+	dim_transitions:-52 = ["minecraft:stone", 4, "minecraft:stone", 4]; !Will all be Stone ceiling and Stone floors.
+	dim_transitions:-54 = ["minecraft:stone", 4, "minecraft:stone", 4]; !Will all be Stone ceiling and Stone floors.
 
-	
+
 	!lower the portal ceiling height in the nether
 	dim_ceiling:-1 = 256;
 	
@@ -93,7 +104,17 @@ INIT() {
 	!add("basicLayer", <dimId>, <blockstate>, [<startY>, <minY>, <maxY>, <endY>]#);
 	!add("basicLayer", -1, "dimstack:bedrock@12", [118, 120, 121, 123]#); !put our fiery bedrock at nether celing just below the portal (rem '!' to enable)
 	!add("basicLayer", 0, "dimstack:bedrock@11", [0, 0, 1, 1]#); !Place first barrier block at bottom of overworld
+	!add("basicLayer", -10, "dimstack:bedrock@11", [255, 255, 255, 255]#); !Place first barrier block at bottom of overworld
 	
+
+	!Attempting to add OreGen this way,
+	!The "even" mode takes a minimum and a maximum height and distributes ore veins evenly between them.
+	!The "centered" mode takes a minimum, a center and a maximum height and distributes ore veins between minimum and maximum but with higher concentration towards the center height.
+	!The "gaussian" mode takes a center height and a deviation distance and spreads ore veins with a Gaussian distribution.
+	!add("oregen", <dimId>, <repBlocks>, <veinsPerChunk>, <blocksPerVein> * it(<oreBlock>), <mode>, <heights>...);
+	!add("oregen", -1, rock, 40,  9, "minecraft:iron_ore",     "even", [128, 256]#);
+
+
 	!remove the '!' in the following line to enable top half nether generation
 	netherTop();
 }

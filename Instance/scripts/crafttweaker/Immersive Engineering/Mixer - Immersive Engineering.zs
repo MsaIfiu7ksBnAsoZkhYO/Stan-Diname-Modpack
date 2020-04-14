@@ -9,7 +9,8 @@ var Recipes = {
 } as string[string];
 
 	//	Ore chunk to Stage 1 Fluid (Cold Oil)  
-for Item in GlobalHarvestLevel {
+for Item,Liquid in GlobalStage1MetalFluid {
+	print("CURRENTIO FUIEDIO:   "~Item);
 	var HarvestLevel = GlobalHarvestLevel[Item];
 
 	if ( 10 >= HarvestLevel ) {
@@ -22,7 +23,7 @@ for Item in GlobalHarvestLevel {
 				!isNull( HarvestLevel )
 			) {
 				mods.immersiveengineering.Mixer.addRecipe(
-					GlobalStage1MetalFluid[Item] * Right, 
+					Liquid * Right, 
 					<liquid:empoweredoil> * Right, 
 					[ Input ], 
 					HarvestLevel * 1000

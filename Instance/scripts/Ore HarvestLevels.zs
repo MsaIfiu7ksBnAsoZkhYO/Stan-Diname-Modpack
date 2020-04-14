@@ -23,6 +23,7 @@ import crafttweaker.block.IBlockDefinition;
 for Item,HarvestLevel in GlobalHarvestLevel {
         //  Get us the oredict object we want
     var ODEntry = GlobalGimmeOreDict("ore",Item);
+    var HLRequirement = HarvestLevel - 1;
         //  Iterate through all the itemstack objects in the current oredictionary entry
     for ItemStack in ODEntry.items {
             //  Verify the itemstack we are working on is actually a block
@@ -31,7 +32,7 @@ for Item,HarvestLevel in GlobalHarvestLevel {
         ) {
                 //  Set the specific block's harvest level
             ItemStack.asBlock().definition
-                .setHarvestLevel( "pickaxe", HarvestLevel )
+                .setHarvestLevel( "pickaxe", HLRequirement )
             ;
         }
     }

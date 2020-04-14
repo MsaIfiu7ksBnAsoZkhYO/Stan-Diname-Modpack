@@ -1,8 +1,32 @@
 [
   {
-    "internalOreName": "contenttweaker:sub_block_holder_1",
-    "meta": 7,
-    "overlay": "undergroundbiomes:blocks/overlays/contenttweaker/zinc",
+    "internalOreName": "contenttweaker:zinc_ore",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/contenttweaker/zinc_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "contenttweaker:manganese_ore",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/contenttweaker/manganese_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "contenttweaker:quartz_ore",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/contenttweaker/quartz_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "contenttweaker:chromium_ore",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/contenttweaker/chromium_ore",
     "lightValue": -1,
     "alphaOverlay": false,
     "oreDirectories": []

@@ -1,6 +1,7 @@
 {
+	"enabled" : "false",
 	"populate": {
-		"limestone rocks": {
+		"Limestone Rocks": {
 			"distribution": "surface",
 			"generator": {
 				"type": "decoration",
@@ -103,95 +104,6 @@
 				"restriction": "whitelist",
 				"value": [
 					0
-				]
-			}
-		},
-		"CR native copper": {
-			"distribution": "uniform",
-			"generator": {
-				"block": "crossroads:ore_native_copper",
-				"material": "minecraft:stone",
-				"cluster-size": 2
-			},
-			"cluster-count": 1,
-			"min-height": 45,
-			"max-height": 95,
-			"retrogen": false,
-			"biome": "all",
-			"dimension": {
-				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
-			}
-		},
-		"Native Copper on Copper": {
-			"distribution": "uniform",
-			"generator": {
-				"block": "crossroads:ore_native_copper",
-				"material": [
-					"basemetals:copper_ore",
-					"immersiveengineering:ore",
-					"magneticraft:ores",
-					"mekanism:oreblock:1",
-					"nuclearcraft:ore",
-					"thermalfoundation:ore",
-					"crossroads:ore_copper",
-					"crossroads:ore_copper"
-				],
-				"cluster-size": 2
-			},
-			"cluster-count": 1,
-			"min-height": 45,
-			"max-height": 95,
-			"retrogen": false,
-			"biome": "all",
-			"dimension": {
-				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
-			}
-		},
-		"Ebwizardry Crystal Ore": {
-			"distribution": "uniform",
-			"generator": {
-				"block": "ebwizardry:crystal_ore",
-				"material": "minecraft:stone",
-				"cluster-size": 2
-			},
-			"cluster-count": 1,
-			"min-height": 3,
-			"max-height": 20,
-			"retrogen": false,
-			"biome": "all",
-			"dimension": {
-				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
-			}
-		},
-		"Zinc Ore": {
-			"distribution": "uniform",
-			"generator": {
-				"block": "<contenttweaker:sub_block_holder_1:7>",
-				"material": "minecraft:stone",
-				"cluster-size": 5
-			},
-			"cluster-count": 3,
-			"min-height": 23,
-			"max-height": 38,
-			"retrogen": false,
-			"biome": "all",
-			"dimension": {
-				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
 				]
 			}
 		}

@@ -1,0 +1,42 @@
+[
+  {
+    "internalOreName": "techguns:basicore",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/techguns/ore_copper",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "techguns:basicore",
+    "meta": 1,
+    "overlay": "undergroundbiomes:blocks/overlays/techguns/ore_tin",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "techguns:basicore",
+    "meta": 2,
+    "overlay": "undergroundbiomes:blocks/overlays/techguns/ore_lead",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "techguns:basicore",
+    "meta": 3,
+    "overlay": "undergroundbiomes:blocks/overlays/techguns/ore_titanium",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "techguns:basicore",
+    "meta": 4,
+    "overlay": "undergroundbiomes:blocks/overlays/techguns/ore_uranium",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  }
+]

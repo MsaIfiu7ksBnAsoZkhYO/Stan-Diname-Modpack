@@ -8,6 +8,14 @@
     "oreDirectories": []
   },
   {
+    "internalOreName": "crossroads:ore_tin",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/crossroads/ore_tin",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
     "internalOreName": "crossroads:ore_copper",
     "meta": 0,
     "overlay": "undergroundbiomes:blocks/overlays/crossroads/ore_copper",

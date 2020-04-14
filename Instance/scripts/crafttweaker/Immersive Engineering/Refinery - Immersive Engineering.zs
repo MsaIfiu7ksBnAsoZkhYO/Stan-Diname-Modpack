@@ -4,13 +4,17 @@
 
 
 	//	Stage 2 fluid (Hot Oily ore) to Stage 3 fluid (Refined Ore Oil)
-for Liquid in GlobalStage4MetalFluid {
-	if ( 10 >= GlobalHarvestLevel[Liquid] ) {
+for Item,Liquid in GlobalStage4MetalFluid {
+	var HarvestLevel = GlobalHarvestLevel[Item];
+	var Input = GlobalStage3MetalFluid[Item];
+	var Output = Liquid;
+	
+	if ( 10 >= HarvestLevel ) {
 		mods.immersiveengineering.Refinery.addRecipe(
-			GlobalStage4MetalFluid[Liquid], 
-			GlobalStage3MetalFluid[Liquid], 
+			Output, 
+			Input, 
 			<liquid:creeper_acid>, 
-			GlobalHarvestLevel[Liquid]*1000
+			HarvestLevel*1000
 		);
 	}
 }

@@ -110,7 +110,7 @@ for Liquid in GlobalMoltenMetal {
 				mods.tconstruct.Melting.addRecipe( 
 					MoltenMetal * Amount, 
 					Input, 
-					MeltingTemp
+					MeltingTemp + 300
 				);
 			}			
 		}
@@ -122,7 +122,7 @@ for Liquid in GlobalMoltenMetal {
 			mods.tconstruct.Melting.addRecipe( 
 				MoltenMetal * 2160 , 
 				Anvil , 
-				MeltingTemp 
+				MeltingTemp + 300
 			); 
 		}
 

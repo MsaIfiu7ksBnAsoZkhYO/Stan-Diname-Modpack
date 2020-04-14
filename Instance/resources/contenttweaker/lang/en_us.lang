@@ -32,6 +32,24 @@ tile.contenttweaker.greywacke_cobble.name=Greywacke Cobblestone
 tile.contenttweaker.shale_cobble.name=Shale Cobblestone
 tile.contenttweaker.siltstone_cobble.name=Siltstone Cobblestone
 
+tile.contenttweaker.menril_bark.name=Menril Bark
+
+tile.contenttweaker.zinc_ore.name=Zinc Ore
+tile.contenttweaker.manganese_ore.name=Manganese Ore
+tile.contenttweaker.quartz_ore.name=Quartz Ore
+tile.contenttweaker.chromium_ore.name=Chromium Ore
+
+
+
+contenttweaker.part.chunk=%s Chunk
+contenttweaker.part.rocky_chunk=Rocky %s Chunk
+contenttweaker.part.dirty_dust=Dirty %s Dust
+contenttweaker.part.sheet=%s Sheet
+contenttweaker.part.doubleplate=Double %s Plate
+contenttweaker.part.heavyplate=Heavy %s Plate
+contenttweaker.part.denseplate=Dense %s Plate
+contenttweaker.part.sheetmetal=%s Sheetmetal
+
 
 item.contenttweaker.quicklime.name=Quicklime Rocks
 item.contenttweaker.limedust.name=Lime Dust
@@ -62,6 +80,8 @@ item.contenttweaker.copshowium_rod.name=Copshowium Rod
 item.contenttweaker.sand_ingot_cast.name=Sand Ingot Cast
 item.contenttweaker.sand_ingot_cast_wet.name=Wet Sand Ingot Cast
 
+item.contenttweaker.brick_mold.name=Brick Mold Box
+
 item.contenttweaker.clay_nugget.name=Clay Nugget
 
 item.contenttweaker.coke_clay.name=Coke Oven Clay
@@ -90,123 +110,3 @@ item.contenttweaker.unfired_scorched_brick.name=Unfired High Oven Brick (Scorche
 item.contenttweaker.tiny_carbon_dust.name=Tiny Carbon Dust
 item.contenttweaker.tiny_sulfur_dust.name=Tiny Sulfur Dust
 item.contenttweaker.tiny_dust_dust.name=Tiny Dust Dust
-
-
-
-item.contenttweaker.chunk_adamantine.name=Adamantine Chunk
-item.contenttweaker.chunk_aluminium.name=Aluminium Chunk
-item.contenttweaker.chunk_amber.name=Amber Chunk
-item.contenttweaker.chunk_amethyst.name=Amethyst Chunk
-item.contenttweaker.chunk_antimony.name=Antimony Chunk
-item.contenttweaker.chunk_aquamarine.name=Aquamarine Chunk
-item.contenttweaker.chunk_ardite.name=Ardite Chunk
-item.contenttweaker.chunk_astral_starmetal.name=Astral Starmetal Chunk
-item.contenttweaker.chunk_beryllium.name=Beryllium Chunk
-item.contenttweaker.chunk_bismuth.name=Bismuth Chunk
-item.contenttweaker.chunk_boron.name=Boron Chunk
-item.contenttweaker.chunk_cadmium.name=Cadmium Chunk
-item.contenttweaker.chunk_chromium.name=Chromium Chunk
-item.contenttweaker.chunk_coal.name=Coal Chunk
-item.contenttweaker.chunk_cobalt.name=Cobalt Chunk
-item.contenttweaker.chunk_coldiron.name=Coldiron Chunk
-item.contenttweaker.chunk_copper.name=Copper Chunk
-item.contenttweaker.chunk_diamond.name=Diamond Chunk
-item.contenttweaker.chunk_dilithium.name=Dilithium Chunk
-item.contenttweaker.chunk_emerald.name=Emerald Chunk
-item.contenttweaker.chunk_ender_biotite.name=Ender Biotite Chunk
-item.contenttweaker.chunk_gold.name=Gold Chunk
-item.contenttweaker.chunk_iridium.name=Iridium Chunk
-item.contenttweaker.chunk_iron.name=Iron Chunk
-item.contenttweaker.chunk_lapis.name=Lapis Chunk
-item.contenttweaker.chunk_lead.name=Lead Chunk
-item.contenttweaker.chunk_lithium.name=Lithium Chunk
-item.contenttweaker.chunk_magnesium.name=Magnesium Chunk
-item.contenttweaker.chunk_malachite.name=Malachite Chunk
-item.contenttweaker.chunk_manganese.name=Manganese Chunk
-item.contenttweaker.chunk_mercury.name=Mercury Chunk
-item.contenttweaker.chunk_mithril.name=Mithril Chunk
-item.contenttweaker.chunk_nickel.name=Nickel Chunk
-item.contenttweaker.chunk_osmium.name=Osmium Chunk
-item.contenttweaker.chunk_peridot.name=Peridot Chunk
-item.contenttweaker.chunk_platinum.name=Platinum Chunk
-item.contenttweaker.chunk_plutonium.name=Plutonium Chunk
-item.contenttweaker.chunk_quartz.name=Quartz Chunk
-item.contenttweaker.chunk_quartz_black.name=Black Quartz Chunk
-item.contenttweaker.chunk_redstone.name=Redstone Chunk
-item.contenttweaker.chunk_ruby.name=Ruby Chunk
-item.contenttweaker.chunk_rutile.name=Rutile Chunk
-item.contenttweaker.chunk_salt.name=Salt Chunk
-item.contenttweaker.chunk_sapphire.name=Sapphire Chunk
-item.contenttweaker.chunk_silver.name=Silver Chunk
-item.contenttweaker.chunk_starsteel.name=Starsteel Chunk
-item.contenttweaker.chunk_sulfur.name=Sulfur Chunk
-item.contenttweaker.chunk_tantalum.name=Tantalum Chunk
-item.contenttweaker.chunk_tanzanite.name=Tanzanite Chunk
-item.contenttweaker.chunk_thorium.name=Thorium Chunk
-item.contenttweaker.chunk_tin.name=Tin Chunk
-item.contenttweaker.chunk_titanium.name=Titanium Chunk
-item.contenttweaker.chunk_topaz.name=Topaz Chunk
-item.contenttweaker.chunk_tungsten.name=Tungsten Chunk
-item.contenttweaker.chunk_uranium.name=Uranium Chunk
-item.contenttweaker.chunk_zinc.name=Zinc Chunk
-item.contenttweaker.chunk_zirconium.name=Zirconium Chunk
-
-
-
-item.contenttweaker.rockychunk_adamantine.name=Adamantine Rocky Chunk
-item.contenttweaker.rockychunk_aluminium.name=Aluminium Rocky Chunk
-item.contenttweaker.rockychunk_amber.name=Amber Rocky Chunk
-item.contenttweaker.rockychunk_amethyst.name=Amethyst Rocky Chunk
-item.contenttweaker.rockychunk_antimony.name=Antimony Rocky Chunk
-item.contenttweaker.rockychunk_aquamarine.name=Aquamarine Rocky Chunk
-item.contenttweaker.rockychunk_ardite.name=Ardite Rocky Chunk
-item.contenttweaker.rockychunk_astral_starmetal.name=Astral Starmetal Rocky Chunk
-item.contenttweaker.rockychunk_beryllium.name=Beryllium Rocky Chunk
-item.contenttweaker.rockychunk_bismuth.name=Bismuth Rocky Chunk
-item.contenttweaker.rockychunk_boron.name=Boron Rocky Chunk
-item.contenttweaker.rockychunk_cadmium.name=Cadmium Rocky Chunk
-item.contenttweaker.rockychunk_chromium.name=Chromium Rocky Chunk
-item.contenttweaker.rockychunk_coal.name=Coal Rocky Chunk
-item.contenttweaker.rockychunk_cobalt.name=Cobalt Rocky Chunk
-item.contenttweaker.rockychunk_coldiron.name=Coldiron Rocky Chunk
-item.contenttweaker.rockychunk_copper.name=Copper Rocky Chunk
-item.contenttweaker.rockychunk_diamond.name=Diamond Rocky Chunk
-item.contenttweaker.rockychunk_dilithium.name=Dilithium Rocky Chunk
-item.contenttweaker.rockychunk_emerald.name=Emerald Rocky Chunk
-item.contenttweaker.rockychunk_ender_biotite.name=Ender Biotite Rocky Chunk
-item.contenttweaker.rockychunk_gold.name=Gold Rocky Chunk
-item.contenttweaker.rockychunk_iridium.name=Iridium Rocky Chunk
-item.contenttweaker.rockychunk_iron.name=Iron Rocky Chunk
-item.contenttweaker.rockychunk_lapis.name=Lapis Rocky Chunk
-item.contenttweaker.rockychunk_lead.name=Lead Rocky Chunk
-item.contenttweaker.rockychunk_lithium.name=Lithium Rocky Chunk
-item.contenttweaker.rockychunk_magnesium.name=Magnesium Rocky Chunk
-item.contenttweaker.rockychunk_malachite.name=Malachite Rocky Chunk
-item.contenttweaker.rockychunk_manganese.name=Manganese Rocky Chunk
-item.contenttweaker.rockychunk_mercury.name=Mercury Rocky Chunk
-item.contenttweaker.rockychunk_mithril.name=Mithril Rocky Chunk
-item.contenttweaker.rockychunk_nickel.name=Nickel Rocky Chunk
-item.contenttweaker.rockychunk_osmium.name=Osmium Rocky Chunk
-item.contenttweaker.rockychunk_peridot.name=Peridot Rocky Chunk
-item.contenttweaker.rockychunk_platinum.name=Platinum Rocky Chunk
-item.contenttweaker.rockychunk_plutonium.name=Plutonium Rocky Chunk
-item.contenttweaker.rockychunk_quartz.name=Quartz Rocky Chunk
-item.contenttweaker.rockychunk_quartz_black.name=Black Quartz Rocky Chunk
-item.contenttweaker.rockychunk_redstone.name=Redstone Rocky Chunk
-item.contenttweaker.rockychunk_ruby.name=Ruby Rocky Chunk
-item.contenttweaker.rockychunk_rutile.name=Rutile Rocky Chunk
-item.contenttweaker.rockychunk_salt.name=Salt Rocky Chunk
-item.contenttweaker.rockychunk_sapphire.name=Sapphire Rocky Chunk
-item.contenttweaker.rockychunk_silver.name=Silver Rocky Chunk
-item.contenttweaker.rockychunk_starsteel.name=Starsteel Rocky Chunk
-item.contenttweaker.rockychunk_sulfur.name=Sulfur Rocky Chunk
-item.contenttweaker.rockychunk_tantalum.name=Tantalum Rocky Chunk
-item.contenttweaker.rockychunk_tanzanite.name=Tanzanite Rocky Chunk
-item.contenttweaker.rockychunk_thorium.name=Thorium Rocky Chunk
-item.contenttweaker.rockychunk_tin.name=Tin Rocky Chunk
-item.contenttweaker.rockychunk_titanium.name=Titanium Rocky Chunk
-item.contenttweaker.rockychunk_topaz.name=Topaz Rocky Chunk
-item.contenttweaker.rockychunk_tungsten.name=Tungsten Rocky Chunk
-item.contenttweaker.rockychunk_uranium.name=Uranium Rocky Chunk
-item.contenttweaker.rockychunk_zinc.name=Zinc Rocky Chunk
-item.contenttweaker.rockychunk_zirconium.name=Zirconium Rocky Chunk

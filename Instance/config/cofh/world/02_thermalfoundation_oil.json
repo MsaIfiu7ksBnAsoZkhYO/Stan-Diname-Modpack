@@ -1,4 +1,5 @@
 {
+	"enabled" : "false",
 	"dependencies": "thermalfoundation",
 	"populate": {
 		"oil_sand_clathrate": {

@@ -79,6 +79,8 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:dustFlint>.add(<contenttweaker:flintdust>);
 <ore:dustBone>.add(<contenttweaker:bonedust>);
 <ore:dustAsh>.add(<contenttweaker:ashdust>);
+<ore:dustCarbon>.add(<contenttweaker:carbon_dust>);
+
 
 	//	Make this oredictionary so the recipe supports any combination of these infgredients.
 <ore:ingredientPorcelain>.addAll(<ore:dustFlint>); 
@@ -98,12 +100,20 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:dustTinyDust>.add(<contenttweaker:tiny_dust_dust>);
 
 
+//=====================================================================================================================================================================================================	
+//	Zinc Ore
+//=====================================================================================================================================================================================================
+<ore:oreZinc>.add(<contenttweaker:zinc_ore>);
+<ore:oreManganese>.add(<contenttweaker:manganese_ore>);
+<ore:oreQuartz>.add(<contenttweaker:quartz_ore>);
+<ore:oreChromium>.add(<contenttweaker:chromium_ore>);
+
 
 //=====================================================================================================================================================================================================	
 //	Recreated Jaopca items
 //=====================================================================================================================================================================================================
 
-
+/*
 	//	Chunks	_______________________________________________________________________________________________________________________________________________________________________
 <ore:chunkAmber>.add(<contenttweaker:chunk_amber>);
 <ore:chunkAmethyst>.add(<contenttweaker:chunk_amethyst>);
@@ -194,5 +204,5 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:rockyChunkTopaz>.add(<contenttweaker:rockychunk_topaz>);
 <ore:rockyChunkUranium>.add(<contenttweaker:rockychunk_uranium>);
 <ore:rockyChunkZirconium>.add(<contenttweaker:rockychunk_zirconium>);
-
+*/
 	//	Dirty Dust?	_______________________________________________________________________________________________________________________________________________________________________

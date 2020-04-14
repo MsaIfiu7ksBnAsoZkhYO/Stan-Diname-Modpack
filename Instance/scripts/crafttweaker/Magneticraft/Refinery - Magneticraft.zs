@@ -4,14 +4,18 @@
 
 
 	//	Stage 2 fluid (Hot Oily ore) to Stage 3 fluid (Refined Ore Oil)
-for Liquid in GlobalStage3MetalFluid {
-	if ( 10 >= GlobalHarvestLevel[Liquid] ) {
+for Item,Liquid in GlobalStage3MetalFluid {
+    var HarvestLevel = GlobalHarvestLevel[Item];
+	var Input = GlobalStage2MetalFluid[Item];
+	var Output = Liquid;
+
+	if ( 10 >= HarvestLevel ) {
         mods.magneticraft.Refinery.addRecipe(
-            GlobalStage2MetalFluid[Liquid], 
-            GlobalStage3MetalFluid[Liquid], 
+            Input, 
+            Output, 
             <liquid:canolaoil>, 
             null, 
-            GlobalHarvestLevel[Liquid]
+            HarvestLevel
         );
 	}
 }

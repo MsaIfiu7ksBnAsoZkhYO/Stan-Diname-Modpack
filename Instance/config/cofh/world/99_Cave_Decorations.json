@@ -1,0 +1,274 @@
+{
+	"enabled" : true,
+	"namespace" : "Cave_Decoration",
+	"populate": {
+		"Fluid_Streams_top": {
+			"enabled": true,
+			"distribution": "cave",
+			"generator": [
+				{
+					"type": "spout",
+					"radius": 0,
+					"height": 1,
+					"block": [
+						{
+							"name": "minecraft:flowing_water",
+							"weight": 90
+						},
+						{
+							"name": "minecraft:flowing_lava",
+							"weight": 10
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 1
+				}
+			],
+			"cluster-count": 2,
+			"ceiling": true,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-10,
+					-11,
+					-12,
+					-13,
+					-14,
+					-50,
+					-51,
+					-52,
+					-54
+				]
+			}
+		},
+		"Fluid_Streams_bottom": {
+			"enabled": true,
+			"distribution": "cave",
+			"generator": [
+				{
+					"type": "spout",
+					"radius": 0,
+					"height": 1,
+					"block": [
+						{
+							"name": "minecraft:flowing_water",
+							"weight": 90
+						},
+						{
+							"name": "minecraft:flowing_lava",
+							"weight": 10
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 1
+				}
+			],
+			"cluster-count": 3,
+			"ceiling": false,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-10,
+					-11,
+					-12,
+					-13,
+					-14,
+					-50,
+					-51,
+					-52,
+					-54
+				]
+			}
+		},
+		"Fluid_Pockets": {
+			"distribution": "uniform",
+			"generator": [
+				{
+					"type": "geode",
+					"block": "minecraft:flowing_water",
+					"material": "minecraft:stone",
+					"crust": "minecraft:clay"
+				},
+				{
+					"type": "geode",
+					"block": "minecraft:flowing_lava",
+					"material": "minecraft:stone",
+					"crust":
+						{
+							"name": "chisel:basalt2",
+							"properties": {
+								"variation": "7"
+							}
+						}
+				}
+			],
+			"cluster-count": 5,
+			"chunk-chance": 3,
+			"min-height": 40,
+			"max-height": 232,
+			"follow-terrain": true,
+			"biome": "all",
+			"retrogen": false,
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-10,
+					-11,
+					-12,
+					-13,
+					-14,
+					-50,
+					-51,
+					-52,
+					-54
+				]
+			}
+		},
+		"Gravel": {
+			"enabled": true,
+			"distribution": "uniform",
+			"generator": [
+				{
+					"type": "plate",
+					"weight": 100,
+					"block": [
+						{
+							"name": "minecraft:gravel",
+							"weight": 20
+						}
+					],
+					"radius": 6,
+					"material": "minecraft:stone",
+					"height": 2
+				}
+			],
+			"cluster-count": 5,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-10,
+					-11,
+					-12,
+					-13,
+					-14,
+					-50,
+					-51,
+					-52,
+					-54
+				]
+			}
+		},
+		"dirt": {
+			"enabled": true,
+			"distribution": "uniform",
+			"generator": [
+				{
+					"type": "plate",
+					"weight": 100,
+					"block": [
+						{
+							"name": "minecraft:dirt",
+							"weight": 20
+						}
+					],
+					"radius": 6,
+					"material": "minecraft:stone",
+					"height": 2
+				}
+			],
+			"cluster-count": 5,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-10,
+					-11,
+					-12,
+					-13,
+					-14,
+					-50,
+					-51,
+					-52,
+					-54
+				]
+			}
+		},
+		"Clay": {
+			"distribution": "uniform",
+			"min-height": 2,
+			"max-height": 43,
+			"material": "minecraft:stone",
+			"generator": [
+				{
+					"type": "cluster",
+					"block": "minecraft:clay",
+					"cluster-size": 3
+				}
+			],
+            "chunk-chance": 1,
+			"cluster-count": 45,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-10,
+					-11,
+					-12,
+					-13,
+					-14,
+					-50,
+					-51,
+					-52,
+					-54
+				]
+			}
+		},
+		"Monster_Boxes": {
+			"enabled": false,
+			"distribution": "cave",
+			"generator": [
+				{
+					"type": "cluster",
+					"block": [
+						{
+							"name": "quark:monster_box",
+							"weight": 100
+						}
+					],
+					"material": "minecraft:air",
+					"cluster-size": 1
+				}
+			],
+			"cluster-count": 6,
+			"ceiling": false,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-10,
+					-11,
+					-12,
+					-13,
+					-14,
+					-50,
+					-51,
+					-52,
+					-54
+				]
+			}
+		}
+	}
+}

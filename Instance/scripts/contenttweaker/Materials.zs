@@ -46,8 +46,11 @@ for Item,Oredict in NewPartList {
             .build();
 }
 
-    //  Dynamically create the parts from the above lists.
-for Material,HexColor in GlobalMaterialList {
+    //  Dynamically create the Ore processing parts.
+//for Material,HexColor in GlobalMaterialList {
+for Material in GlobalOreMetal {
+    print("MATERIAL:   "~Material);
+    var HexColor = GlobalMaterialList[Material];
 
         //  Create the materials as defined above
     var PINGAS = MaterialSystem.getMaterialBuilder()
@@ -60,10 +63,10 @@ for Material,HexColor in GlobalMaterialList {
     PINGAS.registerParts( PartList );
 
         //  Make fluids
-    VanillaFactory.createFluid( "Stage1"~Material, Color.fromHex( HexColor ) ).register();
-    VanillaFactory.createFluid( "Stage2"~Material, Color.fromHex( HexColor ) ).register();  
-    VanillaFactory.createFluid( "Stage3"~Material, Color.fromHex( HexColor ) ).register(); 
-    VanillaFactory.createFluid( "Stage4"~Material, Color.fromHex( HexColor ) ).register(); 
+    VanillaFactory.createFluid( "Stage1_"~Material, Color.fromHex( HexColor ) ).register();
+    VanillaFactory.createFluid( "Stage2_"~Material, Color.fromHex( HexColor ) ).register();  
+    VanillaFactory.createFluid( "Stage3_"~Material, Color.fromHex( HexColor ) ).register(); 
+    VanillaFactory.createFluid( "Stage4_"~Material, Color.fromHex( HexColor ) ).register(); 
 
 
         /*/  Generates an Ore block

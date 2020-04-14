@@ -4,13 +4,17 @@
 
 
 	//	Stage 1 fluid (oily ore) to Stage 2 fluid (Hot oily ore)
-for Liquid in GlobalStage2MetalFluid {
-	if ( 10 >= GlobalHarvestLevel[Liquid] ) {
+for Item,Liquid in GlobalStage2MetalFluid {
+    var HarvestLevel = GlobalHarvestLevel[Item];
+	var Input = GlobalStage1MetalFluid[Item];
+	var Output = Liquid;
+	
+    if ( 10 >= HarvestLevel ) {
         mods.magneticraft.OilHeater.addRecipe(
-            GlobalStage1MetalFluid[Liquid], 
-            GlobalStage2MetalFluid[Liquid], 
-            1.5 * GlobalHarvestLevel[Liquid], 
-            100 * GlobalHarvestLevel[Liquid] + 273.3
+            Input, 
+            Output, 
+            1.5 * HarvestLevel, 
+            100 * HarvestLevel + 273.3
         );
 	}
 }
