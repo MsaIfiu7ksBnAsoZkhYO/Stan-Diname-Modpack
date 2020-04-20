@@ -29,19 +29,34 @@ var TconMaterials = {
 	<ticmat:livingrock> : <liquid:lead>,
 	<ticmat:copper> : <liquid:bronze>,
 	<ticmat:lead> : <liquid:molybdochalkos>,
-
 	<ticmat:magnesium> : <liquid:magmolybdochalkosmuth>,
-
-
 	<ticmat:silver> : <liquid:nickel>,
 	<ticmat:electrum> : <liquid:invar>,
-
 	<ticmat:alumifun> : <liquid:titaniumaluminide>,
 	<ticmat:bronze> : <liquid:water>,
+	<ticmat:steel> : <liquid:ferroboron>,
+	<ticmat:silver> : <liquid:xu_enchanted_metal>,
+	<ticmat:xu_enchanted_metal> : <liquid:xu_demonic_metal>,
+	<ticmat:xu_demonic_metal> : <liquid:xu_evil_metal>,
+	<ticmat:iron> : <liquid:nickel>,
+	<ticmat:mythril> : <liquid:mythril>,
+	<ticmat:adamant> : <liquid:dragonsteel_fire>,
+	<ticmat:adamant> : <liquid:dragonsteel_ice>,
+} as ILiquidStack[ITICMaterial];
 
+	//	Plustic materials table
+	/*
+var TconMaterials = {
+	<ticmat:livingrock> : <liquid:lead>,
+	<ticmat:copper> : <liquid:bronze>,
+	<ticmat:lead> : <liquid:molybdochalkos>,
+	<ticmat:magnesium> : <liquid:magmolybdochalkosmuth>,
+	<ticmat:silver> : <liquid:nickel>,
+	<ticmat:electrum> : <liquid:invar>,
+	<ticmat:alumifun> : <liquid:titaniumaluminide>,
+	<ticmat:bronze> : <liquid:water>,
 	<ticmat:nickel> : <liquid:water>,
 	<ticmat:steel> : <liquid:ferroboron>,
-
 	<ticmat:silver> : <liquid:xu_enchanted_metal>,
 	<ticmat:xu_enchanted_metal> : <liquid:xu_demonic_metal>,
 	<ticmat:xu_demonic_metal> : <liquid:xu_evil_metal>,
@@ -54,6 +69,7 @@ var TconMaterials = {
 	<ticmat:adamant> : <liquid:dragonsteel_fire>,
 	<ticmat:adamant> : <liquid:dragonsteel_ice>,
 } as ILiquidStack[ITICMaterial];
+	*/
 
 // - Technicall this is metals under 1000 C, or under HL 4.
 var SandCastable = {
