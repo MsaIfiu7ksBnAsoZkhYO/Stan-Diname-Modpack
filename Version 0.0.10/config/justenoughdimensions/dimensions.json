@@ -1,0 +1,341 @@
+{
+  "config_version": 
+  {
+    "id": "__default",
+    "version": 0
+  },
+  "dimensions": 
+  [
+    {
+      "dim": -10,
+      "biome": "minecraft:ocean",
+      "dimensiontype": 
+      {
+        "id": -10,
+        "name": "Mining Layer -10",
+        "suffix": "_dim-10",
+        "keeploaded": true,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "generatorName": "flat",
+        "generatorOptions": "3;32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,29*minecraft:stone,2*minecraft:air,minecraft:bedrock;0;biome_1,mineshaft,dungeon,caves,ravines,lake,lava_lake",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    },
+    {
+      "dim": -11,
+      "biome": "minecraft:ocean",
+      "dimensiontype": 
+      {
+        "id": -11,
+        "name": "Mining Layer -11",
+        "suffix": "_dim-11",
+        "keeploaded": true,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "generatorName": "flat",
+        "generatorOptions": "3;32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,29*minecraft:stone,2*minecraft:air,minecraft:bedrock;0;biome_1,mineshaft,dungeon,caves,ravines,lake,lava_lake",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    },
+    {
+      "dim": -11,
+      "biome": "minecraft:ocean",
+      "dimensiontype": 
+      {
+        "id": -11,
+        "name": "Mining Layer -11",
+        "suffix": "_dim-11",
+        "keeploaded": true,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "generatorName": "flat",
+        "generatorOptions": "3;32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,29*minecraft:stone,2*minecraft:air,minecraft:bedrock;0;biome_1,mineshaft,dungeon,caves,ravines,lake,lava_lake",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    },
+    {
+      "dim": -12,
+      "biome": "minecraft:ocean",
+      "dimensiontype": 
+      {
+        "id": -12,
+        "name": "Mining Layer -12",
+        "suffix": "_dim-12",
+        "keeploaded": true,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "generatorName": "flat",
+        "generatorOptions": "3;32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,29*minecraft:stone,2*minecraft:air,minecraft:bedrock;0;biome_1,mineshaft,dungeon,caves,ravines,lake,lava_lake",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    },
+    {
+      "dim": -13,
+      "biome": "minecraft:ocean",
+      "dimensiontype": 
+      {
+        "id": -13,
+        "name": "Mining Layer -13",
+        "suffix": "_dim-13",
+        "keeploaded": true,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "generatorName": "flat",
+        "generatorOptions": "3;32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,29*minecraft:stone,2*minecraft:air,minecraft:bedrock;0;biome_1,mineshaft,dungeon,caves,ravines,lake,lava_lake",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    },
+    {
+      "dim": -14,
+      "biome": "minecraft:ocean",
+      "dimensiontype": 
+      {
+        "id": -14,
+        "name": "Mining Layer -14",
+        "suffix": "_dim-14",
+        "keeploaded": true,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "generatorName": "flat",
+        "generatorOptions": "3;32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,32*minecraft:stone,29*minecraft:stone,2*minecraft:air,minecraft:bedrock;0;biome_1,mineshaft,dungeon,caves,ravines,lake,lava_lake",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    },
+    {
+      "dim": -50,
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    },
+    {
+      "dim": -51,
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    },
+    {
+      "dim": -52,
+      "biome": "minecraft:deep_ocean",
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    },
+    {
+      "dim": -53,
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    },
+    {
+      "dim": -54,
+      "jed": {
+        "CanRespawnHere": "false",
+        "RespawnDimension": "0",
+        "SkyColor": "000000",
+        "FogColor": "000000",
+        "CloudColor": "000000",
+        "SkyRenderType": "1",
+        "SkyDisableFlags": "7",
+        "CloudHeight": "256"
+      },
+      "worldinfo_onetime": 
+      {
+        "Difficulty": 3,
+        "DifficultyLocked": "true",
+        "DayTime": 114000,
+        "GameRules": 
+        {
+          "doDaylightCycle":"false",
+          "doWeatherCycle":"false"
+        }
+      }
+    }
+  ]
+}

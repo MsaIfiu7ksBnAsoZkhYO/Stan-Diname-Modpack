@@ -38,6 +38,8 @@ minecraft:luck
 randomthings:collapse
 randomthings:long_collapse
 randomthings:strong_collapse
+morerefinedstorage:normal_freezing
+morerefinedstorage:long_freezing
 quark:haste
 quark:long_haste
 quark:strong_haste
@@ -79,10 +81,6 @@ techguns:radregenerationpotion
 techguns:radresistancepotion
 terraqueous:firewater
 terraqueous:displacement
-cuisine:cuisine.hot
-cuisine:cuisine.toughness
-cuisine:cuisine.cold_blood
-cuisine:cuisine.dispersal
 cyclicmagic:ender
 cyclicmagic:snow
 cyclicmagic:butter
@@ -173,14 +171,3 @@ cofhcore:unluck2+
 cofhcore:unluck3+
 cofhcore:wither2+
 cofhcore:wither3+
-wrd:curseofthestoneskull
-extrautils2:xu2.doom
-extrautils2:xu2.gravity
-extrautils2:xu2.gravity.long
-extrautils2:xu2.second.chance
-extrautils2:xu2.greek.fire
-extrautils2:oily
-extrautils2:xu2.fizzy.lifting
-extrautils2:xu2.relapse
-extrautils2:xu2.love
-extrautils2:xu2.purging

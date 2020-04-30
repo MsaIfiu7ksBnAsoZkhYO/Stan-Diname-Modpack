@@ -1,0 +1,552 @@
+{
+	"enabled" : true,
+	"namespace" : "Mining-13",
+	"populate": {
+		"Coal_Veins": {
+			"enabled": true,
+			"distribution": "gaussian",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 100,
+					"block": [
+						{
+							"name": "minecraft:coal_ore",
+							"weight": 300
+						},
+						{
+							"name": "minecraft:coal_block",
+							"weight": 1
+						},
+						{
+							"name": "rockhounding_oretiers:coal_blocks",
+							"properties": {
+								"type": "bituminous"
+							},
+							"weight": 1
+						},
+						{
+							"name": "rockhounding_oretiers:coal_ores",
+							"properties": {
+								"type": "bituminous"
+							},
+							"weight": 20
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 16
+				},
+				{
+					"type": "large-vein",
+					"weight": 1,
+					"block": [
+						{
+							"name": "minecraft:coal_ore",
+							"weight": 300
+						},
+						{
+							"name": "minecraft:coal_block",
+							"weight": 1
+						},
+						{
+							"name": "rockhounding_oretiers:coal_blocks",
+							"properties": {
+								"type": "bituminous"
+							},
+							"weight": 1
+						},
+						{
+							"name": "rockhounding_oretiers:coal_ores",
+							"properties": {
+								"type": "bituminous"
+							},
+							"weight": 20
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 64
+				}
+			],
+			"cluster-count": 7,
+			"center-height": 256,
+			"spread": 256,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-51
+				]
+			}
+		},
+		"Iron_Veins": {
+			"enabled": true,
+			"distribution": "gaussian",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 120,
+					"block": [
+						{
+							"name": "rockhounding_oretiers:iron_ores",
+							"properties": {
+								"type": "hematite"
+							},
+							"weight": 200
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 8
+				},
+				{
+					"type": "large-vein",
+					"weight": 1,
+					"block": [
+						{
+							"name": "rockhounding_oretiers:iron_ores",
+							"properties": {
+								"type": "hematite"
+							},
+							"weight": 200
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 32
+				}
+			],
+			"cluster-count": 12,
+			"center-height": 128,
+			"spread": 128,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-51
+				]
+			}
+		},
+		"Dust_Veins": {
+			"enabled": true,
+			"distribution": "uniform",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 100,
+					"block": [
+						{
+							"name": "libvulpes:ore0",
+							"properties": {
+								"varient": "0"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 4
+				},
+				{
+					"type": "large-vein",
+					"weight": 10,
+					"block": [
+						{
+							"name": "taiga:dilithium_ore",
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 4
+				},
+				{
+					"type": "large-vein",
+					"weight": 1,
+					"block": [
+						{
+							"name": "libvulpes:ore0",
+							"properties": {
+								"varient": "0"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 16
+				},
+				{
+					"type": "large-vein",
+					"weight": 1,
+					"block": [
+						{
+							"name": "taiga:dilithium_ore",
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 16
+				}
+			],
+			"cluster-count": 7,
+			"min-height": 32,
+			"max-height": 224,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-51
+				]
+			}
+		},
+		"Metal1_Veins": {
+			"enabled": true,
+			"distribution": "gaussian",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 100,
+					"block": [
+						{
+							"name": "magneticraft:ores",
+							"properties": {
+								"ore_type": "tungsten"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 3
+				},
+				{
+					"type": "large-vein",
+					"weight": 10,
+					"block": [
+						{
+							"name": "magneticraft:ores",
+							"properties": {
+								"ore_type": "tungsten"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 12
+				}
+			],
+			"cluster-count": 5,
+			"center-height": 252,
+			"spread": 168,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-51
+				]
+			}
+		},
+		"Metal2_Veins": {
+			"enabled": true,
+			"distribution": "gaussian",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 100,
+					"block": [
+						{
+							"name": "nuclearcraft:ore",
+							"properties": {
+								"type": "thorium"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 4
+				},
+				{
+					"type": "large-vein",
+					"weight": 10,
+					"block": [
+						{
+							"name": "nuclearcraft:ore",
+							"properties": {
+								"type": "thorium"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 16
+				}
+			],
+			"cluster-count": 9,
+			"center-height": 168,
+			"spread": 168,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-12
+				]
+			}
+		},
+		"Metal3_Veins": {
+			"enabled": true,
+			"distribution": "gaussian",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 100,
+					"block": [
+						{
+							"name": "nuclearcraft:ore",
+							"properties": {
+								"type": "uranium"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 3
+				},
+				{
+					"type": "large-vein",
+					"weight": 100,
+					"block": [
+						{
+							"name": "techguns:basicore",
+							"properties": {
+								"type": "ore_uranium"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 3
+				},
+				{
+					"type": "large-vein",
+					"weight": 100,
+					"block": [
+						{
+							"name": "immersiveengineering:ore",
+							"properties": {
+								"type": "uranium"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 3
+				},
+				{
+					"type": "large-vein",
+					"weight": 10,
+					"block": [
+						{
+							"name": "nuclearcraft:ore",
+							"properties": {
+								"type": "uranium"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 12
+				},
+				{
+					"type": "large-vein",
+					"weight": 10,
+					"block": [
+						{
+							"name": "techguns:basicore",
+							"properties": {
+								"type": "ore_uranium"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 12
+				},
+				{
+					"type": "large-vein",
+					"weight": 10,
+					"block": [
+						{
+							"name": "immersiveengineering:ore",
+							"properties": {
+								"type": "uranium"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 12
+				}
+			],
+			"cluster-count": 9,
+			"center-height": 168,
+			"spread": 168,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-51
+				]
+			}
+		},
+		"Gemstone1_veins": {
+			"enabled": true,
+			"distribution": "gaussian",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 100,
+					"block": [
+						{
+							"name": "biomesoplenty:gem_ore",
+							"properties": {
+								"variant": "ruby"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 2
+				},
+				{
+					"type": "large-vein",
+					"weight": 1,
+					"block": [
+						{
+							"name": "biomesoplenty:gem_ore",
+							"properties": {
+								"variant": "ruby"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 8
+				}
+			],
+			"cluster-count": 1,
+			"center-height": 32,
+			"spread": 32,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-51
+				]
+			}
+		},
+		"Gemstone2_veins": {
+			"enabled": true,
+			"distribution": "uniform",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 100,
+					"block": [
+						{
+							"name": "biomesoplenty:gem_ore",
+							"properties": {
+								"variant": "sapphire"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 1
+				},
+				{
+					"type": "large-vein",
+					"weight": 1,
+					"block": [
+						{
+							"name": "biomesoplenty:gem_ore",
+							"properties": {
+								"variant": "sapphire"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 4
+				}
+			],
+			"cluster-count": 1,
+			"min-height": 0,
+			"max-height": 32,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-51
+				]
+			}
+		},
+		"Special_veins_top": {
+			"enabled": true,
+			"distribution": "cave",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 30,
+					"block": [
+						{
+							"name": "minecraft:redstone_ore",
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 4
+				}
+			],
+			"cluster-count": 1,
+			"ceiling": true,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-51
+				]
+			}
+		},
+		"Special_veins_botton": {
+			"enabled": true,
+			"distribution": "cave",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 30,
+					"block": [
+						{
+							"name": "minecraft:redstone_ore",
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 4
+				}
+			],
+			"cluster-count": 1,
+			"ceiling": false,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-51
+				]
+			}
+		}
+	}
+}

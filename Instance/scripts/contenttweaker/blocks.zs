@@ -31,3 +31,4 @@ VanillaFactory.createBlock("zinc_ore", <blockmaterial:rock>).register();
 VanillaFactory.createBlock("manganese_ore", <blockmaterial:rock>).register();
 VanillaFactory.createBlock("quartz_ore", <blockmaterial:rock>).register();
 VanillaFactory.createBlock("chromium_ore", <blockmaterial:rock>).register();
+VanillaFactory.createBlock("osmium_ore", <blockmaterial:rock>).register();

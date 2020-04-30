@@ -28,6 +28,8 @@ VanillaFactory.createItem("flintdust").register();
 VanillaFactory.createItem("bonedust").register();
 VanillaFactory.createItem("ashdust").register();
 
+VanillaFactory.createItem("carbon_dust").register();
+
 VanillaFactory.createItem("silica_sand").register();
 
 	//	Porcelain brick to mimic: clay ball > clay brick > fired brick 	_______________________________________________________________________________________________________________________________________________________________________
@@ -56,6 +58,11 @@ VanillaFactory.createItem("copshowium_rod").register();
 	//	Sand Ingot Cast	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("sand_ingot_cast").register();
 VanillaFactory.createItem("sand_ingot_cast_wet").register();
+
+	//	Wood Ingot mold box	_______________________________________________________________________________________________________________________________________________________________________
+var brick_mold = VanillaFactory.createItem("brick_mold");
+	brick_mold.maxDamage = 64;
+	brick_mold.register();
 
 	//	Clay Nugget for thingies	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("clay_nugget").register();
@@ -99,7 +106,7 @@ VanillaFactory.createItem("tiny_dust_dust").register();
 //	Recreate Jaopca chunks that don't play nice with Magneticraft's craftweaker intgration.
 //=====================================================================================================================================================================================================
 
-
+/* - Made with the material system
 	//	Recreate Magneticraft chunks from Jaopca	_______________________________________________________________________________________________________________________________________________________________________
 VanillaFactory.createItem("chunk_adamantine").register();
 VanillaFactory.createItem("chunk_amber").register();
@@ -192,3 +199,4 @@ VanillaFactory.createItem("rockychunk_topaz").register();
 VanillaFactory.createItem("rockychunk_uranium").register();
 VanillaFactory.createItem("rockychunk_zirconium").register();
 
+*/

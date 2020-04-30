@@ -13,15 +13,6 @@
     "advancedrocketry:stormland": "DESERT",
     "advancedrocketry:volcanic": "DESERT_HILLS",
     "advancedrocketry:volcanicbarren": "DESERT_HILLS",
-    "atum:dead_oasis": "PLAINS",
-    "atum:deadwood_forest": "SPARSE_FOREST",
-    "atum:dried_river": "WATER",
-    "atum:limestone_crags": "DESERT_HILLS",
-    "atum:limestone_mountains": "MOUNTAINS_NAKED",
-    "atum:oasis": "PLAINS",
-    "atum:sand_dunes": "DESERT_HILLS",
-    "atum:sand_hills": "DESERT_HILLS",
-    "atum:sand_plains": "DESERT",
     "biomesoplenty:alps": "MOUNTAINS_NAKED",
     "biomesoplenty:alps_foothills": "SNOW_PINES",
     "biomesoplenty:bamboo_forest": "JUNGLE",
@@ -95,7 +86,6 @@
     "biomesoplenty:white_beach": "SHORE",
     "biomesoplenty:woodland": "DENSE_FOREST",
     "biomesoplenty:xeric_shrubland": "SAVANNA",
-    "iceandfire:glacier": "SNOW",
     "jeid:error_biome": "PLAINS",
     "minecraft:beaches": "SHORE",
     "minecraft:birch_forest": "BIRCH",
@@ -167,7 +157,6 @@
     "rm:newroof": "PLAINS",
     "rm:old": "PLAINS",
     "rm:oldroof": "PLAINS",
-    "rm:wasteland": "PLAINS",
-    "wrd:dungeonsssssssss": "PLAINS"
+    "rm:wasteland": "PLAINS"
   }
 }

@@ -100,6 +100,5 @@ for Name,Item in GlobalWoodTrapDoor {
 <ore:dustAsh>.add(<biomesoplenty:ash>);
 
 <ore:blockAsh>.addItems([
-	<iceandfire:ash>,
 	<biomesoplenty:ash_block>,
 ]);

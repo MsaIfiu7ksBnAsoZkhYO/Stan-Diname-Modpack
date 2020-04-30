@@ -13,7 +13,7 @@
     mods.magneticraft.Grinder.removeRecipe(<thermalfoundation:ore:4>);
     mods.magneticraft.Grinder.removeRecipe(<thermalfoundation:ore:8>);
     mods.magneticraft.Grinder.removeRecipe(<thermalfoundation:ore:5>);
-    mods.magneticraft.Grinder.removeRecipe(<mekanism:oreblock>);
+    //mods.magneticraft.Grinder.removeRecipe(<mekanism:oreblock>);
     mods.magneticraft.Grinder.removeRecipe(<thermalfoundation:ore:2>);
     mods.magneticraft.Grinder.removeRecipe(<thermalfoundation:ore:1>);
     //mods.magneticraft.Grinder.removeRecipe(<basemetals:zinc_ore>);

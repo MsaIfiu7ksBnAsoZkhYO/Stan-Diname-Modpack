@@ -141,7 +141,7 @@ if (debug) {print("New casting recipes");}
 mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:512> , <immersiveengineering:material:9>, <liquid:redstone> , 400 , true, 300 );
 mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:513> , <ore:gearGold>, <liquid:redstone> , 200 , true, 200 );
 mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:514> , <ore:gearSilver>, <liquid:redstone> , 200 , true, 200 );
-mods.tconstruct.Casting.addTableRecipe(<extrautils2:ingredients:1> , <ore:gearCopper>, <liquid:redstone> , 1600 , true, 200 );
+//mods.tconstruct.Casting.addTableRecipe(<extrautils2:ingredients:1> , <ore:gearCopper>, <liquid:redstone> , 1600 , true, 200 );
 //mods.tconstruct.Casting.addBasinRecipe(<thermalexpansion:frame> , <thermalexpansion:frame:64>, <liquid:iron> , 144*4 , true, 400 );
 mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:2> , <minecraft:redstone_ore>, <liquid:redstone> , 1000 , true, 400 );
 
@@ -226,10 +226,10 @@ mods.tconstruct.Casting.addBasinRecipe(
 if (debug) {print("Sandy Glass");}
 	//	Sandy Glass	_______________________________________________________________________________________________________________________________________________________________________
 //recipes.remove( <extrautils2:decorativesolid:4> );
-mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativesolid:4> , <ore:sand>, <liquid:glass> , 1000 , true, 220 );
+//mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativesolid:4> , <ore:sand>, <liquid:glass> , 1000 , true, 220 );
 if (debug) {print("Thick Glass");}
 	//	Thickened Glass	_______________________________________________________________________________________________________________________________________________________________________
-mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativeglass> , <tconstruct:clear_glass>, <liquid:glass> , 1000 , true, 300 );
+//mods.tconstruct.Casting.addBasinRecipe(<extrautils2:decorativeglass> , <tconstruct:clear_glass>, <liquid:glass> , 1000 , true, 300 );
 
 if (debug) {print("Anvil mold Casting");}
 	//	Anvil mold Casting	_______________________________________________________________________________________________________________________________________________________________________

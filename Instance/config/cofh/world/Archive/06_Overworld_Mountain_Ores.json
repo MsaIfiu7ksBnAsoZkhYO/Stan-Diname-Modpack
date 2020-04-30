@@ -1,0 +1,124 @@
+{
+	"enabled" : false,
+	"namespace" : "Overworld_Mountains",
+	"populate": {
+        "Mountain_Copper_Veins": {
+            "enabled": true,
+            "distribution": "gaussian",
+            "generator": [
+                {
+                    "type": "large-vein",
+                    "weight": 30,
+                    "block": [
+                        {
+                            "name": "immersiveengineering:ore",
+                            "properties": {
+                                "type": "copper"
+                            },
+                            "weight": 100
+                        },
+                        {
+                            "name": "nuclearcraft:ore",
+                            "properties": {
+                                "type": "copper"
+                            },
+                            "weight": 25
+                        },
+                        {
+                            "name": "crossroads:ore_copper",
+                            "weight": 100
+                        },
+                        {
+                            "name": "crossroads:ore_native_copper",
+                            "weight": 10
+                        }
+                    ],
+                    "material": "minecraft:stone",
+                    "cluster-size": 12
+                },
+                {
+                    "type": "large-vein",
+                    "weight": 100,
+                    "block": [
+                        {
+                            "name": "magneticraft:ores",
+                            "properties": {
+                                "ore_type": "copper"
+                            },
+                            "weight": 100
+                        },
+                        {
+                            "name": "mekanism:oreblock",
+                            "properties": {
+                                "type": "copper"
+                            },
+                            "weight": 100
+                        },
+                        {
+                            "name": "crossroads:ore_native_copper",
+                            "weight": 50
+                        }
+                    ],
+                    "material": "minecraft:stone",
+                    "cluster-size": 12
+                },
+                {
+                    "type": "large-vein",
+                    "weight": 50,
+                    "block": [
+                        {
+                            "name": "libvulpes:ore0",
+                            "properties": {
+                                "varient": "4"
+                            },
+                            "weight": 100
+                        },
+                        {
+                            "name": "techguns:basicore",
+                            "properties": {
+                                "type": "ore_copper"
+                            },
+                            "weight": 100
+                        },
+                        {
+                            "name": "thermalfoundation:ore",
+                            "properties": {
+                                "type": "copper"
+                            },
+                            "weight": 100
+                        },
+                        {
+                            "name": "mysticalworld:copper_ore",
+                            "weight": 100
+                        },
+                        {
+                            "name": "crossroads:ore_native_copper",
+                            "weight": 51
+                        }
+                    ],
+                    "material": "minecraft:stone",
+                    "cluster-size": 12
+                }
+            ],
+            "cluster-count": 30,
+            "center-height": 140,
+            "spread": 108,
+            "retrogen": true,
+            "biome": {
+                "restriction": "whitelist",
+                "value": [
+                    {
+                        "type": "dictionary",
+                        "entry": "MOUNTAIN"
+                    }
+                ]
+            },
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    0
+                ]
+            }
+        }
+    }
+}

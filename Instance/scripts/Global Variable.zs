@@ -192,8 +192,6 @@ import crafttweaker.liquid.ILiquidStack;
 	global GlobalWoodLog as IItemStack[string] = {
 		advancedrocketry_alien				:	<advancedrocketry:alienwood>,
 		
-		atum_deadwood						:	<atum:deadwood_log>,
-		atum_palm							:	<atum:palm_log>,
 		
 		biomesoplenty_cherry				:	<biomesoplenty:log_0:5>,
 		biomesoplenty_dead					:	<biomesoplenty:log_4:5>,
@@ -213,13 +211,6 @@ import crafttweaker.liquid.ILiquidStack;
 		biomesoplenty_umbran				:	<biomesoplenty:log_0:6>,
 		biomesoplenty_willow				:	<biomesoplenty:log_2:5>,
 		
-		cuisine_citrus						:	<cuisine:log>,
-
-		
-		extrautils2_ironwood				:	<extrautils2:ironwood_log>,
-		extrautils2_raw_ironwood			:	<extrautils2:ironwood_log:1>,
-		
-
 		
 		minecraft_acacia					:	<minecraft:log2:0>,
 		minecraft_birch						:	<minecraft:log:2>,
@@ -305,19 +296,12 @@ import crafttweaker.liquid.ILiquidStack;
 		biomesoplenty_ebony						:	<biomesoplenty:planks_0:14>,
 		biomesoplenty_eucalyptus				:	<biomesoplenty:planks_0:15>,
 
-		extrautils2_ironwood					:	<extrautils2:ironwood_planks>,
-		extrautils2_raw_ironwood				:	<extrautils2:ironwood_planks:1>,
-
 		rustic_olive							:	<rustic:planks>,
 		rustic_ironwood							:	<rustic:planks:1>,
 
 		randomthings_spectre					:	<randomthings:spectreplank>,
 
 		advancedrocketry_alien					:	<advancedrocketry:planks>,
-
-		atum_palm								:	<atum:palm_planks>,
-		atum_deadwood							:	<atum:deadwood_planks>,
-
 
 
 		natura_maple							:	<natura:overworld_planks:0>,
@@ -336,7 +320,7 @@ import crafttweaker.liquid.ILiquidStack;
 		natura_darkwood							:	<natura:nether_planks:2>,
 		natura_fusewood							:	<natura:nether_planks:3>,
 
-		cuisine_citrus							:	<cuisine:planks>,
+
 
 		immersiveengineering_treated_horizontal	:	<immersiveengineering:treated_wood:0>,
 		immersiveengineering_treated_vertical	:	<immersiveengineering:treated_wood:1>,
@@ -424,8 +408,6 @@ import crafttweaker.liquid.ILiquidStack;
 		rustic_olive							:	<rustic:olive_slab_item>,
 		rustic_ironwood							:	<rustic:ironwood_slab_item>,
 
-		atum_palm								:	<atum:palm_slab>,
-		atum_deadwood							:	<atum:deadwood_slab>,
 
 		natura_maple							:	<natura:overworld_slab:0>,
 		natura_silverbell						:	<natura:overworld_slab:1>,
@@ -525,8 +507,6 @@ import crafttweaker.liquid.ILiquidStack;
 		rustic_olive							:	<rustic:stairs_olive>,
 		rustic_ironwood							:	<rustic:stairs_ironwood>,
 
-		atum_palm								:	<atum:palm_stairs>,
-		atum_deadwood							:	<atum:deadwood_stairs>,
 
 		natura_maple							:	<natura:overworld_stairs_maple>,
 		natura_silverbell						:	<natura:overworld_stairs_silverbell>,
@@ -630,8 +610,6 @@ import crafttweaker.liquid.ILiquidStack;
 		rustic_olive							:	<rustic:fence_olive>,
 		rustic_ironwood							:	<rustic:fence_ironwood>,
 
-		atum_palm								:	<atum:palm_fence>,
-		atum_deadwood							:	<atum:deadwood_fence>,
 
 		natura_maple							:	<natura:maple_fence>,
 		natura_silverbell						:	<natura:silverbell_fence>,
@@ -651,7 +629,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 
 		
-		cuisine_citrus							:	<cuisine:fence>,
+
 
 		immersiveengineering_treated_horizontal	:	<immersiveengineering:wooden_decoration>,
 		immersiveengineering_treated_vertical	:	<immersiveengineering:wooden_decoration>,
@@ -703,8 +681,6 @@ import crafttweaker.liquid.ILiquidStack;
 		rustic_olive							:	<rustic:fence_gate_olive>,
 		rustic_ironwood							:	<rustic:fence_gate_ironwood>,
 
-		atum_palm								:	<atum:palm_fence_gate>,
-		atum_deadwood							:	<atum:deadwood_fence_gate>,
 
 		natura_maple							:	<natura:maple_fence_gate>,
 		natura_silverbell						:	<natura:silverbell_fence_gate>,
@@ -722,7 +698,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 
 
-		cuisine_citrus							:	<cuisine:fence_gate>,
+
 
 		immersiveengineering_treated_horizontal	:	<engineersdoors:fencegate_treated>,
 		immersiveengineering_treated_vertical	:	<engineersdoors:fencegate_treated>,
@@ -772,8 +748,6 @@ import crafttweaker.liquid.ILiquidStack;
 		rustic_olive							:	<rustic:olive_door>,
 		rustic_ironwood							:	<rustic:ironwood_door>,
 
-		atum_palm								:	<atum:palm_door>,
-		atum_deadwood							:	<atum:deadwood_door>,
 
 
 		natura_maple							:	<natura:overworld_doors:6>,
@@ -791,7 +765,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 
 
-		cuisine_citrus							:	<cuisine:door>,
+
 
 		immersiveengineering_treated_horizontal	:	<engineersdoors:door_treated>,
 		immersiveengineering_treated_vertical	:	<engineersdoors:door_treated_ornate>,
@@ -818,8 +792,6 @@ import crafttweaker.liquid.ILiquidStack;
 		terraqueous_coconut						:	<terraqueous:type_earth:18>,
 		terraqueous_banana						:	<terraqueous:type_earth:19>,
 
-		atum_palm								:	<atum:palm_hatch>,
-		atum_deadwood							:	<atum:deadwood_hatch>,
 
 		natura_maple							:	<natura:maple_trap_door>,
 		natura_silverbell						:	<natura:silverbell_trap_door>,
@@ -835,7 +807,7 @@ import crafttweaker.liquid.ILiquidStack;
 		natura_darkwood							:	<natura:darkwood_trap_door>,
 		natura_fusewood							:	<natura:fusewood_trap_door>,
 
-		cuisine_citrus							:	<cuisine:trapdoor>,
+
 
 		immersiveengineering_treated_horizontal	:	<engineersdoors:trapdoor_treated>,
 		immersiveengineering_treated_vertical	:	<engineersdoors:trapdoor_treated>,

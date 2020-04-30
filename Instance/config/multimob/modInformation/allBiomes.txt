@@ -142,16 +142,6 @@ rm:old
 rm:oldroof
 rm:new
 rm:newroof
-iceandfire:glacier
-atum:dead_oasis
-atum:deadwood_forest
-atum:dried_river
-atum:limestone_crags
-atum:limestone_mountains
-atum:oasis
-atum:sand_dunes
-atum:sand_hills
-atum:sand_plains
 nuclearcraft:nuclear_wasteland
 advancedrocketry:moon
 advancedrocketry:alien forest
@@ -165,4 +155,3 @@ advancedrocketry:oceanspires
 advancedrocketry:moondark
 advancedrocketry:volcanic
 advancedrocketry:volcanicbarren
-wrd:dungeonsssssssss

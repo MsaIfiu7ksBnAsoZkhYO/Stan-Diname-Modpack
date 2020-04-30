@@ -10,8 +10,7 @@
 //  Import-ant Things
 //=====================================================================================================================================================================================================
 
-
-#priority -1
+#priority 9998
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.recipes.ICraftingRecipe;
@@ -27,7 +26,7 @@ import mods.artisanworktables.builder.Copy;
     //  Predefine Associative Array with the "recipe name" as the KEY and the ICraftingRecipe as the VALUE
 var AllCraftingRecipes = {} as ICraftingRecipe[string];
  
-    //  Add All crafting table recipes to the Associative Array defined above
+    //  Add All crafting table recipes to the Associative Array defined above.
 for CraftingRecipe in recipes.all {
     AllCraftingRecipes[ CraftingRecipe.fullResourceDomain ] = CraftingRecipe;
 }
@@ -57,6 +56,78 @@ for Item in GlobalRemovalRecipeOutputs {
     }
 }
 
+
+    // Adds in the values from the Global wood Itemstack lists
+for Name,Item in GlobalWoodPlank {
+    if !isNull(Item) {  
+        for CraftingRecipes in recipes.getRecipesFor( Item ) {
+            if !(isNull(CraftingRecipes)) {
+                AllRecipeExceptions[ CraftingRecipes.fullResourceDomain ] = CraftingRecipes;
+            }
+        }
+    }
+}
+
+for Name,Item in GlobalWoodSlab {
+    if !isNull(Item) {  
+        for CraftingRecipes in recipes.getRecipesFor( Item ) {
+            if !(isNull(CraftingRecipes)) {
+                AllRecipeExceptions[ CraftingRecipes.fullResourceDomain ] = CraftingRecipes;
+            }
+        }
+    }
+}
+
+for Name,Item in GlobalWoodStair {
+    if !isNull(Item) {  
+        for CraftingRecipes in recipes.getRecipesFor( Item ) {
+            if !(isNull(CraftingRecipes)) {
+                AllRecipeExceptions[ CraftingRecipes.fullResourceDomain ] = CraftingRecipes;
+            }
+        }
+    }
+}
+
+for Name,Item in GlobalWoodFence {
+    if !isNull(Item) {  
+        for CraftingRecipes in recipes.getRecipesFor( Item ) {
+            if !(isNull(CraftingRecipes)) {
+                AllRecipeExceptions[ CraftingRecipes.fullResourceDomain ] = CraftingRecipes;
+            }
+        }
+    }
+}
+
+for Name,Item in GlobalWoodFenceGate {
+    if !isNull(Item) {  
+        for CraftingRecipes in recipes.getRecipesFor( Item ) {
+            if !(isNull(CraftingRecipes)) {
+                AllRecipeExceptions[ CraftingRecipes.fullResourceDomain ] = CraftingRecipes;
+            }
+        }
+    }
+}
+
+for Name,Item in GlobalWoodDoor {
+    if !isNull(Item) {  
+        for CraftingRecipes in recipes.getRecipesFor( Item ) {
+            if !(isNull(CraftingRecipes)) {
+                AllRecipeExceptions[ CraftingRecipes.fullResourceDomain ] = CraftingRecipes;
+            }
+        }
+    }
+}
+
+for Name,Item in GlobalWoodTrapDoor {
+    if !isNull(Item) {  
+        for CraftingRecipes in recipes.getRecipesFor( Item ) {
+            if !(isNull(CraftingRecipes)) {
+                AllRecipeExceptions[ CraftingRecipes.fullResourceDomain ] = CraftingRecipes;
+            }
+        }
+    }
+}
+
  
     //Add the recipe names to the exception list too.  Filters out Null value recipe names
 for Item in GlobalExceptionRecipeNames {
@@ -77,6 +148,10 @@ for Item in GlobalExceptionRecipeNames {
 	//	I love Loops.  :D	_______________________________________________________________________________________________________________________________________________________________________
 for CraftingRecipe in AllCraftingRecipes {
 
+    //  Making this so it only removes the recipes in the excetions list instead of everything globally.
+//recipes.remove(CraftingRecipe);
+
+
         //  This isNull will return TRUE when a recipe is not an exception and then add the item to the artisan table.
     if ( isNull( AllRecipeExceptions[CraftingRecipe] ) ) {
         RecipeBuilder.get("basic")
@@ -85,6 +160,7 @@ for CraftingRecipe in AllCraftingRecipes {
             .create();
     
     } 
+
 
 }
 

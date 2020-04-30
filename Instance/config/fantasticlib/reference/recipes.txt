@@ -14,6 +14,8 @@ crafttweaker:flinty mchatchet
 crafttweaker:ntp firestarter
 crafttweaker:tconstruct torch arrows
 crafttweaker:gravel to gravel lumps
+crafttweaker:gravel lumps to gravel block
+crafttweaker:gravel to flint shortcut
 crafttweaker:ct_shapeless931733164
 guideapi:guide_journal_to_manual
 guideapi:guide_journal

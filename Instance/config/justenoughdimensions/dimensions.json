@@ -218,10 +218,9 @@
     },
     {
       "dim": -50,
-      "biome": "minecraft:deep_ocean",
       "jed": {
         "CanRespawnHere": "false",
-        "RespawnDimension": "0",
+        "RespawnDimension": 0,
         "SkyColor": "000000",
         "FogColor": "000000",
         "CloudColor": "000000",
@@ -243,10 +242,9 @@
     },
     {
       "dim": -51,
-      "biome": "minecraft:deep_ocean",
       "jed": {
-        "CanRespawnHere": "false",
-        "RespawnDimension": "0",
+        "CanRespawnHere": false,
+        "RespawnDimension": 0,
         "SkyColor": "000000",
         "FogColor": "000000",
         "CloudColor": "000000",
@@ -270,8 +268,8 @@
       "dim": -52,
       "biome": "minecraft:deep_ocean",
       "jed": {
-        "CanRespawnHere": "false",
-        "RespawnDimension": "0",
+        "CanRespawnHere": false,
+        "RespawnDimension": 0,
         "SkyColor": "000000",
         "FogColor": "000000",
         "CloudColor": "000000",
@@ -293,7 +291,6 @@
     },
     {
       "dim": -53,
-      "biome": "minecraft:deep_ocean",
       "jed": {
         "CanRespawnHere": "false",
         "RespawnDimension": "0",
@@ -318,7 +315,6 @@
     },
     {
       "dim": -54,
-      "biome": "minecraft:deep_ocean",
       "jed": {
         "CanRespawnHere": "false",
         "RespawnDimension": "0",

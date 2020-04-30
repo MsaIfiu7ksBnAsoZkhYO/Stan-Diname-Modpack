@@ -107,6 +107,8 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:oreManganese>.add(<contenttweaker:manganese_ore>);
 <ore:oreQuartz>.add(<contenttweaker:quartz_ore>);
 <ore:oreChromium>.add(<contenttweaker:chromium_ore>);
+<ore:oreOsmium>.add(<contenttweaker:osmium_ore>);
+
 
 
 //=====================================================================================================================================================================================================	
