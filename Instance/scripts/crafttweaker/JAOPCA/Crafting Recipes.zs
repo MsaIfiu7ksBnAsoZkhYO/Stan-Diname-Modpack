@@ -1,1 +1,0 @@
-recipes.remove(<jaopca:item_gearadamantine>);
