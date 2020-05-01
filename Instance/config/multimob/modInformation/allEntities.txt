@@ -113,13 +113,13 @@ arcane_essentials:fireball
 arcane_essentials:waterball
 arcane_essentials:magiclightning
 arcane_essentials:lightningspawner
-quark:seat
-quark:totem_of_holding
-quark:gravisand
 quark:flat_item_frame
 quark:leash_knot
 quark:colored_item_frame
 quark:glass_item_frame
+quark:totem_of_holding
+quark:chest_passenger
+quark:gravisand
 quark:arrow_ender
 quark:arrow_explosive
 quark:arrow_torch
@@ -135,7 +135,7 @@ quark:frog
 quark:pirate
 quark:crab
 quark:wraith
-quark:chest_passenger
+quark:seat
 botania:mana_burst
 botania:signal_flare
 botania:pixie
