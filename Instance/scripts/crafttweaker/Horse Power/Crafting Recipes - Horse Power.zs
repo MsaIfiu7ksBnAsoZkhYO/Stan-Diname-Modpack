@@ -19,7 +19,7 @@ val WoodGear = <ore:gearWood>;
 val MobLead = <ore:gearWood>;
 
 	//	Hand Grindstone	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <horsepower:hand_grindstone> );
+recipes.remove( <horsepower:hand_grindstone> );
 RecipeBuilder.get("basic")
     .setShaped([
         [null,        null,       StoneBlock, null,       Handle      ],
@@ -30,12 +30,12 @@ RecipeBuilder.get("basic")
     .create();
 
 	//	Horse Grindstone	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <horsepower:grindstone> );
+recipes.remove( <horsepower:grindstone> );
 RecipeBuilder.get("basic")
   .setShaped([
-    [null,          MobLead,   Handle,         MobLead,   null        ],
-    [StoneBlock,   StoneBlock,        StoneCore,      StoneBlock,        StoneBlock ],
-    [StoneBlock,   WoodGear,     StoneCore,      WoodGear,     StoneBlock ],
-    [StoneBlock,   StoneBlock,        StoneBlock,    StoneBlock,        StoneBlock ]])
+    [null,        MobLead,    Handle,     MobLead,    null        ],
+    [StoneBlock,  StoneBlock, StoneCore,  StoneBlock, StoneBlock  ],
+    [StoneBlock,  WoodGear,   StoneCore,  WoodGear,   StoneBlock  ],
+    [StoneBlock,  StoneBlock, StoneBlock, StoneBlock, StoneBlock  ]])
   .addOutput( <horsepower:grindstone> )
   .create();

@@ -74,12 +74,6 @@ tconstruct:momentum
 tconstruct:dot
 tconstruct:splinter
 conarm:superhotpotion
-botania:soulcross
-botania:featherfeet
-botania:emptiness
-botania:bloodthirst
-botania:allure
-botania:clear
 quark:blue
 quark:black
 quark:white
@@ -104,6 +98,12 @@ bloodmagic:suspended
 bloodmagic:heavy_heart
 bloodmagic:feathered
 bloodarsenal:bleeding
+botania:soulcross
+botania:featherfeet
+botania:emptiness
+botania:bloodthirst
+botania:allure
+botania:clear
 immersiveengineering:flammable
 immersiveengineering:slippery
 immersiveengineering:conductive
@@ -140,6 +140,7 @@ cyclicmagic:potion.bounce
 cyclicmagic:potion.frostwalker
 cyclicmagic:potion.butter
 cyclicmagic:potion.stunned
+cyclicmagic:potion.saturation
 lycanitesmobs:decay
 lycanitesmobs:smited
 lycanitesmobs:plague

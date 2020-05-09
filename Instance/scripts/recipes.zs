@@ -4,6 +4,7 @@
 //#Remove
 //Don't touch me!
 //#Add
+furnace.addRecipe(<tconstruct:clear_glass>, <minecraft:glass>, 0.0);
 furnace.addRecipe(<contenttweaker:ashdust>, <thermalfoundation:material:801>, 0.0);
 furnace.addRecipe(<ceramics:channel>, <ceramics:unfired_clay:7>, 0.0);
 furnace.addRecipe(<ceramics:faucet>, <ceramics:unfired_clay:6>, 0.0);

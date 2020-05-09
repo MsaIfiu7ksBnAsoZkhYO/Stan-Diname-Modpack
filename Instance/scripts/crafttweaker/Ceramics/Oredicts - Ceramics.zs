@@ -21,9 +21,19 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:ingotPorcelain>.add(<contenttweaker:porcelain_brick>);
 
 
-	//	Barrel Extensions 	_______________________________________________________________________________________________________________________________________________________________________
+	//	Barrels and Extensions 	_______________________________________________________________________________________________________________________________________________________________________
+<ore:clayBarrel>.addItems([
+	<ceramics:clay_barrel>,
+	<ceramics:clay_barrel_stained:*>,
+]);
 <ore:clayBarrelExtension>.addItems([
 	<ceramics:clay_barrel:1>,
 	<ceramics:clay_barrel_stained_extension:*>,
+]);
+
+<ore:porcelainBarrel>.addItems([
+	<ceramics:porcelain_barrel:*>,
+]);
+<ore:porcelainBarrelExtension>.addItems([
 	<ceramics:porcelain_barrel_extension:*>
 ]);

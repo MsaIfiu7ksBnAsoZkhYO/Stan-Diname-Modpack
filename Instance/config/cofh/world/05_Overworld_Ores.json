@@ -93,7 +93,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -163,7 +166,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -319,7 +325,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -340,7 +349,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -386,13 +398,6 @@
 							"name": "magneticraft:ores",
 							"properties": {
 								"ore_type": "copper"
-							},
-							"weight": 100
-						},
-						{
-							"name": "mekanism:oreblock",
-							"properties": {
-								"type": "copper"
 							},
 							"weight": 100
 						},
@@ -453,13 +458,6 @@
 							"weight": 100
 						},
 						{
-							"name": "mekanism:oreblock",
-							"properties": {
-								"type": "copper"
-							},
-							"weight": 100
-						},
-						{
 							"name": "crossroads:ore_native_copper",
 							"weight": 50
 						}
@@ -477,7 +475,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -489,13 +490,6 @@
 					"type": "large-vein",
 					"weight": 30,
 					"block": [
-						{
-							"name": "mekanism:oreblock",
-							"properties": {
-								"type": "tin"
-							},
-							"weight": 100
-						},
 						{
 							"name": "nuclearcraft:ore",
 							"properties": {
@@ -544,13 +538,6 @@
 					"type": "large-vein",
 					"weight": 1,
 					"block": [
-						{
-							"name": "mekanism:oreblock",
-							"properties": {
-								"type": "tin"
-							},
-							"weight": 100
-						},
 						{
 							"name": "nuclearcraft:ore",
 							"properties": {
@@ -605,7 +592,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -617,13 +607,6 @@
 					"type": "large-vein",
 					"weight": 100,
 					"block": [
-						{
-							"name": "techguns:basicore",
-							"properties": {
-								"type": "ore_lead"
-							},
-							"weight": 100
-						},
 						{
 							"name": "thermalfoundation:ore",
 							"properties": {
@@ -675,13 +658,6 @@
 					"type": "large-vein",
 					"weight": 1,
 					"block": [
-						{
-							"name": "techguns:basicore",
-							"properties": {
-								"type": "ore_lead"
-							},
-							"weight": 100
-						},
 						{
 							"name": "thermalfoundation:ore",
 							"properties": {
@@ -739,7 +715,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -909,7 +888,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -971,7 +953,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -1018,7 +1003,7 @@
 					"cluster-size": 8
 				}
 			],
-			"cluster-count": 5,
+			"cluster-count": 1,
 			"min-height": 2,
 			"max-height": 24,
 			"retrogen": true,
@@ -1027,7 +1012,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -1044,10 +1032,6 @@
 							"properties": {
 								"type": "silver"
 							},
-							"weight": 100
-						},
-						{
-							"name": "iceandfire:silver_ore",
 							"weight": 100
 						},
 						{
@@ -1077,10 +1061,6 @@
 							"weight": 100
 						},
 						{
-							"name": "iceandfire:silver_ore",
-							"weight": 100
-						},
-						{
 							"name": "thermalfoundation:ore",
 							"properties": {
 								"type": "silver"
@@ -1105,7 +1085,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -1147,7 +1130,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -1189,7 +1175,10 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		},
@@ -1237,7 +1226,61 @@
 				"restriction": "whitelist",
 				"value": [
 					0,
-					-50
+					-50,
+					-51,
+					-52,
+					-54
+				]
+			}
+		},
+		"Pyrite_Dust_Veins": {
+			"enabled": true,
+			"distribution": "uniform",
+			"generator": [
+				{
+					"type": "large-vein",
+					"weight": 100,
+					"block": [
+						{
+							"name": "magneticraft:ores",
+							"properties": {
+								"ore_type": "pyrite"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 4
+				},
+				{
+					"type": "large-vein",
+					"weight": 1,
+					"block": [
+						{
+							"name": "magneticraft:ores",
+							"properties": {
+								"ore_type": "pyrite"
+							},
+							"weight": 100
+						}
+					],
+					"material": "minecraft:stone",
+					"cluster-size": 16
+				}
+			],
+			"cluster-count": 7,
+			"min-height": 12,
+			"max-height": 40,
+			"retrogen": true,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0,
+					-50,
+					-51,
+					-52,
+					-54
 				]
 			}
 		}

@@ -44,35 +44,27 @@ import crafttweaker.oredict.IOreDictEntry;
 for Name,Item in GlobalWoodLog {
 	<ore:logWood>.add(Item);
 }
-
 for Name,Item in GlobalWoodPlank {
 	<ore:plankWood>.add(Item);
 }
-
 for Name,Item in GlobalWoodFence {
 	<ore:fenceWood>.add(Item);
 }
-
 for Name,Item in GlobalWoodFenceGate {
 	<ore:fenceGateWood>.add(Item);
 }
-
 for Name,Item in GlobalWoodSlab {
 	<ore:slabWood>.add(Item);
 }
-
 for Name,Item in GlobalWoodStair {
 	<ore:stairWood>.add(Item);
 }
-
 for Name,Item in GlobalWoodDoor {
 	<ore:doorWood>.add(Item);
 }
-
 for Name,Item in GlobalWoodTrapDoor {
 	<ore:trapdoorWood>.add(Item);
 }
-
 
 //=====================================================================================================================================================================================================	
 //	Red Sandstone

@@ -19,6 +19,9 @@ import mods.TinkersForging.Anvil;
 //==============================================================
 
 
+	//	Make a better hammer
+<ore:hammer>.add(<tinkerscompendium:mallet>);
+
 	//	Custom Pewter Materials	_______________________________________________________________________________________________________________________________________________________________________
 <ore:ingotMagmolybdochalkosmuth>.add(<contenttweaker:magmolybdochalkosmuth_ingot>);
 <ore:ingotMolybdochalkos>.add(<contenttweaker:molybdochalkos_ingot>);

@@ -1,4 +1,15 @@
 //=====================================================================================================================================================================================================	
+//	Import-ant things
+//=====================================================================================================================================================================================================
+
+
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.item.IItemStack;
+
+
+//=====================================================================================================================================================================================================	
 //  Remove Melting Recipes
 //=====================================================================================================================================================================================================	
 
@@ -25,9 +36,54 @@ mods.crossroads.HeatingCrucible.removeRecipe(<ore:ingotTin>);
     //	Silica Sand to molten Glass	_______________________________________________________________________________________________________________________________________________________________________
 mods.crossroads.HeatingCrucible.addRecipe(
 	<ore:sandSilica>, 
-	<liquid:glass> * 1000, 
+	<liquid:glass> * 250, 
 	"minecraft:blocks/sand"
 );
+
+
+//=====================================================================================================================================================================================================	
+//  Clay things melting recipes
+//=====================================================================================================================================================================================================	
+
+
+	//	Clay related things	_______________________________________________________________________________________________________________________________________________________________________
+mods.crossroads.HeatingCrucible.addRecipe( <ore:dustLime> , <liquid:lime_liquid> * 72 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:dustFlint> , <liquid:flint_liquid> * 72 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:sand> , <liquid:sand_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:dustCarbon> , <liquid:carbon_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:gravel> , <liquid:gravel_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:dustAsh> , <liquid:ash_liquid> * 72 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:dustBone> , <liquid:bone_liquid> * 72 , "minecraft:blocks/gravel" ); 
+
+	//	The Clay liquids themselves	_______________________________________________________________________________________________________________________________________________________________________
+mods.crossroads.HeatingCrucible.addRecipe( <ore:clay> , <liquid:clay> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:clayPorcelain> , <liquid:porcelain_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:clayCoke> , <liquid:coke_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:clayKiln> , <liquid:kiln_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:clayBlast> , <liquid:blast_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:claySeared> , <liquid:seared_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:clayScorched> , <liquid:scorched_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+
+	//	Unfired Clay bricks	_______________________________________________________________________________________________________________________________________________________________________
+mods.crossroads.HeatingCrucible.addRecipe( <ore:brickClay> , <liquid:clay> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:plateClayRaw> , <liquid:clay> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:brickPorcelain> , <liquid:porcelain_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:brickCoke> , <liquid:coke_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:brickKiln> , <liquid:kiln_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:brickBlast> , <liquid:blast_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:brickSeared> , <liquid:seared_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:brickScorched> , <liquid:scorched_clay_liquid> * 144 , "minecraft:blocks/gravel" ); 
+
+	//	Clay Nuggets	_______________________________________________________________________________________________________________________________________________________________________
+mods.crossroads.HeatingCrucible.addRecipe( <ore:nuggetClay> , <liquid:clay> * 16 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:nuggetPorcelain> , <liquid:porcelain_clay_liquid> * 16 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:nuggetCoke> , <liquid:coke_clay_liquid> * 16 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:nuggetKiln> , <liquid:kiln_clay_liquid> * 16 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:nuggetBlast> , <liquid:blast_clay_liquid> * 16 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:nuggetSeared> , <liquid:seared_clay_liquid> * 16 , "minecraft:blocks/gravel" ); 
+mods.crossroads.HeatingCrucible.addRecipe( <ore:nuggetScorched> , <liquid:scorched_clay_liquid> * 16 , "minecraft:blocks/gravel" ); 
+
+
 
 
 //=====================================================================================================================================================================================================	

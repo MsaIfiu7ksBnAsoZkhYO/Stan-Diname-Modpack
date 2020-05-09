@@ -19,6 +19,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 	//	Because some recipes use blockGlassColorless	_______________________________________________________________________________________________________________________________________________________________________
 <ore:blockGlassColorless>.add( <tconstruct:clear_glass> );
+<ore:blockGlassThickended>.add( <tconstruct:clear_glass> );
 
 
 	//	Seared Stairs	_______________________________________________________________________________________________________________________________________________________________________

@@ -11,6 +11,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 //=====================================================================================================================================================================================================
 
 
+recipes.remove( <rockhounding_oretiers:bloomery> );
 RecipeBuilder.get("mason")
     .setShaped([
         [null,              null,                       <ore:clayBarrelExtension>,  null,                       null                ],
@@ -24,6 +25,7 @@ RecipeBuilder.get("mason")
     .create();
 
 	//	Coal Refinery	_______________________________________________________________________________________________________________________________________________________________________
+recipes.remove( <rockhounding_oretiers:coal_refiner> );
 RecipeBuilder.get("mason")
     .setShaped([
         [null,                      null,                       <ore:clayBarrelExtension>,  null,                       null                        ],
@@ -35,6 +37,7 @@ RecipeBuilder.get("mason")
     .create();
 
 	//	Drying Pallet	_______________________________________________________________________________________________________________________________________________________________________
+recipes.remove( <rockhounding_oretiers:peat_drier> );
 RecipeBuilder.get("carpenter")
     .setShaped([
         [<ore:stickTreatedWood>,    <ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood> ],
@@ -46,6 +49,7 @@ RecipeBuilder.get("carpenter")
 
 
 	//	Forge Hammer	_______________________________________________________________________________________________________________________________________________________________________
+recipes.remove( <rockhounding_oretiers:forging_hammer> );
 RecipeBuilder.get("basic")
     .setShapeless( [ <tconstruct:cast_custom> ] )
     .addOutput( <rockhounding_oretiers:forging_hammer> )

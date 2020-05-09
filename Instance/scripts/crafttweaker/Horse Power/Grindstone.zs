@@ -37,20 +37,14 @@ mods.horsepower.Grindstone.add(
 mods.horsepower.Grindstone.add(
 	<contenttweaker:quicklime>, 
 	<contenttweaker:limedust> * 1, 
-	8, 
-	false, 
-	<contenttweaker:limedust> * 1 , 
-	100
+	8
 );
 
 	//	Flint shards to flint dust for alternate porcelain recipe	_______________________________________________________________________________________________________________________________________________________________________
 mods.horsepower.Grindstone.add(
 	<ore:shardFlint>, 
 	<contenttweaker:flintdust> * 1, 
-	8, 
-	false, 
-	<contenttweaker:flintdust> * 1 , 
-	100
+	8
 );
 
 	//	Sandstone to sandstone rocks	_______________________________________________________________________________________________________________________________________________________________________
@@ -108,8 +102,5 @@ mods.horsepower.Grindstone.add(
 mods.horsepower.Grindstone.add(
 	<minecraft:dye:15>, 
 	<contenttweaker:bonedust> * 1, 
-	8, 
-	false, 
-	<contenttweaker:bonedust> * 1 , 
-	100
+	8
 );

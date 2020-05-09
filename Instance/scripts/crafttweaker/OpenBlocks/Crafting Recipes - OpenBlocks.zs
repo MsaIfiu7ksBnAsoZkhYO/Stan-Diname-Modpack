@@ -16,11 +16,11 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 
 	//	Fluid Tank	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <openblocks:tank> );
+recipes.remove( <openblocks:tank> );
 RecipeBuilder.get("basic")
     .setShaped([
-        [<ore:stickCopper>, <ore:paneGlass>,        <ore:stickCopper>   ],
-        [<ore:paneGlass>,   <ceramics:clay_barrel>, <ore:paneGlass>     ],
-        [<ore:stickCopper>, <ore:paneGlass>,        <ore:stickCopper>   ]])
+        [<ore:stickCopper>, <ore:paneGlass>,    <ore:stickCopper>   ],
+        [<ore:paneGlass>,   <ore:clayBarrel>,   <ore:paneGlass>     ],
+        [<ore:stickCopper>, <ore:paneGlass>,    <ore:stickCopper>   ]])
     .addOutput( <openblocks:tank> )
     .create();

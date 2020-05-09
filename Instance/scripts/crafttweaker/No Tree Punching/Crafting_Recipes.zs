@@ -10,28 +10,11 @@ import mods.artisanworktables.builder.RecipeBuilder;
 	
 
 //=====================================================================================================================================================================================================	
-//  Remove Easy Tool recipes - Everything must be forged
+//  Remove all Crafting table recipes.
 //=====================================================================================================================================================================================================	
 
 
-//recipes.removeByRecipeName("notreepunching:tools/iron_knife");
-//recipes.removeByRecipeName("notreepunching:tools/iron_mattock");
-//recipes.removeByRecipeName("notreepunching:tools/iron_saw");
-//recipes.removeByRecipeName("notreepunching:tools/gold_knife");
-//recipes.removeByRecipeName("notreepunching:tools/gold_mattock");
-//recipes.removeByRecipeName("notreepunching:tools/gold_saw");
-//recipes.removeByRecipeName("notreepunching:copper_knife");
-//recipes.removeByRecipeName("notreepunching:copper_mattock");
-//recipes.removeByRecipeName("notreepunching:copper_saw");
-//recipes.removeByRecipeName("notreepunching:tin_knife");
-//recipes.removeByRecipeName("notreepunching:tin_mattock");
-//recipes.removeByRecipeName("notreepunching:tin_saw");
-//recipes.removeByRecipeName("notreepunching:bronze_knife");
-//recipes.removeByRecipeName("notreepunching:bronze_mattock");
-//recipes.removeByRecipeName("notreepunching:bronze_saw");
-//recipes.removeByRecipeName("notreepunching:steel_knife");
-//recipes.removeByRecipeName("notreepunching:steel_mattock");
-//recipes.removeByRecipeName("notreepunching:steel_saw");
+recipes.removeByMod("notreepunching");
 
 
 //=====================================================================================================================================================================================================	
@@ -40,7 +23,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 	
 
 	//	Tweak Plant string recipe	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.removeByRecipeName("notreepunching:misc/grass_string");
+recipes.removeByRecipeName("notreepunching:misc/grass_string");
 recipes.addShapeless(
   "Plant String", 
   <notreepunching:grass_string>, 
@@ -51,7 +34,17 @@ recipes.addShapeless(
     <ore:fiberPlant>
   ]
 );
-  
+
+	//	Flint knife	_______________________________________________________________________________________________________________________________________________________________________
+recipes.addShapeless(
+  "Flinty McStabby", 
+  <notreepunching:knife/flint>,
+  [
+    <ore:shardFlint>, 
+    <ore:stickWood>
+  ]
+);  
+
 	//	Flint Hatchet recipe using plant string	_______________________________________________________________________________________________________________________________________________________________________
 recipes.addShapeless(
   "Flinty McHatchet", 
@@ -146,55 +139,54 @@ RecipeBuilder.get("basic")
 //  Pottery on Potter's table
 //=====================================================================================================================================================================================================	
 
-
-	//	Clay ball > Unfired Clay Brick  _______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove(<notreepunching:clay_brick>);
+  
+  //	Clay Tool _______________________________________________________________________________________________________________________________________________________________________
+RecipeBuilder.get("basic")
+  .setShaped([
+    [null, null, <ore:pattern>],
+    [null, <ore:stickWood>, null],
+    [<ore:stickWood>, null, null]])
+  .addOutput(<notreepunching:clay_tool>)
+  .create();
+  
+  //	Clay ball > Unfired Clay Brick  _______________________________________________________________________________________________________________________________________________________________________
+recipes.remove(<notreepunching:clay_brick>);
 RecipeBuilder.get("potter")
   .setShapeless( [ <minecraft:clay_ball> ] )
   .setFluid( <liquid:water> * 50 )
-  .setSecondaryIngredients( [ <minecraft:bowl> ] )
   .addTool( <ore:artisansTrowel> , 1 )
   .addTool( <contenttweaker:brick_mold> , 1 )
   .addOutput( <notreepunching:clay_brick> )
-  .setExtraOutputOne( <minecraft:bowl> , 1.0 )
   .create();
 
 	//	Clay block > Large Vessel  _______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
   .setShapeless( [ <minecraft:clay> ] )
   .setFluid( <liquid:water> * 50 )
-  .setSecondaryIngredients( [ <minecraft:bowl> ] )
   .addTool( <ore:artisansTrowel> , 1 )
   .addOutput( <notreepunching:pottery/large_vessel> )
-  .setExtraOutputOne( <minecraft:bowl> , 1.0 )
   .create();
 
 	//	Large Vessel > Small Vessel  _______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
   .setShapeless( [ <notreepunching:pottery/large_vessel> ] )
   .setFluid( <liquid:water> * 50 )
-  .setSecondaryIngredients( [ <minecraft:bowl> ] )
   .addTool( <ore:artisansTrowel> , 1 )
   .addOutput( <notreepunching:pottery/small_vessel> )
-  .setExtraOutputOne( <minecraft:bowl> , 1.0 )
   .create();
 
   //	Small Vessel > Clay Bucket  _______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
   .setShapeless( [ <notreepunching:pottery/small_vessel> ] )
   .setFluid( <liquid:water> * 50 )
-  .setSecondaryIngredients( [ <minecraft:bowl> ] )
   .addTool( <ore:artisansTrowel> , 1 )
   .addOutput( <notreepunching:pottery/bucket> )
-  .setExtraOutputOne( <minecraft:bowl> , 1.0 )
   .create();
   
   //	Clay Bucket > Clay Flowerpot  _______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
   .setShapeless( [ <notreepunching:pottery/bucket> ] )
   .setFluid( <liquid:water> * 50 )
-  .setSecondaryIngredients( [ <minecraft:bowl> ] )
   .addTool( <ore:artisansTrowel> , 1 )
   .addOutput( <notreepunching:pottery/flower_pot> )
-  .setExtraOutputOne( <minecraft:bowl> , 1.0 )
   .create();

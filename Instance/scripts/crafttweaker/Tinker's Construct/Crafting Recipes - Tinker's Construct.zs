@@ -12,6 +12,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 
 	//	Blank Patterns	_______________________________________________________________________________________________________________________________________________________________________
+recipes.remove( <tconstruct:pattern> );
 RecipeBuilder.get("carpenter")
 	.setShaped([
 		[<ore:stickWood>,	null,				<ore:stickWood>	],
@@ -27,17 +28,6 @@ RecipeBuilder.get("basic")
 	.addOutput( <notreepunching:flint_shard> )
 	.create();
 
-	//	Gravel blocks to flint	_______________________________________________________________________________________________________________________________________________________________________
-recipes.addShapeless(
-  "Gravel to Flint Shortcut",
-  <minecraft:flint>,
-  [
-    <ore:gravel>,
-    <ore:gravel>,
-    <ore:gravel>,
-   ]
-);
-
 
 //=====================================================================================================================================================================================================	
 //	Tool Tables
@@ -45,7 +35,7 @@ recipes.addShapeless(
 
 
 	//	Crafting Station	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:tooltables> );
+recipes.remove( <tconstruct:tooltables> );
 RecipeBuilder.get("basic")
 	.setShaped([
 		[<ore:fenceWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:fenceWood>	],
@@ -56,7 +46,7 @@ RecipeBuilder.get("basic")
 	.create();
 
 	//	Stencil Table	______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:tooltables:1> );
+recipes.remove( <tconstruct:tooltables:1> );
 RecipeBuilder.get("basic")
 	.setShaped([
 		[null, 				<ore:pattern>,	<ore:pattern>,	<ore:pattern>,	null			],
@@ -68,7 +58,7 @@ RecipeBuilder.get("basic")
 	.create();
 
 	//	Pattern Chest	______________________________________________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:tooltables:4> );
+recipes.remove( <tconstruct:tooltables:4> );
 RecipeBuilder.get("basic")
 	.setShaped([
 		[<ore:plankWood>, 	<ore:slabWood>,	<ore:slabWood>,	<ore:slabWood>,	<ore:plankWood>	],
@@ -80,7 +70,7 @@ RecipeBuilder.get("basic")
 	.create();
 
 	//	Part Builder	______________________________________________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:tooltables:2> );
+recipes.remove( <tconstruct:tooltables:2> );
 val platePattern = <tconstruct:pattern>.withTag({PartType: "tconstruct:large_plate"});
 RecipeBuilder.get("basic")
 	.setShaped([
@@ -93,7 +83,7 @@ RecipeBuilder.get("basic")
 	.create();
 
 	//	Part Chest	______________________________________________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:tooltables:5> );
+recipes.remove( <tconstruct:tooltables:5> );
 val bindPattern = <tconstruct:pattern>.withTag({PartType: "tconstruct:binding"});
 RecipeBuilder.get("basic")
 	.setShaped([
@@ -106,7 +96,7 @@ RecipeBuilder.get("basic")
 	.create();
 	
 	//	Tool Station	______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:tooltables:3> );
+recipes.remove( <tconstruct:tooltables:3> );
 val rodPattern = <tconstruct:pattern>.withTag({PartType: "tconstruct:tool_rod"});
 RecipeBuilder.get("basic")
 	.setShaped([
@@ -119,7 +109,7 @@ RecipeBuilder.get("basic")
 	.create();
 	
 	//	Armor Station	______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <conarm:armorstation> );
+recipes.remove( <conarm:armorstation> );
 val armorPattern = <tconstruct:pattern>.withTag({PartType: "conarm:armor_plate"});
 RecipeBuilder.get("basic")
 	.setShaped([
@@ -144,10 +134,8 @@ RecipeBuilder.get("potter")
 		<ore:nuggetSeared>,	<ore:nuggetSeared>,	<ore:nuggetSeared>,
 		<ore:nuggetSeared>,	<ore:nuggetSeared>,	<ore:nuggetSeared>])
 	.setFluid( <liquid:water> * 50 )
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addOutput( <contenttweaker:seared_clay> )
-	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
 
@@ -155,57 +143,33 @@ RecipeBuilder.get("potter")
 RecipeBuilder.get("potter")
 	.setShapeless( [ <ore:claySeared> ] )
 	.setFluid( <liquid:water> * 50 )
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addTool( <ore:toolClay> , 1 )
 	.addOutput( <contenttweaker:seared_clay_nugget> * 9 )
-	.setExtraOutputOne( <minecraft:bowl>, 1.0 )
 	.create();
 
 	//	Seared Clay Ball	_______________________________________________________________________________________________________________________________________________________________________
-/*
-val PorcelainNugget = <ore:nuggetPorcelain>;
-val SandLayer = <ore:layerSand>;
-RecipeBuilder.get("potter")
-	.setShaped([
-		[null,				SandLayer,			PorcelainNugget,	SandLayer,			null			],
-		[SandLayer,			PorcelainNugget,	<ore:lumpGravel>,	PorcelainNugget,	SandLayer		],
-		[PorcelainNugget,	<ore:lumpGravel>,	PorcelainNugget,	<ore:lumpGravel>,	PorcelainNugget	],
-		[SandLayer,			PorcelainNugget,	<ore:lumpGravel>,	PorcelainNugget,	SandLayer		],
-		[null,				SandLayer,			PorcelainNugget,	SandLayer,			null			]])
-	.setFluid( <liquid:water> * 50 )
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
-	.addTool( <ore:artisansTrowel> , 1 )
-	.addOutput( <ore:claySeared>.firstItem )
-	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
-	.create();
-*/
-
 RecipeBuilder.get("potter")
 	.setShaped([
 		[<ore:nuggetPorcelain>,	<ore:lumpGravel>,	<ore:nuggetPorcelain>	],
 		[<ore:layerSand>,		<ore:dustFlint>,	<ore:layerSand>			],
 		[<ore:nuggetPorcelain>,	<ore:lumpGravel>,	<ore:nuggetPorcelain>	]])
 	.setFluid( <liquid:water> * 50 )
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addOutput( <contenttweaker:seared_clay> )
-	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
 	//	Unfired Seared Brick	_______________________________________________________________________________________________________________________________________________________________________
 RecipeBuilder.get("potter")
 	.setShapeless( [ <ore:claySeared> ] )
 	.setFluid( <liquid:water> * 50 )
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addTool( <contenttweaker:brick_mold> , 1 )
 	.addOutput( <contenttweaker:unfired_seared_brick> )
-	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
 	//	Seared Brick Block	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:seared:3> );
+recipes.remove( <tconstruct:seared:3> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	<ore:ingotBrickSeared>	],
@@ -216,7 +180,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Seared Faucet	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:faucet> );
+recipes.remove( <tconstruct:faucet> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	null,					<ore:ingotBrickSeared>	],
@@ -227,7 +191,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Casting Channel	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:channel> );
+recipes.remove( <tconstruct:channel> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>, 	null,					null,					null, 					<ore:ingotBrickSeared>	],
@@ -238,7 +202,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Seared Tank	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:seared_tank> );
+recipes.remove( <tconstruct:seared_tank> );
 RecipeBuilder.get("mason")
 	.setShaped([
     	[<ore:ingotBrickSeared>,	<tconstruct:seared_glass>,	<ore:ingotBrickSeared>	],
@@ -250,7 +214,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Seared glass	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:seared_glass> );
+recipes.remove( <tconstruct:seared_glass> );
 RecipeBuilder.get("mason")
 	.setShaped([
     	[<ore:ingotBrickSeared>,	null,						<ore:ingotBrickSeared>	],
@@ -262,7 +226,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Seared Window	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:seared_tank:2> );
+recipes.remove( <tconstruct:seared_tank:2> );
 RecipeBuilder.get("mason")
 	.setShaped([
     	[<tconstruct:seared_glass>	],
@@ -274,7 +238,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Seared Gauge	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:seared_tank:1> );
+recipes.remove( <tconstruct:seared_tank:1> );
 RecipeBuilder.get("mason")
 	.setShaped([
     	[null,						<tconstruct:seared_glass>,	null					],
@@ -286,7 +250,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Casting Table	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:casting> );
+recipes.remove( <tconstruct:casting> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	null,					null,					null,					<ore:ingotBrickSeared>	],
@@ -300,7 +264,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Casting Basin	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:casting:1> );
+recipes.remove( <tconstruct:casting:1> );
 RecipeBuilder.get("mason")
 	.setShaped([
 		[<ore:ingotBrickSeared>,	null,					null,					null,					<ore:ingotBrickSeared>	],
@@ -314,7 +278,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Smeltery Drain	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:smeltery_io> );
+recipes.remove( <tconstruct:smeltery_io> );
 RecipeBuilder.get("mason")
 	.setShaped([
     	[<ore:ingotBrickSeared>,	<quark:sturdy_stone>,	<tconstruct:channel>,	<quark:sturdy_stone>,	<ore:ingotBrickSeared>	],
@@ -329,7 +293,7 @@ RecipeBuilder.get("mason")
 
 
 	//	Seared Furnace Controller	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:seared_furnace_controller> );
+recipes.remove( <tconstruct:seared_furnace_controller> );
 RecipeBuilder.get("mason")
 	.setShaped([
     	[<ore:ingotBrickSeared>,	<quark:sturdy_stone>,			<ore:ingotBrickSeared>,			<quark:sturdy_stone>,			<ore:ingotBrickSeared>	],
@@ -343,7 +307,7 @@ RecipeBuilder.get("mason")
 	.create();
 
 	//	Tinker Tank Controller	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:tinker_tank_controller> );
+recipes.remove( <tconstruct:tinker_tank_controller> );
 RecipeBuilder.get("mason")
 	.setShaped([
     	[<ore:ingotBrickSeared>,	<quark:sturdy_stone>,		<ore:ingotBrickSeared>,		<quark:sturdy_stone>,		<ore:ingotBrickSeared>	],
@@ -357,7 +321,7 @@ RecipeBuilder.get("mason")
 	.create();
 	
 	//	Smeltery Controller	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <tconstruct:smeltery_controller> );
+recipes.remove( <tconstruct:smeltery_controller> );
 val tinkertank = <tconstruct:tinker_tank_controller>;
 RecipeBuilder.get("mason")
 	.setShaped([
@@ -384,10 +348,8 @@ RecipeBuilder.get("potter")
 		[<ore:nuggetClay>,	<ore:plateClayRaw>	],
 		[<ore:brickClay>,	<ore:nuggetClay>	]])
 	.setFluid(	<liquid:water> * 100	)
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addOutput( <tcomplement:chisel_head>.withTag({Material: "moldclaywet"}) )
-	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
 	//	Sharpening Kit	_______________________________________________________________________________________________________________________________________________________________________
@@ -396,10 +358,8 @@ RecipeBuilder.get("potter")
 		[<ore:brickClay>,	<ore:nuggetClay>	],
 		[<ore:nuggetClay>,	<ore:brickClay>		]])
 	.setFluid( <liquid:water> * 100 )
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addOutput( <tconstruct:sharpening_kit>.withTag({Material: "moldclaywet"}) )
-	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
 	//	Polishing Kit	_______________________________________________________________________________________________________________________________________________________________________
@@ -408,10 +368,8 @@ RecipeBuilder.get("potter")
 		[<ore:clay>,		<ore:nuggetClay>	],
 		[<ore:nuggetClay>,	<ore:clay>			]])
 	.setFluid(<liquid:water> * 100)
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addOutput( <conarm:polishing_kit>.withTag({Material: "moldclaywet"}) )
-	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
 	//	Bowstring	_______________________________________________________________________________________________________________________________________________________________________
@@ -423,10 +381,8 @@ RecipeBuilder.get("potter")
 		[<ore:nuggetClay>,	<ore:stickWood>,	null,				<ore:stickWood>,	<ore:nuggetClay>	],
 		[null,				<ore:nuggetClay>,	<ore:nuggetClay>,	<ore:nuggetClay>,	null				]])
 	.setFluid( <liquid:water> * 100	)
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addOutput( <tconstruct:bow_string>.withTag({Material: "moldclaywet"}) )
-	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
 	//	Arrow Shaft	_______________________________________________________________________________________________________________________________________________________________________
@@ -436,10 +392,8 @@ RecipeBuilder.get("potter")
 		[null,				<ore:stickWood>,	null			],
 		[<ore:brickClay>,	null,				null			]])
 	.setFluid( <liquid:water> * 100 )
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addOutput( <tconstruct:arrow_shaft>.withTag({Material: "moldclaywet"}) )
-	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();
 
 	//	Fletching	_______________________________________________________________________________________________________________________________________________________________________
@@ -449,8 +403,6 @@ RecipeBuilder.get("potter")
 		[null,					<ore:stickWood>,	null				],
 		[null,					null,				<ore:plateClayRaw>	]])
 	.setFluid( <liquid:water> * 100 )
-	.setSecondaryIngredients( [ <minecraft:bowl> ] )
 	.addTool( <ore:artisansTrowel> , 1 )
 	.addOutput( <tconstruct:fletching>.withTag({Material: "moldclaywet"}) )
-	.setExtraOutputOne( <minecraft:bowl> , 1.0 )
 	.create();

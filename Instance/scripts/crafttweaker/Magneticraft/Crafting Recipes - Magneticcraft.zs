@@ -12,7 +12,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 
 	//	Crushing Table	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <magneticraft:crushing_table> );
+recipes.remove( <magneticraft:crushing_table> );
 RecipeBuilder.get("basic")
 	.setShaped([
 		[<ore:stone>,		<ore:stone>,		<ore:stone>,	<ore:stone>,		<ore:stone>		],
@@ -24,7 +24,7 @@ RecipeBuilder.get("basic")
 	.create();
 
 	//	Sluice Box	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.remove( <magneticraft:sluice_box> );
+recipes.remove( <magneticraft:sluice_box> );
 RecipeBuilder.get("basic")
 	.setShaped([
 		[<ore:plankWood>,	null,						<ore:plankWood>,	null,				null			],

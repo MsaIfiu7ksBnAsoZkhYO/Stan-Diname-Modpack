@@ -23,14 +23,16 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:artisansHammer>.addItems(
 	[
 		<tinkerscompendium:mallet:*>,
+		<notreepunching:axe/flint:*>,
 	]
 );
 
-<ore:artisansHammer>.addAll(<ore:hammer>);
+//<ore:artisansHammer>.addAll(<ore:hammer>);
 
 <ore:artisansHandsaw>.addItems(
 	[
 		<tinkerscompendium:saw:*>,
+		<notreepunching:axe/flint:*>,
 	]
 );
 
@@ -43,6 +45,7 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:artisansTrowel>.addItems(
 	[
         <tconstruct:shovel:*>,
+		<notreepunching:shovel/flint:*>,
 	]
 );
 
@@ -52,6 +55,9 @@ import crafttweaker.oredict.IOreDictEntry;
 	]
 );
 
-	//	Tiny coal and charcoal to coal pelet oredict so they work off the existing torch recipe.	_______________________________________________________________________________________________________________________________________________________________________
-//<ore:itemCoalpellet>.add( <actuallyadditions:item_misc:10> );
-//<ore:itemCoalpellet>.add( <actuallyadditions:item_misc:11> );
+<ore:artisansStoneCutter>.addItems(
+	[
+        <tconstruct:pickaxe:*>,
+		<notreepunching:pickaxe/flint:*>,
+	]
+);

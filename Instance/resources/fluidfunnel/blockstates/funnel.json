@@ -1,0 +1,37 @@
+{
+  "forge_marker": 1,
+  "variants":
+  {
+    "inventory":
+    {
+      "model": "fluidfunnel:hopper_down",
+      "transform": "forge:default-block"
+    },
+    "facing":
+    {
+      "north":
+      {
+        "model": "fluidfunnel:hopper_side"
+      },
+      "south":
+      {
+        "model": "fluidfunnel:hopper_side",
+        "y": 180
+      },
+      "west":
+      {
+        "model": "fluidfunnel:hopper_side",
+        "y": 270
+      },
+      "east":
+      {
+        "model": "fluidfunnel:hopper_side",
+        "y": 90
+      },
+      "down":
+      {
+        "model": "fluidfunnel:hopper_down"
+      }
+    }
+  }
+}

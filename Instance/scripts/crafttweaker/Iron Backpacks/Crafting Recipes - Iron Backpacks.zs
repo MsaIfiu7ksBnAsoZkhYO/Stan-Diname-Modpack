@@ -12,6 +12,9 @@ import mods.artisanworktables.builder.RecipeBuilder;
 //	Iron Packpack crafting
 //=====================================================================================================================================================================================================
 
+
+recipes.remove( <ironbackpacks:backpack:*> );
+
     //  Leather Backpack
 RecipeBuilder.get("tailor")
     .setShaped([

@@ -22,6 +22,9 @@ import crafttweaker.oredict.IOreDictEntry;
 
 	//	Make knifes function as knives	_______________________________________________________________________________________________________________________________________________________________________
 <ore:toolKnife>.add(<totaltinkers:dagger:*>);
+<ore:toolKnife>.add(<tconstruct:broadsword:*>);
+
+<ore:toolWeakKnife>.add(<tconstruct:kama:*>);
 
 	//	Unify the sandstone	_______________________________________________________________________________________________________________________________________________________________________
 <ore:rockSandstone>.add(<notreepunching:rock/red_sandstone>);

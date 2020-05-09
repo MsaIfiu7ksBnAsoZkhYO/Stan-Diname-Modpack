@@ -107,6 +107,19 @@ if (debug) {print("Removing Recipes for making casts");}
 mods.tconstruct.Casting.removeTableRecipe(<tconstruct:clay_cast>);
 mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>);
 
+	//	Smeltery Seared Blocks	_______________________________________________________________________________________________________________________________________________________________________
+mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:seared>);
+mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:seared:1>);
+mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:seared_glass>);
+mods.tconstruct.Casting.removeBasinRecipe(<tconstruct:seared_furnace_controller>);
+
+	//	High Oven Scorched blocks	_______________________________________________________________________________________________________________________________________________________________________
+mods.tconstruct.Casting.removeBasinRecipe(<tcomplement:scorched_block>);
+mods.tconstruct.Casting.removeBasinRecipe(<tcomplement:scorched_block:1>);
+mods.tconstruct.Casting.removeBasinRecipe(<tcomplement:scorched_block:10>);
+mods.tconstruct.Casting.removeBasinRecipe(<tcomplement:scorched_slab2:2>);
+
+
 
 	//	Add back casts for things that are not forged for each type of cast metal defined above	_______________________________________________________________________________________________________________________________________________________________________
 if (debug) {print("Add back casts for things not forged");}
@@ -147,7 +160,7 @@ mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:ore_fluid:2> , <minecr
 
 if (debug) {print("Treated wood planks");}
 	//	Treated Wood Planks	_______________________________________________________________________________________________________________________________________________________________________
-//recipes.removeByRecipeName("immersiveengineering:treated_wood/treated_wood");
+recipes.removeByRecipeName("immersiveengineering:treated_wood/treated_wood");
 mods.tconstruct.Casting.addBasinRecipe(<immersiveengineering:treated_wood> , <ore:plankWood>, <liquid:creosote> , 300 , true, 900 );	
 
 if (debug) {print("Bookets");}
@@ -221,6 +234,7 @@ mods.tconstruct.Casting.addBasinRecipe(
 	false,
 	200
 );
+
 
 //mods.tconstruct.Casting.addTableRecipe(<minecraft:glass_pane> , null, <liquid:glass> , 375 , false, 80 );
 if (debug) {print("Sandy Glass");}

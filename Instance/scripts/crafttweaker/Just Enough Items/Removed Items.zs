@@ -1,11 +1,444 @@
-#Priority 9002
 //=====================================================================================================================================================================================================	
-//	Removing things from the game for ballance and to hopefully reduce loading times
+//	Imports and such
 //=====================================================================================================================================================================================================
 
 
+#Priority 9002
+
+import crafttweaker.item.IItemStack;
+
+
+//=====================================================================================================================================================================================================	
+//	Removing things from the game for balance and to reduce loading times
+//=====================================================================================================================================================================================================
+
+/*
 	//	Remove items in the global removal script.	_______________________________________________________________________________________________________________________________________________________________________
 for Item in GlobalRemovalRecipeOutputs {
 	mods.jei.JEI.removeAndHide(Item);
 }
 	
+*/
+
+
+//=====================================================================================================================================================================================================	
+//	Bibliocraft
+//=====================================================================================================================================================================================================
+
+
+var BibliocraftItems = [
+	<bibliocraft:bookcase>,
+	<bibliocraft:bookcasecreative>,
+	<bibliocraft:shelf>,
+	<bibliocraft:furniturepaneler>,
+	<bibliocraft:framedchest>,
+	<bibliocraft:fancysign>,
+	<bibliocraft:fancyworkbench>,
+	<bibliocraft:potionshelf>,
+	<bibliocraft:toolrack>,
+	<bibliocraft:label>,
+	<bibliocraft:desk>,
+	<bibliocraft:table>,
+	<bibliocraft:seat>,
+	<bibliocraft:clock>,
+	<bibliocraft:case>,
+	<bibliocraft:mapframe>,
+	<bibliocraft:paintingframeflat>,
+	<bibliocraft:paintingframesimple>,
+	<bibliocraft:paintingframemiddle>,
+	<bibliocraft:paintingframefancy>,
+	<bibliocraft:paintingframeborderless>,
+	<bibliocraft:armorstand>,
+	<bibliocraft:seatback1>,
+	<bibliocraft:seatback2>,
+	<bibliocraft:seatback3>,
+	<bibliocraft:seatback4>,
+	<bibliocraft:seatback5>,
+] as IItemStack[];
+
+	//	Bibliocraft Non Framed items becuase less clutter and less recipes.
+for Item in BibliocraftItems {
+	var itemDef = Item.definition;
+	//	Does a thing for metadata values 0-5 which should leave the framed variant (meta 6)
+	for i in 0 to 6{
+		mods.jei.JEI.removeAndHide(itemDef.makeStack(i));
+	}
+
+}
+
+
+//=====================================================================================================================================================================================================	
+//	Everything else I haven't bothered to sort yet
+//=====================================================================================================================================================================================================
+
+
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:npc_spawner:*>);
+mods.jei.JEI.removeAndHide(<crossroads:hand_crank>);
+mods.jei.JEI.removeAndHide(<botania:elementiumaxe>);
+mods.jei.JEI.removeAndHide(<botania:elementiumpick>);
+mods.jei.JEI.removeAndHide(<botania:elementiumshovel>);
+mods.jei.JEI.removeAndHide(<botania:elementiumsword>);
+mods.jei.JEI.removeAndHide(<botania:glasspick>);
+mods.jei.JEI.removeAndHide(<botania:manasteelaxe>);
+mods.jei.JEI.removeAndHide(<botania:manasteelpick>);
+mods.jei.JEI.removeAndHide(<botania:manasteelshovel>);
+mods.jei.JEI.removeAndHide(<botania:manasteelsword>);
+mods.jei.JEI.removeAndHide(<ceramics:clay_boots>);
+mods.jei.JEI.removeAndHide(<ceramics:clay_chestplate>);
+mods.jei.JEI.removeAndHide(<ceramics:clay_helmet>);
+mods.jei.JEI.removeAndHide(<ceramics:clay_leggings>);
+mods.jei.JEI.removeAndHide(<ceramics:clay_boots_raw>);
+mods.jei.JEI.removeAndHide(<ceramics:clay_chestplate_raw>);
+mods.jei.JEI.removeAndHide(<ceramics:clay_helmet_raw>);
+mods.jei.JEI.removeAndHide(<ceramics:clay_leggings_raw>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:axe_steel>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_chest>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_feet>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_head>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_legs>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:pickaxe_steel>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:shovel_steel>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:steel_armor_chest>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:steel_armor_feet>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:steel_armor_head>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:steel_armor_legs>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:sword_steel>);
+mods.jei.JEI.removeAndHide(<leatherworks:acacia_bark>);
+mods.jei.JEI.removeAndHide(<leatherworks:birch_bark>);
+mods.jei.JEI.removeAndHide(<leatherworks:broken_leather_boots>);
+mods.jei.JEI.removeAndHide(<leatherworks:darkoak_bark>);
+mods.jei.JEI.removeAndHide(<leatherworks:debarked_log_acacia>);
+mods.jei.JEI.removeAndHide(<leatherworks:debarked_log_birch>);
+mods.jei.JEI.removeAndHide(<leatherworks:debarked_log_darkoak>);
+mods.jei.JEI.removeAndHide(<leatherworks:debarked_log_jungle>);
+mods.jei.JEI.removeAndHide(<leatherworks:debarked_log_oak>);
+mods.jei.JEI.removeAndHide(<leatherworks:debarked_log_spruce>);
+mods.jei.JEI.removeAndHide(<leatherworks:drying_rack_acacia>);
+mods.jei.JEI.removeAndHide(<leatherworks:drying_rack_birch>);
+mods.jei.JEI.removeAndHide(<leatherworks:drying_rack_darkoak>);
+mods.jei.JEI.removeAndHide(<leatherworks:drying_rack_jungle>);
+mods.jei.JEI.removeAndHide(<leatherworks:drying_rack_oak>);
+mods.jei.JEI.removeAndHide(<leatherworks:drying_rack_spruce>);
+mods.jei.JEI.removeAndHide(<leatherworks:barrel_oak>);
+mods.jei.JEI.removeAndHide(<leatherworks:barrel_spruce>);
+mods.jei.JEI.removeAndHide(<leatherworks:barrel_birch>);
+mods.jei.JEI.removeAndHide(<leatherworks:barrel_jungle>);
+mods.jei.JEI.removeAndHide(<leatherworks:barrel_acacia>);
+mods.jei.JEI.removeAndHide(<leatherworks:barrel_darkoak>);
+mods.jei.JEI.removeAndHide(<leatherworks:jungle_bark>);
+mods.jei.JEI.removeAndHide(<leatherworks:oak_bark>);
+mods.jei.JEI.removeAndHide(<leatherworks:spruce_bark>);
+mods.jei.JEI.removeAndHide(<minecraft:chainmail_boots>);
+mods.jei.JEI.removeAndHide(<minecraft:chainmail_chestplate>);
+mods.jei.JEI.removeAndHide(<minecraft:chainmail_helmet>);
+mods.jei.JEI.removeAndHide(<minecraft:chainmail_leggings>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_axe>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_boots>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_chestplate>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_helmet>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_hoe>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_leggings>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_pickaxe>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_shovel>);
+mods.jei.JEI.removeAndHide(<minecraft:diamond_sword>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_axe>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_boots>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_chestplate>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_helmet>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_hoe>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_leggings>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_pickaxe>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_shovel>);
+mods.jei.JEI.removeAndHide(<minecraft:golden_sword>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_axe>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_boots>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_chestplate>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_helmet>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_hoe>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_pickaxe>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_shovel>);
+mods.jei.JEI.removeAndHide(<minecraft:iron_sword>);
+mods.jei.JEI.removeAndHide(<minecraft:leather_boots>);
+mods.jei.JEI.removeAndHide(<natura:bloodwood_kama>);
+mods.jei.JEI.removeAndHide(<natura:bloodwood_pickaxe>);
+mods.jei.JEI.removeAndHide(<natura:bloodwood_shovel>);
+mods.jei.JEI.removeAndHide(<natura:bloodwood_sword>);
+mods.jei.JEI.removeAndHide(<natura:darkwood_kama>);
+mods.jei.JEI.removeAndHide(<natura:darkwood_pickaxe>);
+mods.jei.JEI.removeAndHide(<natura:darkwood_shovel>);
+mods.jei.JEI.removeAndHide(<natura:darkwood_sword>);
+mods.jei.JEI.removeAndHide(<natura:fusewood_kama>);
+mods.jei.JEI.removeAndHide(<natura:fusewood_kama>);
+mods.jei.JEI.removeAndHide(<natura:fusewood_pickaxe>);
+mods.jei.JEI.removeAndHide(<natura:fusewood_shovel>);
+mods.jei.JEI.removeAndHide(<natura:fusewood_sword>);
+mods.jei.JEI.removeAndHide(<natura:ghostwood_kama>);
+mods.jei.JEI.removeAndHide(<natura:ghostwood_pickaxe>);
+mods.jei.JEI.removeAndHide(<natura:ghostwood_shovel>);
+mods.jei.JEI.removeAndHide(<natura:ghostwood_sword>);
+mods.jei.JEI.removeAndHide(<natura:imp_armor_boots>);
+mods.jei.JEI.removeAndHide(<natura:imp_armor_helmet>);
+mods.jei.JEI.removeAndHide(<natura:imp_armor_leggings>);
+mods.jei.JEI.removeAndHide(<natura:netherquartz_kama>);
+mods.jei.JEI.removeAndHide(<natura:netherquartz_pickaxe>);
+mods.jei.JEI.removeAndHide(<natura:netherquartz_shovel>);
+mods.jei.JEI.removeAndHide(<natura:netherquartz_sword>);
+mods.jei.JEI.removeAndHide(<notreepunching:mattock/diamond>);
+mods.jei.JEI.removeAndHide(<notreepunching:mattock/gold>);
+mods.jei.JEI.removeAndHide(<notreepunching:mattock/iron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:axe_boron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:axe_boron_nitride>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:axe_hard_carbon>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:axe_tough>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:boots_boron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:boots_boron_nitride>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:boots_hard_carbon>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:boots_hazmat>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:boots_tough>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:chest_boron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:chest_boron_nitride>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:chest_hard_carbon>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:chest_tough>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:helm_boron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:helm_boron_nitride>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:helm_hard_carbon>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:helm_tough>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:hoe_boron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:hoe_boron_nitride>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:hoe_hard_carbon>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:hoe_tough>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:legs_boron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:legs_boron_nitride>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:legs_hard_carbon>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:legs_hazmat>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:legs_tough>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:pickaxe_boron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:pickaxe_boron_nitride>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:pickaxe_hard_carbon>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:pickaxe_tough>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:shovel_boron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:shovel_boron_nitride>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:shovel_hard_carbon>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:shovel_tough>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:spaxelhoe_boron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:spaxelhoe_boron_nitride>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:spaxelhoe_hard_carbon>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:spaxelhoe_tough>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:sword_boron>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:sword_boron_nitride>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:sword_hard_carbon>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:sword_tough>);
+mods.jei.JEI.removeAndHide(<randomthings:spectreaxe>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrepickaxe>);
+mods.jei.JEI.removeAndHide(<randomthings:spectreshovel>);
+mods.jei.JEI.removeAndHide(<randomthings:spectresword>);
+mods.jei.JEI.removeAndHide(<randomthings:chunkanalyzer>);
+mods.jei.JEI.removeAndHide(<randomthings:diviningrod:*>);
+mods.jei.JEI.removeAndHide(<randomthings:pitcherplant>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecharger:*>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecoil_ender>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecoil_genesis>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecoil_normal>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecoil_number:*>);
+mods.jei.JEI.removeAndHide(<randomthings:spectrecoil_redstone>);
+mods.jei.JEI.removeAndHide(<tconstruct:slime_boots:1>);
+mods.jei.JEI.removeAndHide(<tconstruct:slime_boots:2>);
+mods.jei.JEI.removeAndHide(<tconstruct:slime_boots:3>);
+mods.jei.JEI.removeAndHide(<tconstruct:slime_boots:4>);
+mods.jei.JEI.removeAndHide(<tconstruct:slime_boots>);
+mods.jei.JEI.removeAndHide(<techguns:hazmat_boots>);
+mods.jei.JEI.removeAndHide(<techguns:hazmat_helmet>);
+mods.jei.JEI.removeAndHide(<techguns:hazmat_leggings>);
+mods.jei.JEI.removeAndHide(<techguns:steam_boots>); 
+mods.jei.JEI.removeAndHide(<techguns:steam_helmet>); 
+mods.jei.JEI.removeAndHide(<techguns:t1_combat_boots>);
+mods.jei.JEI.removeAndHide(<techguns:t1_combat_helmet>);
+mods.jei.JEI.removeAndHide(<techguns:t1_miner_boots>);
+mods.jei.JEI.removeAndHide(<techguns:t1_miner_helmet>);
+mods.jei.JEI.removeAndHide(<techguns:t1_scout_boots>);
+mods.jei.JEI.removeAndHide(<techguns:t2_combat_boots>);
+mods.jei.JEI.removeAndHide(<techguns:t2_combat_helmet>);
+mods.jei.JEI.removeAndHide(<techguns:t2_commando_boots>);
+mods.jei.JEI.removeAndHide(<techguns:t2_riot_boots>);
+mods.jei.JEI.removeAndHide(<techguns:t2_riot_helmet>);
+mods.jei.JEI.removeAndHide(<techguns:t3_combat_boots>);
+mods.jei.JEI.removeAndHide(<techguns:t3_combat_helmet>);
+mods.jei.JEI.removeAndHide(<techguns:t3_combat_leggings>);
+mods.jei.JEI.removeAndHide(<techguns:t3_exo_boots>); 
+mods.jei.JEI.removeAndHide(<techguns:t3_exo_helmet>); 
+mods.jei.JEI.removeAndHide(<techguns:t3_exo_leggings>); 
+mods.jei.JEI.removeAndHide(<techguns:t3_miner_boots>); 
+mods.jei.JEI.removeAndHide(<techguns:t3_miner_helmet>); 
+mods.jei.JEI.removeAndHide(<techguns:t3_miner_leggings>); 
+mods.jei.JEI.removeAndHide(<techguns:t3_power_boots>); 
+mods.jei.JEI.removeAndHide(<techguns:t3_power_helmet>); 
+mods.jei.JEI.removeAndHide(<techguns:t3_power_leggings>); 
+mods.jei.JEI.removeAndHide(<techguns:t4_power_boots>); 
+mods.jei.JEI.removeAndHide(<techguns:t4_power_helmet>); 
+mods.jei.JEI.removeAndHide(<techguns:t4_power_leggings>); 
+mods.jei.JEI.removeAndHide(<techguns:t4_praetor_boots>); 
+mods.jei.JEI.removeAndHide(<techguns:t4_praetor_helmet>); 
+mods.jei.JEI.removeAndHide(<techguns:t4_praetor_leggings>); 
+mods.jei.JEI.removeAndHide(<theoneprobe:diamond_helmet_probe>);
+mods.jei.JEI.removeAndHide(<theoneprobe:gold_helmet_probe>);
+mods.jei.JEI.removeAndHide(<theoneprobe:iron_helmet_probe>);
+mods.jei.JEI.removeAndHide(<tinkersforging:hammer/diamond>);
+mods.jei.JEI.removeAndHide(<tinkersforging:hammer/wood>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_knife/bronze>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_knife/copper>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_knife/gold>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_knife/iron>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_knife/steel>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_knife/tin>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_mattock/bronze>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_mattock/copper>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_mattock/gold>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_mattock/iron>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_mattock/steel>);
+mods.jei.JEI.removeAndHide(<tinkersforging:ntp_mattock/tin>);
+mods.jei.JEI.removeAndHide(<minecraft:leather_helmet>);
+mods.jei.JEI.removeAndHide(<minecraft:leather_chestplate>);
+mods.jei.JEI.removeAndHide(<minecraft:leather_leggings>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:wooden_spear>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:stone_spear>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:iron_spear>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:golden_spear>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:diamond_spear>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:wooden_halberd>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:stone_halberd>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:iron_halberd>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:golden_halberd>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:diamond_halberd>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:wooden_lance>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:stone_lance>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:iron_lance>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:golden_lance>);
+mods.jei.JEI.removeAndHide(<ancientwarfarenpc:diamond_lance>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:blood_infused_wooden_pickaxe>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:blood_infused_wooden_axe>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:blood_infused_wooden_shovel>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:blood_infused_wooden_sickle>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:blood_infused_wooden_sword>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:blood_infused_iron_pickaxe>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:blood_infused_iron_axe>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:blood_infused_iron_shovel>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:blood_infused_iron_sickle>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:blood_infused_iron_sword>);
+mods.jei.JEI.removeAndHide(<cavern:aquamarine_pickaxe>);
+mods.jei.JEI.removeAndHide(<cavern:aquamarine_axe>);
+mods.jei.JEI.removeAndHide(<cavern:aquamarine_shovel>);
+mods.jei.JEI.removeAndHide(<cavern:magnite_sword>);
+mods.jei.JEI.removeAndHide(<cavern:magnite_pickaxe>);
+mods.jei.JEI.removeAndHide(<cavern:magnite_axe>);
+mods.jei.JEI.removeAndHide(<cavern:magnite_shovel>);
+mods.jei.JEI.removeAndHide(<cavern:hexcite_sword>);
+mods.jei.JEI.removeAndHide(<cavern:hexcite_pickaxe>);
+mods.jei.JEI.removeAndHide(<cavern:hexcite_axe>);
+mods.jei.JEI.removeAndHide(<cavern:hexcite_shovel>);
+mods.jei.JEI.removeAndHide(<cavern:hexcite_hoe>);
+mods.jei.JEI.removeAndHide(<cavern:hexcite_helmet>);
+mods.jei.JEI.removeAndHide(<cavern:hexcite_chestplate>);
+mods.jei.JEI.removeAndHide(<cavern:hexcite_leggings>);
+mods.jei.JEI.removeAndHide(<cavern:hexcite_boots>);
+mods.jei.JEI.removeAndHide(<cavern:ice_sword>);
+mods.jei.JEI.removeAndHide(<cavern:ice_pickaxe>);
+mods.jei.JEI.removeAndHide(<cavern:ice_axe>);
+mods.jei.JEI.removeAndHide(<cavern:ice_shovel>);
+mods.jei.JEI.removeAndHide(<cavern:ice_hoe>);
+mods.jei.JEI.removeAndHide(<cavern:ice_bow>);
+mods.jei.JEI.removeAndHide(<cavern:cavenic_sword>);
+mods.jei.JEI.removeAndHide(<cavern:cavenic_axe>);
+mods.jei.JEI.removeAndHide(<cavern:cavenic_bow>);
+mods.jei.JEI.removeAndHide(<cyclicmagic:sword_weakness>);
+mods.jei.JEI.removeAndHide(<cyclicmagic:sword_slowness>);
+mods.jei.JEI.removeAndHide(<cyclicmagic:sword_ender>);
+mods.jei.JEI.removeAndHide(<magneticraft:stone_hammer>);
+mods.jei.JEI.removeAndHide(<magneticraft:iron_hammer>);
+mods.jei.JEI.removeAndHide(<magneticraft:steel_hammer>);
+mods.jei.JEI.removeAndHide(<morerefinedstorage:crystalized_sword>);
+mods.jei.JEI.removeAndHide(<morerefinedstorage:crystalized_pickaxe>);
+mods.jei.JEI.removeAndHide(<morerefinedstorage:crystalized_axe>);
+mods.jei.JEI.removeAndHide(<morerefinedstorage:crystalized_shovel>);
+mods.jei.JEI.removeAndHide(<morerefinedstorage:crystalized_hoe>);
+mods.jei.JEI.removeAndHide(<morerefinedstorage:crystalized_shears>);
+mods.jei.JEI.removeAndHide(<morerefinedstorage:crystalized_helmet>);
+mods.jei.JEI.removeAndHide(<morerefinedstorage:crystalized_leggings>);
+mods.jei.JEI.removeAndHide(<morerefinedstorage:crystalized_chestplate>);
+mods.jei.JEI.removeAndHide(<morerefinedstorage:crystalized_boots>);
+mods.jei.JEI.removeAndHide(<mysticalworld:amethyst_knife>);
+mods.jei.JEI.removeAndHide(<mysticalworld:copper_knife>);
+mods.jei.JEI.removeAndHide(<mysticalworld:silver_knife>);
+mods.jei.JEI.removeAndHide(<mysticalworld:copper_axe>);
+mods.jei.JEI.removeAndHide(<mysticalworld:copper_hoe>);
+mods.jei.JEI.removeAndHide(<mysticalworld:copper_pickaxe>);
+mods.jei.JEI.removeAndHide(<mysticalworld:copper_shovel>);
+mods.jei.JEI.removeAndHide(<mysticalworld:copper_sword>);
+mods.jei.JEI.removeAndHide(<mysticalworld:silver_axe>);
+mods.jei.JEI.removeAndHide(<mysticalworld:silver_hoe>);
+mods.jei.JEI.removeAndHide(<mysticalworld:silver_pickaxe>);
+mods.jei.JEI.removeAndHide(<mysticalworld:silver_shovel>);
+mods.jei.JEI.removeAndHide(<mysticalworld:silver_sword>);
+mods.jei.JEI.removeAndHide(<mysticalworld:amethyst_axe>);
+mods.jei.JEI.removeAndHide(<mysticalworld:amethyst_hoe>);
+mods.jei.JEI.removeAndHide(<mysticalworld:amethyst_pickaxe>);
+mods.jei.JEI.removeAndHide(<mysticalworld:amethyst_shovel>);
+mods.jei.JEI.removeAndHide(<mysticalworld:amethyst_sword>);
+mods.jei.JEI.removeAndHide(<natura:imp_armor_chestplate>);
+mods.jei.JEI.removeAndHide(<natura:ghostwood_axe>);
+mods.jei.JEI.removeAndHide(<natura:ghostwood_bow>);
+mods.jei.JEI.removeAndHide(<natura:bloodwood_axe>);
+mods.jei.JEI.removeAndHide(<natura:bloodwood_bow>);
+mods.jei.JEI.removeAndHide(<natura:darkwood_axe>);
+mods.jei.JEI.removeAndHide(<natura:darkwood_bow>);
+mods.jei.JEI.removeAndHide(<natura:darkwood_bow>);
+mods.jei.JEI.removeAndHide(<natura:fusewood_axe>);
+mods.jei.JEI.removeAndHide(<natura:fusewood_bow>);
+mods.jei.JEI.removeAndHide(<natura:netherquartz_axe>);
+mods.jei.JEI.removeAndHide(<notreepunching:knife/iron>);
+mods.jei.JEI.removeAndHide(<notreepunching:knife/gold>);
+mods.jei.JEI.removeAndHide(<notreepunching:knife/diamond>);
+mods.jei.JEI.removeAndHide(<notreepunching:saw/iron>);
+mods.jei.JEI.removeAndHide(<notreepunching:saw/gold>);
+mods.jei.JEI.removeAndHide(<notreepunching:saw/diamond>);
+mods.jei.JEI.removeAndHide(<saltmod:mud_helmet>);
+mods.jei.JEI.removeAndHide(<saltmod:mud_chestplate>);
+mods.jei.JEI.removeAndHide(<saltmod:mud_leggings>);
+mods.jei.JEI.removeAndHide(<saltmod:mud_boots>);
+mods.jei.JEI.removeAndHide(<techguns:gasmask>);
+mods.jei.JEI.removeAndHide(<techguns:glider>);
+mods.jei.JEI.removeAndHide(<techguns:jumppack>);
+mods.jei.JEI.removeAndHide(<techguns:scubatanks>);
+mods.jei.JEI.removeAndHide(<techguns:nightvisiongoggles>);
+mods.jei.JEI.removeAndHide(<techguns:jetpack>);
+mods.jei.JEI.removeAndHide(<techguns:tacticalmask>);
+mods.jei.JEI.removeAndHide(<techguns:combatknife>);
+mods.jei.JEI.removeAndHide(<techguns:crowbar>);
+mods.jei.JEI.removeAndHide(<techguns:t1_combat_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t1_combat_leggings>);
+mods.jei.JEI.removeAndHide(<techguns:t1_scout_helmet>);
+mods.jei.JEI.removeAndHide(<techguns:t1_scout_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t1_scout_leggings>);
+mods.jei.JEI.removeAndHide(<techguns:t1_miner_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t1_miner_leggings>);
+mods.jei.JEI.removeAndHide(<techguns:steam_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:steam_leggings>);
+mods.jei.JEI.removeAndHide(<techguns:hazmat_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t2_combat_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t2_combat_leggings>);
+mods.jei.JEI.removeAndHide(<techguns:t2_commando_helmet>);
+mods.jei.JEI.removeAndHide(<techguns:t2_commando_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t2_commando_leggings>);
+mods.jei.JEI.removeAndHide(<techguns:t2_riot_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t2_riot_leggings>);
+mods.jei.JEI.removeAndHide(<techguns:t3_combat_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t3_power_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t3_miner_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t3_exo_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t2_beret>);
+mods.jei.JEI.removeAndHide(<techguns:t4_praetor_chestplate>);
+mods.jei.JEI.removeAndHide(<techguns:t4_power_chestplate>);
+mods.jei.JEI.removeAndHide(<terraqueous:hammer:*>);
+mods.jei.JEI.removeAndHide(<terraqueous:multitool:*>);
+mods.jei.JEI.removeAndHide(<terraqueous:pitchfork:*>);
+mods.jei.JEI.removeAndHide(<terraqueous:scythe:*>);

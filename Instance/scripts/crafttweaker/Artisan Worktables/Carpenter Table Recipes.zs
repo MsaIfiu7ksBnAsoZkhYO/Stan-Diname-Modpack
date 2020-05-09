@@ -11,24 +11,16 @@ import mods.artisanworktables.builder.RecipeBuilder;
 //=====================================================================================================================================================================================================
 
 
-
-
-    //  Logs to Plank
-for Item in GlobalWoodLog {
-    if( 
-	    !isNull( GlobalWoodLog[Item] ) 
-	    &
-	    !isNull( GlobalWoodPlank[Item] ) 
-	) { 
-    RecipeBuilder.get("carpenter")
-        .setShapeless( [ GlobalWoodLog[Item] ] )
-        .addTool( <ore:artisansHandsaw> , 1 )
-        .addOutput( GlobalWoodPlank[Item] * 4 )
-        .setExtraOutputOne( <ore:dustWood>.firstItem , 0.25 )
-        .setExtraOutputTwo( <leatherworks:bark_oak> , 0.25 )
-        .create();
-    }
-}
+    //  Plain Oredicted Chest
+recipes.remove( <minecraft:chest> );
+RecipeBuilder.get("carpenter")
+    .setShaped([
+        [<ore:plankWood>,   <ore:plankWood>,    <ore:plankWood> ],
+        [<ore:plankWood>,   <ore:stickWood>,    <ore:plankWood> ],
+        [<ore:plankWood>,   <ore:plankWood>,    <ore:plankWood> ]])
+    .addTool( <ore:artisansHammer> , 1 )
+    .addOutput( <minecraft:chest> )
+    .create();
 
 	//  Natura Bloodwood for simplicity sake.
 RecipeBuilder.get("carpenter")
@@ -39,132 +31,225 @@ RecipeBuilder.get("carpenter")
     .setExtraOutputTwo( <leatherworks:bark_oak> , 0.25 )
     .create();
 
+
+    //  Logs to Plank.  Backwards mapping 
+for Item,Input in GlobalWoodLog {
+    print("Focking Logwood Item: "~Item);
+    print("Focking Logwood Item: "~Input.name);
+    var Output = GlobalWoodPlank[Item];  
+    print("Focking Output: "~Output.name);  
+    recipes.remove( Output );   
+    RecipeBuilder.get("carpenter")
+        .setShapeless( [ Input ] )
+        .addTool( <ore:artisansHandsaw> , 1 )
+        .addOutput( Output * 4 )
+        .setExtraOutputOne( <ore:dustWood>.firstItem , 0.25 )
+        .setExtraOutputTwo( <leatherworks:bark_oak> , 0.25 )
+        .create();
+    }
     //  Plank to Stairs
-for Item in GlobalWoodStair {
-    if( 
-	    !isNull( GlobalWoodStair[Item] ) 
-	    &
-	    !isNull( GlobalWoodPlank[Item] ) 
-	) { 
+for Item,Output in GlobalWoodStair {
+    var Input = GlobalWoodPlank[Item];
+    recipes.remove( Output );   
     RecipeBuilder.get("carpenter")
-        .setShapeless( [ GlobalWoodPlank[Item] ] )
+        .setShapeless( [ Input ] )
         .addTool( <ore:artisansHandsaw> , 1 )
-        .addOutput( GlobalWoodStair[Item] )
+        .addOutput( Output )
         .setExtraOutputOne( <ore:dustWood>.firstItem , 0.25 )
         .create();
+    RecipeBuilder.get("carpenter")
+        .setShaped([
+          [Input, null,   null    ],
+          [Input, Input,  null    ],
+          [Input, Input,  Input   ]])
+        .addTool( <ore:artisansHammer>, 6 )
+        .addOutput( Output * 6 )
+        .create();
     }
-}
-
     //  Stair to Slabs
-for Item in GlobalWoodSlab {
-    if( 
-	    !isNull( GlobalWoodSlab[Item] ) 
-	    &
-	    !isNull( GlobalWoodStair[Item] ) 
-	) { 
+for Item,Output in GlobalWoodSlab {
+    var Input = GlobalWoodStair[Item];
+    var InputB = GlobalWoodPlank[Item];
+    recipes.remove( Output );   
     RecipeBuilder.get("carpenter")
-        .setShapeless( [ GlobalWoodStair[Item] ] )
+        .setShapeless( [ Input ] )
         .addTool( <ore:artisansHandsaw> , 1 )
-        .addOutput( GlobalWoodSlab[Item] * 2 )
+        .addOutput( Output * 2 )
         .setExtraOutputOne( <ore:dustWood>.firstItem , 0.25 )
         .create();
+    RecipeBuilder.get("carpenter")
+        .setShaped([
+          [InputB, InputB, InputB    ]])
+        .addTool( <ore:artisansHandsaw>, 3 )
+        .addOutput( Output * 6 )
+        .setExtraOutputOne( <ore:dustWood>.firstItem , 0.75 )
+        .create();
     }
-}
-
-
     //  Fence Posts
-for Item in GlobalWoodFence {
-    if( 
-	    !isNull( GlobalWoodFence[Item] ) 
-	    &
-	    !isNull( GlobalWoodPlank[Item] ) 
-	) { 
+for Item,Output in GlobalWoodFence {
+    var Input = GlobalWoodPlank[Item];
+        recipes.remove( Output );  
         RecipeBuilder.get("carpenter")
             .setShaped([
-                [GlobalWoodPlank[Item],    <ore:stickWood>,    GlobalWoodPlank[Item]  ],
-                [GlobalWoodPlank[Item],    <ore:stickWood>,    GlobalWoodPlank[Item]  ]])
+                [Input,    <ore:stickWood>,    Input  ],
+                [Input,    <ore:stickWood>,    Input  ]])
             .addTool( <ore:artisansHammer> , 1 )
-            .addOutput( GlobalWoodFence[Item] * 4 )
+            .addOutput( Output * 4 )
             .create();
     }
-}
-
     //  Fence Gates
-for Item in GlobalWoodFenceGate {
-    if( 
-	    !isNull( GlobalWoodFenceGate[Item] ) 
-	    &
-	    !isNull( GlobalWoodPlank[Item] ) 
-	) { 
+for Item,Output in GlobalWoodFenceGate {
+    var Input = GlobalWoodPlank[Item];
+        recipes.remove( Output );  
         RecipeBuilder.get("carpenter")
             .setShaped([
-                [<ore:stickWood>,   GlobalWoodPlank[Item], <ore:stickWood> ],
-                [<ore:stickWood>,   GlobalWoodPlank[Item], <ore:stickWood> ]])
+                [<ore:stickWood>,   Input, <ore:stickWood> ],
+                [<ore:stickWood>,   Input, <ore:stickWood> ]])
             .addTool( <ore:artisansHammer> , 1 )
-            .addOutput( GlobalWoodFenceGate[Item] * 4 )
+            .addOutput( Output * 4 )
             .create();
     }
-}
-
     //  Doors
-for Item in GlobalWoodDoor {
-    if( 
-	    !isNull( GlobalWoodDoor[Item] ) 
-	    &
-	    !isNull( GlobalWoodPlank[Item] ) 
-	) { 
+for Item,Output in GlobalWoodDoor {
+    var Input = GlobalWoodPlank[Item];
+        recipes.remove( Output ); 
         RecipeBuilder.get("carpenter")
             .setShaped([
-                [GlobalWoodPlank[Item],    GlobalWoodPlank[Item]  ],
-                [GlobalWoodPlank[Item],    GlobalWoodPlank[Item]  ],
-                [GlobalWoodPlank[Item],    GlobalWoodPlank[Item]  ]])
+                [Input,    Input  ],
+                [Input,    Input  ],
+                [Input,    Input  ]])
             .addTool( <ore:artisansHammer> , 1 )
-            .addOutput( GlobalWoodDoor[Item] * 3 )
+            .addOutput( Output * 3 )
             .create();
     }
-}
-
     //  Trap Doors
-for Item in GlobalWoodTrapDoor {
-    if( 
-	    !isNull( GlobalWoodTrapDoor[Item] ) 
-	    &
-	    !isNull( GlobalWoodPlank[Item] ) 
-	) { 
+for Item,Output in GlobalWoodTrapDoor {
+    var Input = GlobalWoodPlank[Item];
+        recipes.remove( Output ); 
         RecipeBuilder.get("carpenter")
             .setShaped([
-                [GlobalWoodPlank[Item],    GlobalWoodPlank[Item],    GlobalWoodPlank[Item]  ],
-                [GlobalWoodPlank[Item],    GlobalWoodPlank[Item],    GlobalWoodPlank[Item]  ]])
+                [Input,    Input,    Input  ],
+                [Input,    Input,    Input  ]])
             .addTool( <ore:artisansHammer> , 1 )
-            .addOutput( GlobalWoodTrapDoor[Item] * 2 )
+            .addOutput( Output * 2 )
             .create();
     }
-}
-
     //  Chests
-for Item in GlobalWoodChest {
-    if( 
-	    !isNull( GlobalWoodChest[Item] ) 
-	    &
-	    !isNull( GlobalWoodPlank[Item] ) 
-	) { 
+for Item,Output in GlobalWoodChest {
+    var Input = GlobalWoodPlank[Item];
+        recipes.remove( Output ); 
         RecipeBuilder.get("carpenter")
             .setShaped([
-                [GlobalWoodPlank[Item], GlobalWoodPlank[Item],  GlobalWoodPlank[Item]   ],
-                [GlobalWoodPlank[Item], null,                   GlobalWoodPlank[Item]   ],
-                [GlobalWoodPlank[Item], GlobalWoodPlank[Item],  GlobalWoodPlank[Item]   ]])
+                [Input, Input,  Input   ],
+                [Input, null,   Input   ],
+                [Input, Input,  Input   ]])
             .addTool( <ore:artisansHammer> , 1 )
-            .addOutput( GlobalWoodChest[Item] )
+            .addOutput( Output )
             .create();
     }
-}
-
-    //  Plain Oredicted Chest
-RecipeBuilder.get("carpenter")
-    .setShaped([
-        [<ore:plankWood>,   <ore:plankWood>,    <ore:plankWood> ],
-        [<ore:plankWood>,   <ore:stickWood>,    <ore:plankWood> ],
-        [<ore:plankWood>,   <ore:plankWood>,    <ore:plankWood> ]])
-    .addTool( <ore:artisansHammer> , 1 )
-    .addOutput( <minecraft:chest> )
-    .create();
+    //  Plank to Bookshelves
+for Item,Output in GlobalWoodBookshelf {
+    var Input = GlobalWoodPlank[Item];
+    recipes.remove( Output );   
+    RecipeBuilder.get("carpenter")
+        .setShaped([
+            [Input,         Input,      Input       ],
+            [<ore:book>,    <ore:book>, <ore:book>  ],
+            [Input,         Input,      Input       ]])
+        .addTool( <ore:artisansHammer> , 1 )
+        .addOutput( Output )
+        .create();
+    }
+    //  Chairs
+for Item,Output in GlobalWoodChair {
+    var Input = GlobalWoodSlab[Item];
+    var Input2 = GlobalWoodFence[Item];
+    recipes.remove( Output );   
+    RecipeBuilder.get( "carpenter" )
+          .setShaped([
+            [Input2,    null,  null,    null    ],
+            [Input2,    null,  null,    null    ],
+            [Input2,    Input, Input,   Input   ],
+            [Input2,    null,  null,    Input2  ],
+            [Input2,    null,  null,    Input2  ]])
+        .addTool( <ore:artisansHammer> , 1 )
+        .addOutput( Output )
+        .create();
+    }
+    //  Tables
+for Item,Output in GlobalWoodTable {
+    var Input = GlobalWoodSlab[Item];
+    var Input2 = GlobalWoodFence[Item];
+    recipes.remove( Output );   
+    RecipeBuilder.get( "carpenter" )
+          .setShaped([
+            [Input,     Input,  Input,  Input,  Input   ],
+            [Input2,    null,   null,   null,   Input2  ],
+            [Input2,    null,   null,   null,   Input2  ],
+            [Input2,    null,   null,   null,   Input2  ],
+            [Input2,    null,   null,   null,   Input2  ]])
+        .addTool( <ore:artisansHammer> , 1 )
+        .addOutput( Output )
+        .create();
+    }
+    //  Boats
+for Item,Output in GlobalWoodBoat {
+    var Input = GlobalWoodPlank[Item];
+    recipes.remove( Output );   
+    RecipeBuilder.get( "carpenter" )
+          .setShaped([
+            [Input, null,   Input   ],
+            [Input, Input,  Input   ]])
+        .addTool( <ore:artisansHammer> , 1 )
+        .addOutput( Output )
+        .create();
+    }
+    //  Inspirations Bookshelves
+for Item,Output in GlobalInspirationsBookshelf {
+    var Input = GlobalWoodSlab[Item];
+    recipes.remove( Output );   
+    RecipeBuilder.get( "carpenter" )
+          .setShaped([
+            [Input, Input,  Input   ],
+            [null,  null,   null    ],
+            [Input, Input,  Input   ]])
+        .addTool( <ore:artisansHammer> , 1 )
+        .addOutput( Output )
+        .create();
+    }
+for Item,Output in GlobalInspirationsBookshelfRainbow {
+    var Input = GlobalWoodSlab[Item];
+    recipes.remove( Output );   
+    RecipeBuilder.get( "carpenter" )
+          .setShaped([
+            [Input,         Input,          Input           ],
+            [<ore:dyeRed>,  <ore:dyeGreen>, <ore:dyeBlue>   ],
+            [Input,         Input,          Input           ]])
+        .addTool( <ore:artisansHammer> , 1 )
+        .addOutput( Output )
+        .create();
+    }
+for Item,Output in GlobalInspirationsBookshelfTomes {
+    var Input = GlobalWoodSlab[Item];
+    recipes.remove( Output );   
+    RecipeBuilder.get( "carpenter" )
+          .setShaped([
+            [Input, Input,      Input   ],
+            [null,  <ore:book>, null    ],
+            [Input, Input,      Input   ]])
+        .addTool( <ore:artisansHammer> , 1 )
+        .addOutput( Output )
+        .create();
+    }
+for Item,Output in GlobalInspirationsBookshelfAncient {
+    var Input = GlobalWoodSlab[Item];
+    recipes.remove( Output );   
+    RecipeBuilder.get( "carpenter" )
+          .setShaped([
+            [Input,         Input,      Input       ],
+            [<ore:paper>,   <ore:book>, <ore:paper> ],
+            [Input,         Input,      Input       ]])
+        .addTool( <ore:artisansHammer> , 1 )
+        .addOutput( Output )
+        .create();
+    }

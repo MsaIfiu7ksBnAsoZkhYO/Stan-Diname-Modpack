@@ -364,21 +364,6 @@
 					"weight": 100,
 					"block": [
 						{
-							"name": "techguns:basicore",
-							"properties": {
-								"type": "ore_uranium"
-							},
-							"weight": 100
-						}
-					],
-					"material": "minecraft:stone",
-					"cluster-size": 3
-				},
-				{
-					"type": "large-vein",
-					"weight": 100,
-					"block": [
-						{
 							"name": "immersiveengineering:ore",
 							"properties": {
 								"type": "uranium"
@@ -397,21 +382,6 @@
 							"name": "nuclearcraft:ore",
 							"properties": {
 								"type": "uranium"
-							},
-							"weight": 100
-						}
-					],
-					"material": "minecraft:stone",
-					"cluster-size": 12
-				},
-				{
-					"type": "large-vein",
-					"weight": 1,
-					"block": [
-						{
-							"name": "techguns:basicore",
-							"properties": {
-								"type": "ore_uranium"
 							},
 							"weight": 100
 						}
@@ -504,21 +474,6 @@
 			"generator": [
 				{
 					"type": "large-vein",
-					"weight": 100,
-					"block": [
-						{
-							"name": "techguns:basicore",
-							"properties": {
-								"type": "ore_titanium"
-							},
-							"weight": 100
-						}
-					],
-					"material": "minecraft:stone",
-					"cluster-size": 3
-				},
-				{
-					"type": "large-vein",
 					"weight": 1,
 					"block": [
 						{
@@ -535,55 +490,6 @@
 			],
 			"cluster-count": 4,
 			"center-height": 252,
-			"spread": 168,
-			"retrogen": true,
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					-51,
-					-52,
-					-54
-				]
-			}
-		},
-		"Osmium_Metal2_Veins": {
-			"enabled": true,
-			"distribution": "gaussian",
-			"generator": [
-				{
-					"type": "large-vein",
-					"weight": 100,
-					"block": [
-						{
-							"name": "mekanism:oreblock",
-							"properties": {
-								"type": "osmium"
-							},
-							"weight": 100
-						}
-					],
-					"material": "minecraft:stone",
-					"cluster-size": 5
-				},
-				{
-					"type": "large-vein",
-					"weight": 1,
-					"block": [
-						{
-							"name": "mekanism:oreblock",
-							"properties": {
-								"type": "osmium"
-							},
-							"weight": 100
-						}
-					],
-					"material": "minecraft:stone",
-					"cluster-size": 20
-				}
-			],
-			"cluster-count": 5,
-			"center-height": 168,
 			"spread": 168,
 			"retrogen": true,
 			"biome": "all",

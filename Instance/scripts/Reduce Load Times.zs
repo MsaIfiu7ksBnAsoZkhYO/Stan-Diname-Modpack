@@ -10,6 +10,7 @@
 //  Import-ant Things
 //=====================================================================================================================================================================================================
 
+#norun
 #priority 9998
 
 import crafttweaker.item.IItemStack;
@@ -166,7 +167,7 @@ for CraftingRecipe in AllCraftingRecipes {
 
     //  Get this nonsense out of my Load times!
 recipes.removeAll();
-
+recipes.remove(<minecraft:tipped_arrow>);
 
 /* - Old method
 	//	I love Loops.  :D	_______________________________________________________________________________________________________________________________________________________________________

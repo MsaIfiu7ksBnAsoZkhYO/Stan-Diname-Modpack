@@ -12,6 +12,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 
 	//	Sturdy Stone	_______________________________________________________________________________________________________________________________________________________________________
+recipes.remove( <quark:sturdy_stone> );
 RecipeBuilder.get("mason")
     .setShaped([
         [<ore:stone>,       <ore:cobblestone>,  <ore:stone>         ],

@@ -2,5 +2,7 @@
 //	Add a proper recipe for sand layers
 //=====================================================================================================================================================================================================
 
+recipes.removeByMod("weather2");
 
+//recipes.remove( <weather2:sand_layer_placeable> );
 recipes.addShapeless(<weather2:sand_layer_placeable> * 8, [<ore:sand>]);

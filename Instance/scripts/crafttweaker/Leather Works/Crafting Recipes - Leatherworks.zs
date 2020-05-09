@@ -13,6 +13,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 
 
     //  Leather Pack   
+recipes.remove( <leatherworks:pack_brown> );
 RecipeBuilder.get("tailor")
     .setShaped([
         [<ore:leatherStrip>,    <ore:leatherSheet>, <ore:leatherStrip>  ],

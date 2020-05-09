@@ -14,3 +14,6 @@ import crafttweaker.oredict.IOreDictEntry;
 	//	Adjust Seared Bricks_______________________________________________________________________________________________________________________________________________________________________
 furnace.remove(<tconstruct:materials>);
 furnace.addRecipe(<tconstruct:materials>, <contenttweaker:unfired_seared_brick>, 0.0);
+
+	//	Glass to clear glass
+furnace.addRecipe(<tconstruct:clear_glass>, <minecraft:glass>, 0.0);

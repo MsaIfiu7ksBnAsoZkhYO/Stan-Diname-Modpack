@@ -80,20 +80,20 @@ mods.tconstruct.Alloy.addRecipe(
 mods.tconstruct.Alloy.addRecipe(
 	<liquid:coke_clay_liquid>			* 2, 
 	[
+		<liquid:kiln_clay_liquid>		* 1, 
 		<liquid:porcelain_clay_liquid>	* 1, 
-		<liquid:clay>					* 1, 
 		<liquid:sand_liquid>			* 2,
 		<liquid:water>					* 1
 	]
 );
 	//	Kiln Clay	_______________________________________________________________________________________________________________________________________________________________________
 mods.tconstruct.Alloy.addRecipe(
-	<liquid:kiln_clay_liquid>		* 2, 
+	<liquid:kiln_clay_liquid>			* 2, 
 	[
-		<liquid:coke_clay_liquid>	* 1, 
-		<liquid:sand_liquid>		* 2, 
-		<liquid:lime_liquid>		* 1,
-		<liquid:water>				* 1
+		<liquid:porcelain_clay_liquid>	* 1, 
+		<liquid:sand_liquid>			* 2, 
+		<liquid:lime_liquid>			* 1,
+		<liquid:water>					* 1
 	]
 );
 	//	Blast Clay	_______________________________________________________________________________________________________________________________________________________________________
@@ -128,9 +128,9 @@ mods.tconstruct.Alloy.addRecipe(
 );
 	//	Mortar	_______________________________________________________________________________________________________________________________________________________________________
 mods.tconstruct.Alloy.addRecipe(
-	<liquid:mortar>				* 14,
+	<liquid:mortar>				* 7,
 	[
-		<liquid:sand_liquid>	* 3,
+		<liquid:sand_liquid>	* 1,
 		<liquid:lime_liquid>	* 1,
 		<liquid:water>			* 7
 	]
@@ -139,8 +139,8 @@ mods.tconstruct.Alloy.addRecipe(
 mods.tconstruct.Alloy.addRecipe(
 	<liquid:moldsand>			* 7,
 	[
-		<liquid:sand_liquid>	* 4,
+		<liquid:sand_liquid>	* 1,
 		<liquid:clay>			* 1,
-		<liquid:water>			* 2
+		<liquid:water>			* 7
 	]
 );
