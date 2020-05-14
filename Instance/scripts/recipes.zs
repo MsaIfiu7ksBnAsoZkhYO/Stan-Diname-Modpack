@@ -4,6 +4,8 @@
 //#Remove
 //Don't touch me!
 //#Add
+recipes.addShapeless(<actuallyadditions:item_misc:9>, [<ore:cropRice>,<ore:cropRice>,<ore:cropRice>]);
+recipes.addShaped(<actuallyadditions:item_misc:9>, [[<ore:cropRice>, <ore:cropRice>, null],[<ore:cropRice>, null, null], [null, null, null]]);
 furnace.addRecipe(<tconstruct:clear_glass>, <minecraft:glass>, 0.0);
 furnace.addRecipe(<contenttweaker:ashdust>, <thermalfoundation:material:801>, 0.0);
 furnace.addRecipe(<ceramics:channel>, <ceramics:unfired_clay:7>, 0.0);
