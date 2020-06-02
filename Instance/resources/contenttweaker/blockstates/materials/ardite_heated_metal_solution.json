@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "forge:fluid",
+    "custom": {
+      "fluid": "ardite_heated_metal_solution"
+    }
+  },
+  "variants": {
+    "normal": [{}]
+  }
+}

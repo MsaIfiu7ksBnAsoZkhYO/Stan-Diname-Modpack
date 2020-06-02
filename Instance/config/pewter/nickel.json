@@ -1,0 +1,126 @@
+{
+	"name": "nickel",
+	"tool": {
+		"bow": {
+			"speed": 0.71,
+			"range": 1.4,
+			"bonusDamage": 5.4
+		},
+		"fletching": {
+			"accuracy": 0.71,
+			"modifier": 0.8
+		},
+		"head": {
+			"attackDamage": 5,
+			"speed": 5,
+			"durability": 650,
+			"harvestLevel": 6
+		},
+		"handle": {
+			"modifier": 0.8,
+			"durability": 260
+		},
+		"arrowShaft": {
+			"modifier": 0.4,
+			"bonusAmmo": 34
+		},
+		"bowstring": {
+			"modifier": 0.8
+		},
+		"extra": {
+			"durability": 130
+		}
+	},
+	"color": "#e1f8de",
+	"craftable": false,
+	"madeInToolForge": true,
+	"createMeltingRecipes": false,
+	"meltingTemperature": 475,
+	"looks": {
+		"shininess": 0.25,
+		"brightness": 0.25,
+		"hueshift": -0.1
+	},
+	"fluid": {
+		"viscosity": 10000,
+		"density": 2000,
+		"temperature": 1000,
+		"luminosity": 10
+	},
+	"oreDictSuffixes": [
+		"Nickel"
+	],
+	"matParts": [
+		"HEAD","HANDLE","EXTRA","BOW","SHAFT","BOWSTRING","CORE","PLATES","TRIM"
+	],
+	"nameLocales": {
+		"en_us": "Nickel"
+	},
+	"smeltingItems": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"smeltingTags": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"armor": {
+		"core": {
+			"durability": 43.33,
+			"defense": 25
+	},
+	"plates": {
+		"modifier": 0.4,
+		"durability": 17.33,
+		"toughness": 4.19
+	},
+	"trim": {
+		"extraDurability": 8.67
+	}
+	},
+	"specificTraits": {
+		"EXTRA": [
+			
+		],
+		"HEAD": [
+			
+		],
+		"HANDLE": [
+			
+		],
+		"BOW": [
+			
+		],
+		"PROJECTILE": [
+			
+		],
+		"SHAFT": [
+			
+		],
+		"FLETCHING": [
+			
+		],
+		"BOWSTRING": [
+			
+		],
+		"CORE": [
+			
+		],
+		"PLATES": [
+			
+		],
+		"TRIM": [
+			
+		]
+	}
+}

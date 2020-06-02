@@ -39,7 +39,6 @@
   "unnatural",
   "terra_armor",
   "voltaic_armor",
-  "glowing",
   "td_aqualung",
   "infernal_armor",
   "td_stoned",

@@ -1,0 +1,126 @@
+{
+	"name": "gaiaspirit",
+	"tool": {
+		"bow": {
+			"speed": 0.4,
+			"range": 2.47,
+			"bonusDamage": 11.55
+		},
+		"fletching": {
+			"accuracy": 0.4,
+			"modifier": 1.37
+		},
+		"head": {
+			"attackDamage": 9.15,
+			"speed": 9.15,
+			"durability": 1495,
+			"harvestLevel": 11
+		},
+		"handle": {
+			"modifier": 1.37,
+			"durability": 598
+		},
+		"arrowShaft": {
+			"modifier": 1.17,
+			"bonusAmmo": 60
+		},
+		"bowstring": {
+			"modifier": 1.37
+		},
+		"extra": {
+			"durability": 299
+		}
+	},
+	"color": "#aabbcc",
+	"craftable": false,
+	"madeInToolForge": true,
+	"createMeltingRecipes": false,
+	"meltingTemperature": 475,
+	"looks": {
+		"shininess": 0.25,
+		"brightness": 0.25,
+		"hueshift": -0.1
+	},
+	"fluid": {
+		"viscosity": 10000,
+		"density": 2000,
+		"temperature": 1000,
+		"luminosity": 10
+	},
+	"oreDictSuffixes": [
+		
+	],
+	"matParts": [
+		"HEAD","HANDLE","EXTRA","BOW","SHAFT","BOWSTRING","CORE","PLATES","TRIM"
+	],
+	"nameLocales": {
+		"en_us": "Gaia Spirit"
+	},
+	"smeltingItems": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"smeltingTags": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"armor": {
+		"core": {
+			"durability": 99.67,
+			"defense": 83.72
+	},
+	"plates": {
+		"modifier": 1.17,
+		"durability": 39.87,
+		"toughness": 26.71
+	},
+	"trim": {
+		"extraDurability": 19.93
+	}
+	},
+	"specificTraits": {
+		"EXTRA": [
+			
+		],
+		"HEAD": [
+			
+		],
+		"HANDLE": [
+			
+		],
+		"BOW": [
+			
+		],
+		"PROJECTILE": [
+			
+		],
+		"SHAFT": [
+			
+		],
+		"FLETCHING": [
+			
+		],
+		"BOWSTRING": [
+			
+		],
+		"CORE": [
+			
+		],
+		"PLATES": [
+			
+		],
+		"TRIM": [
+			
+		]
+	}
+}

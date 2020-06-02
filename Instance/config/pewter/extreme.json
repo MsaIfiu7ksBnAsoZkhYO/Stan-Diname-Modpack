@@ -1,0 +1,126 @@
+{
+	"name": "extreme",
+	"tool": {
+		"bow": {
+			"speed": 0.44,
+			"range": 2.26,
+			"bonusDamage": 10.45
+		},
+		"fletching": {
+			"accuracy": 0.44,
+			"modifier": 1.16
+		},
+		"head": {
+			"attackDamage": 8.05,
+			"speed": 8.05,
+			"durability": 1265,
+			"harvestLevel": 11
+		},
+		"handle": {
+			"modifier": 1.16,
+			"durability": 506
+		},
+		"arrowShaft": {
+			"modifier": 0.96,
+			"bonusAmmo": 51
+		},
+		"bowstring": {
+			"modifier": 1.16
+		},
+		"extra": {
+			"durability": 253
+		}
+	},
+	"color": "#33001A",
+	"craftable": false,
+	"madeInToolForge": true,
+	"createMeltingRecipes": false,
+	"meltingTemperature": 475,
+	"looks": {
+		"shininess": 0.25,
+		"brightness": 0.25,
+		"hueshift": -0.1
+	},
+	"fluid": {
+		"viscosity": 10000,
+		"density": 2000,
+		"temperature": 1000,
+		"luminosity": 10
+	},
+	"oreDictSuffixes": [
+		
+	],
+	"matParts": [
+		"HEAD","HANDLE","EXTRA","BOW","SHAFT","BOWSTRING","CORE","PLATES","TRIM"
+	],
+	"nameLocales": {
+		"en_us": "Extreme"
+	},
+	"smeltingItems": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"smeltingTags": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"armor": {
+		"core": {
+			"durability": 84.33,
+			"defense": 64.8
+	},
+	"plates": {
+		"modifier": 0.96,
+		"durability": 33.73,
+		"toughness": 16.14
+	},
+	"trim": {
+		"extraDurability": 16.87
+	}
+	},
+	"specificTraits": {
+		"EXTRA": [
+			
+		],
+		"HEAD": [
+			
+		],
+		"HANDLE": [
+			
+		],
+		"BOW": [
+			
+		],
+		"PROJECTILE": [
+			
+		],
+		"SHAFT": [
+			
+		],
+		"FLETCHING": [
+			
+		],
+		"BOWSTRING": [
+			
+		],
+		"CORE": [
+			
+		],
+		"PLATES": [
+			
+		],
+		"TRIM": [
+			
+		]
+	}
+}

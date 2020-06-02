@@ -1,0 +1,126 @@
+{
+	"name": "constantan",
+	"tool": {
+		"bow": {
+			"speed": 0.75,
+			"range": 1.33,
+			"bonusDamage": 4.75
+		},
+		"fletching": {
+			"accuracy": 0.75,
+			"modifier": 0.83
+		},
+		"head": {
+			"attackDamage": 4.75,
+			"speed": 4.75,
+			"durability": 605,
+			"harvestLevel": 5
+		},
+		"handle": {
+			"modifier": 0.83,
+			"durability": 242
+		},
+		"arrowShaft": {
+			"modifier": 0.63,
+			"bonusAmmo": 24
+		},
+		"bowstring": {
+			"modifier": 0.83
+		},
+		"extra": {
+			"durability": 121
+		}
+	},
+	"color": "#fab877",
+	"craftable": false,
+	"madeInToolForge": true,
+	"createMeltingRecipes": false,
+	"meltingTemperature": 475,
+	"looks": {
+		"shininess": 0.25,
+		"brightness": 0.25,
+		"hueshift": -0.1
+	},
+	"fluid": {
+		"viscosity": 10000,
+		"density": 2000,
+		"temperature": 1000,
+		"luminosity": 10
+	},
+	"oreDictSuffixes": [
+		
+	],
+	"matParts": [
+		"HEAD","HANDLE","EXTRA","BOW","SHAFT","BOWSTRING","CORE","PLATES","TRIM"
+	],
+	"nameLocales": {
+		"en_us": "Constantan"
+	},
+	"smeltingItems": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"smeltingTags": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"armor": {
+		"core": {
+			"durability": 40.33,
+			"defense": 22.56
+	},
+	"plates": {
+		"modifier": 0.63,
+		"durability": 16.13,
+		"toughness": 3.8
+	},
+	"trim": {
+		"extraDurability": 8.07
+	}
+	},
+	"specificTraits": {
+		"EXTRA": [
+			"established"
+		],
+		"HEAD": [
+			"established"
+		],
+		"HANDLE": [
+			"established"
+		],
+		"BOW": [
+			"established"
+		],
+		"PROJECTILE": [
+			"established"
+		],
+		"SHAFT": [
+			"established"
+		],
+		"FLETCHING": [
+			"established"
+		],
+		"BOWSTRING": [
+			"established"
+		],
+		"CORE": [
+			"ambitious_armor"
+		],
+		"PLATES": [
+			"ambitious_armor"
+		],
+		"TRIM": [
+			"ambitious_armor"
+		]
+	}
+}

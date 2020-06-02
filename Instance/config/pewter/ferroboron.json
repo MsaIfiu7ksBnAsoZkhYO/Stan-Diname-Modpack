@@ -1,0 +1,126 @@
+{
+	"name": "ferroboron",
+	"tool": {
+		"bow": {
+			"speed": 0.45,
+			"range": 2.2,
+			"bonusDamage": 10
+		},
+		"fletching": {
+			"accuracy": 0.45,
+			"modifier": 1.2
+		},
+		"head": {
+			"attackDamage": 8,
+			"speed": 8,
+			"durability": 1260,
+			"harvestLevel": 10
+		},
+		"handle": {
+			"modifier": 1.2,
+			"durability": 504
+		},
+		"arrowShaft": {
+			"modifier": 1,
+			"bonusAmmo": 50
+		},
+		"bowstring": {
+			"modifier": 1.2
+		},
+		"extra": {
+			"durability": 252
+		}
+	},
+	"color": "#5f5f5f",
+	"craftable": false,
+	"madeInToolForge": true,
+	"createMeltingRecipes": false,
+	"meltingTemperature": 475,
+	"looks": {
+		"shininess": 0.25,
+		"brightness": 0.25,
+		"hueshift": -0.1
+	},
+	"fluid": {
+		"viscosity": 10000,
+		"density": 2000,
+		"temperature": 1000,
+		"luminosity": 10
+	},
+	"oreDictSuffixes": [
+		
+	],
+	"matParts": [
+		"HEAD","HANDLE","EXTRA","BOW","SHAFT","BOWSTRING","CORE","PLATES","TRIM"
+	],
+	"nameLocales": {
+		"en_us": "Ferroboron"
+	},
+	"smeltingItems": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"smeltingTags": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"armor": {
+		"core": {
+			"durability": 84,
+			"defense": 64
+	},
+	"plates": {
+		"modifier": 1,
+		"durability": 33.6,
+		"toughness": 15.85
+	},
+	"trim": {
+		"extraDurability": 16.8
+	}
+	},
+	"specificTraits": {
+		"EXTRA": [
+			"sharp"
+		],
+		"HEAD": [
+			"sharp"
+		],
+		"HANDLE": [
+			"sharp"
+		],
+		"BOW": [
+			"sharp"
+		],
+		"PROJECTILE": [
+			"sharp"
+		],
+		"SHAFT": [
+			"sharp"
+		],
+		"FLETCHING": [
+			"sharp"
+		],
+		"BOWSTRING": [
+			"sharp"
+		],
+		"CORE": [
+			"td_ironclad","td_arrowcatcher"
+		],
+		"PLATES": [
+			"td_ironclad","td_arrowcatcher"
+		],
+		"TRIM": [
+			"td_ironclad","td_arrowcatcher"
+		]
+	}
+}

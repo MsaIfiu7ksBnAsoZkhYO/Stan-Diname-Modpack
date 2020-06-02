@@ -1,44 +1,44 @@
 {
-    "name": "Magmolybdochalkosmuth",
+    "name": "molybdochalkos",
     "tool": {
       "bow": {
-        "speed": 0.85,
-        "range": 1.45,
-        "bonusDamage": 2.7
+        "speed": 0.9,
+        "range": 1.3,
+        "bonusDamage": 1.8
       },
       "fletching": {
-        "accuracy": 0.85,
-        "modifier": 1.15
+        "accuracy": 0.9,
+        "modifier": 1.1
       },
       "head": {
-        "attackDamage": 4.5,
-        "speed": 3.5,
-        "durability": 380,
-        "harvestLevel": 3
+        "attackDamage": 4,
+        "speed": 3,
+        "durability": 270,
+        "harvestLevel": 2
       },
       "handle": {
-        "modifier": 1.15,
-        "durability": 140
+        "modifier": 1.1,
+        "durability": 30
       },
       "arrowShaft": {
-        "modifier": 1.15,
-        "bonusAmmo": 4
+        "modifier": 1.1,
+        "bonusAmmo": 2
       },
       "bowstring": {
         "modifier": 0.5
       },
       "extra": {
-        "durability": 70
+        "durability": 50
       }
     },
-    "color": "#A080A0",
+    "color": "#908090",
     "craftable": false,
-    "madeInToolForge": false,
-    "createMeltingRecipes": false,
+    "madeInToolForge": true,
+    "createMeltingRecipes": true,
     "meltingTemperature": 575,
     "looks": {
       "shininess": 0.55,
-      "brightness": 0.25,
+      "brightness": 0.35,
       "hueshift": -0.1
     },
     "fluid": {
@@ -47,7 +47,7 @@
       "temperature": 1000,
       "luminosity": 4
     },
-    "oreDictSuffixes": ["magmolybdochalkosmuth"],
+    "oreDictSuffixes": ["molybdochalkos"],
     "matParts": [
       "HEAD",
       "HANDLE",
@@ -61,7 +61,7 @@
       "TRIM"
     ],
     "nameLocales": {
-      "en_us": "Magmolybdochalkosmuth"
+      "en_us": "Molybdochalkos"
     },
     "smeltingItems": {
       "ingot": [],
@@ -83,16 +83,16 @@
     },
     "armor": {
       "core": {
-        "durability": 23.33,
-        "defense": 14
+        "durability": 15,
+        "defense": 11
       },
       "plates": {
-        "modifier": 0.75,
-        "durability": 9.33,
-        "toughness": 5.54
+        "modifier": 0.7,
+        "durability": 6.67,
+        "toughness": 2.14
       },
       "trim": {
-        "extraDurability": 4.67
+        "extraDurability": 3.33
       }
     },
     "specificTraits": {

@@ -1,0 +1,126 @@
+{
+	"name": "platinum",
+	"tool": {
+		"bow": {
+			"speed": 0.65,
+			"range": 1.55,
+			"bonusDamage": 6.3
+		},
+		"fletching": {
+			"accuracy": 0.65,
+			"modifier": 0.85
+		},
+		"head": {
+			"attackDamage": 5.5,
+			"speed": 5.5,
+			"durability": 750,
+			"harvestLevel": 7
+		},
+		"handle": {
+			"modifier": 0.85,
+			"durability": 300
+		},
+		"arrowShaft": {
+			"modifier": 0.65,
+			"bonusAmmo": 30
+		},
+		"bowstring": {
+			"modifier": 0.85
+		},
+		"extra": {
+			"durability": 150
+		}
+	},
+	"color": "#B7E7FF",
+	"craftable": false,
+	"madeInToolForge": true,
+	"createMeltingRecipes": false,
+	"meltingTemperature": 475,
+	"looks": {
+		"shininess": 0.25,
+		"brightness": 0.25,
+		"hueshift": -0.1
+	},
+	"fluid": {
+		"viscosity": 10000,
+		"density": 2000,
+		"temperature": 1000,
+		"luminosity": 10
+	},
+	"oreDictSuffixes": [
+		
+	],
+	"matParts": [
+		"HEAD","HANDLE","EXTRA","BOW","SHAFT","BOWSTRING","CORE","PLATES","TRIM"
+	],
+	"nameLocales": {
+		"en_us": "Platinum"
+	},
+	"smeltingItems": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"smeltingTags": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"armor": {
+		"core": {
+			"durability": 50,
+			"defense": 30.25
+	},
+	"plates": {
+		"modifier": 0.65,
+		"durability": 20,
+		"toughness": 5.23
+	},
+	"trim": {
+		"extraDurability": 10
+	}
+	},
+	"specificTraits": {
+		"EXTRA": [
+			"holy"
+		],
+		"HEAD": [
+			"holy"
+		],
+		"HANDLE": [
+			"holy"
+		],
+		"BOW": [
+			"holy"
+		],
+		"PROJECTILE": [
+			"holy"
+		],
+		"SHAFT": [
+			"holy"
+		],
+		"FLETCHING": [
+			"holy"
+		],
+		"BOWSTRING": [
+			"holy"
+		],
+		"CORE": [
+			"ambitious_armor","td_welucated"
+		],
+		"PLATES": [
+			"ambitious_armor","td_welucated"
+		],
+		"TRIM": [
+			"ambitious_armor","td_welucated"
+		]
+	}
+}

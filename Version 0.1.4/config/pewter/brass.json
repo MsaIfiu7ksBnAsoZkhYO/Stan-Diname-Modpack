@@ -1,0 +1,126 @@
+{
+	"name": "brass",
+	"tool": {
+		"bow": {
+			"speed": 1.05,
+			"range": 0.95,
+			"bonusDamage": 2.7
+		},
+		"fletching": {
+			"accuracy": 1.05,
+			"modifier": 0.65
+		},
+		"head": {
+			"attackDamage": 3.5,
+			"speed": 3.5,
+			"durability": 350,
+			"harvestLevel": 3
+		},
+		"handle": {
+			"modifier": 0.65,
+			"durability": 140
+		},
+		"arrowShaft": {
+			"modifier": 0.65,
+			"bonusAmmo": 14
+		},
+		"bowstring": {
+			"modifier": 0.65
+		},
+		"extra": {
+			"durability": 70
+		}
+	},
+	"color": "#daa860",
+	"craftable": false,
+	"madeInToolForge": true,
+	"createMeltingRecipes": false,
+	"meltingTemperature": 475,
+	"looks": {
+		"shininess": 0.25,
+		"brightness": 0.25,
+		"hueshift": -0.1
+	},
+	"fluid": {
+		"viscosity": 10000,
+		"density": 2000,
+		"temperature": 1000,
+		"luminosity": 10
+	},
+	"oreDictSuffixes": [
+		
+	],
+	"matParts": [
+		"HEAD","HANDLE","EXTRA","BOW","SHAFT","BOWSTRING","CORE","PLATES","TRIM"
+	],
+	"nameLocales": {
+		"en_us": "Brass"
+	},
+	"smeltingItems": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"smeltingTags": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"armor": {
+		"core": {
+			"durability": 23.33,
+			"defense": 12.25
+	},
+	"plates": {
+		"modifier": 0.65,
+		"durability": 9.33,
+		"toughness": 2.04
+	},
+	"trim": {
+		"extraDurability": 4.67
+	}
+	},
+	"specificTraits": {
+		"EXTRA": [
+			"heavy"
+		],
+		"HEAD": [
+			"heavy"
+		],
+		"HANDLE": [
+			"heavy"
+		],
+		"BOW": [
+			"heavy"
+		],
+		"PROJECTILE": [
+			"heavy"
+		],
+		"SHAFT": [
+			"heavy"
+		],
+		"FLETCHING": [
+			"heavy"
+		],
+		"BOWSTRING": [
+			"heavy"
+		],
+		"CORE": [
+			"heavy_armor"
+		],
+		"PLATES": [
+			"heavy_armor"
+		],
+		"TRIM": [
+			"heavy_armor"
+		]
+	}
+}

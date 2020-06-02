@@ -1,0 +1,126 @@
+{
+	"name": "magnite",
+	"tool": {
+		"bow": {
+			"speed": 0.71,
+			"range": 1.4,
+			"bonusDamage": 5.4
+		},
+		"fletching": {
+			"accuracy": 0.71,
+			"modifier": 0.8
+		},
+		"head": {
+			"attackDamage": 5,
+			"speed": 30,
+			"durability": 20,
+			"harvestLevel": 6
+		},
+		"handle": {
+			"modifier": 0.8,
+			"durability": 8
+		},
+		"arrowShaft": {
+			"modifier": 0.6,
+			"bonusAmmo": 1
+		},
+		"bowstring": {
+			"modifier": 0.8
+		},
+		"extra": {
+			"durability": 4
+		}
+	},
+	"color": "#a5453b",
+	"craftable": false,
+	"madeInToolForge": true,
+	"createMeltingRecipes": false,
+	"meltingTemperature": 475,
+	"looks": {
+		"shininess": 0.25,
+		"brightness": 0.25,
+		"hueshift": -0.1
+	},
+	"fluid": {
+		"viscosity": 10000,
+		"density": 2000,
+		"temperature": 1000,
+		"luminosity": 10
+	},
+	"oreDictSuffixes": [
+		
+	],
+	"matParts": [
+		"HEAD","HANDLE","EXTRA","BOW","SHAFT","BOWSTRING","CORE","PLATES","TRIM"
+	],
+	"nameLocales": {
+		"en_us": "Magnite"
+	},
+	"smeltingItems": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"smeltingTags": {
+		"ingot": [],
+		"block": [],
+		"nugget": [],
+		"ore": [],
+		"dust": [],
+		"plate": [],
+		"gear": []
+	},
+	"armor": {
+		"core": {
+			"durability": 1.33,
+			"defense": 150
+	},
+	"plates": {
+		"modifier": 0.6,
+		"durability": 0.53,
+		"toughness": 4.19
+	},
+	"trim": {
+		"extraDurability": 0.27
+	}
+	},
+	"specificTraits": {
+		"EXTRA": [
+			"sharp"
+		],
+		"HEAD": [
+			"sharp"
+		],
+		"HANDLE": [
+			"sharp"
+		],
+		"BOW": [
+			"sharp"
+		],
+		"PROJECTILE": [
+			"sharp"
+		],
+		"SHAFT": [
+			"sharp"
+		],
+		"FLETCHING": [
+			"sharp"
+		],
+		"BOWSTRING": [
+			"sharp"
+		],
+		"CORE": [
+			"indomitable_armor"
+		],
+		"PLATES": [
+			"indomitable_armor"
+		],
+		"TRIM": [
+			"indomitable_armor"
+		]
+	}
+}
